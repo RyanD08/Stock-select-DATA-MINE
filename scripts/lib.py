@@ -221,6 +221,39 @@ def find_pay_ratio(text):
     return None
 
 
+_COMPANY_SUFFIX = re.compile(r"\b(inc\.?|llc|corp\.?|ltd\.?|holdings|plc|l\.p\.|company)\b")
+_FAMILY_BRAND_PHRASE = re.compile(r"^\s*of\s+(companies|brands|products|funds|restaurants|stores)\b", re.IGNORECASE)
+_OWNERSHIP_CONTEXT = re.compile(r"beneficial(?:ly)?\s+own|voting power|\btrust\b|\bshares\b|%\s|percent", re.IGNORECASE)
+
+
+def find_founder_led(text_lower):
+    """Only counts a 'founder ... CEO/Executive Chairman' hit if it isn't
+    immediately followed by a different, named company (a classic false
+    positive from director bios listing OTHER companies they founded), which
+    is what a bare proximity regex over flattened filing text would catch."""
+    for m in re.finditer(r"(founder|co-founder)[^.]{0,120}?(chief executive officer|executive chairman)", text_lower):
+        trailing = text_lower[m.end():m.end() + 80]
+        if _COMPANY_SUFFIX.search(trailing):
+            continue
+        return text_lower[max(0, m.start() - 40):m.end() + 60]
+    return None
+
+
+def find_family_owned(text):
+    """Requires the '<Name> family' mention to sit near real ownership
+    language (beneficial ownership, voting power, trust, %) and rejects the
+    common false positive of corporate brand phrasing like 'the X family of
+    companies/brands/products'."""
+    for m in re.finditer(r"the ([A-Z][a-z]+) family\b", text):
+        after = text[m.end():m.end() + 30]
+        if _FAMILY_BRAND_PHRASE.match(after):
+            continue
+        window = text[max(0, m.start() - 250):m.end() + 250]
+        if _OWNERSHIP_CONTEXT.search(window):
+            return m.group(0), window
+    return None
+
+
 def find_independent_directors_pct(text):
     m = re.search(r"(\d{1,3})\s*%\s*of[^.]{0,60}?independent", text, re.IGNORECASE)
     if m:

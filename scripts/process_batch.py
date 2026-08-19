@@ -17,6 +17,7 @@ from lib import (  # noqa: E402
     get_submissions, full_text_search, latest_filing, filing_document_url,
     fetch_filing_text, sic_screen, epa_echo_summary, osha_establishment_search,
     field, none_field, keyword_hit, find_pay_ratio, find_independent_directors_pct,
+    find_founder_led, find_family_owned,
     ENV_KEYWORDS, LABOR_KEYWORDS, GOV_KEYWORDS, save_json, TODAY,
 )
 from financials import revenue_growth, debt_to_equity, dividend_consistency  # noqa: E402
@@ -171,18 +172,19 @@ def process_company(rec):
         rec["shareholder_rights_voting_structure"] = field(
             "dual_class" if dual else "single_class",
             f"DEF 14A share class disclosure, filed {proxy['filing_date']}", purl, "Medium" if dual else "Low")
-        founder_hit = re.search(r"(founder|co-founder)[^.]{0,80}(chief executive officer|executive chairman)", low_p)
+        founder_hit = find_founder_led(low_p)
         if founder_hit:
-            rec["founder_led"] = field(True, f"DEF 14A officer bios, filed {proxy['filing_date']}", purl, "Medium",
-                                        "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.")
+            rec["founder_led"] = field(True, f"DEF 14A officer/director bios, filed {proxy['filing_date']}", purl, "Medium",
+                                        f"Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: '{founder_hit.strip()}'. Not a manual bio read -- verify.")
         else:
-            rec["founder_led"] = none_field("No founder+CEO/Chairman pattern found in proxy text scan")
-        family_hit = re.search(r"the ([A-Z][a-z]+) family", proxy_text)
+            rec["founder_led"] = none_field("No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan")
+        family_hit = find_family_owned(proxy_text)
         if family_hit:
+            name, window = family_hit
             rec["family_owned"] = field(True, f"DEF 14A beneficial ownership section, filed {proxy['filing_date']}", purl, "Medium",
-                                         f"Text mentions '{family_hit.group(0)}'; percentage not automatically extracted -- verify manually.")
+                                         f"Text mentions '{name}' near ownership/voting-power language; percentage not automatically extracted -- verify manually. Context: \"...{window.strip()[:200]}...\"")
         else:
-            rec["family_owned"] = none_field("No '<Name> family' pattern found in proxy text scan")
+            rec["family_owned"] = none_field("No '<Name> family' + ownership-context pattern found in proxy text scan")
     else:
         for f_ in ["ceo_pay_ratio", "board_transparency_independence", "shareholder_rights_voting_structure",
                    "founder_led", "family_owned"]:
