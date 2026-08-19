@@ -1,0 +1,19 @@
+{
+  "description": "Well-documented, real per-company data points found during research that are not covered by the 27 official survey questions but could plausibly matter to a values-driven investor. Logged here for review -- NOT added to the official question set. Each entry: a proposed survey question in the same plain-language 1-5-importance style, the supporting data source, and current coverage.",
+  "candidates": [
+    {
+      "proposed_question": "Prioritizing companies with a validated Science Based Targets initiative (SBTi) emissions-reduction commitment",
+      "rationale": "SBTi validation is a much stronger, independently-verified signal of real decarbonization commitment than the 10-K keyword scan used for Q1/Q2, which only detects whether a company *mentions* climate/renewable topics in its business description, not whether it has a validated target.",
+      "source": "sciencebasedtargets.org (company/target search)",
+      "coverage_status": "Source confirmed reachable from this environment (HTTP 200) but not yet integrated into the collection pipeline -- see logs/suggested_sources.md. 0 companies currently checked.",
+      "confidence_if_implemented": "High (SBTi validation status is a binary, independently-audited fact)"
+    },
+    {
+      "proposed_question": "Prioritizing companies recognized in JUST Capital's annual worker-treatment rankings",
+      "rationale": "JUST Capital publishes an independently-compiled worker-treatment ranking across large-cap US companies, which would materially strengthen Q5 (fair wages)/Q7 (DEI)/Q8 (worker safety) beyond the current 10-K keyword scan and OSHA name-match.",
+      "source": "justcapital.com/rankings",
+      "coverage_status": "Source confirmed reachable (HTTP 200) but not yet integrated -- see logs/suggested_sources.md. 0 companies currently checked.",
+      "confidence_if_implemented": "Medium-High (methodology-driven ranking, but requires interpretation into the dataset's confidence scale)"
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "last_updated": "2026-08-19T22:41:53.735587+00:00",
+  "total_companies": 503,
+  "complete": 3,
+  "manual_review_needed": 0,
+  "pending": 500,
+  "complete_tickers": [
+    "AAPL",
+    "MO",
+    "XOM"
+  ],
+  "manual_review_tickers": []
+}
