@@ -59,6 +59,24 @@ def generic_get(url, params=None, timeout=25):
     return r
 
 
+def fec_get(url, params=None, timeout=60):
+    """fec.gov bulk-download files are served from a redirect (www.fec.gov ->
+    an official FEC-managed S3 bucket in GovCloud) -- allow_redirects follows
+    that through, same as generic_get. The request originates at the
+    approved www.fec.gov domain."""
+    _throttle("fec", 0.5)
+    r = requests.get(url, headers=GENERIC_HEADERS, params=params, timeout=timeout, allow_redirects=True)
+    r.raise_for_status()
+    return r
+
+
+def ftc_get(url, params=None, timeout=25):
+    _throttle("ftc", 0.7)
+    r = requests.get(url, headers=GENERIC_HEADERS, params=params, timeout=timeout, allow_redirects=True)
+    r.raise_for_status()
+    return r
+
+
 def field(value, source, source_url, confidence, notes=None):
     return {
         "value": value,
@@ -324,6 +342,189 @@ def find_independent_directors_pct(text):
     if m3:
         return None  # qualitative-only signal; caller should treat as a text hit, not a %
     return None
+
+
+# ---------------------------------------------------------------- FEC (Q20 political donations)
+#
+# fec.gov's bulk-download files give real, filed committee-level data: the
+# committee master file (cm) lists each PAC's officially reported sponsoring
+# organization (CONNECTED_ORG_NM) and designation, and the committee summary
+# file gives per-committee financial totals for the cycle. This is a much
+# stronger signal than the DEF 14A keyword scan (a real named/registered PAC
+# with dollar totals vs. a proxy-statement sentence merely mentioning
+# "political contributions"), so an FEC match is scored High confidence.
+#
+# Matching a company to its PAC(s) is name-matching against CONNECTED_ORG_NM
+# (FEC's own structured field) or, failing that, the committee's own name
+# with PAC boilerplate stripped -- both restricted to committees with
+# ORG_TP == "C" (Corporation) and CMTE_DSGN == "B" (Lobbyist/Registrant PAC).
+# That restriction was found necessary during testing: without it, several
+# single-word company names (e.g. "Cooper Companies" -> "COOPER", "Progressive
+# Corporation" -> "PROGRESSIVE") false-matched unrelated candidate leadership
+# PACs whose CONNECTED_ORG_NM field happened to be a person's surname
+# ("COOPER", "LIEU", "WATERS") -- those leadership PACs have CMTE_DSGN "D"
+# and a blank ORG_TP, so filtering to ORG_TP == "C" / CMTE_DSGN == "B"
+# (genuine corporate PACs only) eliminates that false-positive class. Even
+# with this restriction, matching is by name only (FEC does not publish a
+# CIK crosswalk) -- exact match only, no fuzzy/prefix matching, since a
+# prefix-match test run produced a real false positive (D.R. Horton
+# incorrectly matched to a Teamsters "D R I V E" committee via a shared
+# two-token prefix).
+FEC_CYCLE = "2024"  # most recently *completed* even-year cycle as of 2026-08-20;
+# preferred over the in-progress 2026 cycle for stable, full-cycle financial totals.
+
+FEC_SUFFIXES = {
+    "inc", "incorporated", "corp", "corporation", "co", "company", "companies",
+    "llc", "ltd", "limited", "plc", "holdings", "holding", "the", "na",
+}
+
+_FEC_PAC_NOISE_PHRASES = [
+    r"\bfederal political action committee\b", r"\bpolitical action committee\b",
+    r"\bseparate segregated fund\b", r"\bnonpartisan political action committee\b",
+    r"\bgood government fund\b", r"\bgood government committee\b", r"\bgood government club\b",
+    r"\bemployees political action committee\b", r"\bemployees pac\b", r"\bemployees fund\b",
+    r"\bemployees' fund\b", r"\bcivic action committee\b", r"\bgovernment affairs\b",
+    r"\bpolitical action fund\b", r"\baction fund\b", r"\baction committee\b",
+    r"\bpolitical fund\b", r"\bconcerned citizens fund\b", r"\bcitizens for \b",
+    r"\bemployees\b", r"\bemployee\b", r"\bassociates\b", r"\bpac\b",
+]
+
+
+def _fec_normalize(name):
+    name = name.upper().replace("&", " AND ")
+    name = re.sub(r"[.,'’]", "", name)
+    name = re.sub(r"[^A-Z0-9 ]", " ", name)
+    return [t for t in name.split() if t.lower() not in FEC_SUFFIXES]
+
+
+def _fec_norm_str(name):
+    return " ".join(_fec_normalize(name))
+
+
+def _fec_cmte_candidate_name(cmte_nm):
+    s = re.sub(r"\([^)]*\)", " ", cmte_nm).lower()
+    for pat in _FEC_PAC_NOISE_PHRASES:
+        s = re.sub(pat, " ", s)
+    s = re.sub(r"\s+", " ", s).strip()
+    return _fec_norm_str(s)
+
+
+_fec_committee_index = None  # {"org": {...}, "cmte": {...}} -- lazily built once per process
+
+
+def _load_fec_committee_master():
+    url = f"https://www.fec.gov/files/bulk-downloads/{FEC_CYCLE}/cm{FEC_CYCLE[2:]}.zip"
+    r = fec_get(url)
+    import io
+    import zipfile
+    zf = zipfile.ZipFile(io.BytesIO(r.content))
+    name = [n for n in zf.namelist() if n.lower().endswith(".txt")][0]
+    text = zf.read(name).decode("latin-1")
+
+    org_index, cmte_index = {}, {}
+    for line in text.splitlines():
+        parts = line.split("|")
+        if len(parts) < 14:
+            continue
+        cmte_id, cmte_nm = parts[0], parts[1]
+        cmte_dsgn, cmte_tp = parts[8], parts[9]
+        org_tp = parts[12]
+        connected_org = parts[13]
+        if cmte_tp not in ("Q", "N", "O", "V", "W"):
+            continue
+        if org_tp != "C" or cmte_dsgn != "B":
+            continue  # genuine corporate-sponsored PACs only -- see module note above
+        if connected_org.strip():
+            org_index.setdefault(_fec_norm_str(connected_org), []).append((cmte_id, cmte_nm, connected_org))
+        cand = _fec_cmte_candidate_name(cmte_nm)
+        if cand:
+            cmte_index.setdefault(cand, []).append((cmte_id, cmte_nm, connected_org))
+    return {"org": org_index, "cmte": cmte_index}
+
+
+def _load_fec_committee_summary():
+    url = f"https://www.fec.gov/files/bulk-downloads/{FEC_CYCLE}/committee_summary_{FEC_CYCLE}.csv"
+    r = fec_get(url)
+    import csv
+    import io
+    reader = csv.DictReader(io.StringIO(r.text))
+    by_cmte = {}
+    for row in reader:
+        by_cmte[row["CMTE_ID"]] = row
+    return by_cmte
+
+
+def get_fec_committee_index():
+    global _fec_committee_index
+    if _fec_committee_index is None:
+        _fec_committee_index = {
+            "master": _load_fec_committee_master(),
+            "summary": _load_fec_committee_summary(),
+        }
+    return _fec_committee_index
+
+
+def match_company_to_fec_pac(company_name):
+    """Returns a list of (cmte_id, cmte_nm, connected_org, summary_row_or_None)
+    for the company's matched corporate PAC(s), or None if no exact match."""
+    idx = get_fec_committee_index()
+    master, summary = idx["master"], idx["summary"]
+    key = _fec_norm_str(company_name)
+    if not key:
+        return None
+    hit = master["org"].get(key) or master["cmte"].get(key)
+    if not hit:
+        return None
+    return [(cmte_id, cmte_nm, connected_org, summary.get(cmte_id))
+            for cmte_id, cmte_nm, connected_org in hit]
+
+
+# ---------------------------------------------------------------- FTC (Q11 fraud/corruption)
+#
+# ftc.gov's Legal Library case search (a real server-rendered HTML results
+# page, not JS-only) supplements the existing SEC-full-text-search signal for
+# Q11 with named FTC enforcement actions. The site's own search matches on
+# full text, not just party name, so results are filtered down to items whose
+# URL has the numeric case-docket prefix real cases use (category/menu pages
+# like "commissioner-statements" or "petitions-quash" don't) AND whose title
+# text contains the company's own name -- both checks are needed; verified
+# against a real "Amazon" search that otherwise pulled in unrelated cases
+# (e.g. "Lights of America", "Sellers Playbook") sharing only incidental
+# keyword overlap with the query.
+_FTC_CASE_HREF = re.compile(r'href="(/legal-library/browse/cases-proceedings/\d[^"]*)"[^>]*>([^<]+)<')
+
+
+def ftc_case_search(company_name, max_examples=5):
+    url = "https://www.ftc.gov/legal-library/browse/cases-proceedings"
+    r = ftc_get(url, params={"search": company_name})
+    html = r.text
+    # Require the first TWO significant (non-suffix) tokens of the company name,
+    # when there are that many, to both appear as whole words in the case title --
+    # matching on a single leading word is too generic (e.g. "Home Depot (The)"'s
+    # first token alone is "HOME", which false-matched "Home Matters USA" and
+    # "Vivint Smart Home, Inc." in testing). Single-word company names fall back
+    # to that one word, guarded by the same length/digit heuristic as before.
+    sig_tokens = [t for t in _fec_normalize(company_name) if t not in ("AND", "OF", "FOR")]
+    seen_tok = set()
+    sig_tokens = [t for t in sig_tokens if not (t in seen_tok or seen_tok.add(t))]  # dedupe, preserve order
+    if not sig_tokens:
+        return None
+    match_tokens = sig_tokens[:2]
+    if len(match_tokens) == 1 and len(match_tokens[0]) < 3 and not re.search(r"\d", match_tokens[0]):
+        return None  # too generic/short a token to safely word-match (unless it's distinctive like "3M")
+    token_patterns = [re.compile(r"\b" + re.escape(t) + r"\b", re.IGNORECASE) for t in match_tokens]
+    seen = set()
+    hits = []
+    for m in _FTC_CASE_HREF.finditer(html):
+        href, title = m.group(1), m.group(2).strip()
+        if href in seen:
+            continue
+        if all(p.search(title) for p in token_patterns):
+            seen.add(href)
+            hits.append({"title": title, "url": f"https://www.ftc.gov{href}"})
+    if not hits:
+        return None
+    return {"case_count": len(hits), "examples": hits[:max_examples], "search_url": f"{url}?search={company_name}"}
 
 
 def save_json(path, obj):

@@ -19,6 +19,7 @@ from lib import (  # noqa: E402
     field, none_field, keyword_hit, find_pay_ratio, find_independent_directors_pct,
     find_founder_led, find_family_owned, RECENT_CORPORATE_ACTION_PATTERN, alcohol_2080_hit,
     ENV_KEYWORDS, LABOR_KEYWORDS, GOV_KEYWORDS, save_json, TODAY,
+    match_company_to_fec_pac, ftc_case_search, FEC_CYCLE,
 )
 from financials import revenue_growth, debt_to_equity, dividend_consistency  # noqa: E402
 
@@ -203,19 +204,35 @@ def process_company(rec):
                    "founder_led", "family_owned"]:
             rec[f_] = none_field("No DEF 14A found/fetchable on EDGAR")
 
-    # --- Q11 fraud/corruption, Q22 data privacy: SEC Litigation Releases full-text search ---
+    # --- Q11 fraud/corruption, Q22 data privacy: SEC full-text search + FTC Legal Library case search ---
     try:
         fraud_hits = full_text_search(entity_name, forms="8-K")
         n_hits = fraud_hits.get("hits", {}).get("total", {}).get("value", 0)
-        if n_hits:
-            rec["fraud_corruption_scandal_history"] = field(
-                {"full_text_search_hits": n_hits}, "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-                f"https://www.sec.gov/cgi-bin/srqsb?text={entity_name}", "Low",
-                "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.")
-        else:
-            rec["fraud_corruption_scandal_history"] = none_field("No SEC full-text search hits; Violation Tracker/Stanford Clearinghouse unavailable (see manual_review log)")
     except Exception:
-        rec["fraud_corruption_scandal_history"] = none_field("SEC full-text search request failed")
+        n_hits = None
+    try:
+        ftc_hits = ftc_case_search(entity_name)
+    except Exception:
+        ftc_hits = None
+
+    if ftc_hits:
+        value = {"ftc_case_count": ftc_hits["case_count"], "ftc_example_cases": ftc_hits["examples"]}
+        notes = (f"FTC Legal Library case search ({ftc_hits['search_url']}) name-matched to {ftc_hits['case_count']} "
+                 "case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a "
+                 "same-named unrelated party.")
+        if n_hits:
+            value["sec_fulltext_search_hits"] = n_hits
+            notes += f" Also {n_hits} SEC EDGAR full-text search hit(s) across 8-K filings (name-matched, not confirmed litigation releases)."
+        rec["fraud_corruption_scandal_history"] = field(
+            value, "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+            ftc_hits["search_url"], "Medium", notes)
+    elif n_hits:
+        rec["fraud_corruption_scandal_history"] = field(
+            {"sec_fulltext_search_hits": n_hits}, "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
+            f"https://www.sec.gov/cgi-bin/srqsb?text={entity_name}", "Low",
+            "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases); no FTC Legal Library case matched. Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.")
+    else:
+        rec["fraud_corruption_scandal_history"] = none_field("No SEC full-text search hits and no FTC Legal Library case matched; Violation Tracker/Stanford Clearinghouse unavailable (see manual_review log)")
     rec["data_privacy_practices"] = none_field("SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source")
 
     # --- Q18: religious compliance -- always None per background doc ---
@@ -260,10 +277,26 @@ def process_company(rec):
         "NLRB case search (nlrb.gov) is a JS-rendered Drupal search widget with no discoverable JSON/HTML API reachable by this pipeline; see logs/manual_review_needed.md")
 
     # --- Q20 political donation transparency ---
-    if proxy_text and re.search(r"political (contribut|spending|donation)", proxy_text.lower()):
+    try:
+        fec_match = match_company_to_fec_pac(name)
+    except Exception:
+        fec_match = None
+    if fec_match:
+        total_receipts = sum(float(s["TTL_RECEIPTS"]) for _, _, _, s in fec_match if s and s.get("TTL_RECEIPTS"))
+        total_disb = sum(float(s["TTL_DISB"]) for _, _, _, s in fec_match if s and s.get("TTL_DISB"))
+        cmte_names = "; ".join(cmte_nm for _, cmte_nm, _, _ in fec_match)
+        rec["political_donation_transparency"] = field(
+            "Disclosed",
+            f"FEC committee master + committee summary bulk data, {FEC_CYCLE} election cycle",
+            f"https://www.fec.gov/data/committee/{fec_match[0][0]}/?cycle={FEC_CYCLE}", "High",
+            f"Matched to registered corporate PAC(s): {cmte_names}. Cycle totals: ${total_receipts:,.2f} receipts / "
+            f"${total_disb:,.2f} disbursements. Matched by company name against FEC's CONNECTED_ORG_NM/committee-name "
+            "fields (FEC does not publish a CIK crosswalk) -- verify the matched committee is this company, not a "
+            "similarly-named one.")
+    elif proxy_text and re.search(r"political (contribut|spending|donation)", proxy_text.lower()):
         rec["political_donation_transparency"] = field("Disclosed", f"DEF 14A political spending disclosure, filed {proxy['filing_date']}", purl, "Medium")
     else:
-        rec["political_donation_transparency"] = none_field("No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment")
+        rec["political_donation_transparency"] = none_field("No FEC-registered corporate PAC name-matched and no political-spending disclosure language found in proxy text scan; opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment")
 
     # --- Q21 countries of concern -- XBRL geographic segment data not yet implemented ---
     rec["countries_of_concern_operations"] = none_field("SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch")
