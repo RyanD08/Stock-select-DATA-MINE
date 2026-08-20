@@ -14,6 +14,13 @@
       "source": "justcapital.com/rankings",
       "coverage_status": "Source confirmed reachable (HTTP 200) but not yet integrated -- see logs/suggested_sources.md. 0 companies currently checked.",
       "confidence_if_implemented": "Medium-High (methodology-driven ranking, but requires interpretation into the dataset's confidence scale)"
+    },
+    {
+      "proposed_question": "Supporting women-run companies",
+      "rationale": "A common values-investing screen (comparable in spirit to founder_led/family_owned in Q24) that the official 27-question list does not cover. Implemented and populated for all 503 companies as the `women_led` field -- see schema/company_schema.json's `additional_criteria` section for the field's data dictionary entry.",
+      "source": "DEF 14A proxy statement (EDGAR) -- see find_ceo_gender_signal() in scripts/lib.py",
+      "coverage_status": "IMPLEMENTED 2026-08-20 via scripts/fix_women_led.py, run across all 503 companies. Identifies the CEO's surname via a name+title-adjacency regex, then reads the filing's own honorific (Mr./Ms./Mrs.) or, failing that, a majority of pronoun references (she/her vs he/his) for that specific named person -- never guessed from a first name. Tested against ~30 known-CEO tickers (Mary Barra/GM, Lisa Su/AMD, Carol Tome/UPS, Vicki Hollub/OXY, Gail Boudreaux/ELV, Kecia Steelman/ULTA as True cases; Tim Cook/AAPL, Satya Nadella/MSFT, Jamie Dimon/JPM, and others as False cases) with no observed misattribution after iterating out several false-positive modes (compensation-table jargon like \"NEO\" being mis-read as a surname, all-caps document headers splitting vote counts from the same properly-cased name, a single incidental past-tense CEO-title mention elsewhere in the document out-voting the real CEO on a 1-1 tie). See coverage numbers in README.md.",
+      "confidence_if_implemented": "Low (flattened-text regex heuristic reading the filing's own gendered language -- same class of caveat as founder_led/family_owned, not a verified/audited fact)"
     }
   ]
 }

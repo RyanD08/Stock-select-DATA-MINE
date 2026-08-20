@@ -182,5 +182,14 @@
         "note": "Companies flagged via recent_corporate_action_flag must not have single-year revenue growth used at face value -- see EXE/Expand Energy example in background doc."
       }
     }
+  },
+  "additional_criteria": {
+    "description": "Real, populated fields that exist on every company record but are NOT one of the 27 official survey questions from the founding materials -- see data/candidate_additional_criteria.json for the full proposal/review record. Kept out of `questions` above so the numbered 1-27 schema the app repo may depend on stays unchanged.",
+    "women_led": {
+      "proposed_survey_question": "Supporting women-run companies",
+      "value_type": "boolean (true if the current CEO is a woman) or 'No verifiable data found'",
+      "sources": ["DEF 14A proxy statement (EDGAR) -- see find_ceo_gender_signal() in scripts/lib.py"],
+      "note": "Identifies the CEO's surname via a name-immediately-before-title regex, then reads which honorific (Mr./Ms./Mrs.) or, failing that, which pronoun (she/her vs he/his) the filing itself consistently uses for that specific named person -- never inferred from a first name. Low confidence, same class of flattened-text heuristic as founder_led/family_owned; the matched surname and evidence quote are always shown in notes for spot-checking."
+    }
   }
 }

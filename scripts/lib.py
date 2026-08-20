@@ -329,6 +329,127 @@ def find_family_owned(text):
     return None
 
 
+_NAME_CHARS = r"A-Za-zÀ-ÖØ-öø-ÿ'’"
+_CEO_NAME_TITLE = re.compile(
+    r"\b([A-Z][" + _NAME_CHARS + r".-]+(?:\s+[A-Z]\.?)?\s+[A-Z][" + _NAME_CHARS + r"-]+)\s*,?\s+"
+    r"(?:(?:our |the Company's )?(?:Chair(?:man|woman)?(?:\s+and\s+|,\s*)|President(?:\s+and\s+|,\s*))*"
+    r"(?:Chief Executive Officer|CEO)\b)")
+_HONORIFIC_SURNAME = re.compile(r"\b(Mr|Ms|Mrs)\.\s*[ \s]?([A-Z][" + _NAME_CHARS + r"-]+)")
+_CEO_NAME_STOPWORDS = {
+    "company", "corporation", "corp", "group", "inc", "officer", "officers",
+    "chairman", "chairwoman", "chair", "president", "retired", "public",
+    "board", "committee", "compensation", "executive", "holdings",
+    "registrant", "former", "interim", "named", "our", "the", "peer",
+    "current", "acting", "outgoing", "incoming", "neo", "neos", "ceo", "cfo",
+    "coo", "evp", "svp", "chief", "vice", "senior", "salary", "paid", "total",
+}
+
+
+def find_ceo_gender_signal(text):
+    """Identifies the current CEO's surname from a name-immediately-before-
+    title construction (e.g. "Mary T. Barra Chair and Chief Executive
+    Officer", "Timothy D. Cook, CEO" -- the standard proxy-statement
+    Summary Compensation Table / bio format), then reads which honorific
+    (Mr./Ms./Mrs.) the filing itself consistently uses for that exact
+    surname elsewhere in the document. This is a gendered reference the
+    filing itself makes about a specific named person -- it never guesses
+    gender from a first name. Requires every honorific found for that
+    surname to agree, and at least 2 supporting occurrences, before
+    returning a signal. Returns (is_woman: bool, surname, evidence_snippet)
+    or None if no consistent CEO-name/honorific pairing was found."""
+    from collections import Counter
+    text = text.replace("\xa0", " ")  # BeautifulSoup's get_text() leaves non-breaking
+    # spaces inside a single text node un-joined, which otherwise breaks literal-space
+    # matches inside multi-word titles like "Chief Executive Officer".
+    name_hits = Counter()
+    surname_display = {}
+    for m in _CEO_NAME_TITLE.finditer(text):
+        full_name = m.group(1).strip()
+        tokens = full_name.split()
+        surname = tokens[-1].strip(".,’'")
+        first = tokens[0].strip(".,’'")
+        if surname.lower() in _CEO_NAME_STOPWORDS or first.lower() in _CEO_NAME_STOPWORDS:
+            continue
+        key = surname.lower()
+        name_hits[key] += 1
+        surname_display.setdefault(key, surname)
+    if not name_hits:
+        return None
+    top_two = name_hits.most_common(2)
+    top_key, top_count = top_two[0]
+    # A single name+title adjacency match is too weak to trust on its own --
+    # it's just as likely to be an incidental "...previously served as CEO
+    # of X" in someone else's bio as the real, current CEO. Require the top
+    # candidate to clearly lead (not tie) a second-place name before using it.
+    if top_count < 2 or (len(top_two) > 1 and top_two[1][1] >= top_count):
+        return None
+    ceo_key = top_key
+    ceo_surname = surname_display[ceo_key]
+
+    honorific_hits = Counter()
+    evidence = None
+    for m in _HONORIFIC_SURNAME.finditer(text):
+        honorific, surname = m.group(1), m.group(2)
+        if surname.lower() != ceo_key:
+            continue
+        gender = "female" if honorific in ("Ms", "Mrs") else "male"
+        honorific_hits[gender] += 1
+        if evidence is None:
+            start = max(0, m.start() - 40)
+            evidence = text[start:m.end() + 60].strip()
+    if honorific_hits and sum(honorific_hits.values()) >= 2 and len(honorific_hits) == 1:
+        is_woman = next(iter(honorific_hits)) == "female"
+        return (is_woman, ceo_surname, evidence)
+
+    # Fallback: some proxies never use Mr./Ms. (a stylistic choice, e.g. AMD
+    # uses "Dr. Su" throughout, which is gender-neutral) but still describe
+    # the CEO with a gendered pronoun in their own bio narrative ("Dr. Su
+    # has served ... She has served ..."). Look at the text immediately
+    # following each mention of the CEO's surname, stopping early at the
+    # next capitalized full name (another person) to avoid picking up a
+    # pronoun that refers to someone else.
+    pronoun_hits = Counter()
+    evidence = None
+    surname_pat = re.compile(r"\b" + re.escape(ceo_surname) + r"\b")
+    next_name_pat = re.compile(r"\b[A-Z][a-z]+\s+[A-Z][a-z]+\b")
+    pronoun_pat = re.compile(r"\b(she|her|hers|herself|he|him|his|himself)\b", re.IGNORECASE)
+    for m in surname_pat.finditer(text):
+        window_end = m.end() + 250
+        # Find the next capitalized-name-like token, skipping a repeat of
+        # the CEO's own name (e.g. "Carol Tomé ... Carol Tomé is..."),
+        # which would otherwise truncate the window before any pronoun.
+        search_from = m.end() + 1
+        for _ in range(4):
+            next_name = next_name_pat.search(text, search_from)
+            if not next_name or next_name.start() >= window_end:
+                break
+            if ceo_surname.lower() in next_name.group(0).lower():
+                search_from = next_name.end()
+                continue
+            window_end = next_name.start()
+            break
+        window = text[m.end():window_end]
+        p = pronoun_pat.search(window)
+        if not p:
+            continue
+        gender = "female" if p.group(1).lower() in ("she", "her", "hers", "herself") else "male"
+        pronoun_hits[gender] += 1
+        if evidence is None:
+            evidence = text[m.start():m.end() + p.end()].strip()
+    total = sum(pronoun_hits.values())
+    if total < 2:
+        return None
+    (top_gender, top_count) = pronoun_hits.most_common(1)[0]
+    # Pronoun windows are noisier than honorific matches (a nearby sentence
+    # can describe someone else), so require a strong majority rather than
+    # unanimity -- a single stray opposite-gender pronoun among many
+    # shouldn't erase an otherwise consistent signal.
+    if top_count / total < 0.85:
+        return None
+    is_woman = top_gender == "female"
+    return (is_woman, ceo_surname, evidence)
+
+
 def find_independent_directors_pct(text):
     m = re.search(r"(\d{1,3})\s*%\s*of[^.]{0,60}?independent", text, re.IGNORECASE)
     if m:

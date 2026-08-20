@@ -19,7 +19,7 @@ from lib import (  # noqa: E402
     field, none_field, keyword_hit, find_pay_ratio, find_independent_directors_pct,
     find_founder_led, find_family_owned, RECENT_CORPORATE_ACTION_PATTERN, alcohol_2080_hit,
     ENV_KEYWORDS, LABOR_KEYWORDS, GOV_KEYWORDS, save_json, TODAY,
-    match_company_to_fec_pac, ftc_case_search, FEC_CYCLE,
+    match_company_to_fec_pac, ftc_case_search, FEC_CYCLE, find_ceo_gender_signal,
 )
 from financials import revenue_growth, debt_to_equity, dividend_consistency  # noqa: E402
 
@@ -199,9 +199,22 @@ def process_company(rec):
                                          f"Text mentions '{name}' near ownership/voting-power language; percentage not automatically extracted -- verify manually. Context: \"...{window.strip()[:200]}...\"")
         else:
             rec["family_owned"] = none_field("No '<Name> family' + ownership-context pattern found in proxy text scan")
+        # --- Additional criteria (not one of the 27 official questions): women_led --
+        # see data/candidate_additional_criteria.json.
+        gender_sig = find_ceo_gender_signal(proxy_text)
+        if gender_sig:
+            is_woman, surname, evidence = gender_sig
+            rec["women_led"] = field(
+                is_woman, f"DEF 14A proxy statement, filed {proxy['filing_date']}", purl, "Low",
+                f"CEO surname identified as '{surname}' via name+title adjacency in the proxy text; gender "
+                f"determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a "
+                f"majority of pronoun references (she/her vs he/his) describing that person -- not inferred "
+                f"from the first name. Not a manual bio read -- verify. Evidence: \"...{evidence[:200]}...\"")
+        else:
+            rec["women_led"] = none_field("No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan")
     else:
         for f_ in ["ceo_pay_ratio", "board_transparency_independence", "shareholder_rights_voting_structure",
-                   "founder_led", "family_owned"]:
+                   "founder_led", "family_owned", "women_led"]:
             rec[f_] = none_field("No DEF 14A found/fetchable on EDGAR")
 
     # --- Q11 fraud/corruption, Q22 data privacy: SEC full-text search + FTC Legal Library case search ---
