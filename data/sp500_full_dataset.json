@@ -70010,6 +70010,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.13 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/920148/000119312526150752/lh-20260410.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Schechter' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...the CHC Committee in February 2025 for Mr. Schechter, our President and Chief Executive Officer (\u201cCEO\u201d), was per...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -70253,6 +70261,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.89 as of 2026-06-28; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-09-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/707549/000114036125036012/ny20050572x2_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Archer' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ny part of fiscal year 2025, other than Mr. Archer, are independent in accordance with Nasdaq criteria for dir...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -70487,6 +70503,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001300514.json",
       "confidence": "Medium",
       "notes": "D/E 12.57 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1300514/000130051426000031/lvs-20260401.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Goldstein' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ary Fixed annual amount, paid in cash \u2022 Mr. Goldstein*: $3 million \u2022 Mr. Dumont: $2.5 million \u2022 Mr. Hyzak: $1.2 m...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -70731,6 +70755,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.74 as of 2026-01-02; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000138/ldos-20260319.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'BELL' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...lic Company Boards : None Key Expertise Mr. Bell serves as Leidos\u2019 Chief Executive Officer, overseeing globa...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -70972,6 +71004,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.56 as of 2025-11-30. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -71208,6 +71248,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001069202.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1069202/000106920226000046/lii-20260406.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Maskara' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...School of Management Key Qualifications Mr. Maskara has extensive experience in the areas of management, financ...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -71447,6 +71495,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000059478.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Ricks' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...d CEO KEY EXPERIENCE AND QUALIFICATIONS Mr. Ricks has over 25 years of experience at Lilly, leading and shapi...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -71688,6 +71744,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001707925.json",
       "confidence": "Medium",
       "notes": "D/E 1.23 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1707925/000119312526192209/lin-20260429.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Lamba' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...t each qualifies as independent, except Mr. Lamba, the Company\u2019s Chairman of the Board and  Chief Executive O...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -71932,6 +71996,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1335258/000119312526174146/d43878ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Rapino' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...hich case the designated proxy holders, Mr. Rapino and Mr. Berchtold, will vote for such substitute nominee. T...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -72168,6 +72240,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000936468.json",
       "confidence": "Medium",
       "notes": "D/E 7.9 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/936468/000093646826000004/lmt-20260326.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Taiclet' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ic environment. The Board believes that Mr. Taiclet, a former independent Board member and a veteran with deep...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -72409,6 +72489,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000060086.json",
       "confidence": "Medium",
       "notes": "D/E 3.57 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/60086/000006008626000023/l-20260331.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Tisch' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ry, Loews Hotels & Co (\u201cLoews Hotels\u201d). Mr. Tisch has served as a Vice President of Loews since 2014, and as...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -72655,6 +72743,14 @@
       "confidence": "Medium",
       "notes": "D/E -6.46 as of 2026-01-30; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000056/low-20260415.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Ellison' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ions, and Attributes Relevant to Lowe\u2019s Mr. Ellison has more than 35 years of leadership and operational experi...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -72900,6 +72996,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.7 as of 2026-02-01. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-04-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1397187/000139718725000017/lulu-20250429.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'McDonald' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...group of luxury brands. Before Sephora, Mr. McDonald spent two years as president and chief executive officer of...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -73140,6 +73244,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001633978.json",
       "confidence": "Medium",
       "notes": "D/E 0.57 as of 2026-06-27. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-10-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1633978/000130817925000615/lite014752-def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Hurlston' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...sition 42 Compensation Arrangements for Mr. Hurlston 43 Fiscal Year 2025 Say-on-Pay Vote and Stockholder Engagem...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -73384,6 +73496,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1489393/000130817926000250/lyb014791-def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Vanacker' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Executive Director since 2022 Biography Mr. Vanacker has served as our Chief Executive\n        Officer since May...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -73618,6 +73738,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000036270.json",
       "confidence": "Medium",
       "notes": "D/E 6.32 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/36270/000119312526099298/d74790ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'JONES' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ve Committee Member Director since 2017 Mr. Jones, age 61, has been Chairman of the Board and Chief Executive...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -73862,6 +73990,14 @@
       "confidence": "Medium",
       "notes": "D/E 3.46 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2026-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000023/mpc-20260316.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Mannen' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...h, Edward G. Galante and Susan Tomasky. Ms. Mannen, in her role as Chairman, President and CEO, is not indepen...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -74096,6 +74232,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001048286.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1048286/000114036126011590/ny20062722x771_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Rozanski' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Lee, Mr. Lewis, Ms. McCarthy, Mr. Reid, Mr. Rozanski, Ambassador Schwab, and Mr. Tresvant are each independent o...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -74337,6 +74481,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000062709.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -74583,6 +74735,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.86 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/916076/000119312526157039/d28378ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'NYE' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Wajsgras Financial Expert Yes Chair \u2713 * Mr. Nye is the only member of management on the Board. The Executiv...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -74823,6 +74983,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001835632.json",
       "confidence": "Medium",
       "notes": "D/E 0.56 as of 2026-01-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-05-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1835632/000110465926060253/tm261486-1_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Murphy' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...s Chairman and Chief Executive Officer, Mr. Murphy is responsible for leading new technology development, dire...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -75065,6 +75233,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/62996/000119312526151241/d44594ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Nudi' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ectors are independent. As an employee, Mr. Nudi, our President and CEO, is not an independent director. In...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -75299,6 +75475,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001141391.json",
       "confidence": "Medium",
       "notes": "D/E 6.0 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Miebach' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...experiences, qualifications and skills Mr. Miebach brings to the Board extensive global payments experience. A...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -75536,6 +75720,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000063754.json",
       "confidence": "Medium",
       "notes": "D/E 1.3 as of 2025-11-30; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-02-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/63754/000006375426000140/mkc-20260217.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Foley' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...w) performance were 40.4% of target for Mr. Foley, Mr. Gabriel, Mr. Schwartz and Ms. Piper, and 35.3% of targ...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -75780,6 +75972,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/63908/000119312526145548/mcd-20260407.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Kempczinski' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...d its leadership structure, re-electing Mr. Kempczinski as Chairman and Mr. White as Lead Independent Director. Aft...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -76023,6 +76223,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-06-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/927653/000092765326000169/mck-20260612.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Tyler' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ROFESSIONAL EXPERIENCE AND BACKGROUND \u2022 Mr. Tyler has served as chief executive officer of McKesson Corporati...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -76264,6 +76472,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.87 as of 2026-04-24; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -76504,6 +76720,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000310158.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/310158/000119312526147704/d85708ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Davis' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ructure at least annually. As Chairman, Mr. Davis presides over meetings of the Board and shareholders, and h...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -76748,6 +76972,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.68 as of 2025-12-31; paid dividend in 2/2 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -76988,6 +77220,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001099219.json",
       "confidence": "Medium",
       "notes": "D/E 25.22 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1099219/000109921926000026/met-20260429.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Khalaf' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ment Manager, Alico Paris (1990-1992) \u2022 Mr. Khalaf began his career as an investment officer at Alico in Wilmi...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -77232,6 +77472,14 @@
       "confidence": "Medium",
       "notes": "D/E -158.08 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -77474,6 +77722,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000789570.json",
       "confidence": "Medium",
       "notes": "D/E 15.68 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789570/000119312526129074/d899213ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Hornbuckle' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...text of succession planning. Presently, Mr. Hornbuckle is our Chief Executive Officer and Mr. Salem serves as the...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -77720,6 +77976,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-07-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000026/mchp-20260701.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Sanghi' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...sed by over $35.0 billion.  At the time Mr. Sanghi was appointed as Interim CEO and President, the Board had d...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -77962,6 +78226,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723125.json",
       "confidence": "Medium",
       "notes": "D/E 0.53 as of 2025-08-28; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-11-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/723125/000072312525000038/mu-20251125.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Mehrotra' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Since | 2017 Professional Experience \u2022 Mr. Mehrotra has served as Micron\u2019s President, Chief Executive Officer,...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -78212,6 +78484,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.71 as of 2026-06-30; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-10-21",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525245150/d908201ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Nadella' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Lead Independent Director. In his role, Mr. Nadella leverages his deep understanding of the business to elevate...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -78452,6 +78732,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000912595.json",
       "confidence": "Medium",
       "notes": "D/E 1.08 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/912595/000114036126013212/ny20062832x1_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Hill' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"..., our\n          Executive Chairman, and Mr. Hill, our CEO, meet the qualifications to be considered Independ...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -78694,6 +78982,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.43 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1682852/000130817926000081/mrna-20260316.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Bancel' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...h the target total compensation mix for Mr. Bancel, our Chief Executive Officer, and the average target compen...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -78934,6 +79230,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000024545.json",
       "confidence": "Medium",
       "notes": "D/E 1.19 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/24545/000110465926034154/tap-20260506xdef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Whitehead' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...and CEO effective October 1, 2025. (2) Mr. Whitehead became President and CEO of Molson Coors EMEA&APAC effectiv...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -79176,6 +79480,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -79416,6 +79728,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001280452.json",
       "confidence": "Medium",
       "notes": "D/E 0.19 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1280452/000143774926014084/mpwr20260403_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Hsing' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...in August 1997. Prior to founding MPS, Mr. Hsing was a Senior Silicon Technology Developer at several analog...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -79658,6 +79978,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -79898,6 +80226,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001059556.json",
       "confidence": "Medium",
       "notes": "D/E 2.87 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1059556/000105955626000019/mco-20260304.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Fauber' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...for the current time because it allows Mr. Fauber to focus on leading the Company\u2019s business and operations....\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -80141,6 +80477,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000895421.json",
       "confidence": "Medium",
       "notes": "D/E 11.71 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/895421/000114036126012975/ny20058185x1_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Pick' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...al shareholder returns of 45%. In 2025, Mr. Pick continued to execute the Firm\u2019s consistent strategy and del...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -80387,6 +80731,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 1/1 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000061/mos-20260415.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Bodine' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...uce M. Bodine Occupation and Experience Mr. Bodine was appointed our Chief Executive Officer in January 2024 a...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -80630,6 +80982,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/68505/000119312526139004/d50373ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Brown' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...nt 9 Table of Contents GREGORY Q. BROWN Mr. Brown joined the Company in 2003, was appointed as Chief Executiv...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -80871,6 +81231,14 @@
       "confidence": "Medium",
       "notes": "D/E -3.15 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000023/msci-20260310.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Fernandez' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...um-priced stock options (the \u201cPPOs\u201d) to Mr. Fernandez on January 31, 2025, having a total grant date value of $15...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -81107,6 +81475,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001120193.json",
       "confidence": "Medium",
       "notes": "D/E 1.54 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1120193/000162828026027245/ndaq-20260424.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Friedman' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...e Board on January 1, 2023. Previously, Ms. Friedman served as President and Chief Operating Officer from Decemb...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -81353,6 +81729,14 @@
       "confidence": "Medium",
       "notes": "D/E 6.95 as of 2026-04-24; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-07-28",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1002047/000119312526321210/ntap-20260727.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Kurian' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...rectors for fiscal 2026, other than for Mr. Kurian, whose Company compensation is fully reflected in the Summa...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -81596,6 +81980,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.09 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -81828,6 +82220,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001164727.json",
       "confidence": "Medium",
       "notes": "D/E 0.68 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2026-03-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1164727/000110465926035211/nem-20260512xdef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'VILJOEN' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...rectors at the last Annual Meeting with Ms. Viljoen having been appointed to the Board effective January 1, 202...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -82063,6 +82463,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001564708.json",
       "confidence": "Medium",
       "notes": "paid dividend in 3/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-10-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1564708/000114036125037696/ny20055386x3_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Thomson' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ualifications and Board Contributions \u25a0 Mr. Thomson has been central in publishing industry efforts to negotiat...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -82304,6 +82712,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001564708.json",
       "confidence": "Medium",
       "notes": "paid dividend in 3/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-10-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1564708/000114036125037696/ny20055386x3_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Thomson' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ualifications and Board Contributions \u25a0 Mr. Thomson has been central in publishing industry efforts to negotiat...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -82550,6 +82966,14 @@
       "confidence": "Medium",
       "notes": "D/E 2.68 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -82793,6 +83217,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -83030,6 +83462,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1111711/000114036126011851/ny20055306x771_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Yates' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ommittees: \u2022 None Executive Experience: Mr. Yates has served as president and CEO of NiSource since February...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -83266,6 +83706,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000072331.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-01-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/72331/000119312526014662/d895414ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Nagarajan' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ts Career Highlights and Qualifications Mr. Nagarajan has served as Nordson\u2019s President and Chief Executive Offic...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -83508,6 +83956,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.91 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/702165/000119312526127620/nsc-20260327.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'George' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...S: \u25a0 Executive RATIONALE FOR NOMINATION Mr. George, our President and Chief Executive Officer, has more than 3...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -83742,6 +84198,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000073124.json",
       "confidence": "Medium",
       "notes": "D/E 12.67 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/73124/000007312426000022/ntrs-20260311.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'O\u2019GRADY' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Qualifications The Board concluded that Mr. O\u2019Grady should serve as a director based on his experience and ongo...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -83990,6 +84454,14 @@
       "confidence": "Medium",
       "notes": "D/E 2.08 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2026-04-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1133421/000113342126000007/noc-20260401.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Warden' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...8. Prior to becoming CEO and President, Ms. Warden served as President and Chief Operating Officer of the Comp...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -84230,6 +84702,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001513761.json",
       "confidence": "Medium",
       "notes": "D/E 9.2 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -84474,6 +84954,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1013871/000110465926030844/tm261406-2_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Coben' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Coben has served as our CEO since November 2023 and Chair of the Board since 2017. He...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -84710,6 +85198,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000073309.json",
       "confidence": "Medium",
       "notes": "D/E 0.62 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526127739/d21430ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Topalian' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ve Officer Age : 58 Director Since 2020 Mr. Topalian has served as Chair of the Board of Directors of Nucor sinc...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -84949,6 +85445,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001045810.json",
       "confidence": "Medium",
       "notes": "D/E 0.31 as of 2026-01-25; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-05-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000036/nvda-20260512.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'HUANG' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ions of Nasdaq, and one NVIDIA officer: Mr. Huang, who serves as our President and CEO. All of our directors...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -85193,6 +85697,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.52 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -85434,6 +85946,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1413447/000141344726000026/nxpi-20260427.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Sotomayor' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...d by the Board. The Board has appointed Mr. Sotomayor to succeed Mr. Sievers as President, effective April 28, 20...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -85671,6 +86191,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -85907,6 +86435,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000797468.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2026-03-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/797468/000162828026019816/oxy-20260319.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'HOLLUB' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...r Board\u2019s director nominees, other than Ms. Hollub, is independent under NYSE standards. The average tenure of...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -86153,6 +86689,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.27 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/878927/000087892726000006/odfl-20260417.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Freeman' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...as first elected as a director in 2024. Mr. Freeman has served as our President and Chief Executive Officer sin...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -86394,6 +86938,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/29989/000121390026034811/ea0274271-02.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Wren' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...and restated employment agreement with Mr. Wren, pursuant to which he agreed to extend his employment as Om...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -86629,6 +87181,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.63 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1097864/000109786426000010/on-20260401.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'El-Khoury' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...n the two roles. Our President and CEO, Mr. El-Khoury, is primarily responsible for managing the day-to-day busin...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -86863,6 +87423,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001039684.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -87102,6 +87670,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001341439.json",
       "confidence": "Medium",
       "notes": "paid dividend in 3/4 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -87346,6 +87922,14 @@
       "confidence": "Medium",
       "notes": "D/E -2.95 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2026-04-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1781335/000114036126015389/ny20061782x1_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Marks' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...February 2022. The decision to appoint Ms. Marks as Chair followed careful consideration by the Board after...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -87588,6 +88172,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000075362.json",
       "confidence": "Medium",
       "notes": "paid dividend in 4/4 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -87832,6 +88424,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/75677/000119312526127602/d176963ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Kowlzan' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...uary 2016. From 1998 through June 2010, Mr. Kowlzan led PCA\u2019s containerboard mill system, first as Vice Preside...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -88066,6 +88666,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001321655.json",
       "confidence": "Medium",
       "notes": "D/E 0.19 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000019/pltr-20260423.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Karp' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...e Nominees for Director Alexander Karp. Mr. Karp is one of our co-founders and has served in various positio...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -88303,6 +88911,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001327567.json",
       "confidence": "Medium",
       "notes": "D/E 2.01 as of 2025-07-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-11-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1327567/000130817925000624/panw-20251107.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Arora' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ure Added a new commitment to not grant Mr. Arora, our Chief Executive Officer, additional one-time equity aw...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -88544,6 +89160,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002041610.json",
       "confidence": "Medium",
       "notes": "paid dividend in 2/2 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No DEF 14A found/fetchable on EDGAR",
       "last_updated": "2026-08-20"
     }
   },
@@ -88788,6 +89412,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.16 as of 2025-06-30; paid dividend in 3/3 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2025-09-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/76334/000130817925000603/ph-20250919.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Parmentier' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...r Strategic Alignment & Differentiators Ms. Parmentier brings to our Board extensive operational and industry expe...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -89028,6 +89660,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000723531.json",
       "confidence": "Medium",
       "notes": "D/E 3.33 as of 2026-05-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-08-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/723531/000119312525191789/d946290ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Gibson' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...fications: The Board has concluded that Mr. Gibson is qualified to serve as a director of the Company due to h...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -89271,6 +89911,14 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1633917/000119312526145721/d59508ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Lores' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...irector nominees are independent except Mr. Lores, our President and CEO. Directors are elected annually by a...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -89519,6 +90167,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -89764,6 +90420,14 @@
       "confidence": "Medium",
       "notes": "D/E 4.26 as of 2025-12-27; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/77476/000130817926000169/pep015012_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Laguarta' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...role of Chairman of the Board in 2019. Mr. Laguarta previously served as President of PepsiCo\n        from 2017...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -90007,6 +90671,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.4 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000033/pfe-20260312.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Bourla' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Bourla has over 30 years of leadership experience and a demonstrated track record for delivering strong business results. Dr. Bourla has deep knowledge of the global healthcare industry and the regula...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -90241,6 +90913,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001004980.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -90482,6 +91162,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001413329.json",
       "confidence": "Medium",
       "notes": "D/E -7.73 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -90728,6 +91416,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.49 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000010/psx-20260401.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Lashier' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...t Chairman and Chief Executive Officer, Mr. Lashier brings extensive knowledge of Phillips 66\u2019s businesses and...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -90969,6 +91665,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/764622/000162828026023516/pnw-20260403.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Geisler' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Performance-Based Pay (1) During 2025, Mr. Geisler served as President of APS until his promotion to Chairman...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -91203,6 +91907,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000713676.json",
       "confidence": "Medium",
       "notes": "D/E 8.47 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/713676/000119312526102189/d62941ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Demchak' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ervices companies in the United States. Mr. Demchak joined PNC in 2002 as Chief Financial Officer. In July 2005...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -91449,6 +92161,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000088/ppg-20260304.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'KNAVISH' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...n, Inc. Expertise Provided to the Board Mr. Knavish has been an employee of PPG for over 35 years and has serve...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -91689,6 +92409,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000922224.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/922224/000119312526135991/ppl-20260331.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Sorgi' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...of experience in the utility industry, Mr. Sorgi brings to our Board extensive capital markets, finance and...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -91933,6 +92661,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2026-04-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1126328/000110465926039920/tm2529976-1_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Strable-Soethout' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...demy of Actuaries \u200b \u200b Career highlights Ms. Strable-Soethout has served as Chair, President and Chief Executive Officer...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -92176,6 +92912,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 4/4 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-08-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/80424/000119312525191749/d875382ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'MOELLER' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...term incentive award of $17,500,000 for Mr. Moeller. One half of the award value was delivered in the PSP. The...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -92416,6 +93160,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000080661.json",
       "confidence": "Medium",
       "notes": "D/E 3.06 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -92662,6 +93414,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.77 as of 2025-12-31; paid dividend in 3/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -92902,6 +93662,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001137774.json",
       "confidence": "Medium",
       "notes": "D/E 22.76 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -93146,6 +93914,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 1/1 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/788784/000119312526104270/peg-20260310.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'LaRossa' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...lph A. LaRossa. The Board believes that Mr. LaRossa possesses the attributes of experience, judgment, vision, m...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -93386,6 +94162,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000857005.json",
       "confidence": "Medium",
       "notes": "D/E 0.73 as of 2025-09-30. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-12-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/857005/000110465925124170/tm2526581-1_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Barua' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...other than our Chief Executive Officer, Mr. Barua, are independent. None of the independent directors are kno...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -93632,6 +94416,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.18 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1393311/000119312526128991/psa-20260325.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Petherbridge' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...nt Trustee Committees: Audit Investment Mr. Petherbridge joined the Board in July 2025. Mr. Petherbridge has served...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -93872,6 +94664,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000822416.json",
       "confidence": "Medium",
       "notes": "D/E 0.39 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/822416/000082241626000016/phm-20260312.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'MARSHALL' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ees: \u2022 Finance and Investment Biography Mr. Marshall brings significant insight to the Board from his tenure at...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -94114,6 +94914,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.78 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -94354,6 +95162,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000804328.json",
       "confidence": "Medium",
       "notes": "D/E 5.89 as of 2025-09-28; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-01-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/804328/000110465926005781/tm2528704-1_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Amon' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...e Board has determined that, except for Mr. Amon, all of the members of the Board are independent directors...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -94600,6 +95416,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1022079/000114036126013356/ny20064122x1_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Davis' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...corporated Age: 63 Director since: 2022 Mr. Davis became Chairman of the Board on April 1, 2023 and Chief Exe...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -94841,6 +95665,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.94 as of 2025-12-31; paid dividend in 1/1 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2058873/000162828026024259/q-20260408.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Kemp' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...f April 8, 2026. **    Does not include Mr. Kemp, 50, as he is not an independent director. Board Compositio...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -95075,6 +95907,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001037038.json",
       "confidence": "Medium",
       "notes": "D/E 1.72 as of 2026-03-28; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-06-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1037038/000114036126025788/ny20071304x1_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Louvet' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ry to the Board. Patrice Louvet AGE: 61 Mr. Louvet has served as our President and Chief Executive Officer, an...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -95319,6 +96159,14 @@
       "confidence": "Medium",
       "notes": "D/E 6.06 as of 2025-09-30; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-01-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/720005/000072000526000019/rjf-20260106.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Shoukry' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...d leadership transition, Mr. Reilly and Mr. Shoukry each served in the CEO role during a portion of fiscal 2025...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -95559,6 +96407,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001713445.json",
       "confidence": "Medium",
       "notes": "D/E 0.11 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000060/rddt-20260423.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Huffman' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \".... Prior to returning to Reddit in 2015, Mr. Huffman was the Co-Founder and Chief Technology Officer at Hipmunk,...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -95801,6 +96657,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.59 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -96041,6 +96905,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000726728.json",
       "confidence": "Medium",
       "notes": "D/E 0.83 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000021/o-20260325.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Roy' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...rent directors and nominees, except for Mr. Roy, has no material relationship with us (either directly or i...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -96285,6 +97157,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.84 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2026-03-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/910606/000119312526122880/d939595ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Palmer' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...for Mr. Stein (Executive Chairman) and Ms. Palmer (President and CEO). Upon election of these directors at th...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -96525,6 +97405,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000872589.json",
       "confidence": "Medium",
       "notes": "D/E 0.3 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -96767,6 +97655,14 @@
       "confidence": "Medium",
       "notes": "D/E 7.34 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -97001,6 +97897,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001060391.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -97243,6 +98147,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.36 as of 2026-06-30; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-10-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/943819/000094381925000079/rmd-20251001.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Farrell' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...tee. As lead director, Mr. Taylor keeps Mr. Farrell apprised of issues discussed during the independent session...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -97481,6 +98393,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000031791.json",
       "confidence": "Medium",
       "notes": "D/E 0.68 as of 2025-12-28; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31791/000119312526107266/d21831ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Singh' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Singh joined Revvity as the President of our Diagnostics business in 2014. He...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -97722,6 +98642,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001783879.json",
       "confidence": "Medium",
       "notes": "D/E 3.64 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000053/hood-20260422.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Tenev' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...s B common stock is held exclusively by Mr. Tenev and Mr. Bhatt (together, the \u201cCo-Founders\u201d) and their relat...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -97965,6 +98893,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001024478.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-12-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1024478/000130817925000665/rok014559-def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'MORET' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ined the roles of Chairman and CEO, and Mr. Moret serves\nin both capacities. The Board believes that this str...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -98215,6 +99151,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.29 as of 2025-12-31; paid dividend in 1/1 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -98449,6 +99393,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000882835.json",
       "confidence": "Medium",
       "notes": "D/E 0.74 as of 2025-12-31; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/882835/000119312526145481/d204543ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Hunn' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Chief Executive Officer in August 2018, Mr. Hunn served as Executive Vice President and Chief Operating Offi...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -98693,6 +99645,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000013/rost-20260406.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Conroy' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...mpany\u2019s 2017 Equity Incentive Plan. (7) Mr. Conroy: Includes 212,054 shares of the Company\u2019s common stock whic...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -98936,6 +99896,14 @@
       "confidence": "Medium",
       "notes": "D/E 3.13 as of 2025-12-31; paid dividend in 3/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000017/rcl-20260417.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'LIBERTY' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...R NOMINEES Jason T. Liberty BACKGROUND: Mr. Liberty has served as Chairman and Chief Executive Officer of the C...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -99176,6 +100144,14 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -99420,6 +100396,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.9 as of 2026-01-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000085/crm-20260416.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Benioff' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...of our top 20 investors (not including Mr. Benioff, our Chair and Chief Executive Officer), representing appro...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -99660,6 +100644,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002023554.json",
       "confidence": "Medium",
       "notes": "D/E 0.43 as of 2026-07-03. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -99904,6 +100896,14 @@
       "confidence": "None",
       "notes": "No balance-sheet/dividend XBRL facts found on EDGAR, and volatility sources are unavailable in this environment",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1034054/000119312526149656/d98181ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Cavanagh' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ed SBA, Mr. Stoops, our Board Chair and Mr. Cavanagh, our CEO, have a range of age and tenure. SBA Communication...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -100139,6 +101139,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.06 as of 2025-12-31; paid dividend in 4/4 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-02-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/87347/000130817926000024/slb2026-def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Peuch' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Peuch brings to the Board unparalleled knowledge of SLB\u2019s operational activities worldwide and its technology differentiation as a result of his...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -100373,6 +101381,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001137789.json",
       "confidence": "Medium",
       "notes": "D/E 3.6 as of 2026-07-03; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2025-09-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1137789/000113778925000211/stx-20250909.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Mosley' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...roved increases to the base salaries of Mr. Mosley, Mr. Romano, Mr. Teh, and Mr. Lee that were generally in li...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -100613,6 +101629,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1032208/000119312526127603/d90144ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Martin' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...h year since the initial appointment of Mr. Martin to the Chairman and Chief Executive Officer roles in 2018,...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -100847,6 +101871,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0001373715.json",
       "confidence": "Medium",
       "notes": "D/E 1.01 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000039/now-20260406.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'McDermott' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Shareholder Value As shown below, since Mr. McDermott became Chief Executive Officer (\u201cCEO\u201d) in 2019, our TSR sig...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -101091,6 +102123,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": true,
+      "source": "DEF 14A proxy statement, filed 2026-03-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000025/shw-20260310.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Petz' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...term equity incentive compensation) for Ms. Petz, our Chief Executive Officer (\u201cCEO\u201d), and an average of 80%...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -101328,6 +102368,14 @@
       "confidence": "Medium",
       "notes": "D/E 6.51 as of 2025-12-31; paid dividend in 2/2 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926038320/spg-20260513xdef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Simon' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Simon, the Board appointed Mr. Eli Simon as CEO and President. He...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -101562,6 +102610,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000004127.json",
       "confidence": "Medium",
       "notes": "D/E 0.38 as of 2025-10-03; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4127/000110465926039476/tm261577-5_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Brace' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...mpensation mix for fiscal year 2025 for Mr. Brace, our Chief Executive Officer, and the average for our other...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -101806,6 +102862,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.93 as of 2026-04-30; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-06-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/91419/000119312526283858/d227901ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Smucker' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ostess Twinkies Professional Experience Mr. Smucker has been our Chief Executive Officer, President and Chair o...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -102048,6 +103112,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0002005951.json",
       "confidence": "Medium",
       "notes": "D/E 1.46 as of 2025-12-31; paid dividend in 4/4 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
@@ -102292,6 +103364,14 @@
       "confidence": "Medium",
       "notes": "D/E 0.41 as of 2026-01-03; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000101/sna-20260311.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Pinchuk' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...as T. Pinchuk Director since April 2007 Mr. Pinchuk, age 79, has been Snap-on\u2019s President and Chief Executive O...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -102533,6 +103613,14 @@
       "confidence": "Medium",
       "notes": "D/E 1.83 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000196473826000017/solv-20260327.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Hanson' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ls and experience supporting nomination Mr. Hanson has over 30 years\u2019 experience in successfully leading, grow...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -102769,6 +103857,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000092122.json",
       "confidence": "Medium",
       "notes": "D/E 3.24 as of 2025-12-31. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000028/so-20260402.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Womack' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...expertise, are valuable to the Board. 4 Mr. Womack was named President, effective March 2023; Chief Executive...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -103013,6 +104109,14 @@
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
       "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/92380/000119312526127237/d121727ddef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Jordan' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ng experience in the airline industry . Mr. Jordan has served in 15 different positions at Southwest. As Execu...\"",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -103251,6 +104355,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000093556.json",
       "confidence": "Medium",
       "notes": "paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-03-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/93556/000114036126008170/ny20055502x771_def14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Nelson' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \".... In connection with the appointment of Mr. Nelson as President and CEO, effective October 1, 2025, Mr. Allan...\"",
       "last_updated": "2026-08-20"
     }
   },
@@ -103494,6 +104606,14 @@
       "source_url": "https://data.sec.gov/api/xbrl/companyfacts/CIK0000829224.json",
       "confidence": "Medium",
       "notes": "D/E -4.95 as of 2025-09-28; paid dividend in 5/5 most recent fiscal years. Volatility/beta component unavailable (price-data sources blocked in this environment).",
+      "last_updated": "2026-08-20"
+    },
+    "women_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
     }
   },
