@@ -332,7 +332,7 @@ def find_family_owned(text):
 _NAME_CHARS = r"A-Za-zÀ-ÖØ-öø-ÿ'’"
 _CEO_NAME_TITLE = re.compile(
     r"\b([A-Z][" + _NAME_CHARS + r".-]+(?:\s+[A-Z]\.?)?\s+[A-Z][" + _NAME_CHARS + r"-]+)\s*,?\s+"
-    r"(?:(?:our |the Company's )?(?:Chair(?:man|woman)?(?:\s+and\s+|,\s*)|President(?:\s+and\s+|,\s*))*"
+    r"(?:(?:our |the Company's )?(?:Chair(?:man|woman)?(?:\s+of\s+the\s+Board)?(?:\s+and\s+|,\s*)|President(?:\s+and\s+|,\s*))*"
     r"(?:Chief Executive Officer|CEO)\b)")
 _HONORIFIC_SURNAME = re.compile(r"\b(Mr|Ms|Mrs)\.\s*[ \s]?([A-Z][" + _NAME_CHARS + r"-]+)")
 _CEO_NAME_STOPWORDS = {
@@ -363,6 +363,7 @@ def find_ceo_gender_signal(text):
     # matches inside multi-word titles like "Chief Executive Officer".
     name_hits = Counter()
     surname_display = {}
+    chair_tagged = set()
     for m in _CEO_NAME_TITLE.finditer(text):
         full_name = m.group(1).strip()
         tokens = full_name.split()
@@ -373,17 +374,33 @@ def find_ceo_gender_signal(text):
         key = surname.lower()
         name_hits[key] += 1
         surname_display.setdefault(key, surname)
+        if re.search(r"chair", m.group(0), re.IGNORECASE):
+            chair_tagged.add(key)
     if not name_hits:
         return None
-    top_two = name_hits.most_common(2)
-    top_key, top_count = top_two[0]
-    # A single name+title adjacency match is too weak to trust on its own --
-    # it's just as likely to be an incidental "...previously served as CEO
-    # of X" in someone else's bio as the real, current CEO. Require the top
-    # candidate to clearly lead (not tie) a second-place name before using it.
-    if top_count < 2 or (len(top_two) > 1 and top_two[1][1] >= top_count):
-        return None
-    ceo_key = top_key
+    # Some companies (e.g. P&G) use "Chief Executive Officer" as an internal
+    # title for multiple business-segment heads, not just the single overall
+    # corporate CEO -- pure mention-frequency can pick the wrong one. A
+    # "Chair(man/woman) ... CEO" combined title is a much stronger signal of
+    # being THE company's top executive (segment heads are essentially never
+    # also Board Chair), so prefer a uniquely chair-tagged candidate over raw
+    # frequency; only fall back to plurality-by-frequency when that signal is
+    # absent or itself ambiguous (multiple chair-tagged candidates).
+    candidates = name_hits
+    if len(chair_tagged) == 1:
+        ceo_key = next(iter(chair_tagged))
+    else:
+        if chair_tagged:
+            candidates = Counter({k: v for k, v in name_hits.items() if k in chair_tagged})
+        top_two = candidates.most_common(2)
+        top_key, top_count = top_two[0]
+        # A single name+title adjacency match is too weak to trust on its own --
+        # it's just as likely to be an incidental "...previously served as CEO
+        # of X" in someone else's bio as the real, current CEO. Require the top
+        # candidate to clearly lead (not tie) a second-place name before using it.
+        if top_count < 2 or (len(top_two) > 1 and top_two[1][1] >= top_count):
+            return None
+        ceo_key = top_key
     ceo_surname = surname_display[ceo_key]
 
     honorific_hits = Counter()
