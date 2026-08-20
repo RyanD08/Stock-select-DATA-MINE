@@ -20,6 +20,7 @@ from lib import (  # noqa: E402
     find_founder_led, find_family_owned, RECENT_CORPORATE_ACTION_PATTERN, alcohol_2080_hit,
     ENV_KEYWORDS, LABOR_KEYWORDS, GOV_KEYWORDS, save_json, TODAY,
     match_company_to_fec_pac, ftc_case_search, FEC_CYCLE, find_ceo_gender_signal,
+    cybersecurity_incident_search, find_countries_of_concern,
 )
 from financials import revenue_growth, debt_to_equity, dividend_consistency  # noqa: E402
 
@@ -217,7 +218,7 @@ def process_company(rec):
                    "founder_led", "family_owned", "women_led"]:
             rec[f_] = none_field("No DEF 14A found/fetchable on EDGAR")
 
-    # --- Q11 fraud/corruption, Q22 data privacy: SEC full-text search + FTC Legal Library case search ---
+    # --- Q11 fraud/corruption: SEC full-text search + FTC Legal Library case search ---
     try:
         fraud_hits = full_text_search(entity_name, forms="8-K")
         n_hits = fraud_hits.get("hits", {}).get("total", {}).get("value", 0)
@@ -246,7 +247,26 @@ def process_company(rec):
             "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases); no FTC Legal Library case matched. Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.")
     else:
         rec["fraud_corruption_scandal_history"] = none_field("No SEC full-text search hits and no FTC Legal Library case matched; Violation Tracker/Stanford Clearinghouse unavailable (see manual_review log)")
-    rec["data_privacy_practices"] = none_field("SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source")
+    # --- Q22 data privacy: 8-K Item 1.05 material-cybersecurity-incident disclosures ---
+    try:
+        cyber = cybersecurity_incident_search(cik)
+    except Exception:
+        cyber = None
+    if cyber is None:
+        rec["data_privacy_practices"] = none_field("SEC EDGAR full-text search (Item 1.05) request failed")
+    elif cyber["incident_count"] > 0:
+        rec["data_privacy_practices"] = field(
+            {"item_1_05_incident_count": cyber["incident_count"], "examples": cyber["examples"]},
+            "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings", cyber["search_url"], "Medium",
+            f"{cyber['incident_count']} material-cybersecurity-incident 8-K(s) (SEC Item 1.05, rule effective "
+            "December 2023) filed under this company's own CIK -- self-disclosed, not a third-party finding.")
+    else:
+        rec["data_privacy_practices"] = field(
+            {"item_1_05_incident_count": 0}, "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+            cyber["search_url"], "Low",
+            "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 "
+            "only exists for incidents from December 2023 onward, so this does not rule out an incident before "
+            "the rule took effect, or one judged immaterial.")
 
     # --- Q18: religious compliance -- always None per background doc ---
     rec["religious_investment_compliance"] = field(
@@ -311,8 +331,32 @@ def process_company(rec):
     else:
         rec["political_donation_transparency"] = none_field("No FEC-registered corporate PAC name-matched and no political-spending disclosure language found in proxy text scan; opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment")
 
-    # --- Q21 countries of concern -- XBRL geographic segment data not yet implemented ---
-    rec["countries_of_concern_operations"] = none_field("SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch")
+    # --- Q21 countries of concern: 10-K text scan + Section 13(r) Iran/Syria disclosure ---
+    if tenk_text:
+        coc = find_countries_of_concern(tenk_text)
+        if coc:
+            countries = list(coc["countries"])
+            if coc["section_13r"] and "Iran" not in countries:
+                countries = sorted(countries + ["Iran (Section 13(r) disclosure)"])
+            notes = ("Section 13(r) of the Exchange Act (Iran Threat Reduction and Syria Human Rights Act) "
+                      "disclosure present in this filing -- a company only includes this section when it has "
+                      "actual Iran/Syria-connected activity to report. " if coc["section_13r"] else "")
+            if coc["evidence"]:
+                notes += ("Country name(s) matched near operational-presence language (subsidiary/facility/"
+                           "revenue/etc.), not a bare mention: " +
+                           "; ".join(f"{c}: \"...{ev[:150]}...\"" for c, ev in coc["evidence"].items()))
+            rec["countries_of_concern_operations"] = field(
+                countries, f"10-K Item 1/1A text scan + Section 13(r) disclosure, filed {tenk['filing_date']}",
+                tenk_url, "High" if coc["section_13r"] else "Medium", notes)
+        else:
+            rec["countries_of_concern_operations"] = field(
+                [], f"10-K text scan, filed {tenk['filing_date']}", tenk_url, "Low",
+                "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and "
+                "no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, "
+                "Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only "
+                "sectoral/targeted sanctions (e.g. China).")
+    else:
+        rec["countries_of_concern_operations"] = none_field("No 10-K found/fetchable on EDGAR")
 
     # --- Q26/27 Growth Potential / Stability (EDGAR-derived only; see manual_review log for price-data gap) ---
     try:

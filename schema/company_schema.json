@@ -141,14 +141,16 @@
       "q21_countries_of_concern": {
         "survey_question": "Avoiding companies operating in specific countries or regions of concern",
         "field": "countries_of_concern_operations",
-        "value_type": "array of country names or 'No verifiable data found'",
-        "sources": ["SEC XBRL Frames API (data.sec.gov) geographic segment data", "10-K footnote parsing fallback"]
+        "value_type": "array of country names (possibly empty) or 'No verifiable data found'",
+        "sources": ["10-K Item 1/1A text scan for an OFAC-comprehensively-sanctioned country name near real operational-presence language", "SEC Section 13(r) of the Exchange Act (Iran/Syria disclosure requirement)"],
+        "note": "Implemented 2026-08-20 -- see find_countries_of_concern() in scripts/lib.py. The XBRL Frames API originally proposed here turned out not to expose per-company dimensional geographic-segment breakdowns (only company-wide scalar totals), so this uses the 10-K text scan instead. Deliberately narrow country list (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela -- OFAC's comprehensively-sanctioned jurisdictions) rather than an editorial judgment call about broader geopolitical concern (e.g. does not include China). Section 13(r) presence is High confidence (a purpose-built mandatory disclosure item -- a company only includes it when it has actual Iran/Syria-connected activity); a context-matched country name without Section 13(r) is Medium; an empty result (no match at all) is Low, not None, since the company's own 10-K was successfully searched."
       },
       "q22_data_privacy_practices": {
         "survey_question": "Companies with strong data privacy practices",
         "field": "data_privacy_practices",
-        "value_type": "object: { enforcement_action_count } or enum fallback",
-        "sources": ["SEC Litigation Releases (efts.sec.gov)"]
+        "value_type": "object: { item_1_05_incident_count, examples } or 'No verifiable data found'",
+        "sources": ["SEC EDGAR full-text search (efts.sec.gov), scoped to the company's own CIK, for 8-K Item 1.05 filings"],
+        "note": "Implemented 2026-08-20 -- see cybersecurity_incident_search() in scripts/lib.py. SEC Litigation Releases (the source originally proposed here) are not indexed by EDGAR full-text search (which only covers filings, not the separate litigation microsite) and have no other free structured API, so this uses Item 1.05 instead -- the SEC rule (effective December 2023) requiring disclosure of a material cybersecurity incident within four business days. Because the search is scoped to the company's own CIK rather than a name-matched search across all filers, a zero result is a real, meaningful answer (Low confidence) rather than a failed match -- though Item 1.05 only covers incidents from December 2023 onward."
       }
     },
     "community_identity": {

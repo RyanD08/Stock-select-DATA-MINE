@@ -329,6 +329,61 @@ def find_family_owned(text):
     return None
 
 
+# Q21 countries of concern -- deliberately narrow to OFAC's comprehensively-
+# sanctioned jurisdictions (the closest thing to an objective, sourced list of
+# "countries of concern" rather than an editorial judgment call). Does NOT
+# include countries under only sectoral/targeted sanctions (e.g. China) --
+# see the field's own notes for that scoping caveat.
+COUNTRIES_OF_CONCERN = ["Russia", "Iran", "North Korea", "Syria", "Cuba", "Belarus", "Venezuela"]
+_SECTION_13R = re.compile(r"13\(r\)")
+_OPERATIONAL_CONTEXT = re.compile(
+    r"operations? in|subsidiary in|subsidiaries in|facilit(?:y|ies) in|employees? in|"
+    r"interest in|distribution.{0,20}in|customers?.{0,20}in|revenue.{0,20}from|"
+    r"conduct(?:ed|s)? business in|maintain(?:ed|s)? operations? in|manufactur\w* in|"
+    r"business in|sales? in|joint venture in|plant(?:s)? in|office(?:s)? in",
+    re.IGNORECASE)
+
+
+def find_countries_of_concern(text):
+    """Two-tier signal: (1) SEC Section 13(r) of the Exchange Act is a
+    purpose-built mandatory disclosure item for any Iran- or Syria-related
+    dealings (Iran Threat Reduction and Syria Human Rights Act) -- its
+    presence is a high-confidence, high-precision hit, and its absence
+    genuinely means no disclosable activity, not "not searched". (2) For
+    the other OFAC-comprehensively-sanctioned countries, a country name is
+    only counted if it sits within ~100 chars of real operational-presence
+    language (subsidiary/facility/revenue/etc.), and is rejected if the
+    same sentence-ish window also names two or more OTHER tracked
+    countries (a strong sign of generic sanctions/export-control
+    boilerplate listing multiple jurisdictions at once, not a specific
+    operational claim about this one). Returns a dict {countries: [...],
+    section_13r: bool, evidence: {country: snippet}} or None if nothing
+    found."""
+    countries_found = {}
+    section_13r = bool(_SECTION_13R.search(text))
+    for country in COUNTRIES_OF_CONCERN:
+        for m in re.finditer(r"\b" + re.escape(country) + r"\b", text):
+            window_start = max(0, m.start() - 100)
+            window = text[window_start:m.end() + 100]
+            if not _OPERATIONAL_CONTEXT.search(window):
+                continue
+            other_country_count = sum(
+                1 for c in COUNTRIES_OF_CONCERN
+                if c != country and re.search(r"\b" + re.escape(c) + r"\b", window)
+            )
+            if other_country_count >= 2:
+                continue
+            countries_found[country] = text[max(0, m.start() - 60):m.end() + 60].strip()
+            break
+    if not countries_found and not section_13r:
+        return None
+    return {
+        "countries": sorted(countries_found.keys()),
+        "section_13r": section_13r,
+        "evidence": countries_found,
+    }
+
+
 _NAME_CHARS = r"A-Za-zÀ-ÖØ-öø-ÿ'’"
 _CEO_NAME_TITLE = re.compile(
     r"\b([A-Z][" + _NAME_CHARS + r".-]+(?:\s+[A-Z]\.?)?\s+[A-Z][" + _NAME_CHARS + r"-]+)\s*,?\s+"
@@ -639,6 +694,37 @@ def match_company_to_fec_pac(company_name):
 # against a real "Amazon" search that otherwise pulled in unrelated cases
 # (e.g. "Lights of America", "Sellers Playbook") sharing only incidental
 # keyword overlap with the query.
+def cybersecurity_incident_search(cik, max_examples=5):
+    """Q22 data privacy: searches EDGAR full-text search, scoped to this
+    company's own CIK, for 8-K filings disclosing Item 1.05 ("Material
+    Cybersecurity Incidents") -- the SEC rule effective December 2023
+    requiring public companies to disclose a material cybersecurity
+    incident within four business days. Unlike a name-matched search
+    across all filers, this is scoped to the company's own CIK, so a zero
+    result is a real, meaningful answer (no such 8-K filed) rather than a
+    failed name-match -- though it only covers incidents from December
+    2023 onward, since the item didn't exist before that. Returns
+    {incident_count, examples, search_url} or None if the search itself
+    failed (never for a genuine zero)."""
+    try:
+        result = full_text_search("Item 1.05", forms="8-K", ciks=cik)
+    except Exception:
+        return None
+    hits = result.get("hits", {}).get("hits", [])
+    examples = []
+    for h in hits[:max_examples]:
+        src = h.get("_source", {})
+        examples.append({
+            "filed": src.get("file_date"),
+            "url": f"https://www.sec.gov/Archives/edgar/data/{cik.lstrip('0') or '0'}/{src.get('adsh', '').replace('-', '')}/{h.get('_id', '').split(':')[-1]}",
+        })
+    total = result.get("hits", {}).get("total", {}).get("value", 0)
+    return {
+        "incident_count": total, "examples": examples,
+        "search_url": f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik}&type=8-K",
+    }
+
+
 _FTC_CASE_HREF = re.compile(r'href="(/legal-library/browse/cases-proceedings/\d[^"]*)"[^>]*>([^<]+)<')
 
 
