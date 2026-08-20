@@ -93,7 +93,12 @@ auto-selects the next `processing_status: "pending"` companies.
 ## Sources actually used
 
 Per the approved source list (see founding prompt / background doc), with
-what actually worked from this environment as of 2026-08-19:
+what actually worked from this environment as of 2026-08-20. FEC and FTC
+integration (added 2026-08-20) raised Q20 political-donation-transparency
+coverage from 253/503 (50.3%, all Medium confidence) to 323/503 (64.2%,
+200 of those now High confidence), and gave 15/503 companies a real,
+name-matched FTC enforcement-action record for Q11 (upgraded to Medium
+confidence) on top of the existing SEC-full-text-search baseline:
 
 | Source | Status | Used for |
 |---|---|---|
