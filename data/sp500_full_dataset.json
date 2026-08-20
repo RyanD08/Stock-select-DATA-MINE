@@ -234,6 +234,16 @@
       "confidence": "Low",
       "notes": "CEO surname identified as 'Brown' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...rd Motor Company (NYSE: F) (1999-2013), Mr. Brown was responsible for approximately $90B of production and no...\"",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000066740&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -474,6 +484,16 @@
       "source_url": "https://www.sec.gov/Archives/edgar/data/91142/000119312526089938/d79196ddef14a.htm",
       "confidence": "Low",
       "notes": "CEO surname identified as 'Shafer' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...since: 2025 Age: 50 Director Biography: Mr. Shafer became president and chief executive officer of our company...\"",
+      "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000091142&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     }
   },
@@ -730,6 +750,16 @@
       "confidence": "Low",
       "notes": "CEO surname identified as 'Ford' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...r all of Abbott\u2019s operating businesses, Mr. Ford contributes an extensive knowledge of the Company\u2019s global...\"",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000001800&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -975,6 +1005,16 @@
       "confidence": "Low",
       "notes": "CEO surname identified as 'MICHAEL' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...r, AbbVie Inc. \u200b \u200b Business Experience: Mr. Michael is AbbVie\u2019s Chairman and Chief Executive Officer, a positio...\"",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001551152&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -1209,6 +1249,16 @@
       "source_url": "https://www.sec.gov/Archives/edgar/data/1467373/000130817925000651/acn-20251210.htm",
       "confidence": "Low",
       "notes": "CEO surname identified as 'Sweet' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ability Committee, in consultation with Ms. Sweet and Ms. Park, evaluated overall Company performance for fis...\"",
+      "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001467373&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     }
   },
@@ -1455,6 +1505,16 @@
       "confidence": "None",
       "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000796343&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -1689,6 +1749,16 @@
       "source_url": "https://www.sec.gov/Archives/edgar/data/2488/000119312526129057/d85856ddef14a.htm",
       "confidence": "Low",
       "notes": "CEO surname identified as 'Su' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Su has led AMD\u2019s transformation into a leader in high-performance and adaptive computing. Under her...\"",
+      "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000002488&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     }
   },
@@ -1933,6 +2003,16 @@
       "confidence": "Low",
       "notes": "CEO surname identified as 'Gluski' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Shaughnessy, and Dr. Na\u00edm), other than Mr. Gluski, qualifies as independent under the NYSE rules. Mr. Gluski...\"",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000874761&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -2173,6 +2253,16 @@
       "source_url": "https://www.sec.gov/Archives/edgar/data/4977/000162828026019621/afl-20260319.htm",
       "confidence": "Low",
       "notes": "CEO surname identified as 'Amos' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ur Strategy and Key Board Contributions Mr. Amos is the longest-serving CEO in the FORTUNE 250, having led A...\"",
+      "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000004977&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     }
   },
@@ -2417,6 +2507,16 @@
       "confidence": "Low",
       "notes": "CEO surname identified as 'McDonnell' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Held During the Past Five Years: \u2022 None Mr. McDonnell has served as our President and Chief Executive Officer sin...\"",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001090872&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -2660,6 +2760,16 @@
       "confidence": "Low",
       "notes": "CEO surname identified as 'Menezes' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ay, Mr. Evans, Ms. Graziano, Mr. Hilal, Mr. Menezes, Mr. Patel, Mr. Reilley, Mr. Smith, Mr. Stern and Mr. Unger...\"",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000002969&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -2901,6 +3011,16 @@
       "confidence": "None",
       "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001559720&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -3141,6 +3261,16 @@
       "source_url": "https://www.sec.gov/Archives/edgar/data/1086222/000108622226000042/akam-20260330.htm",
       "confidence": "Low",
       "notes": "CEO surname identified as 'Leighton' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...Leighton, who does not receive any / 32 / Table of Contents compensation for his...\"",
+      "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001086222&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     }
   },
@@ -3387,6 +3517,16 @@
       "confidence": "None",
       "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000915913&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -3629,6 +3769,16 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001035443&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     }
   },
@@ -3873,6 +4023,16 @@
       "confidence": "None",
       "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001097149&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -4113,6 +4273,16 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001579241&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     }
   },
@@ -4356,6 +4526,16 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000352541&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     }
   },
@@ -4602,6 +4782,16 @@
       "confidence": "Low",
       "notes": "CEO surname identified as 'Wilson' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...: \u2022 All nominated directors, other than Mr. Wilson, are independent according to applicable law, the NYSE List...\"",
       "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000899051&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
+      "last_updated": "2026-08-20"
     }
   },
   {
@@ -4844,6 +5034,16 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
+      "last_updated": "2026-08-20"
+    },
+    "data_privacy_practices": {
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001652044&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     }
   },
