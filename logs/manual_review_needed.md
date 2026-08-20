@@ -2,14 +2,11 @@
 
 This file logs companies or systemic issues that need human follow-up rather than
 a forced/guessed answer.
-
 ## Background document vs. founding prompt: conflicts found
-
 The founding prompt (`claude_code_new_repo_founding_prompt.md`) lists 27 survey
 questions and gives Q17 as "no verifiable per-company religious compliance data
 source available." The `TrueNorth_Background_Info.pdf` (authoritative per its own
 text) confirms the same 27-question list and numbering, and additionally notes:
-
 - An original 28th question (avoiding animal testing) was **permanently removed**
   from the survey. It is not present in either source's active question list, so
   no field is being built for it. No conflict, just confirming exclusion.
@@ -30,16 +27,12 @@ text) confirms the same 27-question list and numbering, and additionally notes:
   website. No action needed in this repo beyond keeping the dataset schema
   compatible with them (e.g. keeping growth_potential/stability unblended,
   flagging recent corporate actions) -- which `company_schema.json` already does.
-
 No unresolved conflicts requiring a data decision were found between the two
 source documents.
-
 ## Approved sources that are unreachable from this environment
-
 Tested 2026-08-19 with a descriptive `TrueNorth-DataMine/1.0 (research@...)`
 User-Agent (per SEC guidance) and, for the sites that still 403'd, a standard
 browser User-Agent as a second attempt:
-
 | Source | Status | Detail |
 |---|---|---|
 | `violationtracker.goodjobsfirst.org` | **Blocked** | Cloudflare JS challenge ("Just a moment...") on every request; not a proxy-policy denial, the origin itself returns the challenge page to this environment's egress IP regardless of headers. |
@@ -48,7 +41,6 @@ browser User-Agent as a second attempt:
 | `api.gunfreefunds.org` | **Blocked (proxy policy)** | The environment's outbound proxy returns "gateway answered 502 to CONNECT (policy denial or upstream failure)" specifically for this subdomain. |
 | `www.gunfreefunds.org` (with `www.`) | **Blocked (proxy policy)** | Same CONNECT-tunnel 403 as above; the bare domain `gunfreefunds.org` (no `www.`) **does** work (HTTP 200), so that's used instead. |
 | `cii.org` | Reachable but only returns a redirect (301) in quick testing; needs a follow-up fetch with `-L` to confirm real content access. |
-
 **Consequence for scoring:** Q11 (fraud/corruption/scandal history) and Q20
 (political donation transparency) lose their two richest intended sources
 (Violation Tracker's parent-company rollups, and cii.org's political-spending
@@ -61,9 +53,7 @@ bare-domain HTML pages for Q16) -- but coverage and depth will be lower than if
 the blocked sources were reachable. Flagging so a human can decide whether to
 retry from a different network/IP, or accept the SIC-code/EDGAR-only fallback
 as final.
-
 ## Finnhub free tier requires an API key not available in this environment
-
 `finnhub.io` is network-reachable (HTTP 401 "Please use an API key" on an
 unauthenticated request), but the founding materials do not include a Finnhub
 API key, and this agent has no way to self-register for one. Q26/27 (Growth
@@ -74,9 +64,7 @@ with the public `demo` key for limited symbols, but a real free-tier key would
 give full coverage). **Action needed:** if the user has or can obtain a free
 Finnhub API key, provide it (e.g. as an environment variable `FINNHUB_API_KEY`)
 so future sessions can use it for richer coverage.
-
 ## Alpha Vantage free tier also requires a self-registered API key
-
 Confirmed 2026-08-19: Alpha Vantage's public `demo` key only serves a small set
 of fixed demo symbols/functions -- calling `OVERVIEW` or
 `TIME_SERIES_MONTHLY_ADJUSTED` for a real ticker (tested with AAPL) returns
@@ -95,9 +83,7 @@ API key (both take under a minute per their own docs) and supply it as an
 environment variable (`FINNHUB_API_KEY` / `ALPHAVANTAGE_API_KEY`), a future
 session can immediately fill in the price-return and beta/volatility data for
 all companies.
-
 ## Stooq.com is behind a JavaScript proof-of-work challenge
-
 `stooq.com` (on the approved list, no-API-key historical price source) returns
 a client-side proof-of-work challenge page to this environment instead of CSV
 data, for both the HTML and `/q/d/l/` CSV-download endpoints. This is not
@@ -105,10 +91,7 @@ solvable by a headless HTTP client. Historical price data for the
 Growth Potential / 5-year-return field is being sourced from Alpha Vantage's
 free tier instead. Flagging in case a different egress IP/environment resolves
 this.
-
 ---
-
 *(Per-company sourcing difficulty entries -- foreign private issuers, recent
 IPOs, name/ticker changes -- will be appended below as batches are processed.)*
-- **XOM** (2026-08-19): CIK 0002115436 ('ExxonMobil Holdings Corp') has no 10-K or DEF 14A filing history on EDGAR -- likely a recent holding-company reorganization/successor-registrant event (check for a predecessor CIK). Filing types on record: ['10-Q', '8-K', '8-K12B', 'POSASR', 'S-8 POS'].
 - **XOM** (2026-08-19): CIK 0002115436 ('ExxonMobil Holdings Corp') has no 10-K or DEF 14A filing history on EDGAR -- likely a recent holding-company reorganization/successor-registrant event (check for a predecessor CIK). Filing types on record: ['10-Q', '8-K', '8-K12B', 'POSASR', 'S-8 POS'].
