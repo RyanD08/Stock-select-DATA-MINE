@@ -29,6 +29,19 @@ site, and so the dataset can be versioned and swapped independently.
                                     review before future use.
 ```
 
+## Status
+
+All 503 constituents (the S&P 500 includes a handful of dual-share-class
+tickers, hence >500 rows) have been run through the pipeline at least once
+as of 2026-08-20 -- see `logs/progress.json` for the live checkpoint. That
+means every field has a real, sourced value or an honest "No verifiable
+data found," not that every field is fully populated: several fields are
+intentionally `None` pending a blocked source or an unimplemented data
+source (see Known pipeline limitations below and `logs/manual_review_needed.md`
+for the full detail on what's missing and why). Two companies (XOM, HONA)
+are flagged for manual review as recent holding-company reorganizations
+with no filing history yet under their current CIK.
+
 ## Data model
 
 Every scored field on a company record is an object:
@@ -138,3 +151,18 @@ future pipeline run can fill in the missing pieces.
   successor-registrant event) are flagged via
   `recent_corporate_action_flag` and logged to manual review rather than
   scored on stale/absent data.
+- SIC-based sin-stock screens have two documented false-positive traps that
+  were found and fixed during the first full pass (SIC 2080 "Beverages"
+  covering both soft drinks and alcohol; SIC 7990 "Amusement & Recreation"
+  covering both Disney's theme parks and, previously, gambling) -- see
+  `logs/manual_review_needed.md` for what else this class of bug might still
+  be hiding at the individual-company level.
+- `recent_corporate_action_flag` requires *completion* language ("completed
+  the merger," "spun off") to fire, not a bare mention of "merger" or
+  "acquisition" -- but it has no trailing-12-months date check, so a `True`
+  means "a completed corporate action is discussed in this filing," which
+  could be older than 12 months. Always read the field's own `notes`.
+- `founder_led` / `family_owned` are flattened-proxy-text regex heuristics,
+  scored at Low confidence for exactly that reason -- treat a `True` as "the
+  filing text plausibly says this, here's the exact quote in `notes`,
+  please verify" rather than a settled fact.

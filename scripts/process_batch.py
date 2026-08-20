@@ -17,7 +17,7 @@ from lib import (  # noqa: E402
     get_submissions, full_text_search, latest_filing, filing_document_url,
     fetch_filing_text, sic_screen, epa_echo_summary, osha_establishment_search,
     field, none_field, keyword_hit, find_pay_ratio, find_independent_directors_pct,
-    find_founder_led, find_family_owned, RECENT_CORPORATE_ACTION_PATTERN,
+    find_founder_led, find_family_owned, RECENT_CORPORATE_ACTION_PATTERN, alcohol_2080_hit,
     ENV_KEYWORDS, LABOR_KEYWORDS, GOV_KEYWORDS, save_json, TODAY,
 )
 from financials import revenue_growth, debt_to_equity, dividend_consistency  # noqa: E402
@@ -93,7 +93,11 @@ def process_company(rec):
     screens = sic_screen(sic)
     sic_note = f"Registrant SIC code {sic} ({submissions.get('sicDescription')}) per SEC EDGAR submissions record. Only the top-line registrant SIC was checked; conglomerates with a sin-stock segment under a different primary SIC would be missed."
     rec["tobacco_involvement"] = field(screens["tobacco"], "SEC EDGAR registrant SIC code", sub_url, "High", sic_note)
-    rec["alcohol_involvement"] = field(screens["alcohol"], "SEC EDGAR registrant SIC code", sub_url, "High", sic_note)
+    alcohol_needs_keyword_check = str(sic).zfill(4) == "2080"
+    if not alcohol_needs_keyword_check:
+        rec["alcohol_involvement"] = field(screens["alcohol"], "SEC EDGAR registrant SIC code", sub_url, "High", sic_note)
+    # else: resolved below once 10-K text is fetched -- SIC 2080 ("Beverages") is a generic
+    # code SEC EDGAR assigns to soft-drink makers and alcohol producers alike.
     rec["gambling_casino_involvement"] = field(screens["gambling"], "SEC EDGAR registrant SIC code", sub_url, "High", sic_note)
     rec["weapons_defense_involvement"] = field(screens["weapons"], "SEC EDGAR registrant SIC code", sub_url, "High", sic_note)
     rec["interest_based_financial_products"] = field(screens["interest_based_finance"], "SEC EDGAR registrant SIC code", sub_url, "High", sic_note)
@@ -142,11 +146,19 @@ def process_company(rec):
         action_hit = RECENT_CORPORATE_ACTION_PATTERN.search(low)
         if action_hit:
             rec["recent_corporate_action_flag"] = {"value": True, "notes": f"10-K (filed {tenk['filing_date']}) references a completed merger/spin-off/separation ('{action_hit.group(0)}') -- verify recency and treat single-year financial comparisons with caution."}
+        if alcohol_needs_keyword_check:
+            hit = alcohol_2080_hit(low)
+            rec["alcohol_involvement"] = field(
+                hit, "SEC EDGAR registrant SIC code (2080, generic) + 10-K business description keyword scan",
+                tenk_url, "Medium",
+                f"{sic_note} SIC 2080 ('Beverages') does not by itself distinguish alcohol producers from soft-drink makers, so this was disambiguated by scanning the 10-K business description for alcohol-specific terms (wine/beer/spirits/etc.).")
     else:
         for f_ in ["carbon_fossil_fuel_involvement", "renewable_clean_tech_involvement",
                    "sustainable_agriculture_resource_use", "fair_wages_labor_practices",
                    "workplace_diversity_equity_inclusion"]:
             rec[f_] = none_field("No 10-K found/fetchable on EDGAR")
+        if alcohol_needs_keyword_check:
+            rec["alcohol_involvement"] = none_field(f"{sic_note} SIC 2080 is generic and no 10-K was fetchable to disambiguate via keyword scan.")
 
     # --- DEF 14A text scan: Q9 board independence, Q10 pay ratio, Q12 share class ---
     proxy = latest_filing(submissions, "DEF 14A")

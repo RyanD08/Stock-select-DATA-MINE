@@ -91,7 +91,68 @@ solvable by a headless HTTP client. Historical price data for the
 Growth Potential / 5-year-return field is being sourced from Alpha Vantage's
 free tier instead. Flagging in case a different egress IP/environment resolves
 this.
+## SIC 2080 ("Beverages") does not distinguish alcohol from soft-drink makers
+
+Found and fixed 2026-08-20: SEC EDGAR assigns the generic SIC code 2080
+("Beverages") to soft-drink companies (Coca-Cola, PepsiCo, Keurig Dr Pepper)
+just as often as to alcohol producers (Constellation Brands, Brown-Forman) --
+it is not a reliable signal on its own. The pipeline now disambiguates SIC
+2080 registrants with a 10-K business-description keyword scan (wine/beer/
+spirits/etc.) at Medium confidence instead of auto-flagging every 2080
+registrant as an alcohol producer, which had incorrectly flagged Coca-Cola,
+PepsiCo, and Keurig Dr Pepper as True. That keyword scan has its own known
+false-positive mode worth flagging: Keurig Dr Pepper's alcohol_involvement
+is currently True because its 10-K mentions "beer wholesalers, wine and
+spirit distributors" as a category of *third-party distributor it sells
+through*, not a description of KDP's own products -- the keyword match
+can't currently tell "we distribute via X-type wholesalers" apart from "we
+produce X." Left as Medium confidence with the matched text visible in the
+field's notes for a human to judge; a similar-scale distribution-channel
+false positive is possible (but not confirmed) at other SIC-2080 companies.
+
+## Similarly, SIC 7990 ("Amusement & Recreation, NEC") does not mean gambling
+
+Found and fixed 2026-08-20: SIC 7990 is Disney's own registrant code (theme
+parks), not a gambling-specific classification -- it had been included in
+the gambling/casino SIC set and incorrectly flagged Disney as a casino
+company. Removed; only SIC 7993 (Coin-Operated Amusement Devices) remains,
+which is itself an imperfect proxy for pure-play casino operators (who are
+often coded under Hotels, SIC 7011, instead). No S&P 500 company currently
+in the dataset is flagged for gambling as a result -- worth a manual check
+if the app team knows of a casino operator that should be in the S&P 500
+list and isn't showing up here.
+
+## Recent-corporate-action flag was ~80% false-positive before a regex fix
+
+Found and fixed 2026-08-20: the original keyword scan (bare "merger" or
+"spin-off" anywhere in the 10-K) matched routine risk-factor/strategy
+boilerplate present in nearly every 10-K (e.g. Coca-Cola's flag fired on a
+sentence about IT systems mentioning "mergers and acquisitions" as a
+business-process category, unrelated to any actual event). Replaced with a
+regex requiring completion language ("completed the merger," "the spin-off
+was completed," "spun off," "became an independent public company").
+Verified against the real EXE (Expand Energy) case from the background doc
+as a true positive. This field still has no explicit trailing-12-months
+date check -- a 10-K's MD&A section often recaps M&A history from more than
+a year back, so a True here should be read as "a completed merger/
+acquisition/spin-off is discussed in the filing," not strictly "within the
+last 12 months" -- the field's own notes say to verify recency for exactly
+this reason.
+
+## Founder-led / family-owned detection is a flattened-text regex heuristic
+
+Iterated extensively against real proxy-statement phrasing (see git history
+2026-08-19/20 for the specific false positives found and fixed: Baker
+Hughes, Adobe, Air Products, Allegion, Alphabet, Amphenol, Best Buy, Amazon,
+Altria). Precision improved substantially but Air Products (APD) remains a
+known, documented false positive (a director's bio mentions founding an
+unrelated firm, "Mantle Ridge," with no company-suffix marker for the
+filter to catch), which is why both fields are scored at Low rather than
+Medium confidence project-wide. Each True hit includes the exact matched
+text in its `notes` field specifically so it can be spot-checked quickly.
+
 ---
 *(Per-company sourcing difficulty entries -- foreign private issuers, recent
 IPOs, name/ticker changes -- will be appended below as batches are processed.)*
 - **XOM** (2026-08-19): CIK 0002115436 ('ExxonMobil Holdings Corp') has no 10-K or DEF 14A filing history on EDGAR -- likely a recent holding-company reorganization/successor-registrant event (check for a predecessor CIK). Filing types on record: ['10-Q', '8-K', '8-K12B', 'POSASR', 'S-8 POS'].
+- **HONA** (2026-08-20): CIK 0002089271 ('Honeywell Aerospace Inc.') has no 10-K or DEF 14A filing history on EDGAR -- likely a recent holding-company reorganization/successor-registrant event (check for a predecessor CIK). Filing types on record: ['10-12B', '10-12B/A', '10-Q', '3', '4', '424B3', '8-K', 'CERT', 'DRS', 'DRS/A', 'EFFECT', 'S-4', 'S-8', 'SCHEDULE 13G', 'SEC STAFF ACTION'].

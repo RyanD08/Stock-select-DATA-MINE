@@ -131,8 +131,17 @@ def fetch_filing_text(url, max_chars=600000):
 # ---------------------------------------------------------------- SIC screens
 
 TOBACCO_SIC = {"2100", "2111", "2121", "2131", "2141"}
-ALCOHOL_SIC = {"2080", "2082", "2083", "2084", "2085"}
-GAMBLING_SIC = {"7990", "7993"}
+ALCOHOL_SIC = {"2082", "2083", "2084", "2085"}  # NOT 2080 -- SEC EDGAR assigns the generic
+# "2080 Beverages" code to soft-drink makers (Coca-Cola, PepsiCo, Keurig Dr Pepper) just as
+# often as to alcohol producers (Constellation Brands, Brown-Forman); it does not reliably
+# distinguish the two. SIC-2080 registrants need a business-description keyword check instead
+# -- see ALCOHOL_2080_KEYWORDS and its use in process_batch.py.
+ALCOHOL_2080_KEYWORDS = ["wine", "beer", "brewery", "brewing", "spirits", "distilled", "vodka",
+                          "whiskey", "whisky", "rum ", "tequila", "bourbon", "alcoholic beverage"]
+GAMBLING_SIC = {"7993"}  # 7990 ("Amusement & Recreation, NEC") is too broad -- it's also Disney's own
+# SIC code (theme parks), not a gambling-specific classification. 7993 (Coin-Operated
+# Amusement Devices) is closer but still imperfect for pure-play casino operators, who
+# are often coded under Hotels (7011) instead -- see notes on this field's confidence.
 WEAPONS_SIC = {"3480", "3483", "3484", "3489", "3760", "3761", "3764", "3769", "3795", "3489"}
 FINANCE_LENDING_SIC = {str(x) for x in list(range(6000, 6100)) + list(range(6100, 6200)) + [6712, 6199, 6159, 6141, 6162, 6022, 6020, 6035, 6036]}
 
@@ -209,6 +218,20 @@ RECENT_CORPORATE_ACTION_PATTERN = re.compile(
 
 def keyword_hit(text_lower, keywords):
     return any(k in text_lower for k in keywords)
+
+
+def alcohol_2080_hit(text_lower):
+    """Like keyword_hit(ALCOHOL_2080_KEYWORDS), but guards against the
+    'nonalcoholic beverage' substring trap -- 'alcoholic beverage' is a
+    literal substring of 'nonalcoholic beverage', which flagged Coca-Cola
+    (whose 10-K explicitly defines its trademark beverages as nonalcoholic)
+    as an alcohol producer."""
+    for kw in ALCOHOL_2080_KEYWORDS:
+        for m in re.finditer(re.escape(kw), text_lower):
+            if kw == "alcoholic beverage" and text_lower[max(0, m.start() - 3):m.start()] == "non":
+                continue
+            return True
+    return False
 
 
 def find_pay_ratio(text):
