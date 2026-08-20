@@ -581,13 +581,23 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 3085
+        "ftc_case_count": 2,
+        "ftc_example_cases": [
+          {
+            "title": "Abbott Laboratories and Alere Inc., In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/161-0084-abbott-laboratories-alere-inc-matter"
+          },
+          {
+            "title": "Abbott Laboratories and St. Jude Medical, In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/161-0126-abbott-laboratories-st-jude-medical-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=ABBOTT LABORATORIES",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
-      "last_updated": "2026-08-19"
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=ABBOTT LABORATORIES",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=ABBOTT LABORATORIES) name-matched to 2 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
+      "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
       "value": "single_class",
