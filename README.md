@@ -138,6 +138,17 @@ SEC EDGAR XBRL data and are populated. If a Finnhub or Alpha Vantage API key
 becomes available (env vars `FINNHUB_API_KEY` / `ALPHAVANTAGE_API_KEY`), a
 future pipeline run can fill in the missing pieces.
 
+## Additional-criteria fields (not part of the official 27 questions)
+
+`women_led` (added 2026-08-20, see `schema/company_schema.json`'s
+`additional_criteria` section and `data/candidate_additional_criteria.json`):
+populated for all 503 companies -- 40 True, 334 False, 129 None. Identifies
+whether the current CEO is a woman by reading which honorific or pronoun a
+company's own DEF 14A proxy statement uses for whoever holds the CEO title,
+never by guessing from a first name. Low confidence, same caution level as
+`founder_led`/`family_owned` -- every result carries the matched CEO surname
+and a quoted evidence snippet in `notes` for spot-checking.
+
 ## Known pipeline limitations (see logs for detail)
 
 - Sin-stock screens (Q13-17) and interest-based-finance (Q19) use only the
