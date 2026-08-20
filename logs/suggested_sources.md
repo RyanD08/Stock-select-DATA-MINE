@@ -19,6 +19,16 @@ still be in-scope (same domain) and worth a follow-up session investigating
 `nlrb.gov`'s "Reports & Guidance" / open-data pages specifically for a
 downloadable dataset rather than the search widget.
 
+## data.dol.gov for worker safety / enforcement data (Q8) -- new domain to request
+
+`enforcedata.dol.gov` was added to the allowlist 2026-08-20 but is not directly
+usable: it 301-redirects to `data.dol.gov`, a *different* subdomain, which was
+not itself added -- the proxy denies it. `data.dol.gov` is DOL's actual public
+enforcement-data portal (OSHA, WHD, MSHA case-level data), which would meaningfully
+supplement/replace the current OSHA establishment-search scrape for Q8 (currently
+36.8% coverage). Suggesting `data.dol.gov` specifically be added to the allowlist
+for a future session to investigate its bulk-download/API structure.
+
 ## data.sec.gov XBRL Frames for country-of-operations (already approved, just unimplemented)
 
 Not a new source -- `data.sec.gov` is already approved and used elsewhere in

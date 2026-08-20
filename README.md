@@ -115,6 +115,13 @@ what actually worked from this environment as of 2026-08-19:
 | sciencebasedtargets.org | Working (not yet integrated into the pipeline) | Verified climate commitments (Q1/Q2) |
 | www.bls.gov | Working (not yet integrated into the pipeline) | Industry benchmarking context |
 | cii.org | Reachable, minimal integration | Political spending context (Q20) |
+| www.fec.gov / fec.gov | Working | FEC bulk committee-master + committee-summary data -- real filed corporate-PAC records (Q20) |
+| www.ftc.gov / ftc.gov | Working | Legal Library case search -- named enforcement actions (Q11 supplement) |
+| www.opensecrets.org / opensecrets.org | **Blocked** -- Cloudflare challenge | Political spending context (Q20) |
+| enforcedata.dol.gov | **Blocked** -- redirects to `data.dol.gov`, a different subdomain not on the allowlist | Worker safety (Q8) |
+| api.gunfreefunds.org | **Blocked** -- proxy policy denial | Weapons/defense fund-level exposure detail (Q16) |
+| www.gunfreefunds.org | Reachable, but same client-rendered SPA as the bare domain -- no new data | Weapons/defense exposure context (Q16) |
+| catalog.data.gov | Reachable, but search (API and HTML) is non-functional from this environment | Bulk NLRB case data, if it existed (Q6) -- none found |
 
 Full detail, including exactly how each was tested, is in
 `logs/manual_review_needed.md`. **Growth Potential / Stability (Q26/27) is

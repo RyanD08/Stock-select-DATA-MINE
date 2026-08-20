@@ -139,6 +139,33 @@ acquisition/spin-off is discussed in the filing," not strictly "within the
 last 12 months" -- the field's own notes say to verify recency for exactly
 this reason.
 
+## New domains added to the allowlist 2026-08-20 -- reachability results
+
+The user added `api.gunfreefunds.org`, `www.gunfreefunds.org`, `enforcedata.dol.gov`,
+`opensecrets.org`/`www.opensecrets.org`, `fec.gov`/`www.fec.gov`, `ftc.gov`/`www.ftc.gov`,
+and `catalog.data.gov` to the allowlist specifically to fill known coverage gaps.
+Tested with the same descriptive User-Agent as the rest of the pipeline:
+
+| Domain | Result | Detail |
+|---|---|---|
+| `www.fec.gov` / `fec.gov` | **Working -- integrated** | HTTP 200. Bulk committee-master (`cm.zip`) and committee-summary (`.csv`) downloads under `/files/bulk-downloads/<cycle>/` give real, filed corporate-PAC data (sponsor org + cycle receipts/disbursements). Wired into the pipeline for Q20 -- see git history 2026-08-20 "Add FEC bulk-data integration". Note: these bulk files are served via a 302 redirect from `www.fec.gov` to an FEC-managed S3 bucket in GovCloud (`cg-*.s3-us-gov-west-1.amazonaws.com`); the request still originates at the approved domain and `requests`' default redirect-following resolves it transparently, same pattern already used elsewhere in `lib.py` (`allow_redirects=True`). |
+| `www.ftc.gov` / `ftc.gov` | **Working -- integrated** | HTTP 200. The Legal Library case search (`/legal-library/browse/cases-proceedings?search=<name>`) is real server-rendered HTML (not JS-only) and gives named enforcement-action hits. Wired into the pipeline as a Q11 supplement to the existing SEC full-text search -- see git history 2026-08-20 "Add FTC Legal Library integration". Its own search matches on full text, not just party name, so the pipeline additionally filters to results whose URL has a real numeric case-docket prefix AND whose title contains the company's own name (as whole words) -- both checks were needed after testing surfaced real false positives (e.g. an "Apple Inc." query returning cases with no relation to Apple; a "Home Depot" query's naive first-token match hitting "Home Matters USA"). |
+| `www.opensecrets.org` / `opensecrets.org` | **Blocked** | HTTP 403, Cloudflare "Just a moment..." JS challenge on every request, both with and without `www.`. Not usable from this environment. |
+| `enforcedata.dol.gov` | **Blocked (indirectly)** | The domain itself resolves (301) but redirects to `data.dol.gov`, a *different* subdomain that was not added to the allowlist -- the proxy denies it (403). `enforcedata.dol.gov` as configured is therefore not usable; if DOL enforcement data is wanted for Q8, a future session should ask the user to allowlist `data.dol.gov` specifically. |
+| `api.gunfreefunds.org` | **Blocked (proxy policy)** | Same as previously documented: proxy returns a 502 CONNECT-tunnel denial for this specific subdomain. No change from the prior session's finding. |
+| `www.gunfreefunds.org` | **Reachable, but no new capability** | HTTP 200 (redirects to the same client-rendered React SPA as the already-working bare `gunfreefunds.org` domain). Checked for server-side-rendered data (`window.__data`) -- present but empty; the actual search results are fetched client-side via XHR calls to `api.gunfreefunds.org`, which is blocked. So `www.gunfreefunds.org` doesn't unblock anything beyond what was already true of the bare domain (static page content only, no structured fund-level exposure data reachable). Q16 remains SIC-code-only. |
+| `catalog.data.gov` | **Reachable, but search is non-functional here** | HTTP 200 for the homepage and for direct `/dataset/<slug>` pages, but both the CKAN API (`/api/3/action/package_search` etc. -- real 404s, not a proxy block) and the HTML search listing (`/dataset?q=...` 301-redirects to the homepage, dropping the query, for any query string) are unusable for keyword search from this environment. Tried several guessed NLRB dataset/org slugs (`nlrb-case-data`, `national-labor-relations-board`, etc.) directly -- all 404. **No NLRB bulk dataset was found or confirmed to exist on data.gov.** Q6 labor disputes remains at 0% coverage; this specific avenue is exhausted absent a known exact dataset URL. |
+
+**Headless-browser retest of the four sites already known to be Cloudflare/bot-protection-blocked**
+(`violationtracker.goodjobsfirst.org`, `securities.stanford.edu`, `www.bcorporation.net`, `stooq.com`):
+tried real headless Chromium (Playwright, pre-installed in this environment) instead of a plain HTTP
+client, per the user's suggestion that a real browser might get through where `curl`/`requests` can't.
+No improvement -- three of the four (`violationtracker`, `securities.stanford.edu`, `stooq.com`) now
+fail at the network/proxy level itself (`ERR_TUNNEL_CONNECTION_FAILED`, matching a plain `curl`
+retest showing HTTP 000 on the same three), and `www.bcorporation.net` still hits its bot-protection
+403 (`ERR_CONNECTION_RESET` in the browser). These are not solvable from this environment by any HTTP
+client, headless-browser or otherwise; no further avenue is known for these four sources.
+
 ## Founder-led / family-owned detection is a flattened-text regex heuristic
 
 Iterated extensively against real proxy-statement phrasing (see git history

@@ -100,7 +100,7 @@
         "survey_question": "Avoiding companies with histories of fraud, corruption, or major scandals",
         "field": "fraud_corruption_scandal_history",
         "value_type": "object: { case_count, description } or 'No verifiable data found'",
-        "sources": ["SEC Litigation Releases / full-text search (efts.sec.gov)", "Violation Tracker (blocked -- see manual_review_needed.md)", "Stanford Securities Class Action Clearinghouse (blocked -- see manual_review_needed.md)"]
+        "sources": ["SEC Litigation Releases / full-text search (efts.sec.gov)", "FTC Legal Library case search (ftc.gov)", "Violation Tracker (blocked -- see manual_review_needed.md)", "Stanford Securities Class Action Clearinghouse (blocked -- see manual_review_needed.md)"]
       },
       "q12_shareholder_rights_voting_structure": {
         "survey_question": "Shareholder rights and voting power",
@@ -136,7 +136,7 @@
         "survey_question": "Company political donation transparency",
         "field": "political_donation_transparency",
         "value_type": "enum: Disclosed | Partial | None",
-        "sources": ["DEF 14A political spending disclosure (EDGAR)", "cii.org (blocked by proxy policy -- see manual_review_needed.md)"]
+        "sources": ["FEC bulk committee-master + committee-summary data (fec.gov)", "DEF 14A political spending disclosure (EDGAR)", "cii.org (blocked by proxy policy -- see manual_review_needed.md)", "opensecrets.org (blocked by Cloudflare -- see manual_review_needed.md)"]
       },
       "q21_countries_of_concern": {
         "survey_question": "Avoiding companies operating in specific countries or regions of concern",
