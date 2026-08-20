@@ -174,14 +174,14 @@ def process_company(rec):
             f"DEF 14A share class disclosure, filed {proxy['filing_date']}", purl, "Medium" if dual else "Low")
         founder_hit = find_founder_led(low_p)
         if founder_hit:
-            rec["founder_led"] = field(True, f"DEF 14A officer/director bios, filed {proxy['filing_date']}", purl, "Medium",
+            rec["founder_led"] = field(True, f"DEF 14A officer/director bios, filed {proxy['filing_date']}", purl, "Low",
                                         f"Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: '{founder_hit.strip()}'. Not a manual bio read -- verify.")
         else:
             rec["founder_led"] = none_field("No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan")
         family_hit = find_family_owned(proxy_text)
         if family_hit:
             name, window = family_hit
-            rec["family_owned"] = field(True, f"DEF 14A beneficial ownership section, filed {proxy['filing_date']}", purl, "Medium",
+            rec["family_owned"] = field(True, f"DEF 14A beneficial ownership section, filed {proxy['filing_date']}", purl, "Low",
                                          f"Text mentions '{name}' near ownership/voting-power language; percentage not automatically extracted -- verify manually. Context: \"...{window.strip()[:200]}...\"")
         else:
             rec["family_owned"] = none_field("No '<Name> family' + ownership-context pattern found in proxy text scan")

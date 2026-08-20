@@ -212,7 +212,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -220,7 +220,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -453,7 +453,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -461,7 +461,7 @@
       "source": "DEF 14A beneficial ownership section, filed 2026-03-04",
       "source_url": "https://www.sec.gov/Archives/edgar/data/91142/000119312526089938/d79196ddef14a.htm",
       "confidence": "Medium",
-      "notes": "Text mentions 'the Smith family'; percentage not automatically extracted -- verify manually.",
+      "notes": "Text mentions 'the Smith family' near ownership/voting-power language; percentage not automatically extracted -- verify manually. Context: \"...nce Plan. \u2022 A \u201cChange in Control\u201d is deemed to have occurred upon: the acquisition of 50% or more of our company\u2019s or relevant business unit\u2019s capital stock entitled to vote in the election of directo...\"",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -560,11 +560,13 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "value": {
+        "matched_establishment_rows": 1
+      },
+      "source": "OSHA establishment search (name-matched)",
+      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=ABBOTT+LABORATORIES&State=All&officetype=All&Industry=All",
+      "confidence": "Medium",
+      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -584,11 +586,13 @@
       "last_updated": "2026-08-19"
     },
     "fraud_corruption_scandal_history": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC full-text search request failed",
+      "value": {
+        "full_text_search_hits": 3085
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
+      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=ABBOTT LABORATORIES",
+      "confidence": "Low",
+      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
       "last_updated": "2026-08-19"
     },
     "shareholder_rights_voting_structure": {
@@ -692,7 +696,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -700,7 +704,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -937,7 +941,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -945,7 +949,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -1068,11 +1072,13 @@
       "last_updated": "2026-08-19"
     },
     "fraud_corruption_scandal_history": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC full-text search request failed",
+      "value": {
+        "full_text_search_hits": 524
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
+      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=Accenture plc",
+      "confidence": "Low",
+      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
       "last_updated": "2026-08-19"
     },
     "shareholder_rights_voting_structure": {
@@ -1176,7 +1182,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -1184,7 +1190,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -1237,17 +1243,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 328,
-        "caa_case_rows": 13,
-        "cwa_case_rows": 33,
-        "rcra_case_rows": 109,
-        "total_penalties_usd": "$33,000"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ADOBE INC.",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -1418,10 +1418,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-02-27",
+      "source": "DEF 14A officer/director bios, filed 2026-02-27",
       "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000043/adbe-20260227.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'dership: directors who have served as a founder, chief executive officer or chief executive officer-equivalent, senior executive or'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -1429,7 +1429,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -1662,7 +1662,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -1670,7 +1670,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -1723,17 +1723,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 262,
-        "caa_case_rows": 31,
-        "cwa_case_rows": 86,
-        "rcra_case_rows": 80,
-        "total_penalties_usd": "$5,266,172"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=AES CORP",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -1769,11 +1763,13 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "value": {
+        "matched_establishment_rows": 1
+      },
+      "source": "OSHA establishment search (name-matched)",
+      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=AES+CORP&State=All&officetype=All&Industry=All",
+      "confidence": "Medium",
+      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -1903,7 +1899,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -1911,7 +1907,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -1964,11 +1960,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 5,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 3,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=AFLAC INC",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -2138,7 +2140,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -2146,7 +2148,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -2245,11 +2247,13 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "value": {
+        "matched_establishment_rows": 1
+      },
+      "source": "OSHA establishment search (name-matched)",
+      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=AGILENT+TECHNOLOGIES%2C+INC.&State=All&officetype=All&Industry=All",
+      "confidence": "Medium",
+      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -2379,7 +2383,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -2387,7 +2391,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -2512,11 +2516,13 @@
       "last_updated": "2026-08-19"
     },
     "fraud_corruption_scandal_history": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC full-text search request failed",
+      "value": {
+        "full_text_search_hits": 128
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
+      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=Air Products & Chemicals, Inc.",
+      "confidence": "Low",
+      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
       "last_updated": "2026-08-19"
     },
     "shareholder_rights_voting_structure": {
@@ -2617,10 +2623,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2025-12-11",
+      "source": "DEF 14A officer/director bios, filed 2025-12-11",
       "source_url": "https://www.sec.gov/Archives/edgar/data/2969/000130817925000643/apd-20251210.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'es steel corporation 2023 paul c. hilal founder and chief executive officer of mantle ridge lp 2025 eduardo menezes chief executive off'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -2628,7 +2634,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -2681,11 +2687,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 6,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 4,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Airbnb, Inc.",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -2852,10 +2864,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-24",
+      "source": "DEF 14A officer/director bios, filed 2026-04-24",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1559720/000119312526175062/d936646ddef14a.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'pective and experience he brings as our co-founder and chief executive officer. angela ahrendts. ms.\u00a0ahrendts joined our board of director'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -2863,7 +2875,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -2916,17 +2928,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 3,
-        "caa_case_rows": 0,
-        "cwa_case_rows": 0,
-        "rcra_case_rows": 0,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=AKAMAI TECHNOLOGIES INC",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -3092,11 +3098,11 @@
       "last_updated": "2026-08-19"
     },
     "founder_led": {
-      "value": true,
-      "source": "DEF 14A officer bios, filed 2026-03-31",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/1086222/000108622226000042/akam-20260330.htm",
-      "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -3104,7 +3110,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -3157,17 +3163,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 231,
-        "caa_case_rows": 32,
-        "cwa_case_rows": 66,
-        "rcra_case_rows": 50,
-        "total_penalties_usd": "$500,210"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ALBEMARLE CORP",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -3335,11 +3335,11 @@
       "last_updated": "2026-08-19"
     },
     "founder_led": {
-      "value": true,
-      "source": "DEF 14A officer bios, filed 2026-03-24",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/915913/000091591326000050/alb-20260323.htm",
-      "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -3347,7 +3347,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -3400,17 +3400,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 29,
-        "caa_case_rows": 3,
-        "cwa_case_rows": 0,
-        "rcra_case_rows": 9,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ALEXANDRIA REAL ESTATE EQUITIES, INC.",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -3582,7 +3576,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -3590,7 +3584,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -3825,7 +3819,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -3833,7 +3827,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -3886,17 +3880,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 1,
-        "caa_case_rows": 1,
-        "cwa_case_rows": 1,
-        "rcra_case_rows": 1,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Allegion plc",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -3956,11 +3944,13 @@
       "last_updated": "2026-08-19"
     },
     "fraud_corruption_scandal_history": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC full-text search request failed",
+      "value": {
+        "full_text_search_hits": 285
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
+      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=Allegion plc",
+      "confidence": "Low",
+      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
       "last_updated": "2026-08-19"
     },
     "shareholder_rights_voting_structure": {
@@ -4061,10 +4051,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-17",
+      "source": "DEF 14A officer/director bios, filed 2026-04-17",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1579241/000110465926044597/alle-20260604xdef14a.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'usely, inc. , an it operations company. founder and chief executive officer (2022-september\u00a02024) amazon web services (a division of am'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -4072,7 +4062,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -4125,17 +4115,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 72,
-        "caa_case_rows": 15,
-        "cwa_case_rows": 31,
-        "rcra_case_rows": 19,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ALLIANT ENERGY CORP",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -4307,7 +4291,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -4315,7 +4299,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -4368,11 +4352,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 328,
+        "caa_case_rows": 19,
+        "cwa_case_rows": 35,
+        "rcra_case_rows": 139,
+        "total_penalties_usd": "$40,775"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ALLSTATE CORP",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -4408,13 +4398,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": {
-        "matched_establishment_rows": 1
-      },
-      "source": "OSHA establishment search (name-matched)",
-      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=ALLSTATE+CORP&State=All&officetype=All&Industry=All",
-      "confidence": "Medium",
-      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No OSHA establishments matched by company name",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -4546,7 +4534,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -4554,7 +4542,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -4784,10 +4772,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-24",
+      "source": "DEF 14A officer/director bios, filed 2026-04-24",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'ent ac rcc (1) ldicc ncgc ec larry page co-founder 53 1998 0 sergey brin co-founder 52 1998 0 sundar pichai chief executive officer, alphabet and google 53 2017 0 john l. hennessy (chair) for'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -4795,7 +4783,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -4848,11 +4836,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 36,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 4,
+        "rcra_case_rows": 9,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Alphabet Inc.",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -4913,7 +4907,7 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 581
+        "full_text_search_hits": 593
       },
       "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
       "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=Alphabet Inc.",
@@ -5019,10 +5013,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-24",
+      "source": "DEF 14A officer/director bios, filed 2026-04-24",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'ent ac rcc (1) ldicc ncgc ec larry page co-founder 53 1998 0 sergey brin co-founder 52 1998 0 sundar pichai chief executive officer, alphabet and google 53 2017 0 john l. hennessy (chair) for'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -5030,7 +5024,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -5263,15 +5257,15 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
-      "value": true,
-      "source": "DEF 14A beneficial ownership section, filed 2026-04-02",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/764180/000110465926038900/tmb-20260514xdef14a.htm",
-      "confidence": "Medium",
-      "notes": "Text mentions 'the Altria family'; percentage not automatically extracted -- verify manually.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -5370,11 +5364,13 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "value": {
+        "matched_establishment_rows": 1
+      },
+      "source": "OSHA establishment search (name-matched)",
+      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=AMAZON+COM+INC&State=All&officetype=All&Industry=All",
+      "confidence": "Medium",
+      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -5501,10 +5497,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-09",
+      "source": "DEF 14A officer/director bios, filed 2026-04-09",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1018724/000110465926041026/tm261382-1_def14a.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'ng, since june\u00a02017. dr.\u00a0ng is also the founder of landingai, which provides visual ai solutions, where he has served as executive chairman since august\u00a02024 and previously served as chief executive'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -5512,7 +5508,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -5565,17 +5561,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 1,
-        "caa_case_rows": 1,
-        "cwa_case_rows": 0,
-        "rcra_case_rows": 0,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Amcor plc",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -5745,7 +5735,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -5753,7 +5743,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -5986,7 +5976,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -5994,7 +5984,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -6227,7 +6217,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -6235,7 +6225,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -6468,7 +6458,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -6476,7 +6466,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -6599,11 +6589,13 @@
       "last_updated": "2026-08-19"
     },
     "fraud_corruption_scandal_history": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC full-text search request failed",
+      "value": {
+        "full_text_search_hits": 2674
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
+      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=AMERICAN INTERNATIONAL GROUP, INC.",
+      "confidence": "Low",
+      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
       "last_updated": "2026-08-19"
     },
     "shareholder_rights_voting_structure": {
@@ -6707,7 +6699,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -6715,7 +6707,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -6948,7 +6940,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -6956,7 +6948,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -7189,7 +7181,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -7197,7 +7189,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -7250,17 +7242,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 2,
-        "caa_case_rows": 1,
-        "cwa_case_rows": 0,
-        "rcra_case_rows": 2,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=AMERIPRISE FINANCIAL INC",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -7432,7 +7418,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -7440,7 +7426,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -7539,11 +7525,13 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "value": {
+        "matched_establishment_rows": 1
+      },
+      "source": "OSHA establishment search (name-matched)",
+      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=AMETEK+INC%2F&State=All&officetype=All&Industry=All",
+      "confidence": "Medium",
+      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -7673,7 +7661,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -7681,7 +7669,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -7806,11 +7794,13 @@
       "last_updated": "2026-08-19"
     },
     "fraud_corruption_scandal_history": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC full-text search request failed",
+      "value": {
+        "full_text_search_hits": 2460
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
+      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=AMGEN INC",
+      "confidence": "Low",
+      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
       "last_updated": "2026-08-19"
     },
     "shareholder_rights_voting_structure": {
@@ -7914,7 +7904,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -7922,7 +7912,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -8150,10 +8140,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-08",
+      "source": "DEF 14A officer/director bios, filed 2026-04-08",
       "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926040688/tm261344-1_def14a.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'stic corporation \u200b \u200b \u200b ms.\u00a0wolff is the founder and chief executive officer of independence point advisors, an independent investment b'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -8161,7 +8151,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -8214,17 +8204,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 55,
-        "caa_case_rows": 4,
-        "cwa_case_rows": 14,
-        "rcra_case_rows": 33,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ANALOG DEVICES INC",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -8260,11 +8244,13 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "value": {
+        "matched_establishment_rows": 1
+      },
+      "source": "OSHA establishment search (name-matched)",
+      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=ANALOG+DEVICES+INC&State=All&officetype=All&Industry=All",
+      "confidence": "Medium",
+      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -8396,7 +8382,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -8404,7 +8390,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -8457,17 +8443,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 0,
-        "caa_case_rows": 0,
-        "cwa_case_rows": 0,
-        "rcra_case_rows": 0,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Aon plc",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -8639,7 +8619,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -8647,7 +8627,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -8700,17 +8680,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 52,
-        "caa_case_rows": 1,
-        "cwa_case_rows": 10,
-        "rcra_case_rows": 23,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=APA Corp",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -8880,7 +8854,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -8888,7 +8862,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -9120,10 +9094,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-24",
+      "source": "DEF 14A officer/director bios, filed 2026-04-24",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1858681/000119312526177321/d948913ddef14a.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'rick toomey 64 director marc rowan is a co-founder, chief executive officer and chair of the board of directors of agm. he is an execut'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -9131,7 +9105,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -9184,17 +9158,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 3883,
-        "caa_case_rows": 99,
-        "cwa_case_rows": 624,
-        "rcra_case_rows": 965,
-        "total_penalties_usd": "$6,934,055"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Apple Inc.",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -9366,7 +9334,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -9374,7 +9342,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -9607,7 +9575,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -9615,7 +9583,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -9847,10 +9815,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-21",
+      "source": "DEF 14A officer/director bios, filed 2026-04-21",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1751008/000175100826000028/app-20260420.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: '5 2011 no 0 chief executive officer and co-founder of applovin corporation craig billings 53 2020 yes 2 c chairperson; chief executive officer of wynn resorts, limited herald chen 56 2018 no 1 former pr'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -9858,7 +9826,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -9911,17 +9879,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 1,
-        "caa_case_rows": 0,
-        "cwa_case_rows": 0,
-        "rcra_case_rows": 1,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Aptiv PLC",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -10089,11 +10051,11 @@
       "last_updated": "2026-08-19"
     },
     "founder_led": {
-      "value": true,
-      "source": "DEF 14A officer bios, filed 2026-03-16",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/1521332/000119312526108328/aptv-20260311.htm",
-      "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -10101,7 +10063,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -10154,17 +10116,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": {
-        "matched_facility_query_rows": 0,
-        "caa_case_rows": 0,
-        "cwa_case_rows": 0,
-        "rcra_case_rows": 0,
-        "total_penalties_usd": "$0"
-      },
-      "source": "EPA ECHO facility search (name-matched)",
-      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ARCH CAPITAL GROUP LTD.",
-      "confidence": "Medium",
-      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No EPA ECHO facilities matched by company name",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -10334,7 +10290,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -10342,7 +10298,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -10395,11 +10351,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 567,
+        "caa_case_rows": 47,
+        "cwa_case_rows": 137,
+        "rcra_case_rows": 125,
+        "total_penalties_usd": "$41,250"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Archer-Daniels-Midland Co",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -10461,11 +10423,13 @@
       "last_updated": "2026-08-19"
     },
     "fraud_corruption_scandal_history": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC full-text search request failed",
+      "value": {
+        "full_text_search_hits": 105
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
+      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=Archer-Daniels-Midland Co",
+      "confidence": "Low",
+      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
       "last_updated": "2026-08-19"
     },
     "shareholder_rights_voting_structure": {
@@ -10565,11 +10529,11 @@
       "last_updated": "2026-08-19"
     },
     "founder_led": {
-      "value": true,
-      "source": "DEF 14A officer bios, filed 2026-03-26",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/7084/000119312526126218/d911479ddef14a.htm",
-      "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -10577,7 +10541,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -10807,10 +10771,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-21",
+      "source": "DEF 14A officer/director bios, filed 2026-04-21",
       "source_url": "https://www.sec.gov/Archives/edgar/data/1176948/000162828026026286/ares-20260420.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'r (class ii director) since march 2014, co-founder and chief executive officer ashish bhutani 65 director (class ii director) since januar'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -10818,7 +10782,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -11051,7 +11015,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -11059,7 +11023,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -11288,7 +11252,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -11296,7 +11260,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -11529,7 +11493,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -11537,7 +11501,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -11766,11 +11730,11 @@
       "last_updated": "2026-08-19"
     },
     "founder_led": {
-      "value": true,
-      "source": "DEF 14A officer bios, filed 2026-03-23",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/732717/000119312526119888/d919223ddef14a.htm",
-      "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -11778,7 +11742,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -12013,7 +11977,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -12021,7 +11985,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -12250,11 +12214,11 @@
       "last_updated": "2026-08-19"
     },
     "founder_led": {
-      "value": true,
-      "source": "DEF 14A officer bios, filed 2026-05-06",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000030/adsk-20260429.htm",
-      "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -12262,7 +12226,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -12497,7 +12461,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -12505,7 +12469,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -12604,11 +12568,13 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "value": {
+        "matched_establishment_rows": 1
+      },
+      "source": "OSHA establishment search (name-matched)",
+      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=AUTOZONE+INC&State=All&officetype=All&Industry=All",
+      "confidence": "Medium",
+      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -12738,7 +12704,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -12746,7 +12712,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -12981,7 +12947,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -12989,7 +12955,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -13112,11 +13078,13 @@
       "last_updated": "2026-08-19"
     },
     "fraud_corruption_scandal_history": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC full-text search request failed",
+      "value": {
+        "full_text_search_hits": 235
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
+      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=AXON ENTERPRISE, INC.",
+      "confidence": "Low",
+      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
       "last_updated": "2026-08-19"
     },
     "shareholder_rights_voting_structure": {
@@ -13220,7 +13188,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -13228,7 +13196,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -13281,11 +13249,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 402,
+        "caa_case_rows": 39,
+        "cwa_case_rows": 98,
+        "rcra_case_rows": 166,
+        "total_penalties_usd": "$69,748"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Baker Hughes Co",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -13453,11 +13427,11 @@
       "last_updated": "2026-08-19"
     },
     "founder_led": {
-      "value": true,
-      "source": "DEF 14A officer bios, filed 2026-03-30",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/1701605/000119312526130309/d939028ddef14a.htm",
-      "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -13465,7 +13439,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -13518,11 +13492,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 1337,
+        "caa_case_rows": 103,
+        "cwa_case_rows": 364,
+        "rcra_case_rows": 307,
+        "total_penalties_usd": "$297,423"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=BALL Corp",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -13558,11 +13538,13 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "value": {
+        "matched_establishment_rows": 1
+      },
+      "source": "OSHA establishment search (name-matched)",
+      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=BALL+Corp&State=All&officetype=All&Industry=All",
+      "confidence": "Medium",
+      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -13694,7 +13676,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -13702,7 +13684,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -13755,11 +13737,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=BANK OF AMERICA CORP /DE/",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -13931,7 +13919,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -13939,7 +13927,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -13992,11 +13980,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 5,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 2,
+        "rcra_case_rows": 2,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=BAXTER INTERNATIONAL INC",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -14168,7 +14162,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -14176,7 +14170,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -14269,13 +14263,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": {
-        "matched_establishment_rows": 1
-      },
-      "source": "OSHA establishment search (name-matched)",
-      "source_url": "https://www.osha.gov/ords/imis/establishment.search?p_logger=1&establishment=BECTON+DICKINSON+%26+CO&State=All&officetype=All&Industry=All",
-      "confidence": "Medium",
-      "notes": "Aggregated across all OSHA-inspected establishments whose name matches the company name substring; row count reflects inspections, not confirmed violations -- see individual establishment records for detail.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No OSHA establishments matched by company name",
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
@@ -14405,7 +14397,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -14413,7 +14405,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -14646,15 +14638,15 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No founder+CEO/Chairman pattern found in proxy text scan",
+      "notes": "No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
-      "value": true,
-      "source": "DEF 14A beneficial ownership section, filed 2026-03-13",
-      "source_url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm",
-      "confidence": "Medium",
-      "notes": "Text mentions 'the Buffett family'; percentage not automatically extracted -- verify manually.",
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -14888,10 +14880,10 @@
     },
     "founder_led": {
       "value": true,
-      "source": "DEF 14A officer bios, filed 2026-04-30",
+      "source": "DEF 14A officer/director bios, filed 2026-04-30",
       "source_url": "https://www.sec.gov/Archives/edgar/data/764478/000114036126018265/ny20063180x1_def14a.htm",
       "confidence": "Medium",
-      "notes": "Regex match on 'founder ... CEO/Executive Chairman' in proxy text; not a manual bio read.",
+      "notes": "Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: 'ations officer, global consumer group \u2022 founder, chairman and chief executive officer of citigroup\u2019s women & co., a membership service that provi'. Not a manual bio read -- verify.",
       "last_updated": "2026-08-19"
     },
     "family_owned": {
@@ -14899,7 +14891,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No '<Name> family' pattern found in proxy text scan",
+      "notes": "No '<Name> family' + ownership-context pattern found in proxy text scan",
       "last_updated": "2026-08-19"
     },
     "growth_potential": {
@@ -43611,11 +43603,17 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ExxonMobil Holdings Corp",
+      "confidence": "Medium",
+      "notes": "Aggregated across all EPA-regulated facilities whose name matches the company name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names.",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {

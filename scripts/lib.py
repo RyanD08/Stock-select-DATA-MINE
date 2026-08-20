@@ -221,19 +221,45 @@ def find_pay_ratio(text):
     return None
 
 
-_COMPANY_SUFFIX = re.compile(r"\b(inc\.?|llc|corp\.?|ltd\.?|holdings|plc|l\.p\.|company)\b")
+_COMPANY_SUFFIX = re.compile(
+    r"\b(inc|llc|corp|ltd|holdings|plc|lp|company|co|advisors?|partners?|"
+    r"capital|ventures?|associates|management|group)\.?(?![a-z])")
+_DATE_RANGE_PAREN = re.compile(r"^\s*\(\d{4}[\s\-–—]")  # e.g. "(2022-september 2024)" = a past role elsewhere
+_PAST_TENSE = re.compile(r"previously served|no longer serves|from \d{4} to|from \w+ \d{4} to|until \d{4}|\bformer\b|\bretired\b")
+_POSSESSIVE_PRECEDER = re.compile(r"([a-z]+)[’']s\s*$")
+_SELF_REFERENCE_WORDS = {"company", "our", "registrant"}
+_GENERIC_CRITERIA_PRECEDER = re.compile(
+    r"(served as a|such as a|including a|including the|who have|criteria include)\s*$")
 _FAMILY_BRAND_PHRASE = re.compile(r"^\s*of\s+(companies|brands|products|funds|restaurants|stores)\b", re.IGNORECASE)
 _OWNERSHIP_CONTEXT = re.compile(r"beneficial(?:ly)?\s+own|voting power|\btrust\b|\bshares\b|%\s|percent", re.IGNORECASE)
 
 
 def find_founder_led(text_lower):
-    """Only counts a 'founder ... CEO/Executive Chairman' hit if it isn't
+    """Only counts a 'founder ... CEO/Executive Chairman' hit if: it isn't
     immediately followed by a different, named company (a classic false
-    positive from director bios listing OTHER companies they founded), which
-    is what a bare proximity regex over flattened filing text would catch."""
+    positive from director bios listing OTHER companies they founded); the
+    matched span doesn't contain a second 'founder' mention (a sign this is
+    a multi-person table/list where the founder and CEO titles belong to two
+    different people, not one bio); and it isn't preceded by generic board-
+    selection-criteria language ('directors who have served as a founder,
+    CEO...') rather than an actual person's bio. This is still a flattened-
+    text regex heuristic, not a structured read of the filing -- treat hits
+    as Low confidence and spot-check before trusting."""
     for m in re.finditer(r"(founder|co-founder)[^.]{0,120}?(chief executive officer|executive chairman)", text_lower):
-        trailing = text_lower[m.end():m.end() + 80]
-        if _COMPANY_SUFFIX.search(trailing):
+        span = text_lower[m.start():m.end()]
+        if span.count("founder") > 1:
+            continue
+        preceding = text_lower[max(0, m.start() - 30):m.start()]
+        if _GENERIC_CRITERIA_PRECEDER.search(preceding):
+            continue
+        poss = _POSSESSIVE_PRECEDER.search(preceding)
+        if poss and poss.group(1) not in _SELF_REFERENCE_WORDS:
+            continue
+        middle = span[len(m.group(1)):-len(m.group(2))]  # text between "founder" and the CEO/chairman title itself
+        if _COMPANY_SUFFIX.search(middle) or _PAST_TENSE.search(middle):
+            continue
+        trailing = text_lower[m.end():m.end() + 100]
+        if _COMPANY_SUFFIX.search(trailing) or _DATE_RANGE_PAREN.match(trailing) or _PAST_TENSE.search(trailing):
             continue
         return text_lower[max(0, m.start() - 40):m.end() + 60]
     return None
