@@ -85721,19 +85721,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1013871/000101387126000004/nrg-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001013871&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -85966,19 +85968,31 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/73309/000119312526071575/nue-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 2,
+        "examples": [
+          {
+            "filed": "2025-06-20",
+            "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312525143135/d926586d8ka.htm"
+          },
+          {
+            "filed": "2025-05-14",
+            "url": "https://www.sec.gov/Archives/edgar/data/73309/000119312525119311/d795264d8k.htm"
+          }
+        ]
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000073309&type=8-K",
+      "confidence": "Medium",
+      "notes": "2 material-cybersecurity-incident 8-K(s) (SEC Item 1.05, rule effective December 2023) filed under this company's own CIK -- self-disclosed, not a third-party finding.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -86213,19 +86227,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-02-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045810/000104581026000021/nvda-20260125.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...of Ukraine. In fiscal year 2023, we stopped direct sales to Russia and closed business operations in Russia. Concurrently, the...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001045810&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -86464,19 +86482,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/906163/000090616326000018/nvr-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000906163&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -86713,19 +86733,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1413447/000141344726000008/nxpi-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001413447&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -86958,19 +86980,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/898173/000089817326000009/orly-20251231x10k.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000898173&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -87203,19 +87227,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/797468/000162828026009059/oxy-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000797468&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -87456,19 +87482,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/878927/000119312526067161/odfl-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000878927&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -87705,19 +87733,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-02-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/29989/000002998926000006/omc-20251231.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...operations in Ukraine and disposed of all our businesses in Russia. In addition, economic sanctions were imposed on Russia by...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000029989&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -87948,11 +87980,11 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1097864/000109786426000006/on-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
@@ -87960,7 +87992,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -88191,19 +88223,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1039684/000103968426000006/oke-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001039684&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -88438,19 +88472,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-06-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1341439/000119312526277521/orcl-20260531.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001341439&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -88689,19 +88725,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-02-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1781335/000178133526000011/otis-20251231.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...including restrictions on the transfer of funds to and from Russia). We do not have operations in Russia. 28 Table of Contents...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001781335&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -88940,11 +88980,11 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/75362/000119312526057025/pcar-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
@@ -88952,7 +88992,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -89191,19 +89231,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/75677/000119312526074129/pkg-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000075677&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -89434,19 +89476,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-02-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1321655/000132165526000011/pltr-20251231.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...al tensions such as those that may be caused by the ongoing Russia-Ukraine conflict, or acts of misconduct. Moreover, we have...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001321655&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -89679,19 +89725,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2025-08-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1327567/000132756725000027/panw-20250731.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...rotect our end-customers\u2019 networks. In addition, due to the Russia-Ukraine war, there could be a significant increase in Russi...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001327567&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -89928,19 +89978,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2041610/000204161026000011/psky-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002041610&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -90179,19 +90231,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2025-08-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/76334/000007633425000035/ph-20250630.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000076334&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -90428,19 +90482,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-07-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/723531/000119312526307785/payx-20260531.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000723531&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -90679,19 +90735,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1633917/000163391726000024/pypl-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001633917&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -90934,19 +90992,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/77360/000007736026000007/pnr-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000077360&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -91187,19 +91247,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-02-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/77476/000007747626000007/pep-20251227.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...nfavorable impacts on our future results. Our operations in Russia accounted for 5% and 4% of our consolidated net revenue for...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000077476&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -91438,19 +91502,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/78003/000007800326000026/pfe-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000078003&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -91681,19 +91747,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1004980/000100498026000009/pcg-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001004980&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -91930,19 +91998,24 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia",
+        "Venezuela"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-02-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1413329/000162828026005939/pm-20251231.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...e tax legislation applicable to companies doing business in Russia, which could also have a material adverse impact on our eff...\"; Venezuela: \"...ialized in the U.S., and the cessation of our operations in Venezuela. During 2025, we recorded pre-tax restructuring charges of...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001413329&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -92183,19 +92256,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1534701/000153470126000006/psx-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001534701&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -92432,19 +92507,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/764622/000076462226000011/pnw-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000764622&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -92675,19 +92752,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/713676/000071367626000020/pnc-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000713676&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -92928,19 +93007,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-02-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000046/ppg-20251231.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...rth quarter 2024 when the company's remaining operations in Russia were classified as held for sale, which is included in Impa...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000079879&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -93177,19 +93260,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/922224/000092222426000008/ppl-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000922224&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -93428,19 +93513,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1126328/000110465926017031/pfg-20251231x10k.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001126328&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -93679,19 +93766,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-08-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/80424/000008042426000103/pg-20260630.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...lve. We may reduce further or discontinue our operations in Russia due to significant and cumulative sanctions and export cont...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000080424&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -93928,19 +94019,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-03-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/80661/000008066126000086/pgr-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000080661&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -94181,19 +94274,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526051453/pld-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001045609&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -94430,19 +94525,31 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1137774/000113777426000048/pru-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 2,
+        "examples": [
+          {
+            "filed": "2024-02-13",
+            "url": "https://www.sec.gov/Archives/edgar/data/1137774/000119312524033753/d770643d8k.htm"
+          },
+          {
+            "filed": "2024-02-21",
+            "url": "https://www.sec.gov/Archives/edgar/data/1137774/000119312524040749/d766318d8ka.htm"
+          }
+        ]
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001137774&type=8-K",
+      "confidence": "Medium",
+      "notes": "2 material-cybersecurity-incident 8-K(s) (SEC Item 1.05, rule effective December 2023) filed under this company's own CIK -- self-disclosed, not a third-party finding.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -94681,19 +94788,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/788784/000119312526077446/peg-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000788784&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -94930,11 +95039,11 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2025-11-21",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/857005/000119312525291326/ptc-20250930.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
@@ -94942,7 +95051,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -95183,19 +95292,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1393311/000162828026007696/psa-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001393311&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -95432,11 +95543,11 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/822416/000082241626000007/phm-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
@@ -95444,7 +95555,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -95681,19 +95792,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1050915/000105091526000006/pwr-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001050915&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -95930,19 +96043,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2025-11-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/804328/000080432825000085/qcom-20250928.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000804328&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -96183,19 +96298,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1022079/000102207926000015/dgx-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001022079&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -96432,19 +96549,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2058873/000205887326000010/q-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002058873&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -96675,19 +96794,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Iran"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-05-21",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1037038/000162828026037074/rl-20260328.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Iran: \"...going military conflicts, including the conflicts involving Iran and other hostilities in the Middle East. Although our ongo...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001037038&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -96926,19 +97049,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2025-11-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/720005/000072000525000093/rjf-20250930.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000720005&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -97175,19 +97300,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1713445/000171344526000022/rddt-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001713445&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -97424,19 +97551,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/101829/000010182926000006/rtx-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000101829&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -97673,19 +97802,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/726728/000072672826000011/o-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000726728&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -97924,19 +98055,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/910606/000119312526051668/reg-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000910606&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -98173,19 +98306,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/872589/000087258926000008/regn-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000872589&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -98422,19 +98557,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1281761/000128176126000019/rf-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001281761&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -98665,19 +98802,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1060391/000106039126000094/rsg-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001060391&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -98914,19 +99053,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-08-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/943819/000094381926000047/rmd-20260630.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000943819&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -99161,19 +99302,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31791/000003179126000012/revv-20251228.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000031791&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -99410,19 +99553,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1783879/000178387926000023/hood-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001783879&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -99661,19 +99806,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2025-11-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1024478/000102447825000116/rok-20250930.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001024478&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -99918,19 +100065,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/84839/000008483926000008/rol-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000084839&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -100161,19 +100310,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/882835/000088283526000009/rop-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000882835&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -100412,19 +100563,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-03-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/745732/000074573226000006/rost-20260131.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000745732&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -100663,19 +100816,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/884887/000088488726000007/rcl-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000884887&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -100912,19 +101067,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Russia"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-02-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/64040/000006404026000013/spgi-20251231.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Russia: \"...ample, in response to the ongoing military conflict between Russia and Ukraine, governments in the U.S., the EU, the U.K., Can...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000064040&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -101163,19 +101322,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-03-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000060/crm-20260131.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001108524&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -101412,19 +101573,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-08-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828026057406/sndk-20260703.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002023554&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -101663,19 +101826,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1034054/000103405426000002/sbac-20251231x10k.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001034054&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -101906,11 +102071,13 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Iran"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-01-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/87347/000119312526021017/slb-20251231.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Iran: \"...ormation. In 2013, SLB wound down its service operations in Iran. Prior to this, certain non-US subsidiaries provided oilfie...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
@@ -101918,7 +102085,7 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -102149,19 +102316,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Iran"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-08-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1137789/000113778926000159/stx-20260703.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Iran: \"...and Russia and conflicts in the Middle East, including the Iran conflict, natural disasters, public health issues and other...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001137789&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -102396,19 +102567,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1032208/000103220826000010/sre-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001032208&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -102639,19 +102812,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-01-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1373715/000137371526000007/now-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001373715&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -102890,19 +103065,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000008/shw-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000089800&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -103135,19 +103312,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926019419/spg-20251231x10k.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001063761&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -103378,19 +103557,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2025-11-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4127/000000412725000085/swks-20251003.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000004127&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -103629,19 +103810,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-06-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/91419/000009141926000050/sjm-20260430.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000091419&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -103880,19 +104063,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2005951/000162828026012555/smur-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002005951&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -104131,19 +104316,23 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [
+        "Belarus"
+      ],
+      "source": "10-K Item 1/1A text scan + Section 13(r) disclosure, filed 2026-02-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/91440/000009144026000045/sna-20260103.htm",
+      "confidence": "Medium",
+      "notes": "Country name(s) matched near operational-presence language (subsidiary/facility/revenue/etc.), not a bare mention: Belarus: \"...a Distribution and financial services Leased SOT, FS Minsk, Belarus Manufacturing Owned C&I Santa B\u00e1rbara d\u2019Oeste, Brazil Manuf...\"",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000091440&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -104380,19 +104569,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1964738/000196473826000007/solv-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001964738&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -104625,19 +104816,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/92122/000009212226000006/so-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000092122&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -104876,19 +105069,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/92380/000009238026000004/luv-20251231.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000092380&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -105123,19 +105318,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2026-02-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/93556/000009355626000009/swk-20260103.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000093556&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
@@ -105374,19 +105571,21 @@
       "last_updated": "2026-08-20"
     },
     "countries_of_concern_operations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC XBRL Frames geographic-segment parsing not yet implemented in this pipeline version; candidate for a future batch",
+      "value": [],
+      "source": "10-K text scan, filed 2025-11-14",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/829224/000082922425000114/sbux-20250928.htm",
+      "confidence": "Low",
+      "notes": "No OFAC-comprehensively-sanctioned-country name found near operational-presence language, and no Section 13(r) Iran/Syria disclosure in this filing. Scope is deliberately narrow (Russia, Iran, North Korea, Syria, Cuba, Belarus, Venezuela) -- does not cover countries under only sectoral/targeted sanctions (e.g. China).",
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC Litigation Release cross-reference not yet implemented for this field; see logs/suggested_sources.md for a better-fit source",
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000829224&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
     },
     "domestic_hq": {
