@@ -710,7 +710,16 @@ def cybersecurity_incident_search(cik, max_examples=5):
         result = full_text_search("Item 1.05", forms="8-K", ciks=cik)
     except Exception:
         return None
-    hits = result.get("hits", {}).get("hits", [])
+    # The query above is a plain full-text match, which also catches a
+    # filing that merely contains the literal string "Item 1.05" somewhere
+    # unrelated (e.g. a numbered contract clause in an exhibit) -- confirmed
+    # by two false positives in testing, including one filed in 2005, two
+    # decades before Item 1.05 (cybersecurity incidents) existed as an 8-K
+    # item. EDGAR's search index separately tags each filing with its real,
+    # structured item codes, so only trust a hit whose own "items" field
+    # actually contains "1.05".
+    hits = [h for h in result.get("hits", {}).get("hits", [])
+            if "1.05" in (h.get("_source", {}).get("items") or [])]
     examples = []
     for h in hits[:max_examples]:
         src = h.get("_source", {})
@@ -718,9 +727,8 @@ def cybersecurity_incident_search(cik, max_examples=5):
             "filed": src.get("file_date"),
             "url": f"https://www.sec.gov/Archives/edgar/data/{cik.lstrip('0') or '0'}/{src.get('adsh', '').replace('-', '')}/{h.get('_id', '').split(':')[-1]}",
         })
-    total = result.get("hits", {}).get("total", {}).get("value", 0)
     return {
-        "incident_count": total, "examples": examples,
+        "incident_count": len(hits), "examples": examples,
         "search_url": f"https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK={cik}&type=8-K",
     }
 
