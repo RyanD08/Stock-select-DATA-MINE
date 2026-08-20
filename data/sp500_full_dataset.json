@@ -5415,13 +5415,19 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 28
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Amazon.com, Inc., U.S. v.",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/252-3024-amazoncom-inc-us-v"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=AMAZON COM INC",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
-      "last_updated": "2026-08-19"
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=AMAZON COM INC",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=AMAZON COM INC) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
+      "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
       "value": "single_class",
@@ -23982,12 +23988,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 203
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Chevron/Hess, In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/241-0008-chevronhess-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=CHEVRON CORP",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=CHEVRON CORP",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=CHEVRON CORP) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -30978,11 +30990,19 @@
       "last_updated": "2026-08-20"
     },
     "fraud_corruption_scandal_history": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC full-text search request failed",
+      "value": {
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Syngenta and Corteva, FTC v.",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/191-0031-syngenta-corteva-ftc-v"
+          }
+        ]
+      },
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Corteva, Inc.",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Corteva, Inc.) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -34361,12 +34381,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 234
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Deere &amp; Company, FTC v.",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/211-0191-deere-company-ftc-v"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=DEERE & CO",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=DEERE & CO",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=DEERE & CO) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -39916,12 +39942,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 29
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Edwards Lifesciences Corporation and JenaValve Technology, Inc., FTC v.",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/241-0114-edwards-lifesciences-corporation-jenavalve-technology-inc-ftc-v"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=Edwards Lifesciences Corp",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Edwards Lifesciences Corp",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Edwards Lifesciences Corp) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -41362,12 +41394,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 42
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "QEP Partners/EQT Corporation, In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2210212-qep-partnerseqt-corporation-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=EQT Corp",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=EQT Corp",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=EQT Corp) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -48078,12 +48116,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 299
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Amazon Flex",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/1923123-amazon-flex"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=FLEX LTD.",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=FLEX LTD.",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=FLEX LTD.) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -63984,12 +64028,34 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 7280
+        "ftc_case_count": 9,
+        "ftc_example_cases": [
+          {
+            "title": "Integra Lifesciences and Johnson &amp; Johnson, In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/171-0084-integra-lifesciences-johnson-johnson-matter"
+          },
+          {
+            "title": "Johnson &amp; Johnson / Synthes, Inc.",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/1110160-johnson-johnson-synthes-inc"
+          },
+          {
+            "title": "Valeant Pharmaceuticals International, Inc. (Johnson &amp; Johnson), In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/1110216-valeant-pharmaceuticals-international-inc-johnson-johnson-matter"
+          },
+          {
+            "title": "M Group, The, Inc., d/b/a Bamboosa, and Mindy Johnson, Michael Moore, and Morris Saintsing, In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/082-3184-m-group-inc-dba-bamboosa-mindy-johnson-michael-moore-morris-saintsing-matter"
+          },
+          {
+            "title": "Johnson &amp; Johnson and Pfizer Inc., In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/0610220-johnson-johnson-pfizer-inc-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=JOHNSON & JOHNSON",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=JOHNSON & JOHNSON",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=JOHNSON & JOHNSON) name-matched to 9 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -73817,12 +73883,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 670
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Medtronic/Intersect, In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2110184-medtronicintersect-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=Medtronic plc",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Medtronic plc",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=Medtronic plc) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -75759,12 +75831,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 602
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Microsoft/Activision Blizzard, In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/2210077-microsoftactivision-blizzard-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=MICROSOFT CORP",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=MICROSOFT CORP",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=MICROSOFT CORP) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -81531,12 +81609,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 74
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Northrop Grumman and Orbital ATK, In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/181-0005-c-4652-northrop-grumman-orbital-atk-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=NORTHROP GRUMMAN CORP /DE/",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=NORTHROP GRUMMAN CORP /DE/",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=NORTHROP GRUMMAN CORP /DE/) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -82969,12 +83053,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 370
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "NXP Semiconductors N.V., In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/151-0090-nxp-semiconductors-nv-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=NXP Semiconductors N.V.",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=NXP Semiconductors N.V.",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=NXP Semiconductors N.V.) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -87048,12 +87138,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 363
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Emerson Electric and Pentair, In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/161-0221-emerson-electric-pentair-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=PENTAIR plc",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=PENTAIR plc",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=PENTAIR plc) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
@@ -95738,12 +95834,18 @@
     },
     "fraud_corruption_scandal_history": {
       "value": {
-        "full_text_search_hits": 989
+        "ftc_case_count": 1,
+        "ftc_example_cases": [
+          {
+            "title": "Rollins Inc., In the Matter of",
+            "url": "https://www.ftc.gov/legal-library/browse/cases-proceedings/251-0011-rollins-inc-matter"
+          }
+        ]
       },
-      "source": "SEC EDGAR full-text search (efts.sec.gov) across 8-K filings",
-      "source_url": "https://www.sec.gov/cgi-bin/srqsb?text=ROLLINS INC",
-      "confidence": "Low",
-      "notes": "Raw full-text search hit count only (name-matched 8-K filings, not confirmed litigation releases). Violation Tracker and Stanford Securities Class Action Clearinghouse -- the two stronger intended sources -- are blocked in this environment; see logs/manual_review_needed.md.",
+      "source": "FTC Legal Library case search (ftc.gov) + SEC EDGAR full-text search (efts.sec.gov)",
+      "source_url": "https://www.ftc.gov/legal-library/browse/cases-proceedings?search=ROLLINS INC",
+      "confidence": "Medium",
+      "notes": "FTC Legal Library case search (https://www.ftc.gov/legal-library/browse/cases-proceedings?search=ROLLINS INC) name-matched to 1 case(s) -- see ftc_example_cases for titles/links, verify each is this company and not a same-named unrelated party.",
       "last_updated": "2026-08-20"
     },
     "shareholder_rights_voting_structure": {
