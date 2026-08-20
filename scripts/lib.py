@@ -342,6 +342,8 @@ _CEO_NAME_STOPWORDS = {
     "registrant", "former", "interim", "named", "our", "the", "peer",
     "current", "acting", "outgoing", "incoming", "neo", "neos", "ceo", "cfo",
     "coo", "evp", "svp", "chief", "vice", "senior", "salary", "paid", "total",
+    "director", "directors", "non-executive", "nonexecutive", "nominee",
+    "nominees", "independent", "lead", "trustee",
 }
 
 
@@ -386,12 +388,20 @@ def find_ceo_gender_signal(text):
     # also Board Chair), so prefer a uniquely chair-tagged candidate over raw
     # frequency; only fall back to plurality-by-frequency when that signal is
     # absent or itself ambiguous (multiple chair-tagged candidates).
+    # A single stray mention -- e.g. an outside director's bio quoting their
+    # own CEO title *at a different company* (a board bio table lists Mary
+    # Barra as "Chair and Chief Executive Officer" in every proxy she's a
+    # director of, not just GM's) -- must never win just for being
+    # chair-tagged. Only trust the chair-tag signal when that candidate is
+    # independently a real, repeated presence in this filing (>=2 mentions,
+    # the same bar the raw-frequency path requires).
+    qualifying_chair = {k for k in chair_tagged if name_hits[k] >= 2}
     candidates = name_hits
-    if len(chair_tagged) == 1:
-        ceo_key = next(iter(chair_tagged))
+    if len(qualifying_chair) == 1:
+        ceo_key = next(iter(qualifying_chair))
     else:
-        if chair_tagged:
-            candidates = Counter({k: v for k, v in name_hits.items() if k in chair_tagged})
+        if qualifying_chair:
+            candidates = Counter({k: v for k, v in name_hits.items() if k in qualifying_chair})
         top_two = candidates.most_common(2)
         top_key, top_count = top_two[0]
         # A single name+title adjacency match is too weak to trust on its own --
