@@ -198,6 +198,14 @@ GOV_KEYWORDS = {
     "dual_class": ["class a common stock", "class b common stock", "ten votes per share", "super-voting"],
 }
 
+# Requires completion language, not a bare mention of "merger"/"acquisition" --
+# those words appear as generic risk-factor/strategy boilerplate in nearly
+# every 10-K regardless of whether anything actually happened.
+RECENT_CORPORATE_ACTION_PATTERN = re.compile(
+    r"(completed (?:the |its )?(merger|acquisition|spin-?off|separation|business combination)|"
+    r"(merger|acquisition|spin-?off|separation|business combination)[^.]{0,60}?(?:was|were) completed|"
+    r"\bspun off\b|became an? (?:new |newly )?(?:independent |standalone )?public(?:ly traded)? company)")
+
 
 def keyword_hit(text_lower, keywords):
     return any(k in text_lower for k in keywords)

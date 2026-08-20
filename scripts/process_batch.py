@@ -17,7 +17,7 @@ from lib import (  # noqa: E402
     get_submissions, full_text_search, latest_filing, filing_document_url,
     fetch_filing_text, sic_screen, epa_echo_summary, osha_establishment_search,
     field, none_field, keyword_hit, find_pay_ratio, find_independent_directors_pct,
-    find_founder_led, find_family_owned,
+    find_founder_led, find_family_owned, RECENT_CORPORATE_ACTION_PATTERN,
     ENV_KEYWORDS, LABOR_KEYWORDS, GOV_KEYWORDS, save_json, TODAY,
 )
 from financials import revenue_growth, debt_to_equity, dividend_consistency  # noqa: E402
@@ -139,8 +139,9 @@ def process_company(rec):
         rec["workplace_diversity_equity_inclusion"] = field(
             "High" if keyword_hit(low, LABOR_KEYWORDS["dei"]) else "Low",
             f"10-K Human Capital section keyword scan, filed {tenk['filing_date']}", tenk_url, "Medium")
-        if keyword_hit(low, ["merger", "spin-off", "spinoff", "business combination completed"]):
-            rec["recent_corporate_action_flag"] = {"value": True, "notes": f"10-K (filed {tenk['filing_date']}) business description references a recent merger/spin-off/combination -- verify before trusting single-year financial comparisons."}
+        action_hit = RECENT_CORPORATE_ACTION_PATTERN.search(low)
+        if action_hit:
+            rec["recent_corporate_action_flag"] = {"value": True, "notes": f"10-K (filed {tenk['filing_date']}) references a completed merger/spin-off/separation ('{action_hit.group(0)}') -- verify recency and treat single-year financial comparisons with caution."}
     else:
         for f_ in ["carbon_fossil_fuel_involvement", "renewable_clean_tech_involvement",
                    "sustainable_agriculture_resource_use", "fair_wages_labor_practices",
