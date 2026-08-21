@@ -1479,46 +1479,6 @@ def ftc_case_search(company_name, max_examples=5):
     return {"case_count": len(hits), "examples": hits[:max_examples], "search_url": f"{url}?search={company_name}"}
 
 
-# ------------------------------------------------------- GitHub CSV dataset
-
-GITHUB_FINANCIALS_CSV_URL = (
-    "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/"
-    "master/data/constituents-financials.csv"
-)
-
-
-def _normalize_github_ticker(sym):
-    """The GitHub dataset uses '.' as the class-share separator (BF.B); this
-    project's own ticker list uses '-' (BF-B). Normalize to match."""
-    return sym.replace(".", "-").strip().upper()
-
-
-def get_github_financials_dataset():
-    """Fetch and parse the Open Knowledge Foundation's daily-refreshed,
-    Yahoo-Finance-sourced S&P 500 financials CSV (PDDL/public-domain
-    licensed, on the approved raw.githubusercontent.com domain). Used as a
-    substitute for live market-data APIs (Finnhub/Stooq/Alpha Vantage) that
-    are blocked or unavailable in this environment -- see
-    logs/manual_review_needed.md. Returns a dict keyed by normalized ticker,
-    or {} if the fetch fails (caller should treat every company as a miss,
-    not crash)."""
-    import csv
-    import io
-
-    try:
-        r = generic_get(GITHUB_FINANCIALS_CSV_URL, timeout=30)
-    except requests.RequestException:
-        return {}
-    reader = csv.DictReader(io.StringIO(r.text))
-    out = {}
-    for row in reader:
-        sym = row.get("Symbol")
-        if not sym:
-            continue
-        out[_normalize_github_ticker(sym)] = row
-    return out
-
-
 def save_json(path, obj):
     tmp = path + ".tmp"
     with open(tmp, "w") as f:
