@@ -120,6 +120,35 @@ say "was" (past tense) with filler in between ("was estimated to be",
 "our estimate ... was"), use "N times that of the median employee" as an
 entirely different phrasing, and the character-budget regex itself was
 silently broken by "Mr."/"Ms." abbreviations sitting next to the ratio
+sentence.
+
+Q9 (board independence) went through a different kind of fix: the original
+`find_independent_directors_pct()` reported 175/503 (34.8%), but that number
+was mostly wrong, not just incomplete. Testing the pipeline's stored values
+against freshly-fetched proxy text (2026-08-21) turned up 16 successive
+precision bugs, the majority variations on one theme -- a DEF 14A stating a
+"100% independent" (or similar) statistic for a specific board *committee*
+(Audit, Compensation, Nominating) rather than the full board, which the
+original regex couldn't tell apart from a genuine board-wide claim. Also
+found: unrelated same-magnitude percentages picked up near the word
+"independent" (an industry-peer benchmarking stat in Chevron's proxy that
+propagated the same wrong "39%" across several unrelated companies citing
+the same survey; a negated related-party revenue threshold; an auditor-fee
+cap); a role title ("Lead Independent Director") satisfying a loose
+proximity check with no actual percentage nearby; bullet-glyph inconsistency
+across filings ("•" vs "●") breaking the text-boundary logic used to bound
+the committee-exclusion search window; and "Proxy Highlights" summary
+tables, which `get_text(" ", strip=True)` flattens into unpunctuated
+label/value runs, producing a false match where a *director-count* label
+("Number of Directors 13") sat immediately in front of an unrelated
+"% Independent" column header. Each fix was validated against a growing
+regression set of real, freshly-fetched filings (both confirmed-good and
+confirmed-bad tickers) rather than synthetic test strings, since several of
+these bugs only manifested in full-document context. The corrected function
+lands at 155/503 (30.8%) -- a lower raw count than the original 175, because
+most of the difference was false positives (committee stats, benchmarking
+noise) being correctly excluded, not real coverage lost; every remaining
+hit has been spot-checked against its source filing.
 sentence. This is a near-universal mandatory disclosure (Dodd-Frank
 953(b)), so the original 30% hit rate was a pipeline gap, not a real
 absence of data:
