@@ -1,20 +1,22 @@
 #!/usr/bin/env python3
-"""One-off backfill: re-run the corrected find_independent_directors_pct()
-(see lib.py) against every company currently at board_transparency_
-independence confidence None with notes "Independent-director percentage
-not found in proxy text scan" -- the old regex only matched "N% of ...
-independent" and a bare "N of M directors", missing reversed word order,
-infographic-tile style, parenthetical, and "N out of M" phrasings. Only
-ever upgrades a record; already-Medium records are left untouched."""
+"""(Re)populate board_transparency_independence for every company missing
+the field using the corrected find_independent_directors_pct() (see
+lib.py). Targets any record where the field is absent entirely (used
+after clearing it for a full re-run following a precision fix) -- not
+just the old None-confidence stub, since a prior buggy version of this
+function may have already written a wrong Medium-confidence value that
+needs reprocessing, not skipping. Always writes an explicit result
+(Medium with the percentage, or an explicit None field), never leaves
+the key silently unset, to match the rest of the dataset's convention
+of every record having every field."""
 import json
 import sys
 
 sys.path.insert(0, ".")
-from lib import get_submissions, latest_filing, filing_document_url, fetch_filing_text, find_independent_directors_pct, field, save_json  # noqa: E402
+from lib import get_submissions, latest_filing, filing_document_url, fetch_filing_text, find_independent_directors_pct, field, none_field, save_json  # noqa: E402
 
 DATA_PATH = "data/sp500_full_dataset.json"
 CHECKPOINT_EVERY = 20
-_STUB_NOTE = "Independent-director percentage not found in proxy text scan"
 
 
 def load():
@@ -29,13 +31,13 @@ def save(dataset):
 def main():
     dataset = load()
 
-    targets = [r for r in dataset if (r.get("board_transparency_independence", {}) or {}).get("notes") == _STUB_NOTE]
-    print(f"{len(targets)}/{len(dataset)} companies to re-check.", flush=True)
+    targets = [r for r in dataset if "board_transparency_independence" not in r]
+    print(f"{len(targets)}/{len(dataset)} companies to (re)check.", flush=True)
 
     recovered = 0
     processed_this_run = 0
     for i, rec in enumerate(dataset):
-        if (rec.get("board_transparency_independence", {}) or {}).get("notes") != _STUB_NOTE:
+        if "board_transparency_independence" in rec:
             continue
 
         cik = rec.get("cik")
@@ -44,6 +46,7 @@ def main():
             subs = get_submissions(cik)
             proxy = latest_filing(subs, "DEF 14A")
             if not proxy:
+                rec["board_transparency_independence"] = none_field("No DEF 14A found/fetchable on EDGAR")
                 processed_this_run += 1
                 continue
             url = filing_document_url(cik, proxy["accession"], proxy["primary_doc"])
@@ -59,6 +62,8 @@ def main():
                 {"pct_independent_directors": pct}, f"DEF 14A, filed {proxy['filing_date']}", url, "Medium")
             recovered += 1
             print(f"{ticker}: board_transparency_independence -> {pct}%", flush=True)
+        else:
+            rec["board_transparency_independence"] = none_field("Independent-director percentage not found in proxy text scan")
 
         if (processed_this_run % CHECKPOINT_EVERY) == 0:
             save(dataset)
