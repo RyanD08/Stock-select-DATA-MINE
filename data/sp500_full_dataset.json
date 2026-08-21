@@ -55632,6 +55632,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -55869,6 +55877,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -56112,6 +56128,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 85
+      },
+      "source": "DEF 14A, filed 2026-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/886982/000119312526117433/gs-20260319.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -56363,6 +56389,14 @@
       "confidence": "Medium",
       "notes": "1 material-cybersecurity-incident 8-K(s) (SEC Item 1.05, rule effective December 2023) filed under this company's own CIK -- self-disclosed, not a third-party finding.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -56606,6 +56640,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -56849,6 +56891,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -57092,6 +57142,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -57335,6 +57393,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -57572,6 +57638,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -57817,6 +57891,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -58069,6 +58151,16 @@
       "confidence": "Medium",
       "notes": "1 material-cybersecurity-incident 8-K(s) (SEC Item 1.05, rule effective December 2023) filed under this company's own CIK -- self-disclosed, not a third-party finding.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-02-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1645590/000164559026000019/hpe-20260210.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -58312,6 +58404,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -58557,6 +58657,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/354950/000035495026000090/hd-20260406.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -58800,6 +58910,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No DEF 14A found/fetchable on EDGAR",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -59045,6 +59163,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -59286,6 +59412,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -59529,6 +59663,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 78
+      },
+      "source": "DEF 14A, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000062/hst-20260407.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -59774,6 +59918,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 89
+      },
+      "source": "DEF 14A, filed 2026-04-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4281/000110465926039940/tm261330-1_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -60017,6 +60171,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-02-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/47217/000004721726000015/hpq-20260225.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -60262,6 +60426,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -60501,6 +60673,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -60744,6 +60924,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -60981,6 +61169,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -61222,6 +61418,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-03-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/51143/000005114326000025/ibm-20260306.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -61457,6 +61663,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -61694,6 +61908,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -61939,6 +62161,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -62182,6 +62412,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 87
+      },
+      "source": "DEF 14A, filed 2026-04-28",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/879169/000087916926000031/incy-20260428.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -62427,6 +62667,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -62670,6 +62918,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -62916,6 +63172,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-03-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/50863/000005086326000061/proxy2026.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -63153,6 +63419,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -63390,6 +63664,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -63637,6 +63919,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -63882,6 +64172,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -64125,6 +64423,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -64368,6 +64674,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-03-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035267/000103526726000023/isrg-20260313.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -64611,6 +64927,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -64848,6 +65172,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 89
+      },
+      "source": "DEF 14A, filed 2026-03-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1687229/000119312526126310/d96989ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -65093,6 +65427,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -65338,6 +65680,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -65581,6 +65931,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -65826,6 +66184,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -66069,6 +66435,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 80
+      },
+      "source": "DEF 14A, filed 2025-10-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/779152/000077915225000079/jkhy-20251001.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -66308,6 +66684,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -66577,6 +66961,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -66816,6 +67208,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-01-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/833444/000110465926004565/tm2524665-5_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -67057,6 +67459,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -67300,6 +67710,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -67547,6 +67965,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -67784,6 +68210,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -68031,6 +68465,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -68270,6 +68712,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -68513,6 +68963,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 67
+      },
+      "source": "DEF 14A, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/879101/000120677426000197/kim4498121-def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -68752,6 +69212,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -68989,6 +69457,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -69232,6 +69708,14 @@
       "confidence": "None",
       "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -69480,6 +69964,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2026-04-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1637459/000119312526141397/khc-20260402.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -69719,6 +70213,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -69954,6 +70456,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -70191,6 +70701,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -70436,6 +70954,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -70673,6 +71199,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -70918,6 +71452,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2026-03-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1336920/000133692026000138/ldos-20260319.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -71161,6 +71705,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -71398,6 +71950,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -71635,6 +72195,14 @@
       "confidence": "None",
       "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -71878,6 +72446,14 @@
       "confidence": "None",
       "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -72123,6 +72699,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -72360,6 +72944,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 89
+      },
+      "source": "DEF 14A, filed 2026-03-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/936468/000093646826000004/lmt-20260326.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -72603,6 +73197,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -72848,6 +73450,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-04-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/60667/000006066726000056/low-20260415.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -73093,6 +73705,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -73336,6 +73956,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -73579,6 +74207,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -73816,6 +74452,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -74059,6 +74703,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1510295/000151029526000023/mpc-20260316.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -74296,6 +74950,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -74539,6 +75201,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -74784,6 +75454,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2026-04-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/916076/000119312526157039/d28378ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -75025,6 +75705,14 @@
       "confidence": "None",
       "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -75268,6 +75956,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -75507,6 +76203,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-04-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -75744,6 +76450,14 @@
       "confidence": "None",
       "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -75987,6 +76701,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 50
+      },
+      "source": "DEF 14A, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/63908/000119312526145548/mcd-20260407.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -76230,6 +76954,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-06-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/927653/000092765326000169/mck-20260612.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -76477,6 +77211,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -76720,6 +77462,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -76965,6 +77715,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -77208,6 +77966,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -77451,6 +78217,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-03-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1037646/000117494726000389/mtol-def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -77696,6 +78472,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -77941,6 +78725,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 86
+      },
+      "source": "DEF 14A, filed 2026-07-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/827054/000082705426000026/mchp-20260701.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -78186,6 +78980,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -78445,6 +79247,16 @@
       "confidence": "Medium",
       "notes": "2 material-cybersecurity-incident 8-K(s) (SEC Item 1.05, rule effective December 2023) filed under this company's own CIK -- self-disclosed, not a third-party finding.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2025-10-21",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/789019/000119312525245150/d908201ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -78688,6 +79500,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 78
+      },
+      "source": "DEF 14A, filed 2026-04-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/912595/000114036126013212/ny20062832x1_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -78931,6 +79753,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -79174,6 +80004,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -79419,6 +80257,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -79662,6 +80508,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -79905,6 +80759,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -80148,6 +81010,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -80393,6 +81263,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -80638,6 +81516,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-04-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1285785/000128578526000061/mos-20260415.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -80881,6 +81769,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 88
+      },
+      "source": "DEF 14A, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/68505/000119312526139004/d50373ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -81124,6 +82022,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -81361,6 +82267,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1120193/000162828026027245/ndaq-20260424.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -81606,6 +82522,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 75
+      },
+      "source": "DEF 14A, filed 2026-07-28",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1002047/000119312526321210/ntap-20260727.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -81851,6 +82777,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -82086,6 +83020,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -82323,6 +83265,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -82566,6 +83516,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -82811,6 +83769,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-04-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/753308/000110465926038551/tm261592-1_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -83056,6 +84024,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 73
+      },
+      "source": "DEF 14A, filed 2026-07-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000089/nke-20260715.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -83295,6 +84273,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -83532,6 +84518,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -83775,6 +84769,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -84012,6 +85014,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -84261,6 +85271,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -84504,6 +85522,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -84749,6 +85775,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -84998,6 +86032,14 @@
       "confidence": "Medium",
       "notes": "2 material-cybersecurity-incident 8-K(s) (SEC Item 1.05, rule effective December 2023) filed under this company's own CIK -- self-disclosed, not a third-party finding.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -85241,6 +86283,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -85486,6 +86536,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -85729,6 +86787,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2026-04-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1413447/000141344726000026/nxpi-20260427.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -85968,6 +87036,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -86205,6 +87281,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -86450,6 +87534,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 67
+      },
+      "source": "DEF 14A, filed 2026-04-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/878927/000087892726000006/odfl-20260417.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -86695,6 +87789,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -86932,6 +88034,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -87169,6 +88279,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -87410,6 +88528,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -87655,6 +88781,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2026-04-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1781335/000114036126015389/ny20061782x1_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -87900,6 +89036,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -88145,6 +89289,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -88384,6 +89536,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -88623,6 +89783,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 82
+      },
+      "source": "DEF 14A, filed 2025-11-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1327567/000130817925000624/panw-20251107.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -88866,6 +90036,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No DEF 14A found/fetchable on EDGAR",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -89111,6 +90289,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2025-09-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/76334/000130817925000603/ph-20250919.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -89354,6 +90542,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -89597,6 +90793,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1633917/000119312526145721/d59508ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -89846,6 +91052,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -90093,6 +91307,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/77476/000130817926000169/pep015012_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -90338,6 +91562,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -90575,6 +91807,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -90821,6 +92061,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -91066,6 +92314,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -91309,6 +92565,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -91546,6 +92810,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-03-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/713676/000119312526102189/d62941ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -91793,6 +93067,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-03-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/79879/000007987926000088/ppg-20260304.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -92036,6 +93320,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -92279,6 +93571,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -92524,6 +93824,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 86
+      },
+      "source": "DEF 14A, filed 2025-08-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/80424/000119312525191749/d875382ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -92767,6 +94077,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -93012,6 +94330,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 82
+      },
+      "source": "DEF 14A, filed 2026-03-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1045609/000119312526115132/d36709ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -93265,6 +94593,14 @@
       "confidence": "Medium",
       "notes": "2 material-cybersecurity-incident 8-K(s) (SEC Item 1.05, rule effective December 2023) filed under this company's own CIK -- self-disclosed, not a third-party finding.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -93508,6 +94844,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-03-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/788784/000119312526104270/peg-20260310.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -93749,6 +95095,14 @@
       "confidence": "None",
       "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -93994,6 +95348,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 83
+      },
+      "source": "DEF 14A, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1393311/000119312526128991/psa-20260325.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -94237,6 +95601,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -94480,6 +95852,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -94723,6 +96103,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -94968,6 +96356,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-04-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1022079/000114036126013356/ny20064122x1_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -95211,6 +96609,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -95448,6 +96854,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 75
+      },
+      "source": "DEF 14A, filed 2026-06-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1037038/000114036126025788/ny20071304x1_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -95691,6 +97107,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -95934,6 +97358,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -96177,6 +97609,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2026-03-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/101829/000130817926000036/rtx014050-def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -96420,6 +97862,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -96663,6 +98113,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -96906,6 +98364,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -97149,6 +98615,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -97386,6 +98860,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -97629,6 +99111,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -97868,6 +99358,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2026-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31791/000119312526107266/d21831ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -98111,6 +99611,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -98356,6 +99864,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -98607,6 +100123,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -98844,6 +100368,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -99089,6 +100621,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -99332,6 +100872,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -99577,6 +101125,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -99820,6 +101376,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 77
+      },
+      "source": "DEF 14A, filed 2026-04-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1108524/000110852426000085/crm-20260416.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -100063,6 +101629,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 86
+      },
+      "source": "DEF 14A, filed 2025-10-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2023554/000162828025044481/sndk-20251006.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -100306,6 +101882,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -100545,6 +102129,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -100784,6 +102376,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -101023,6 +102623,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -101260,6 +102868,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -101505,6 +103121,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 89
+      },
+      "source": "DEF 14A, filed 2026-03-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/89800/000008980026000025/shw-20260310.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -101742,6 +103368,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-04-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1063761/000110465926038320/spg-20260513xdef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -101979,6 +103615,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -102224,6 +103868,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -102467,6 +104119,16 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": {
+        "pct_independent_directors": 83
+      },
+      "source": "DEF 14A, filed 2026-03-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2005951/000110465926026094/sw-20260501xdef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -102712,6 +104374,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -102955,6 +104625,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -103194,6 +104872,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -103439,6 +105125,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -103678,6 +105372,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -103921,6 +105623,14 @@
       "confidence": "Low",
       "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company's own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial.",
       "last_updated": "2026-08-20"
+    },
+    "board_transparency_independence": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
