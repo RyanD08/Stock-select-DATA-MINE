@@ -562,49 +562,105 @@ def find_ceo_gender_signal(text):
 
 
 _INDEP_PCT_PATTERNS = [
-    # "91% of the board/directors ... independent" -- the original, still the most common form.
-    re.compile(r"(\d{1,3})\s*%\s*of[^.]{0,60}?independent", re.IGNORECASE),
+    # "91% of the board/directors ... independent" -- the original, still the most common
+    # form, but the original version of this ("(\d{1,3})\s*%\s*of[^.]{0,60}?independent")
+    # was far too loose: it matches ANY "N% of <anything> ... independent" construction,
+    # not specifically board composition. Found producing real wrong values at scale: "39%
+    # of companies had an independent chair" (an industry peer-benchmarking statistic from
+    # Chevron's proxy, not Chevron's own board -- and the likely source of the same wrong
+    # 39% appearing across multiple unrelated companies that cite the same survey), "2% of
+    # such other company's consolidated gross revenues, is not independent" (a related-
+    # party-transaction revenue threshold in the independence-criteria definition, and
+    # negated besides), and "5% of the fees we pay to our independent registered public
+    # accounting firm" (an auditor fee cap -- "independent" here means the auditor, not a
+    # director). Now requires "of" to be followed (allowing a few filler words -- "the
+    # current", "serving", "the members of") by "board" or "directors" as the head noun --
+    # not just "independent" appearing somewhere within 60 characters -- and excludes an
+    # immediately following "accounting"/"auditor" (the auditor-independence class).
+    # NOTE: must still require "independent" nearby -- an early version of this fix
+    # dropped that requirement entirely while tightening the "of ..." clause, which made
+    # it match ANY "N% of the board/directors" regardless of subject, including near-
+    # universal "proxy access" boilerplate ("a shareholder ... is able to nominate
+    # directors to fill up to 20% of the Board seats") that has nothing to do with
+    # independence -- caught immediately by a full regression run before this shipped.
+    # The tail also needs "are/is/were/being" directly before "independent", not just the
+    # bare word anywhere in the next 60 characters -- otherwise an unrelated nearby role
+    # title ("... 20% of our Board ... Lead Independent Director") satisfies a bare
+    # "independent" check without ever actually stating a composition percentage.
+    re.compile(r"(\d{1,3})\s*%\s*of\s+(?:[a-z]+\s+){0,4}?(?:board|directors?)\b(?:\s+members?)?"
+               r"[^.]{0,60}?(?:are|is|were|being)\s+independent\b(?!\s+registered\s+public\s+accounting|\s+auditor)", re.IGNORECASE),
     # "Independent directors comprise/constitute/represent 100% of ..." -- reversed word
     # order (the word "independent" comes first, not the number) that the pattern above
     # can't match at all.
     re.compile(r"independent\s+directors?\s+(?:comprise|constitute|represent)\s+(\d{1,3})\s*%", re.IGNORECASE),
-]
-# A compact infographic/"board snapshot" tile style increasingly common in modern proxies,
-# e.g. "8.6 years AVERAGE TENURE 91% INDEPENDENT" -- no "of" at all -- and the parenthetical
-# form "Nine (9) directors (82%) are independent". Both need extra validation beyond a bare
-# regex: these dashboards very often ALSO show a separate "100% independent [Audit/
-# Compensation] Committee" stat nearby, which isn't the full-board number -- found as a real
-# regression (KIM, WDAY) where the committee stat matched before the real board number.
-_INDEP_PCT_NEEDS_CONTEXT = [
+    # A compact infographic/"board snapshot" tile style increasingly common in modern
+    # proxies, e.g. "8.6 years AVERAGE TENURE 91% INDEPENDENT" -- no "of" at all.
     re.compile(r"(\d{1,3})\s*%\s+independent\b", re.IGNORECASE),
+    # Parenthetical form: "Nine (9) directors (82%) are independent".
     re.compile(r"\(\s*(\d{1,3})\s*%\s*\)\s*(?:are|is)\s+independent", re.IGNORECASE),
 ]
-_INDEP_PCT_COMMITTEE_NEARBY = re.compile(r"\bcommittees?\b", re.IGNORECASE)
+# A "100% independent" (or "N% of ... independent") stat is at least as likely to
+# describe a specific committee (Audit, Compensation, Nominating) as the full board, and
+# these dashboard-style proxies often show both close together -- confirmed as a real
+# false positive on every pattern above, not just the tile/parenthetical ones originally
+# thought to be at risk (e.g. Adobe: "Our Executive Compensation Committee is comprised
+# 100% of independent directors"; CenterPoint: "the 100% independent director
+# composition of each Board committee", and separately "100% Independent Human Capital
+# and Compensation Committee" naming the committee directly after the number with no
+# "members of" construction at all). Two distinct constructions, checked separately with
+# different windows:
+#   - LEADING: "committee(s)" as the direct grammatical subject right before the number
+#     ("Board committees consist of 100% independent directors", "Nominating and
+#     Corporate Governance Committee 100% INDEPENDENT"). Bounded by the nearest "." or
+#     "•", OR the specific marker ", and that" (a genuine new-clause break) -- NOT a bare
+#     comma, which is also just a list separator within the same clause ("Our three
+#     standing Board committees—Audit, Compensation and Nominating and Governance—are
+#     100% independent" -- D.R. Horton: a bare-comma break would cut "committees" out of
+#     the leading window here and wrongly keep this as if it were board-wide) and must be
+#     distinguished from an unrelated earlier committee mention genuinely in a separate
+#     clause (Schwab: "...scope of authority of these committees, and that over 70% of
+#     our directors are independent..." -- a real board-wide claim).
+#   - TRAILING: either "committee(s)" directly, allowing up to 5 filler/committee-name
+#     words ("100% Independent Human Capital and Compensation Committee"), OR the longer
+#     "members/composition of/on ... committee(s)" construction for an enumerated
+#     committee-name list, which must NOT break on a comma/semicolon for the same reason
+#     as above ("100% independent members of the Audit, Compensation and Nominating and
+#     Corporate Governance committees").
+_INDEP_PCT_COMMITTEE_LEADING = re.compile(r"committees?\b", re.IGNORECASE)
+_INDEP_PCT_NEW_CLAUSE = re.compile(r",\s*and\s+that\b", re.IGNORECASE)
+_INDEP_PCT_COMMITTEE_TRAILING = re.compile(
+    r"^\s*(?:[a-z]+\s+){0,5}committees?\b|"
+    r"^\s*(?:[a-z]+\s+){0,2}(?:members?|composition)\s+(?:of|on)\b.{0,380}?committees?\b", re.IGNORECASE)
 _INDEP_PCT_BOARD_CONTEXT = re.compile(r"\bboard\b|\bdirectors?\b", re.IGNORECASE)
 
 
 def find_independent_directors_pct(text):
     for pat in _INDEP_PCT_PATTERNS:
-        m = pat.search(text)
-        if m:
-            return int(m.group(1))
-    for pat in _INDEP_PCT_NEEDS_CONTEXT:
         for m in pat.finditer(text):
-            # A tile/parenthetical "100% independent" stat is at least as likely to be
-            # about a specific committee (Audit, Compensation, Nominating) as the full
-            # board -- these dashboard-style proxies often show both stats close together.
-            # "committee" can lead the match ("Nominating and Corporate Governance
-            # Committee 100% INDEPENDENT") or trail it, sometimes well past a short fixed
-            # window when several committee names are enumerated first ("100% independent
-            # members of the Audit, Compensation and Nominating and Corporate Governance
-            # committees") -- found as real false positives (Chipotle, Cintas, Verisk,
-            # Steel Dynamics) in testing. Bounded by the nearest sentence/bullet edge
-            # (".", "•", or a 250-char cap) rather than a fixed word/char count, so an
-            # arbitrarily long committee-name list still gets caught.
-            lead_bound = max((text.rfind(c, max(0, m.start() - 250), m.start()) for c in ".•"), default=-1)
-            trail_bound = min((i for i in (text.find(c, m.end(), m.end() + 250) for c in ".•") if i != -1), default=m.end() + 250)
-            nearby = text[lead_bound + 1:trail_bound]
-            if _INDEP_PCT_COMMITTEE_NEARBY.search(nearby):
+            window_start = max(0, m.start() - 250)
+            # Bullet glyphs vary by filing -- "•" (U+2022) is common, but "●" (U+25CF,
+            # BLACK CIRCLE) is at least as common and wasn't being recognized at all,
+            # letting the leading window silently run past real bullet-point breaks and
+            # pick up an unrelated separate bullet item (UDR: a "● Independent Committee
+            # Chairs" bullet several items above the real "90% of serving board members
+            # are independent" bullet, both in the same governance-highlights list).
+            boundary_positions = [p for p in (text.rfind(c, window_start, m.start()) for c in (".", "•", "●", "○", "▪"))
+                                   if p >= 0]
+            boundary_positions += [window_start + cm.end() - 1
+                                    for cm in _INDEP_PCT_NEW_CLAUSE.finditer(text[window_start:m.start()])]
+            # rfind returns -1 for "not found", which is itself a valid int and would
+            # otherwise win the max() comparison over a real (larger) boundary position
+            # -- filtered out above so an absent "."/"•" correctly falls back to the
+            # window_start cap instead of silently becoming -1 and scanning the ENTIRE
+            # rest of the document backwards for "committee" (found producing a 110,000-
+            # character "leading" window on a real filing whose preceding 250 characters
+            # were dense XBRL tag metadata with no punctuation at all).
+            lead_bound = max(boundary_positions, default=window_start - 1)
+            leading = text[lead_bound + 1:m.start()]
+            if _INDEP_PCT_COMMITTEE_LEADING.search(leading):
+                continue
+            trailing = text[m.end():m.end() + 400]
+            if _INDEP_PCT_COMMITTEE_TRAILING.search(trailing):
                 continue
             window = text[max(0, m.start() - 100):m.end() + 100]
             if not _INDEP_PCT_BOARD_CONTEXT.search(window):
