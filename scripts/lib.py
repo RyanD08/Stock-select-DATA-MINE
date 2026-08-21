@@ -267,9 +267,17 @@ _PAY_RATIO_PATTERNS = [
     # newlines acted as unintended hard stops and silently killed real matches too.
     re.compile(r"\bratio\b(?=.{0,150}?\b(?:compensation|median|employee)\b).{0,150}?"
                r"\b(?:is|was|were)\b.{0,60}?([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1\b", re.IGNORECASE | re.DOTALL),
-    # Fallbacks for phrasing the primary pattern doesn't cover.
-    re.compile(r"pay ratio.{0,300}?([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1", re.IGNORECASE | re.DOTALL),
-    re.compile(r"([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1.{0,60}?pay ratio", re.IGNORECASE | re.DOTALL),
+    # Fallbacks for phrasing the primary pattern doesn't cover. Both need a trailing \b --
+    # without it, a table presented in reversed "median:CEO" order (e.g. Valero's own
+    # summary table: "Median Employee to CEO Pay Ratio 1:162") silently matched just the
+    # leading "1" of "162" as if it were "...:1", producing a wrong value (1.0 instead of
+    # the real 162) rather than either the right number or no match at all.
+    re.compile(r"pay ratio.{0,300}?([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1\b", re.IGNORECASE | re.DOTALL),
+    re.compile(r"([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1\b.{0,60}?pay ratio", re.IGNORECASE | re.DOTALL),
+    # Reversed "median:CEO" table format (e.g. "Median Employee to CEO Pay Ratio 1:162") --
+    # the leading "1" is the normalized median-employee value, the second number is the
+    # real ratio.
+    re.compile(r"median employee to ceo pay ratio\D{0,10}1\s*:\s*([\d,]+(?:\.\d+)?)\b", re.IGNORECASE),
     # "N times that of/the median employee" -- an equally common alternate phrasing that
     # never uses "to 1"/":1" at all (e.g. CF Industries: "...was approximately 88 times
     # that of our median employee").
