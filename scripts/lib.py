@@ -646,12 +646,24 @@ _INDEP_PCT_BOARD_CONTEXT = re.compile(r"\bboard\b|\bdirectors?\b", re.IGNORECASE
 # right after and is simply never reached because the loop returns on the first match.
 # Excluded by checking the number isn't immediately preceded by a bare count-style label.
 _INDEP_PCT_COUNT_LABEL = re.compile(r"(?:number\s+of\s+directors|board\s+size)\s*$", re.IGNORECASE)
+# "100% of Board committee members are independent" (Intuitive Surgical): pattern 0's
+# "of (board|directors)" head-noun requirement is satisfied by "Board" immediately after
+# "of", but "committee" right after that changes the actual subject to committee
+# membership, not the full board -- the existing leading/trailing committee checks only
+# look OUTSIDE the matched span, so a "committee" word inside the match itself (between
+# the head noun and "are/is independent") was never checked. "committee" can legitimately
+# appear inside a genuine board-wide claim too ("...board, including its committees, is
+# independent"), so this only excludes when it directly follows the head noun as a
+# compound ("Board committee members"), not any "committee" mention anywhere in the match.
+_INDEP_PCT_INLINE_COMMITTEE = re.compile(r"(?:board|directors?)\s+committee", re.IGNORECASE)
 
 
 def find_independent_directors_pct(text):
     for pat in _INDEP_PCT_PATTERNS:
         for m in pat.finditer(text):
             if _INDEP_PCT_COUNT_LABEL.search(text[max(0, m.start() - 40):m.start()]):
+                continue
+            if _INDEP_PCT_INLINE_COMMITTEE.search(m.group(0)):
                 continue
             window_start = max(0, m.start() - 250)
             # Bullet glyphs vary by filing -- "•" (U+2022) is common, but "●" (U+25CF,
