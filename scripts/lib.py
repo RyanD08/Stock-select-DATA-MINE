@@ -822,6 +822,24 @@ def find_family_owned(text):
         # (narrative-only cases have nothing to check here).
         if share_counts and max(share_counts) < 500_000 and not has_override:
             continue
+        # Nearly every personal-trust false positive found this session has one
+        # thing in common: the family name is followed directly by a formal
+        # individual-vehicle entity type -- Trust, LLC, Foundation, Limited
+        # Partnership, Office -- and separately, that specific footnote's share
+        # count sits in a DIFFERENT sentence than the "Family Trust" name itself,
+        # referenced only by a table footnote marker this scan can't follow
+        # (Amgen: "(4) Shares held through the Holley Family Trust." -- no count
+        # at all in this sentence, nothing to reject on, so it fell through to the
+        # permissive default). A genuine large stake ALSO sometimes uses this
+        # phrasing (A.O. Smith: "Smith Family Voting Trust," 96.96%) but always has
+        # an override signal (a stated percentage, share count, or controlling
+        # language) somewhere to back it up -- so when the name IS entity-suffixed,
+        # require that positive evidence rather than defaulting to permissive.
+        entity_suffixed = bool(re.match(
+            r"\s*(?:Trust|LLC|L\.L\.C\.|Foundation|Limited Partnership|LP|L\.P\.|Office|Corp\.?|Inc\.?)\b",
+            text[m.end():m.end() + 40], re.IGNORECASE))
+        if entity_suffixed and not has_override:
+            continue
         # The institutional-owner check uses a deliberately tighter window (160 vs.
         # 250 chars each side) than the ownership-context check above: a large
         # beneficial-ownership table's shared footnotes often mention Vanguard/
