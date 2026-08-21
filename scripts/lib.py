@@ -354,7 +354,14 @@ def find_founder_led(text, company_name):
     if ceo:
         candidates.append(ceo)
     chair = _top_named_officer(text, _EXEC_CHAIR_NAME_TITLE, company_key)
-    if chair and (not ceo or chair[1] != ceo[1]):
+    # Dedupe by full name, not surname -- a father-founder/son-CEO pair (or any two
+    # relatives leading the same family company) can share a surname while being two
+    # different people (UHS: CEO Marc D. Miller and Executive Chairman Alan B. Miller,
+    # the company's actual founder). Surname-only dedupe silently dropped Alan Miller
+    # as a candidate whenever his son was also identified as CEO, so the founder-
+    # evidence search only ever anchored on the son -- and picked up a same-surname
+    # "Alan B. Miller" mention nearby without correctly attributing it to him.
+    if chair and (not ceo or chair[0].lower() != ceo[0].lower()):
         candidates.append(chair)
     for full_name, surname in candidates:
         hit = _officer_founder_evidence(text, text_lower, surname, full_name, company_key)
@@ -562,7 +569,19 @@ def _officer_founder_evidence(text, text_lower, surname, full_name, company_key)
         # rather than let a same-surname anchor pick up someone else's founder
         # claim (Gary W. Rollins, CEO, wrongly credited with "Wayne Rollins ...
         # founder" evidence that's actually about his late father).
-        preceding_word = re.search(r"([a-z][a-z'\-]*)\s*$", text_lower[max(0, m.start() - 25):m.start()])
+        # Strip a trailing middle initial ("B. ") before looking for the first-name
+        # token -- otherwise "Alan B. Miller" reads as having no preceding word at
+        # all (the period breaks the plain word-search), silently skipping this
+        # check entirely and letting a middle-initialed relative's name through
+        # unchecked (UHS: founder/Executive Chairman "Alan B. Miller" mistakenly
+        # anchored to CEO "Marc D. Miller"'s search, his son, no relation checked).
+        # The lookbehind requires an actual preceding word (2+ letters, then a
+        # space) before the single-letter+period -- otherwise "Mr. Surname" itself
+        # gets misread as ending in a stray middle initial ("r." in "Mr."), wiping
+        # out the whole honorific and leaving a dangling single letter that then
+        # fails the "known honorific" exception below (regressed CRM/ORCL/CPRT).
+        preceding_context = re.sub(r"(?<=[a-z]{2}\s)[a-z]\.\s*$", "", text_lower[max(0, m.start() - 25):m.start()])
+        preceding_word = re.search(r"([a-z][a-z'\-]*)\s*$", preceding_context)
         if preceding_word and officer_first:
             pw = preceding_word.group(1)
             if pw not in ("mr", "ms", "mrs", "dr", "the", "a", "an", "our", "co", "") and pw != officer_first:
