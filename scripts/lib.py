@@ -620,23 +620,39 @@ _INDEP_PCT_PATTERNS = [
 #     distinguished from an unrelated earlier committee mention genuinely in a separate
 #     clause (Schwab: "...scope of authority of these committees, and that over 70% of
 #     our directors are independent..." -- a real board-wide claim).
-#   - TRAILING: either "committee(s)" directly, allowing up to 5 filler/committee-name
-#     words ("100% Independent Human Capital and Compensation Committee"), OR the longer
-#     "members/composition of/on ... committee(s)" construction for an enumerated
-#     committee-name list, which must NOT break on a comma/semicolon for the same reason
-#     as above ("100% independent members of the Audit, Compensation and Nominating and
-#     Corporate Governance committees").
+#   - TRAILING: either "committee(s)" directly, allowing up to 120 characters of
+#     filler/committee-name text ("100% Independent Human Capital and Compensation
+#     Committee"; Cigna: "100% independent Audit & Compliance, Corporate Governance,
+#     Finance & Technology, and People Resources Committees" -- multi-word committee
+#     names joined with "&" and commas blow past a plain-word-count filler budget, so
+#     the filler is character-bounded instead, stopping only at a real clause break
+#     (bullet/period), not at punctuation that's just part of a committee name list),
+#     OR the longer "members/composition of/on ... committee(s)" construction for an
+#     enumerated committee-name list, which must NOT break on a comma/semicolon for the
+#     same reason as above ("100% independent members of the Audit, Compensation and
+#     Nominating and Corporate Governance committees").
 _INDEP_PCT_COMMITTEE_LEADING = re.compile(r"committees?\b", re.IGNORECASE)
 _INDEP_PCT_NEW_CLAUSE = re.compile(r",\s*and\s+that\b", re.IGNORECASE)
 _INDEP_PCT_COMMITTEE_TRAILING = re.compile(
-    r"^\s*(?:[a-z]+\s+){0,5}committees?\b|"
+    r"^\s*[^.•●○▪]{0,120}?committees?\b|"
     r"^\s*(?:[a-z]+\s+){0,2}(?:members?|composition)\s+(?:of|on)\b.{0,380}?committees?\b", re.IGNORECASE)
 _INDEP_PCT_BOARD_CONTEXT = re.compile(r"\bboard\b|\bdirectors?\b", re.IGNORECASE)
+# "Proxy Highlights" summary tables get flattened by get_text(" ", strip=True) into a
+# run of label/value pairs with no cell delimiter -- e.g. ADM: "... Director Term One
+# Year Number of Directors 13 % Independent 92% % Overall Diversity 54% ...". Pattern 2
+# (bare "N% independent", meant for infographic tiles like "91% INDEPENDENT") matched
+# "13" here: the *director count* label sitting immediately before an unrelated "%
+# Independent" column header, not a percentage of anything. The real value, 92%, sits
+# right after and is simply never reached because the loop returns on the first match.
+# Excluded by checking the number isn't immediately preceded by a bare count-style label.
+_INDEP_PCT_COUNT_LABEL = re.compile(r"(?:number\s+of\s+directors|board\s+size)\s*$", re.IGNORECASE)
 
 
 def find_independent_directors_pct(text):
     for pat in _INDEP_PCT_PATTERNS:
         for m in pat.finditer(text):
+            if _INDEP_PCT_COUNT_LABEL.search(text[max(0, m.start() - 40):m.start()]):
+                continue
             window_start = max(0, m.start() - 250)
             # Bullet glyphs vary by filing -- "•" (U+2022) is common, but "●" (U+25CF,
             # BLACK CIRCLE) is at least as common and wasn't being recognized at all,
