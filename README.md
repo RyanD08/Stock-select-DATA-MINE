@@ -191,12 +191,44 @@ founder personally. Validated across four rounds with a 40-case regression
 set of real, freshly-fetched EDGAR filings (a mix of confirmed-false and
 confirmed-true tickers), plus full re-verification of every prior True
 result after each fix -- the final run reproduced the same result as the
-one before it, the first time that happened in this investigation. Final
-numbers: `founder_led` 33/503 (6.6%) True, 470/503 honest None;
-`family_owned` 15/503 (3.0%) True, 488/503 honest None. Given the false-
-positive rate found in the original heuristic, these lower True counts are
-the trustworthy ones, not a coverage regression -- a "founder-led S&P 500
-company" is, in reality, fairly rare.
+one before it, the first time that happened in this investigation.
+
+**Update:** a user then asked the natural follow-up -- for the large
+remaining None bucket, are those companies genuinely *not* founder-led/
+family-owned, or just unverified? So `founder_led`/`family_owned` were
+extended with an explicit False path, not just True/None:
+`resolve_founder_led_field()` writes False when the registrant's own CEO/
+Executive Chair was independently identified by name but no founder claim
+was ever found tied to them (real negative evidence -- DEF 14A proxies
+narrate executive backgrounds extensively, so silence here is meaningful);
+`resolve_family_owned_field()` writes False when the proxy's mandatory
+Item 403 beneficial-ownership disclosure was found and scanned but no
+family match was found among the disclosed 5%-or-greater owners (every
+such owner must be named by law). Both keep None only for the genuine
+"can't verify" case: no officer could be identified at all (a co-CEO
+structure with no single clear leader, e.g. Netflix), or no ownership
+section was found in the text at all.
+
+Turning "confident False" on raised the precision bar sharply, since a
+wrong False is now a fabricated negative rather than a missed positive --
+validating it against real filings surfaced a whole further class of
+false positives in `family_owned` specific to this: an ordinary director
+or executive's personal "`<Surname>` Family Trust/LLC/Foundation" estate-
+planning vehicle being mistaken for a controlling founding family, in
+a dozen-plus different phrasings (a trustee-dating convention, a same-
+surname trustee relationship, a small share count, an unrelated activist
+investor's stockholder-proposal sponsor entity, cross-sentence/cross-
+footnote window bleeding onto a different person's much larger number).
+Fixed across several rounds, converging on a general rule: when a family
+name is followed by a formal entity suffix (Trust/LLC/Foundation/Limited
+Partnership/Office), require positive evidence (a stated percentage,
+large share count, or explicit controlling language) to accept, rather
+than defaulting to permissive.
+
+Final numbers: `founder_led` 34/503 (6.8%) True, 399/503 (79.3%) False,
+64/503 None; `family_owned` 29/503 (5.8%) True, 435/503 (86.5%) False,
+39/503 None. Both fields are now, for practical purposes, complete --
+93%+ of companies have a real, sourced True or False, not a gap.
 
 | Source | Status | Used for |
 |---|---|---|
@@ -270,6 +302,11 @@ and a quoted evidence snippet in `notes` for spot-checking.
   director's own outside-company bio, or an institutional shareholder's
   beneficial-ownership footnote, matching as if it described the
   registrant) -- see `## Sources actually used` above for the full story.
+  Unlike Q9/Q10, Q24 now writes an explicit False (not just None) when the
+  registrant's own CEO/Chair or beneficial-ownership disclosure was
+  identified/located but came up negative -- so a Q24 `None` specifically
+  means "couldn't even identify who to check," a narrower and rarer case
+  than Q9/Q10's `None`.
 - Country-of-operations (Q21) and cybersecurity-incident-based data privacy
   (Q22) are now implemented (see `## Sources actually used` above for
   coverage numbers) -- both are text/full-text-search-based signals with
