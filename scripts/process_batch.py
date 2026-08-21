@@ -17,7 +17,7 @@ from lib import (  # noqa: E402
     get_submissions, full_text_search, latest_filing, filing_document_url,
     fetch_filing_text, sic_screen, epa_echo_summary, osha_establishment_search,
     field, none_field, keyword_hit, find_pay_ratio, find_independent_directors_pct,
-    find_founder_led, find_family_owned, RECENT_CORPORATE_ACTION_PATTERN, alcohol_2080_hit,
+    resolve_founder_led_field, resolve_family_owned_field, RECENT_CORPORATE_ACTION_PATTERN, alcohol_2080_hit,
     ENV_KEYWORDS, LABOR_KEYWORDS, GOV_KEYWORDS, save_json, TODAY,
     match_company_to_fec_pac, ftc_case_search, FEC_CYCLE, find_ceo_gender_signal,
     cybersecurity_incident_search, find_countries_of_concern,
@@ -187,19 +187,8 @@ def process_company(rec):
         rec["shareholder_rights_voting_structure"] = field(
             "dual_class" if dual else "single_class",
             f"DEF 14A share class disclosure, filed {proxy['filing_date']}", purl, "Medium" if dual else "Low")
-        founder_hit = find_founder_led(proxy_text, rec.get("company_name"))
-        if founder_hit:
-            rec["founder_led"] = field(True, f"DEF 14A officer/director bios, filed {proxy['filing_date']}", purl, "Low",
-                                        f"Name-anchored regex match on the registrant's own identified CEO/Executive Chair having founder language tied to their name: '{founder_hit.strip()[:300]}'. Not a manual bio read -- verify.")
-        else:
-            rec["founder_led"] = none_field("No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan")
-        family_hit = find_family_owned(proxy_text)
-        if family_hit:
-            name, window = family_hit
-            rec["family_owned"] = field(True, f"DEF 14A beneficial ownership section, filed {proxy['filing_date']}", purl, "Low",
-                                         f"Text mentions '{name}' near ownership/voting-power language; percentage not automatically extracted -- verify manually. Context: \"...{window.strip()[:200]}...\"")
-        else:
-            rec["family_owned"] = none_field("No '<Name> family' + ownership-context pattern found in proxy text scan")
+        rec["founder_led"] = resolve_founder_led_field(proxy_text, rec.get("company_name"), purl, proxy["filing_date"])
+        rec["family_owned"] = resolve_family_owned_field(proxy_text, purl, proxy["filing_date"])
         # --- Additional criteria (not one of the 27 official questions): women_led --
         # see data/candidate_additional_criteria.json.
         gender_sig = find_ceo_gender_signal(proxy_text)

@@ -324,10 +324,49 @@ _INSTITUTIONAL_OWNER_MARKERS = re.compile(
     r"\bcapital research\b|\bcapital world investors\b|\bt\.?\s*rowe price\b|"
     r"\bwellington management\b|\bcapital group\b|\bgeode capital\b|\bnorges bank\b",
     re.IGNORECASE)
+# A "<Surname> Family Trust" is common personal estate-planning boilerplate for
+# ANY director or executive, not just a founding/controlling family -- found as a
+# real false positive: Veeva's "The Cabral Family Trust", a mere 5,500 shares (well
+# under 1%) belonging to an ordinary independent director, sitting in the same
+# beneficial-ownership table as, and within reach of, that table's own "* Less than
+# 1%." legend. Rejected when that legend -- or an explicit sub-3% figure -- appears
+# in the match window; a genuine controlling family's stake is always a large,
+# clearly-stated percentage (Murdoch: 40.7%; and the like).
+_SMALL_STAKE_MARKER = re.compile(r"less\s+than\s+1\s*%|<\s*1\s*%", re.IGNORECASE)
+_PCT_NUMBER = re.compile(r"(\d{1,2}(?:\.\d+)?)\s*%")
+# The above catches a small stake NEXT to an explicit percentage, but most personal-
+# trust footnotes never state one at all -- they just report a share count (Veeva's
+# neighbor was luck: KLAC's "the Kennedy Family Trust u/a/d 11/19/98, of which
+# Mr. Kennedy is a trustee and beneficiary" and Arista's "Mr. Giancarlo as trustee of
+# the Giancarlo Family Trust UAD 11/02/98" have no percentage nearby at all, only a
+# raw share count in the low hundred-thousands or less -- vs. a genuine controlling
+# family's stake, which is either a stated large percentage (A.O. Smith: 96.96%) or
+# qualitative narrative language ("our founding Sands family", "majority of the
+# voting power"). "trustee" plus a personal-trust dating convention ("u/a/d"/"UAD"/
+# "dated <date>", both meaning "under agreement dated") is the reliable marker of an
+# ordinary individual's own estate-planning vehicle -- checked only as a targeted
+# override, so it can't reject a genuine case that happens to also mention a trustee.
+_TRUST_DATING = r"u[./]?a[./]?d[./]?|dated\s+\w+\s+\d{1,2}|revocable\s+trust"
+_PERSONAL_TRUST_MARKER = re.compile(
+    r"\btrustees?\b.{0,120}?(?:" + _TRUST_DATING + r")|"
+    r"(?:" + _TRUST_DATING + r").{0,120}?\btrustees?\b", re.IGNORECASE)
+_CONTROLLING_LANGUAGE = re.compile(
+    r"founding|controlled compan|majority of (?:the )?(?:outstanding )?voting power|"
+    r"significant (?:share )?ownership|voting trust|\bcontrols?\b", re.IGNORECASE)
 
 
 def find_founder_led(text, company_name):
-    """Identifies the current CEO and current Executive Chair (if any) by
+    """Returns (evidence_or_None, identified_officer_names). identified_officer_names
+    is the list of full names this call was able to independently pin down as the
+    registrant's own current CEO and/or Executive Chair (via title-adjacency) --
+    empty if neither could be identified at all. This distinction lets a caller tell
+    apart three real outcomes: evidence found (True); officer(s) identified but no
+    founder claim tied to their name anywhere nearby (a real, sourced False -- SEC
+    proxies extensively narrate executive backgrounds, so a documented CEO/Chair with
+    no founder language near their name is genuine negative evidence, not silence);
+    and no officer identified at all (honest None -- nothing to check against).
+
+    Identifies the current CEO and current Executive Chair (if any) by
     name via title-adjacency, then checks ONLY the neighborhood of each
     identified officer's own name for founder language. Anchoring to a
     specific, independently-identified officer -- rather than scanning the
@@ -366,8 +405,32 @@ def find_founder_led(text, company_name):
     for full_name, surname in candidates:
         hit = _officer_founder_evidence(text, text_lower, surname, full_name, company_key)
         if hit:
-            return f"{full_name}: {hit}"
-    return None
+            return f"{full_name}: {hit}", [c[0] for c in candidates]
+    return None, [c[0] for c in candidates]
+
+
+def resolve_founder_led_field(text, company_name, proxy_url, filing_date):
+    """Turns find_founder_led()'s (evidence, identified_officers) result into a
+    full field() dict via the True/False/None trichotomy documented there --
+    False is written (not just left None) whenever the registrant's own CEO/
+    Executive Chair was independently identified by name but no founder claim
+    was found tied to them, since that's real negative evidence given how
+    extensively DEF 14A proxies narrate executive backgrounds."""
+    hit, identified = find_founder_led(text, company_name)
+    if hit:
+        return field(True, f"DEF 14A officer/director bios, filed {filing_date}", proxy_url, "Low",
+                     f"Name-anchored regex match on the registrant's own identified CEO/Executive Chair "
+                     f"having founder language tied to their name: '{hit.strip()[:300]}'. Not a manual "
+                     f"bio read -- verify.")
+    if identified:
+        who = "; ".join(identified)
+        return field(False, f"DEF 14A officer/director bios, filed {filing_date}", proxy_url, "Low",
+                      f"Identified the registrant's own current CEO/Executive Chair ({who}) but found no "
+                      f"founder claim tied to their name anywhere in the proxy text -- SEC proxies "
+                      f"extensively narrate executive backgrounds, so this is treated as real negative "
+                      f"evidence, not just an absence of a match. Not a manual bio read -- verify.")
+    return none_field("Could not identify the registrant's own current CEO/Executive Chair by name in "
+                       "the proxy text scan, so no founder claim could be checked either way")
 
 
 def _company_key(company_name):
@@ -639,20 +702,79 @@ def _company_object_matches(obj, company_key):
     return False
 
 
+_BENEFICIAL_OWNERSHIP_SECTION = re.compile(
+    r"security ownership of (?:certain )?beneficial owners|"
+    r"beneficial ownership (?:of|table)|"
+    r"5%\s+(?:or\s+greater\s+)?(?:stockholders|shareholders|owners)|"
+    r"principal (?:stockholders|shareholders)",
+    re.IGNORECASE)
+
+
 def find_family_owned(text):
-    """Requires the '<Name> family' mention to sit near real ownership
+    """Returns ((name, window)_or_None, has_ownership_section). Regulation S-K
+    Item 403 mandatorily requires every DEF 14A to disclose every 5%-or-greater
+    beneficial owner by name -- so when that section is present in the text and
+    no '<Name> family' + ownership-context match was found, that's real, sourced
+    negative evidence (no disclosed owner is described as a controlling family),
+    not just an absence of a match. has_ownership_section lets a caller
+    distinguish that from a genuine "couldn't verify" (the section wasn't found
+    in the scanned text at all -- e.g. a fetch/parsing gap).
+
+    Requires the '<Name> family' mention to sit near real ownership
     language (beneficial ownership, voting power, trust, %) and rejects two
     confirmed false-positive classes: corporate brand phrasing like 'the X
     family of companies/brands/products', and a large asset manager's own
     controlling family appearing in a Schedule 13D/G beneficial-ownership
     footnote about the *reporting institution*, not the registrant (see
     _INSTITUTIONAL_OWNER_MARKERS)."""
-    for m in re.finditer(r"the ([A-Z][a-z]+) family\b", text):
+    has_ownership_section = bool(_BENEFICIAL_OWNERSHIP_SECTION.search(text))
+    # "family" is matched case-insensitively (but the surname itself still requires
+    # real capitalization) because a formal trust name capitalizes it as a proper
+    # noun -- "the Murdoch Family Trust" -- which a lowercase-only "family" missed
+    # entirely (News Corp: a real, unambiguous 40.7%-of-Class-B-stock family trust).
+    for m in re.finditer(r"[Tt]he ([A-Z][a-z]+) [Ff]amily\b", text):
+        # "immediate family (members)" is generic related-party-transaction/
+        # compensation boilerplate ("executive officers, directors, ... and their
+        # immediate family members"), not a surname -- "Immediate" only fits the
+        # capture group because it's mid-sentence-capitalized like a real name would
+        # be (Builders FirstSource: a real false positive with no company at all).
+        if m.group(1).lower() in ("immediate", "same", "entire", "extended", "such"):
+            continue
         after = text[m.end():m.end() + 30]
         if _FAMILY_BRAND_PHRASE.match(after):
             continue
         window = text[max(0, m.start() - 250):m.end() + 250]
         if not _OWNERSHIP_CONTEXT.search(window):
+            continue
+        if _SMALL_STAKE_MARKER.search(window):
+            continue
+        pct_values = [float(p) for p in _PCT_NUMBER.findall(window)]
+        if pct_values and max(pct_values) < 3:
+            continue
+        has_controlling_or_large_pct = bool(_CONTROLLING_LANGUAGE.search(window)) or bool(pct_values and max(pct_values) >= 3)
+        if _PERSONAL_TRUST_MARKER.search(window) and not has_controlling_or_large_pct:
+            continue
+        # Most personal-trust footnotes never state a percentage at all -- just a raw
+        # share count (Reddit: "162,828 shares ... held by the Slowe Family Trust";
+        # Teledyne: "18,735 shares held by the Dahlberg Family Trust" -- neither
+        # mentions "trustee" so the check above never even triggers). A genuine
+        # controlling family's share count is either in the millions (A.O. Smith's
+        # Smith Family Voting Trust: 25,077,373) or the mention is narrative with no
+        # specific count at all (Constellation Brands: "our founding Sands family").
+        # So: only reject when a share-count number IS present nearby and its largest
+        # value is small -- absence of any number stays permissive (narrative-only
+        # cases have nothing to check here). Scoped to a TIGHT window right around
+        # this specific match, not the wide ±250 one -- a beneficial-ownership table
+        # is a run of adjacent per-person footnotes, and the wide window can pick up
+        # a much larger number that belongs to someone else's entry entirely (Cadence
+        # Design Systems: Dr. Plummer's own small "23,996 shares" trust wrongly kept
+        # its True verdict because an unrelated "(10) Includes 710,412 shares which
+        # all current executive officers and directors in the aggregate..." sentence
+        # -- a different footnote about a different, much larger, unrelated total --
+        # sat within the wide window too).
+        tight_window = text[max(0, m.start() - 100):m.end() + 60]
+        share_counts = [int(s.replace(",", "")) for s in re.findall(r"\b(\d{1,3}(?:,\d{3})+)\b", tight_window)]
+        if share_counts and max(share_counts) < 500_000 and not has_controlling_or_large_pct:
             continue
         # The institutional-owner check uses a deliberately tighter window (160 vs.
         # 250 chars each side) than the ownership-context check above: a large
@@ -670,8 +792,32 @@ def find_family_owned(text):
         # naive period-scan sees as two sentences).
         if _INSTITUTIONAL_OWNER_MARKERS.search(text[max(0, m.start() - 160):m.end() + 160]):
             continue
-        return m.group(0), window
-    return None
+        return (m.group(0), window), has_ownership_section
+    return None, has_ownership_section
+
+
+def resolve_family_owned_field(text, proxy_url, filing_date):
+    """Turns find_family_owned()'s (hit, has_ownership_section) result into a
+    full field() dict. False is written (not just left None) whenever the
+    proxy's mandatory Item 403 beneficial-ownership section was found and
+    scanned but no family-ownership pattern was found among the disclosed
+    5%-or-greater owners -- that's real negative evidence, since every such
+    owner must be named."""
+    hit, has_section = find_family_owned(text)
+    if hit:
+        name, window = hit
+        return field(True, f"DEF 14A beneficial ownership section, filed {filing_date}", proxy_url, "Low",
+                     f"Text mentions '{name}' near ownership/voting-power language, not near a large "
+                     f"asset manager marker; percentage not automatically extracted -- verify manually. "
+                     f"Context: \"...{window.strip()[:200]}...\"")
+    if has_section:
+        return field(False, f"DEF 14A beneficial ownership section, filed {filing_date}", proxy_url, "Low",
+                      "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and "
+                      "scanned, but no '<Name> family' + ownership-context pattern was found among the "
+                      "disclosed 5%-or-greater owners (excluding large asset managers). Not a manual "
+                      "read -- verify.")
+    return none_field("Could not locate a beneficial-ownership disclosure section in the proxy text "
+                       "scan, so family ownership could not be checked either way")
 
 
 # Q21 countries of concern -- deliberately narrow to OFAC's comprehensively-
@@ -751,7 +897,8 @@ _CEO_NAME_STOPWORDS = {
 }
 _EXEC_CHAIR_NAME_TITLE = re.compile(
     r"\b([A-Z][" + _NAME_CHARS + r".-]+(?:\s+[A-Z]\.?)?\s+[A-Z][" + _NAME_CHARS + r"-]+)\s*,?\s+"
-    r"(?:(?:our |the Company's )?(?:President(?:\s+and\s+|,\s*))?Executive\s+Chair(?:man|woman)?\b)")
+    r"(?:\d{1,4}\s+)?(?:(?:Co-)?Founder(?:,\s*|\s+and\s+))?"
+    r"(?:(?:our |the Company's )?(?:President(?:,?\s+and\s+|,\s*))?Executive\s+Chair(?:man|woman)?\b)")
 # Used only by find_founder_led, not find_ceo_gender_signal -- a superset of
 # _CEO_NAME_TITLE that also accepts "Founder," inline within the title cluster
 # ("Mark Zuckerberg, Founder, Chairman, and Chief Executive Officer") and an
