@@ -301,60 +301,234 @@ def find_pay_ratio(text):
 
 _COMPANY_SUFFIX = re.compile(
     r"\b(inc|llc|corp|ltd|holdings|plc|lp|company|co|advisors?|partners?|"
-    r"capital|ventures?|associates|management|group)\.?(?![a-z])")
+    r"capital|ventures?|associates|management|group|therapeutics|systems|"
+    r"health|technologies|global|labs?|studio|studios|strategies|ai)\.?(?![a-z])")
 _DATE_RANGE_PAREN = re.compile(r"^\s*\(\d{4}[\s\-–—]")  # e.g. "(2022-september 2024)" = a past role elsewhere
-_PAST_TENSE = re.compile(r"previously served|no longer serves|from \d{4} to|from \w+ \d{4} to|until \d{4}|\bformer\b|\bretired\b")
+_PAST_TENSE = re.compile(r"previously served|no longer serves|from \d{4} to|from \w+ \d{4} to|until \d{4}|\bformer\b|\bretired\b|transitioned from")
 _POSSESSIVE_PRECEDER = re.compile(r"([a-z]+)[’']s\s*$")
 _SELF_REFERENCE_WORDS = {"company", "our", "registrant"}
 _GENERIC_CRITERIA_PRECEDER = re.compile(
     r"(served as a|such as a|including a|including the|who have|criteria include)\s*$")
 _FAMILY_BRAND_PHRASE = re.compile(r"^\s*of\s+(companies|brands|products|funds|restaurants|stores)\b", re.IGNORECASE)
 _OWNERSHIP_CONTEXT = re.compile(r"beneficial(?:ly)?\s+own|voting power|\btrust\b|\bshares\b|%\s|percent", re.IGNORECASE)
+# A "<Name> family" mention near ownership language is at least as likely to be a large
+# asset manager's own controlling family showing up in a Schedule 13D/G beneficial-
+# ownership footnote (an SEC-mandated disclosure of who controls the *reporting*
+# institution, not the registrant) as it is the registrant's own founding family --
+# confirmed as a real false positive: "the Johnson family" (Abigail P. Johnson, FMR
+# LLC/Fidelity's chairman and CEO) showing up as a beneficial-ownership footnote for
+# three unrelated semiconductor companies (LITE, NXPI, ON) that Fidelity funds simply
+# hold a large index/institutional position in.
+_INSTITUTIONAL_OWNER_MARKERS = re.compile(
+    r"\bfmr\b|\bfidelity\b|\bblackrock\b|\bvanguard\b|\bstate street\b|"
+    r"\bcapital research\b|\bcapital world investors\b|\bt\.?\s*rowe price\b|"
+    r"\bwellington management\b|\bcapital group\b|\bgeode capital\b|\bnorges bank\b",
+    re.IGNORECASE)
 
 
-def find_founder_led(text_lower):
-    """Only counts a 'founder ... CEO/Executive Chairman' hit if: it isn't
-    immediately followed by a different, named company (a classic false
-    positive from director bios listing OTHER companies they founded); the
-    matched span doesn't contain a second 'founder' mention (a sign this is
-    a multi-person table/list where the founder and CEO titles belong to two
-    different people, not one bio); and it isn't preceded by generic board-
-    selection-criteria language ('directors who have served as a founder,
-    CEO...') rather than an actual person's bio. This is still a flattened-
-    text regex heuristic, not a structured read of the filing -- treat hits
-    as Low confidence and spot-check before trusting."""
-    for m in re.finditer(r"(founder|co-founder)[^.]{0,120}?(chief executive officer|executive chairman)", text_lower):
-        span = text_lower[m.start():m.end()]
-        if span.count("founder") > 1:
-            continue
-        preceding = text_lower[max(0, m.start() - 30):m.start()]
-        if _GENERIC_CRITERIA_PRECEDER.search(preceding):
-            continue
-        poss = _POSSESSIVE_PRECEDER.search(preceding)
-        if poss and poss.group(1) not in _SELF_REFERENCE_WORDS:
-            continue
-        middle = span[len(m.group(1)):-len(m.group(2))]  # text between "founder" and the CEO/chairman title itself
-        if _COMPANY_SUFFIX.search(middle) or _PAST_TENSE.search(middle):
-            continue
-        trailing = text_lower[m.end():m.end() + 100]
-        if _COMPANY_SUFFIX.search(trailing) or _DATE_RANGE_PAREN.match(trailing) or _PAST_TENSE.search(trailing):
-            continue
-        return text_lower[max(0, m.start() - 40):m.end() + 60]
+def find_founder_led(text, company_name):
+    """Identifies the current CEO and current Executive Chair (if any) by
+    name via title-adjacency, then checks ONLY the neighborhood of each
+    identified officer's own name for founder language. Anchoring to a
+    specific, independently-identified officer -- rather than scanning the
+    whole document for any 'founder ... CEO' phrase -- is what avoids
+    matching an unrelated director's own bio blurb about a completely
+    different company they separately founded: a near-universal modern
+    'director skills highlights' bio pattern (e.g. Microsoft's board bio for
+    Jeff Weiner, LinkedIn's co-founder, sitting a few sentences from
+    Microsoft's actual CEO) that a whole-document scan has no way to tell
+    apart from a genuine claim about this company's own leadership -- found
+    producing false positives at scale (MSFT, GM, MCD, CVS, LLY, SO, CSX,
+    MDLZ, HSY, MA, WSM all matched some OTHER director's unrelated outside
+    venture, not the registrant's own founder-CEO/chair). Also recovers the
+    dominant phrasing this replaced: a verb-form founding bio ("Jen-Hsun
+    Huang founded NVIDIA in 1993 and has served since its inception as ...
+    Chief Executive Officer") that the original noun-only pattern
+    ("founder ... CEO") could never match at all. Still a flattened-text
+    regex heuristic, not a structured read of the filing -- treat hits as
+    Low confidence and spot-check before trusting."""
+    text_lower = text.lower()
+    company_key = _company_key(company_name)
+    candidates = []
+    ceo = _top_named_officer(text, _CEO_NAME_TITLE_FOUNDER_OK, company_key)
+    if ceo:
+        candidates.append(ceo)
+    chair = _top_named_officer(text, _EXEC_CHAIR_NAME_TITLE, company_key)
+    if chair and (not ceo or chair[1] != ceo[1]):
+        candidates.append(chair)
+    for full_name, surname in candidates:
+        hit = _officer_founder_evidence(text, text_lower, surname, company_key)
+        if hit:
+            return f"{full_name}: {hit}"
     return None
+
+
+def _company_key(company_name):
+    """First alphabetic-ish token of the registrant's own name (e.g. 'Oracle'
+    from 'Oracle Corporation', 'Meta' from 'Meta Platforms') -- used as a
+    lightweight same-company check on what a 'founded X' / 'founder of X'
+    claim is actually claiming to have founded."""
+    if not company_name:
+        return None
+    m = re.search(r"[A-Za-z0-9]+", company_name)
+    return m.group(0).lower() if m and len(m.group(0)) > 1 else None
+
+
+_TITLE_TRAILING_OF_COMPANY = re.compile(r"^\s*of\s+([A-Z][\w &,.''-]{2,60})")
+
+
+def _top_named_officer(text, title_regex, company_key=None):
+    """Finds the name most consistently paired with title_regex (a
+    _CEO_NAME_TITLE/_EXEC_CHAIR_NAME_TITLE-shaped pattern whose group(1) is
+    the person's full name), requiring it to clearly lead any second-place
+    name -- otherwise a single stray mention (an outside director's bio
+    quoting their OWN matching title at a different company) could win just
+    by appearing once. That "clearly leads" bar alone isn't enough, though:
+    a director-qualifications table can repeat the SAME outside director's
+    own "Chairman and CEO of <Other Company>" title 2+ times (once in a
+    summary highlights bullet, once in the full director table row) --
+    found producing a real false positive (CVS: "Guy P. Sansone Chairman
+    and CEO of H2 Health" won the frequency contest over CVS's actual CEO,
+    J. David Joyner, who's mentioned differently). A title match whose
+    trailing text is an explicit "of <Company>" naming something other than
+    the registrant itself is therefore excluded from counting at all."""
+    from collections import Counter
+    text = text.replace("\xa0", " ")
+    name_hits = Counter()
+    display = {}
+    for m in title_regex.finditer(text):
+        full_name = m.group(1).strip()
+        tokens = full_name.split()
+        if len(tokens) < 2:
+            continue
+        surname = tokens[-1].strip(".,’'")
+        first = tokens[0].strip(".,’'")
+        if surname.lower() in _CEO_NAME_STOPWORDS or first.lower() in _CEO_NAME_STOPWORDS:
+            continue
+        trailing_of = _TITLE_TRAILING_OF_COMPANY.match(text[m.end():m.end() + 65])
+        if trailing_of and not _company_object_matches(trailing_of.group(1), company_key):
+            continue
+        key = surname.lower()
+        name_hits[key] += 1
+        display.setdefault(key, full_name)
+    if not name_hits:
+        return None
+    top_two = name_hits.most_common(2)
+    top_key, top_count = top_two[0]
+    # A single occurrence is trusted here (unlike find_ceo_gender_signal's stricter
+    # >=2 bar) because the stopword list and the trailing-"of <Company>" exclusion
+    # above already filter out the two confirmed classes of noise match (document
+    # section headers like "Relationship Between CEO"; an outside director's own
+    # "Chairman and CEO of <Other Company>" title) -- and some real founder-CEOs
+    # (e.g. ABNB's Brian Chesky) genuinely appear in this exact name+title shape
+    # only once in the filing. Still requires a clear, non-tied lead over any
+    # second-place name, so an ambiguous document (two names each mentioned once)
+    # correctly falls back to "can't tell" rather than guessing.
+    if len(top_two) > 1 and top_two[1][1] >= top_count:
+        return None
+    return display[top_key], top_key
+
+
+_FOUNDER_VERB = re.compile(r"\b(?:co-)?founded\s+([^.]{0,60}?)(?=\s+in\s+\d{4}\b|[.,]|\s+and\b)", re.IGNORECASE)
+_FOUNDER_NOUN = re.compile(r"\b(?:co-)?founder\b(?:\s+of\s+([^.,]{0,60}))?", re.IGNORECASE)
+
+
+_CAPITALIZED_NAME_LIKE = re.compile(r"\b[A-Z][a-z]+\s+[A-Z][a-z]+\b")
+
+
+def _officer_founder_evidence(text, text_lower, surname, company_key):
+    """Looks for founder language ('founded X' / 'founder [of X]') within a
+    bullet/sentence-bounded window around each occurrence of a specific,
+    already-identified officer's surname. An object company (X) is accepted
+    as this registrant if it's empty/generic ('it', 'the Company', 'us') or
+    shares the registrant's own name token (company_key); otherwise -- a
+    different, explicitly named company -- it's rejected. When the founder
+    text sits BEFORE the surname in the window, the clause could belong to
+    a different person entirely (a run-on leadership-transition sentence:
+    "Mr. Smith previously transitioned to Founder and Executive Chairman
+    and Rajesh Subramaniam assumed the role of CEO" -- FDX's founder claim
+    is about Smith, not the current CEO Subramaniam, even though both names
+    share one sentence) -- rejected if another capitalized full name sits
+    between the founder text and this officer's own name."""
+    surname_pat = re.compile(r"\b" + re.escape(surname) + r"\b")
+    for m in surname_pat.finditer(text_lower):
+        window_start = max(0, m.start() - 80)
+        window_end = min(len(text_lower), m.end() + 300)
+        boundary = text_lower.rfind(".", window_start, m.start())
+        if boundary >= 0:
+            window_start = boundary + 1
+        stop_positions = [p for p in (text_lower.find(c, m.end(), window_end) for c in (".", "•", "●")) if p >= 0]
+        if stop_positions:
+            window_end = min(stop_positions) + 1
+        window = text_lower[window_start:window_end]
+        if _PAST_TENSE.search(window):
+            continue
+        surname_rel_start = m.start() - window_start
+        surname_rel_end = m.end() - window_start
+        for pat in (_FOUNDER_VERB, _FOUNDER_NOUN):
+            fm = pat.search(window)
+            if not fm:
+                continue
+            obj = (fm.group(1) or "").strip()
+            if obj and not _company_object_matches(obj, company_key):
+                continue
+            if fm.start() < surname_rel_start:
+                between = text[window_start + fm.end():window_start + surname_rel_start]
+                if _CAPITALIZED_NAME_LIKE.search(between):
+                    continue
+            elif fm.start() >= surname_rel_end:
+                between = text[window_start + surname_rel_end:window_start + fm.start()]
+                if _CAPITALIZED_NAME_LIKE.search(between):
+                    continue
+            return text[max(0, window_start):window_end].strip()
+    return None
+
+
+def _company_object_matches(obj, company_key):
+    """True if a 'founded X' / 'founder of X' object plausibly refers to
+    the registrant itself: a generic self-reference ('it', 'the Company',
+    'us', 'our company'), or the registrant's own name token appears in it.
+    False (a different, named company) otherwise."""
+    obj = obj.strip().rstrip(",")
+    if not obj or obj in ("it", "us", "the company", "our company", "the registrant"):
+        return True
+    if company_key and company_key in obj.lower():
+        return True
+    return False
 
 
 def find_family_owned(text):
     """Requires the '<Name> family' mention to sit near real ownership
-    language (beneficial ownership, voting power, trust, %) and rejects the
-    common false positive of corporate brand phrasing like 'the X family of
-    companies/brands/products'."""
+    language (beneficial ownership, voting power, trust, %) and rejects two
+    confirmed false-positive classes: corporate brand phrasing like 'the X
+    family of companies/brands/products', and a large asset manager's own
+    controlling family appearing in a Schedule 13D/G beneficial-ownership
+    footnote about the *reporting institution*, not the registrant (see
+    _INSTITUTIONAL_OWNER_MARKERS)."""
     for m in re.finditer(r"the ([A-Z][a-z]+) family\b", text):
         after = text[m.end():m.end() + 30]
         if _FAMILY_BRAND_PHRASE.match(after):
             continue
         window = text[max(0, m.start() - 250):m.end() + 250]
-        if _OWNERSHIP_CONTEXT.search(window):
-            return m.group(0), window
+        if not _OWNERSHIP_CONTEXT.search(window):
+            continue
+        # The institutional-owner check uses a deliberately tighter window (160 vs.
+        # 250 chars each side) than the ownership-context check above: a large
+        # beneficial-ownership table's shared footnotes often mention Vanguard/
+        # BlackRock/etc. nearby for an unrelated reason (a standard "percent of
+        # class after removing double-counted shares" disclaimer covering ALL
+        # reported holders), which a too-wide window wrongly blames on a genuine,
+        # unrelated family mention elsewhere in the same table (found regressing
+        # Marriott: MAR's real controlling family sitting ~240 chars from a
+        # table-wide Vanguard/BlackRock disclaimer). A strict single-sentence bound
+        # is too tight the other way -- "P." in "Abigail P. Johnson" reads as a
+        # sentence end, truncating the real Fidelity/FMR sentence early (LITE/NXPI's
+        # "members of the Johnson family ... form a controlling group with respect
+        # to FMR" sits ~130 chars after the family mention, split across what a
+        # naive period-scan sees as two sentences).
+        if _INSTITUTIONAL_OWNER_MARKERS.search(text[max(0, m.start() - 160):m.end() + 160]):
+            continue
+        return m.group(0), window
     return None
 
 
@@ -427,8 +601,27 @@ _CEO_NAME_STOPWORDS = {
     "current", "acting", "outgoing", "incoming", "neo", "neos", "ceo", "cfo",
     "coo", "evp", "svp", "chief", "vice", "senior", "salary", "paid", "total",
     "director", "directors", "non-executive", "nonexecutive", "nominee",
-    "nominees", "independent", "lead", "trustee",
+    "nominees", "independent", "lead", "trustee", "qualification", "qualifications",
+    "highlights", "summary", "biography", "experience", "skills", "matrix",
+    "relationship", "between", "average", "chart", "showing", "graphical",
+    "versus", "comparison", "annual", "median", "report", "section", "table",
+    "figure", "notice", "meeting", "statement", "mr", "ms", "mrs", "dr",
 }
+_EXEC_CHAIR_NAME_TITLE = re.compile(
+    r"\b([A-Z][" + _NAME_CHARS + r".-]+(?:\s+[A-Z]\.?)?\s+[A-Z][" + _NAME_CHARS + r"-]+)\s*,?\s+"
+    r"(?:(?:our |the Company's )?(?:President(?:\s+and\s+|,\s*))?Executive\s+Chair(?:man|woman)?\b)")
+# Used only by find_founder_led, not find_ceo_gender_signal -- a superset of
+# _CEO_NAME_TITLE that also accepts "Founder," inline within the title cluster
+# ("Mark Zuckerberg, Founder, Chairman, and Chief Executive Officer") and an
+# optional "director since" year some proxy tables insert between name and title
+# ("Mark Zuckerberg 2004 Founder, Chairman, and Chief Executive Officer, Meta").
+# Deliberately not merged into the shared _CEO_NAME_TITLE to avoid touching the
+# already-validated women_led CEO-identification logic.
+_CEO_NAME_TITLE_FOUNDER_OK = re.compile(
+    r"\b([A-Z][" + _NAME_CHARS + r".-]+(?:\s+[A-Z]\.?)?\s+[A-Z][" + _NAME_CHARS + r"-]+)\s*,?\s+"
+    r"(?:\d{1,4}\s+)?(?:(?:Co-)?Founder(?:,\s*|\s+and\s+))?"
+    r"(?:(?:our |the Company's )?(?:Chair(?:man|woman)?(?:\s+of\s+the\s+Board(?:\s+of\s+Directors)?)?(?:,?\s+and\s+|\s*&\s*|,\s*)|President(?:,?\s+and\s+|\s*&\s*|,\s*))*"
+    r"(?:Chief Executive Officer|CEO)\b)")
 
 
 def find_ceo_gender_signal(text):

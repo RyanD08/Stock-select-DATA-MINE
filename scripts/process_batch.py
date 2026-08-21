@@ -187,12 +187,12 @@ def process_company(rec):
         rec["shareholder_rights_voting_structure"] = field(
             "dual_class" if dual else "single_class",
             f"DEF 14A share class disclosure, filed {proxy['filing_date']}", purl, "Medium" if dual else "Low")
-        founder_hit = find_founder_led(low_p)
+        founder_hit = find_founder_led(proxy_text, rec.get("company_name"))
         if founder_hit:
             rec["founder_led"] = field(True, f"DEF 14A officer/director bios, filed {proxy['filing_date']}", purl, "Low",
-                                        f"Regex match on 'founder ... CEO/Executive Chairman' not immediately followed by a different named company: '{founder_hit.strip()}'. Not a manual bio read -- verify.")
+                                        f"Name-anchored regex match on the registrant's own identified CEO/Executive Chair having founder language tied to their name: '{founder_hit.strip()[:300]}'. Not a manual bio read -- verify.")
         else:
-            rec["founder_led"] = none_field("No founder+CEO/Chairman pattern (of this company, specifically) found in proxy text scan")
+            rec["founder_led"] = none_field("No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan")
         family_hit = find_family_owned(proxy_text)
         if family_hit:
             name, window = family_hit
