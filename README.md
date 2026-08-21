@@ -93,12 +93,26 @@ auto-selects the next `processing_status: "pending"` companies.
 ## Sources actually used
 
 Per the approved source list (see founding prompt / background doc), with
-what actually worked from this environment as of 2026-08-20. FEC and FTC
+what actually worked from this environment as of 2026-08-21. FEC and FTC
 integration (added 2026-08-20) raised Q20 political-donation-transparency
 coverage from 253/503 (50.3%, all Medium confidence) to 323/503 (64.2%,
 200 of those now High confidence), and gave 15/503 companies a real,
 name-matched FTC enforcement-action record for Q11 (upgraded to Medium
-confidence) on top of the existing SEC-full-text-search baseline:
+confidence) on top of the existing SEC-full-text-search baseline. Q21
+(countries of concern) and Q22 (data privacy) -- both previously stubbed
+to None because their originally-proposed sources (XBRL Frames dimensional
+data; SEC Litigation Releases via efts.sec.gov) turned out not to work as
+described -- were implemented 2026-08-21 on working substitutes: Q21 went
+from 0% to 501/503 (99.6%), 82 companies with a country flagged (a 10-K
+text scan for an OFAC-comprehensively-sanctioned country name near real
+operational-presence language, plus SEC Section 13(r) of the Exchange
+Act, a purpose-built mandatory Iran/Syria-dealings disclosure item); Q22
+went from 0% to 493/503 (98.0%), 13 companies with a genuine disclosed
+incident (8-K Item 1.05, the SEC's post-December-2023 material-
+cybersecurity-incident disclosure rule, scoped to each company's own
+CIK and filtered on EDGAR's structured item-code field after an initial
+pass caught two false positives from unstructured text matching --
+including one filing dated 2005, two decades before Item 1.05 existed):
 
 | Source | Status | Used for |
 |---|---|---|
@@ -165,10 +179,13 @@ and a quoted evidence snippet in `notes` for spot-checking.
   Q24) are regex text scans of the latest DEF 14A -- real, sourced hits when
   found, but recall is imperfect; a `None` here often just means the
   disclosure used unanticipated phrasing, not that no disclosure exists.
-- Country-of-operations (Q21) and SEC-Litigation-Release-based data privacy
-  enforcement (Q22) are stubbed to `None` -- flagged in
-  `logs/suggested_sources.md` as good next tasks (the XBRL Frames API is
-  already-approved and reachable, just not yet implemented).
+- Country-of-operations (Q21) and cybersecurity-incident-based data privacy
+  (Q22) are now implemented (see `## Sources actually used` above for
+  coverage numbers) -- both are text/full-text-search-based signals with
+  their own caveats: Q21's country list is deliberately narrow (OFAC's
+  comprehensively-sanctioned jurisdictions only, not broader geopolitical
+  concern like China), and Q22 only covers incidents from December 2023
+  onward (when the SEC's Item 1.05 disclosure rule took effect).
 - Companies whose current SEC CIK has no 10-K/DEF 14A filing history
   (typically a very recent holding-company reorganization, e.g. an `8-K12B`
   successor-registrant event) are flagged via
