@@ -2102,12 +2102,14 @@
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-03-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4977/000162828026019621/afl-20260319.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 396.0,
@@ -2608,12 +2610,14 @@
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2025-12-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2969/000130817925000643/apd-20251210.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 171.0,
@@ -4881,12 +4885,14 @@
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": {
+        "pct_independent_directors": 70
+      },
+      "source": "DEF 14A, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 35,
@@ -5128,12 +5134,14 @@
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": {
+        "pct_independent_directors": 70
+      },
+      "source": "DEF 14A, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 35,
@@ -6389,12 +6397,14 @@
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2026-03-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4904/000000490426000022/aep-20260318.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 261.0,
@@ -8143,12 +8153,14 @@
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/318154/000119312526145588/d13946ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 160.0,
@@ -12681,12 +12693,14 @@
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-05-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000030/adsk-20260429.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 203.5,
@@ -14948,12 +14962,14 @@
       "last_updated": "2026-08-19"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2025-12-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/10795/000162828025057846/bdx-20251217.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 374.0,
@@ -16719,12 +16735,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026027203/sq-20260423.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 1e-05,
@@ -17731,12 +17749,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 90
+      },
+      "source": "DEF 14A, filed 2026-03-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/885725/000088572526000025/bsx-20260318.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 348.0,
@@ -19488,12 +19508,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 92
+      },
+      "source": "DEF 14A, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1996862/000162828026024588/bg-20260410.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 252.0,
@@ -19735,12 +19757,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 82
+      },
+      "source": "DEF 14A, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000010/bxp-20260410.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 164.5,
@@ -20739,12 +20763,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-03-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/927628/000119312526124131/d701179ddef14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 526.0,
@@ -23253,12 +23279,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 70
+      },
+      "source": "DEF 14A, filed 2026-01-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1140859/000162828026003061/cor-20260122.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 198.0,
@@ -23761,12 +23789,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-03-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1130310/000110465926023457/tm261341-3_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 93.0,
@@ -24012,12 +24042,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-03-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465926029482/tm261459-1_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 88.0,
@@ -25287,12 +25319,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-04-28",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1058090/000114036126017294/ny20063214x1_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 886,
@@ -26291,12 +26325,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-03-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000023/ci-20260312.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 310,
@@ -26795,12 +26831,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2025-09-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/723254/000072325425000025/ctas-20250915.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 125.0,
@@ -28054,12 +28092,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 95
+      },
+      "source": "DEF 14A, filed 2026-03-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1156375/000162828026020500/cme-20260323.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 140.0,
@@ -33352,12 +33392,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 89
+      },
+      "source": "DEF 14A, filed 2026-05-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1535527/000110465926055599/tm2532333-4_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 1391,
@@ -35372,12 +35414,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 89
+      },
+      "source": "DEF 14A, filed 2026-04-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000053/dva-20260422.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 254.0,
@@ -39904,12 +39948,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": {
+        "pct_independent_directors": 100
+      },
+      "source": "DEF 14A, filed 2026-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926032443/tm261356-4_def14a.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "ceo_pay_ratio": {
       "value": 106.0,
