@@ -357,7 +357,7 @@ def find_founder_led(text, company_name):
     if chair and (not ceo or chair[1] != ceo[1]):
         candidates.append(chair)
     for full_name, surname in candidates:
-        hit = _officer_founder_evidence(text, text_lower, surname, company_key)
+        hit = _officer_founder_evidence(text, text_lower, surname, full_name, company_key)
         if hit:
             return f"{full_name}: {hit}"
     return None
@@ -430,13 +430,108 @@ def _top_named_officer(text, title_regex, company_key=None):
 
 
 _FOUNDER_VERB = re.compile(r"\b(?:co-)?founded\s+([^.]{0,60}?)(?=\s+in\s+\d{4}\b|[.,]|\s+and\b)", re.IGNORECASE)
-_FOUNDER_NOUN = re.compile(r"\b(?:co-)?founder\b(?:\s+of\s+([^.,]{0,60}))?", re.IGNORECASE)
+# The object clause (X in "founder of X") isn't always adjacent to "founder" -- a
+# title cluster can sit between them ("founder AND CHAIRMAN of X", "Founder and Board
+# Chair of X"), which the original of-X-only capture missed entirely, silently
+# treating the whole thing as a bare/generic founder claim with no object to check
+# (found producing false positives: Intel's Lip-Bu Tan is "the founder and Chairman
+# of Walden International" -- a VC firm he separately runs, not Intel; NRG's Lawrence
+# Coben is "Founder and Board Chair of the ESCALA Initiative", an NGO). "Founder SPAC"
+# is excluded outright: a real special-purpose-acquisition-company name that happens
+# to start with the word "Founder" as its brand, not a role description (Ciena).
+_FOUNDER_NOUN = re.compile(
+    r"\b(?:co-)?founder\b(?!\s+spac\b)"
+    # NOTE: each "of X" branch below is mandatory WITHIN its own alternative
+    # (not a separately-optional trailing group) so the lazy title-text
+    # quantifier is forced to backtrack/expand until it actually finds "of" --
+    # otherwise (a bare trailing `(?:\s+of\s+(...))?` after a lazy quantifier)
+    # the engine is free to stop at zero title characters and skip the "of X"
+    # match entirely, since the whole thing being optional gives it no reason
+    # to keep looking. Found silently swallowing the object clause in "is
+    # also the founder and chairman of an international venture capital
+    # firm" (Intel's Lip-Bu Tan's OWN separate VC firm, not Intel) and "Founder
+    # and Board Chair of the ESCALA Initiative" (NRG's Lawrence Coben's
+    # separate NGO) -- both left group(1)/(2) empty, so the different-company
+    # object was never checked against the registrant's own name at all.
+    r"(?:\s+of\s+([^.,]{0,60})"
+    r"|\s+and\s+[a-z][a-z ]{0,30}?\s+of\s+([^.,]{0,60})"
+    r")?",
+    re.IGNORECASE)
 
 
 _CAPITALIZED_NAME_LIKE = re.compile(r"\b[A-Z][a-z]+\s+[A-Z][a-z]+\b")
+_ADJACENT_APPOSITIVE = re.compile(
+    r",\s*(?:Mr\.?|Ms\.?|Mrs\.?|Dr\.?)?\s*([A-Z][a-zA-Z.'\-]*(?:\s+[A-Z][a-zA-Z.'\-]*){0,2})")
 
 
-def _officer_founder_evidence(text, text_lower, surname, company_key):
+def _appositive_name_conflicts(adjacent_text, full_name, company_key):
+    """True if a comma-set-off name sits right next to the founder keyword
+    (an appositive: 'our founder, Mr. Luddy' / 'Wayne Rollins, the founder')
+    and it names someone OTHER than the officer this evidence search is
+    anchored to -- catches two real cases a same-sentence guard alone
+    doesn't: ServiceNow's 'Mr. McDermott, our founder, Mr. Luddy, and Mr.
+    Yuan' (the founder appositive attaches to Luddy, not McDermott, even
+    though McDermott's own name sits right before it in the same clause);
+    and Rollins' 'Wayne Rollins, the founder of Rollins, Inc.' next to
+    current CEO Gary W. Rollins -- same surname, so a surname-only check
+    can't tell them apart, but the first names differ. A capitalized,
+    comma-set-off phrase isn't always a person's name, though -- a title
+    cluster ("Chair, Chief Executive Officer & co-founder") or the
+    registrant's own company name ("co-founder, Salesforce") match the same
+    shape (capitalized words after a comma) without naming anyone at all;
+    those are filtered out via _CEO_NAME_STOPWORDS and company_key rather
+    than treated as a conflicting person."""
+    m = _ADJACENT_APPOSITIVE.search(adjacent_text)
+    if not m:
+        return False
+    cand = [t.strip(".,") for t in m.group(1).split() if t.strip(".,")]
+    if any(t.lower() in _CEO_NAME_STOPWORDS for t in cand):
+        return False
+    if company_key and company_key in " ".join(cand).lower():
+        return False
+    officer = [t.strip(".,’'") for t in full_name.replace("’", "'").split() if t.strip(".,’'")]
+    if not cand or not officer:
+        return False
+    if cand[-1].lower() != officer[-1].lower():
+        return True
+    if len(cand) > 1 and cand[0].lower() != officer[0].lower():
+        return True
+    return False
+
+
+_ABBREV_BEFORE_PERIOD = re.compile(r"\b(?:mr|ms|mrs|dr|jr|sr|st|inc|corp|co|ltd|no|vs|etc|[a-z])\.$", re.IGNORECASE)
+
+
+def _real_period_before(text_lower, start, end):
+    """Like text_lower.rfind('.', start, end), but skips a period that's
+    actually part of an abbreviation ('Mr.', 'J.', 'Inc.') rather than a
+    real sentence end -- otherwise "our founder, Mr. Luddy" reads as
+    ending right after "Mr.", truncating the window before the name it's
+    actually about even appears (see _officer_founder_evidence)."""
+    pos = end
+    while True:
+        pos = text_lower.rfind(".", start, pos)
+        if pos < 0:
+            return -1
+        if _ABBREV_BEFORE_PERIOD.search(text_lower[max(0, pos - 4):pos + 1]):
+            continue
+        return pos
+
+
+def _real_period_after(text_lower, start, end):
+    """Forward-searching counterpart to _real_period_before."""
+    pos = start
+    while True:
+        pos = text_lower.find(".", pos, end)
+        if pos < 0:
+            return -1
+        if _ABBREV_BEFORE_PERIOD.search(text_lower[max(0, pos - 4):pos + 1]):
+            pos += 1
+            continue
+        return pos
+
+
+def _officer_founder_evidence(text, text_lower, surname, full_name, company_key):
     """Looks for founder language ('founded X' / 'founder [of X]') within a
     bullet/sentence-bounded window around each occurrence of a specific,
     already-identified officer's surname. An object company (X) is accepted
@@ -449,15 +544,37 @@ def _officer_founder_evidence(text, text_lower, surname, company_key):
     and Rajesh Subramaniam assumed the role of CEO" -- FDX's founder claim
     is about Smith, not the current CEO Subramaniam, even though both names
     share one sentence) -- rejected if another capitalized full name sits
-    between the founder text and this officer's own name."""
+    between the founder text and this officer's own name. A tighter check
+    right at the founder keyword itself (see _appositive_name_conflicts)
+    catches the comma-appositive variant of the same problem, where the
+    other name sits immediately next to "founder" rather than between it
+    and the officer's name."""
+    officer_first = full_name.split()[0].strip(".,’'").lower() if full_name.split() else ""
     surname_pat = re.compile(r"\b" + re.escape(surname) + r"\b")
     for m in surname_pat.finditer(text_lower):
+        # A surname alone doesn't identify WHICH person a mention is about when the
+        # company shares its name with a whole founding family (Rollins, Inc.: "Ms.
+        # Rollins is the granddaughter of O. Wayne Rollins, the founder of Rollins,
+        # Inc." mentions three different Rollinses in one sentence). If the word
+        # immediately before this specific surname occurrence is itself a
+        # capitalized first-name-like token that ISN'T the officer's own first
+        # name, this occurrence is about a different family member -- skip it
+        # rather than let a same-surname anchor pick up someone else's founder
+        # claim (Gary W. Rollins, CEO, wrongly credited with "Wayne Rollins ...
+        # founder" evidence that's actually about his late father).
+        preceding_word = re.search(r"([a-z][a-z'\-]*)\s*$", text_lower[max(0, m.start() - 25):m.start()])
+        if preceding_word and officer_first:
+            pw = preceding_word.group(1)
+            if pw not in ("mr", "ms", "mrs", "dr", "the", "a", "an", "our", "co", "") and pw != officer_first:
+                continue
         window_start = max(0, m.start() - 80)
         window_end = min(len(text_lower), m.end() + 300)
-        boundary = text_lower.rfind(".", window_start, m.start())
+        boundary = _real_period_before(text_lower, window_start, m.start())
         if boundary >= 0:
             window_start = boundary + 1
-        stop_positions = [p for p in (text_lower.find(c, m.end(), window_end) for c in (".", "•", "●")) if p >= 0]
+        stop_positions = [p for p in (_real_period_after(text_lower, m.end(), window_end),
+                                       text_lower.find("•", m.end(), window_end),
+                                       text_lower.find("●", m.end(), window_end)) if p >= 0]
         if stop_positions:
             window_end = min(stop_positions) + 1
         window = text_lower[window_start:window_end]
@@ -469,7 +586,8 @@ def _officer_founder_evidence(text, text_lower, surname, company_key):
             fm = pat.search(window)
             if not fm:
                 continue
-            obj = (fm.group(1) or "").strip()
+            groups = fm.groups()
+            obj = next((g for g in groups if g), "").strip()
             if obj and not _company_object_matches(obj, company_key):
                 continue
             if fm.start() < surname_rel_start:
@@ -480,6 +598,11 @@ def _officer_founder_evidence(text, text_lower, surname, company_key):
                 between = text[window_start + surname_rel_end:window_start + fm.start()]
                 if _CAPITALIZED_NAME_LIKE.search(between):
                     continue
+            leading_adj = text[window_start + max(0, fm.start() - 45):window_start + fm.start()]
+            trailing_adj = text[window_start + fm.end():window_start + min(len(window), fm.end() + 45)]
+            if (_appositive_name_conflicts(leading_adj, full_name, company_key)
+                    or _appositive_name_conflicts(trailing_adj, full_name, company_key)):
+                continue
             return text[max(0, window_start):window_end].strip()
     return None
 
