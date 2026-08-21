@@ -346,13 +346,22 @@ _PCT_NUMBER = re.compile(r"(\d{1,2}(?:\.\d+)?)\s*%")
 # "dated <date>", both meaning "under agreement dated") is the reliable marker of an
 # ordinary individual's own estate-planning vehicle -- checked only as a targeted
 # override, so it can't reject a genuine case that happens to also mention a trustee.
-_TRUST_DATING = r"u[./]?a[./]?d[./]?|dated\s+\w+\s+\d{1,2}|revocable\s+trust"
+_TRUST_DATING = r"u[./]?a[./]?d[./]?|dated\s+\w+\s+\d{1,2}|revocable\s+trust|trust\s*#?\s*\d+"
+_TRUSTEE_WORD = r"(?:co-)?trustees?\b|\bttee\b"
 _PERSONAL_TRUST_MARKER = re.compile(
-    r"\btrustees?\b.{0,120}?(?:" + _TRUST_DATING + r")|"
-    r"(?:" + _TRUST_DATING + r").{0,120}?\btrustees?\b", re.IGNORECASE)
+    r"(?:" + _TRUSTEE_WORD + r").{0,120}?(?:" + _TRUST_DATING + r")|"
+    r"(?:" + _TRUST_DATING + r").{0,120}?(?:" + _TRUSTEE_WORD + r")", re.IGNORECASE)
 _CONTROLLING_LANGUAGE = re.compile(
-    r"founding|controlled compan|majority of (?:the )?(?:outstanding )?voting power|"
-    r"significant (?:share )?ownership|voting trust|\bcontrols?\b", re.IGNORECASE)
+    r"founding|controlled compan|controls?\s+(?:the\s+)?(?:company|corporation|registrant)\b|"
+    r"majority of (?:the )?(?:outstanding )?voting power|"
+    r"significant (?:share )?ownership|voting trust", re.IGNORECASE)
+# A "<Name> family" mention can also come from an unrelated ACTIVIST INVESTOR's own
+# stockholder proposal -- naming their proposal's sponsoring trust/fund, not any real
+# connection to the registrant's ownership or leadership at all (Gilead: "Bowyer
+# Research, Inc. on behalf of the Bahnsen Family Trust ... has submitted a stockholder
+# proposal" -- an outside proponent, not a Gilead insider or beneficial owner).
+_ACTIVIST_PROPONENT_MARKER = re.compile(
+    r"stockholder proposal|shareholder proposal|\bproponent\b", re.IGNORECASE)
 
 
 def find_founder_led(text, company_name):
@@ -703,7 +712,7 @@ def _company_object_matches(obj, company_key):
 
 
 _BENEFICIAL_OWNERSHIP_SECTION = re.compile(
-    r"security ownership of (?:certain )?beneficial owners|"
+    r"securit(?:y|ies) ownership of (?:certain )?beneficial owners|"
     r"beneficial ownership (?:of|table)|"
     r"5%\s+(?:or\s+greater\s+)?(?:stockholders|shareholders|owners)|"
     r"principal (?:stockholders|shareholders)",
@@ -746,35 +755,72 @@ def find_family_owned(text):
         window = text[max(0, m.start() - 250):m.end() + 250]
         if not _OWNERSHIP_CONTEXT.search(window):
             continue
+        if _ACTIVIST_PROPONENT_MARKER.search(window):
+            continue
         if _SMALL_STAKE_MARKER.search(window):
             continue
-        pct_values = [float(p) for p in _PCT_NUMBER.findall(window)]
+        # Every check below that reads a specific number or trustee relationship uses
+        # a SENTENCE-bounded window, not the wide ±250 one -- a beneficial-ownership
+        # table is a run of adjacent per-person footnotes and disclosure sections,
+        # and a fixed-width window reliably bleeds into a neighboring one: a much
+        # larger unrelated share count from the NEXT footnote (MGM: "...held by the
+        # Hornbuckle Family Foundation. (E) The 5,347,978 shares..."); an unrelated
+        # generic percentage from Section 16(a)'s standard ">10% beneficial owner"
+        # reporting-threshold boilerplate, several sentences later in an entirely
+        # different section (Coherent: "...held by the Vij Family 2001 Trust.
+        # DELINQUENT SECTION 16(A) REPORTS ... more than 10% of a class..."); or a
+        # different person's much larger total from an earlier footnote (Cadence
+        # Design Systems: "...710,412 shares which all current executive officers
+        # and directors in the aggregate..." bleeding into Dr. Plummer's own small,
+        # separate "23,996 shares" trust). _real_period_before/_real_period_after
+        # (defined for founder_led, above) are reused here since they already handle
+        # the same abbreviation-period trap ("Mr." reading as a sentence end).
+        sent_start = _real_period_before(text.lower(), max(0, m.start() - 400), m.start())
+        sent_start = sent_start + 1 if sent_start >= 0 else max(0, m.start() - 400)
+        sent_end = _real_period_after(text.lower(), m.end(), min(len(text), m.end() + 400))
+        sent_end = sent_end + 1 if sent_end >= 0 else min(len(text), m.end() + 400)
+        sentence_window = text[sent_start:sent_end]
+        pct_values = [float(p) for p in _PCT_NUMBER.findall(sentence_window)]
         if pct_values and max(pct_values) < 3:
             continue
-        has_controlling_or_large_pct = bool(_CONTROLLING_LANGUAGE.search(window)) or bool(pct_values and max(pct_values) >= 3)
-        if _PERSONAL_TRUST_MARKER.search(window) and not has_controlling_or_large_pct:
+        # Comma-formatted numbers (25,077,373) are captured wherever they appear in
+        # the sentence -- unambiguous as a share count regardless of nearby wording.
+        # A bare small number without a comma is only trusted as a share count when
+        # "shares" immediately follows it ("100 common shares", "25 shares") --
+        # otherwise a bare 1-3 digit number is just as likely to be an unrelated
+        # legal citation (Lennar: "Section 16 reports" reading as "16 shares").
+        share_counts = ([int(s.replace(",", "")) for s in re.findall(r"\b(\d{1,3}(?:,\d{3})+)\b", sentence_window)]
+                         + [int(s) for s in re.findall(r"\b(\d{1,3})\s+(?:common\s+)?shares?\b", sentence_window, re.IGNORECASE)])
+        has_override = (bool(_CONTROLLING_LANGUAGE.search(sentence_window))
+                         or bool(pct_values and max(pct_values) >= 3)
+                         or bool(share_counts and max(share_counts) >= 500_000))
+        if _PERSONAL_TRUST_MARKER.search(sentence_window) and not has_override:
+            continue
+        # The single most reliable signal across every personal-trust false positive
+        # found, independent of exact dating-convention phrasing: the trust's own
+        # NAME is the same surname as the specific person who serves as its trustee
+        # ("Mr. Hoag ... trustee of the Hoag Family Trust"; "Mr. Norris is the
+        # co-trustee" of "the Norris Family Limited Partnership") -- that's
+        # definitionally an individual's own estate-planning vehicle, not a
+        # collectively-held founding family's stake. A genuine controlling family is
+        # described as a group ("the Simon family", "the Walton family"), not
+        # "Mr. <Surname>, trustee of the <Surname> Family Trust."
+        same_surname_trustee = re.search(
+            r"\b(?:Mr|Ms|Mrs|Dr)\.?\s+" + re.escape(m.group(1)) + r"\b.{0,150}?\btrustees?\b|"
+            r"\btrustees?\b.{0,150}?\b(?:Mr|Ms|Mrs|Dr)\.?\s+" + re.escape(m.group(1)) + r"\b",
+            sentence_window, re.IGNORECASE)
+        if same_surname_trustee and not has_override:
             continue
         # Most personal-trust footnotes never state a percentage at all -- just a raw
         # share count (Reddit: "162,828 shares ... held by the Slowe Family Trust";
-        # Teledyne: "18,735 shares held by the Dahlberg Family Trust" -- neither
-        # mentions "trustee" so the check above never even triggers). A genuine
+        # Teledyne: "18,735 shares held by the Dahlberg Family Trust"). A genuine
         # controlling family's share count is either in the millions (A.O. Smith's
         # Smith Family Voting Trust: 25,077,373) or the mention is narrative with no
         # specific count at all (Constellation Brands: "our founding Sands family").
-        # So: only reject when a share-count number IS present nearby and its largest
-        # value is small -- absence of any number stays permissive (narrative-only
-        # cases have nothing to check here). Scoped to a TIGHT window right around
-        # this specific match, not the wide ±250 one -- a beneficial-ownership table
-        # is a run of adjacent per-person footnotes, and the wide window can pick up
-        # a much larger number that belongs to someone else's entry entirely (Cadence
-        # Design Systems: Dr. Plummer's own small "23,996 shares" trust wrongly kept
-        # its True verdict because an unrelated "(10) Includes 710,412 shares which
-        # all current executive officers and directors in the aggregate..." sentence
-        # -- a different footnote about a different, much larger, unrelated total --
-        # sat within the wide window too).
-        tight_window = text[max(0, m.start() - 100):m.end() + 60]
-        share_counts = [int(s.replace(",", "")) for s in re.findall(r"\b(\d{1,3}(?:,\d{3})+)\b", tight_window)]
-        if share_counts and max(share_counts) < 500_000 and not has_controlling_or_large_pct:
+        # So: only reject when a share-count number IS present in this sentence and
+        # its largest value is small -- absence of any number stays permissive
+        # (narrative-only cases have nothing to check here).
+        if share_counts and max(share_counts) < 500_000 and not has_override:
             continue
         # The institutional-owner check uses a deliberately tighter window (160 vs.
         # 250 chars each side) than the ownership-context check above: a large
