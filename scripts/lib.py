@@ -252,18 +252,39 @@ def alcohol_2080_hit(text_lower):
     return False
 
 
+_PAY_RATIO_PATTERNS = [
+    # Primary: "the ratio of ... [compensation/median/employee] ... is/was/were ... N to 1" --
+    # requires a compensation/median/employee word somewhere near "ratio" (so an unrelated
+    # financial ratio, e.g. debt-to-equity, doesn't match) and allows filler between the
+    # verb and the number ("is estimated to be", "was approximately") since real disclosures
+    # use both "is" and "was" and rarely put the number immediately after the verb. Uses
+    # `.` rather than `[^.]` for the character budget -- a bare `[^.]` stops dead at the
+    # first "Mr." or "Ms." abbreviation, which appear constantly in these disclosures right
+    # next to the ratio sentence (e.g. "the ratio of Mr. Stein's ... compensation ... was
+    # 369:1"), and silently killed real matches in testing. DOTALL so `.` also crosses the
+    # literal "\n" line-wrap characters BeautifulSoup sometimes leaves mid-sentence (e.g.
+    # "Interim CEO's annual\ntotal compensation ... was 417 to 1") -- without it those
+    # newlines acted as unintended hard stops and silently killed real matches too.
+    re.compile(r"\bratio\b(?=.{0,150}?\b(?:compensation|median|employee)\b).{0,150}?"
+               r"\b(?:is|was|were)\b.{0,60}?([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1\b", re.IGNORECASE | re.DOTALL),
+    # Fallbacks for phrasing the primary pattern doesn't cover.
+    re.compile(r"pay ratio.{0,300}?([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1", re.IGNORECASE | re.DOTALL),
+    re.compile(r"([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1.{0,60}?pay ratio", re.IGNORECASE | re.DOTALL),
+    # "N times that of/the median employee" -- an equally common alternate phrasing that
+    # never uses "to 1"/":1" at all (e.g. CF Industries: "...was approximately 88 times
+    # that of our median employee").
+    re.compile(r"\b(?:was|is)\b.{0,60}?\b(?:approximately\s+)?([\d,]+(?:\.\d+)?)\s+times\b"
+               r".{0,80}?\b(?:median|employee)\b", re.IGNORECASE | re.DOTALL),
+]
+
+
 def find_pay_ratio(text):
-    patterns = [
-        r"ratio[^.]{0,120}?is\s+(?:approximately\s+)?([\d,]{2,7})\s*(?:to|:)\s*1",
-        r"pay ratio[^.]{0,300}?([\d,]{2,7})\s*(?:to|:)\s*1",
-        r"([\d,]{2,7})\s*(?:to|:)\s*1[^.]{0,60}?pay ratio",
-    ]
-    for pat in patterns:
-        m = re.search(pat, text, re.IGNORECASE)
+    for pat in _PAY_RATIO_PATTERNS:
+        m = pat.search(text)
         if m:
             try:
-                val = int(m.group(1).replace(",", ""))
-                if 1 < val < 100000:
+                val = float(m.group(1).replace(",", ""))
+                if 0 < val < 100000:
                     return val
             except ValueError:
                 continue
