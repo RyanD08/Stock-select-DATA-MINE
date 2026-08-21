@@ -579,7 +579,7 @@ _INDEP_PCT_NEEDS_CONTEXT = [
     re.compile(r"(\d{1,3})\s*%\s+independent\b", re.IGNORECASE),
     re.compile(r"\(\s*(\d{1,3})\s*%\s*\)\s*(?:are|is)\s+independent", re.IGNORECASE),
 ]
-_INDEP_PCT_COMMITTEE_TRAILING = re.compile(r"\s*(?:\w+\s+){0,2}committees?\b", re.IGNORECASE)
+_INDEP_PCT_COMMITTEE_NEARBY = re.compile(r"\bcommittees?\b", re.IGNORECASE)
 _INDEP_PCT_BOARD_CONTEXT = re.compile(r"\bboard\b|\bdirectors?\b", re.IGNORECASE)
 
 
@@ -590,8 +590,22 @@ def find_independent_directors_pct(text):
             return int(m.group(1))
     for pat in _INDEP_PCT_NEEDS_CONTEXT:
         for m in pat.finditer(text):
-            if _INDEP_PCT_COMMITTEE_TRAILING.match(text, m.end()):
-                continue  # "100% independent Compensation Committee" -- a different stat
+            # A tile/parenthetical "100% independent" stat is at least as likely to be
+            # about a specific committee (Audit, Compensation, Nominating) as the full
+            # board -- these dashboard-style proxies often show both stats close together.
+            # "committee" can lead the match ("Nominating and Corporate Governance
+            # Committee 100% INDEPENDENT") or trail it, sometimes well past a short fixed
+            # window when several committee names are enumerated first ("100% independent
+            # members of the Audit, Compensation and Nominating and Corporate Governance
+            # committees") -- found as real false positives (Chipotle, Cintas, Verisk,
+            # Steel Dynamics) in testing. Bounded by the nearest sentence/bullet edge
+            # (".", "•", or a 250-char cap) rather than a fixed word/char count, so an
+            # arbitrarily long committee-name list still gets caught.
+            lead_bound = max((text.rfind(c, max(0, m.start() - 250), m.start()) for c in ".•"), default=-1)
+            trail_bound = min((i for i in (text.find(c, m.end(), m.end() + 250) for c in ".•") if i != -1), default=m.end() + 250)
+            nearby = text[lead_bound + 1:trail_bound]
+            if _INDEP_PCT_COMMITTEE_NEARBY.search(nearby):
+                continue
             window = text[max(0, m.start() - 100):m.end() + 100]
             if not _INDEP_PCT_BOARD_CONTEXT.search(window):
                 continue
