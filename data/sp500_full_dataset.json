@@ -115934,6 +115934,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -116177,6 +116193,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -116414,6 +116446,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": true,
+      "source": "DEF 14A officer/director bios, filed 2026-04-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/352915/000119312526148814/uhs-20260403.htm",
+      "confidence": "Low",
+      "notes": "Name-anchored regex match on the registrant's own identified CEO/Executive Chair having founder language tied to their name: 'Alan B. Miller: Inc. Alan B. Miller \u2013 Executive Chairman of the Board and Founder : Mr. Alan B. Miller was appointed Executive Chairman of the Board effective January 1, 2021.'. Not a manual bio read -- verify.",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -116648,6 +116696,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -116888,6 +116952,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": true,
+      "source": "DEF 14A officer/director bios, filed 2026-05-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1393052/000114036126018796/ny20062821x1_def14a.htm",
+      "confidence": "Low",
+      "notes": "Name-anchored regex match on the registrant's own identified CEO/Executive Chair having founder language tied to their name: 'Peter P. Gassner: has been uniquely tailored to create appropriate performance incentives for Mr.\u00a0Gassner, our founder and CEO.'. Not a manual bio read -- verify.",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -117125,6 +117205,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -117359,6 +117455,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -117595,6 +117707,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -117829,6 +117957,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -118067,6 +118211,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -118301,6 +118461,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -118537,6 +118713,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -118769,6 +118961,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -119006,6 +119214,22 @@
       "source_url": "https://www.sec.gov/Archives/edgar/data/1705696/000110465926028592/tm261334-1_def14a.htm",
       "confidence": "Medium",
       "notes": null,
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -119246,6 +119470,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -119476,6 +119716,22 @@
       "source_url": "https://www.sec.gov/Archives/edgar/data/1692819/000162828026019029/vistra-20260318.htm",
       "confidence": "Medium",
       "notes": null,
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -119711,6 +119967,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -119949,6 +120221,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -120185,6 +120473,22 @@
       "source_url": "https://www.sec.gov/Archives/edgar/data/11544/000119312526170583/d82252ddef14a.htm",
       "confidence": "Medium",
       "notes": null,
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -120423,6 +120727,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -120653,6 +120973,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -120895,6 +121231,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": true,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/104169/000119312526173673/wmt-20260423.htm",
+      "confidence": "Low",
+      "notes": "Text mentions 'the Walton family' near ownership/voting-power language, not near a large asset manager marker; percentage not automatically extracted -- verify manually. Context: \"...on page 24 . As disclosed on page 98 , approximately 44% of our company\u2019s Shares are held by entities related to the family of Sam Walton, our company\u2019s founder. Three generations of Walton family mem...\"",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -121131,6 +121483,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -121369,6 +121737,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -121600,6 +121984,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -121826,6 +122226,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -122063,6 +122479,22 @@
       "source_url": "https://www.sec.gov/Archives/edgar/data/783325/000078332526000035/wec-20260324.htm",
       "confidence": "Medium",
       "notes": null,
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -122303,6 +122735,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -122533,6 +122981,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -122783,6 +123247,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -123015,6 +123495,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -123255,6 +123751,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -123494,6 +124006,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -123731,6 +124259,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -123965,6 +124509,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -124203,6 +124763,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": true,
+      "source": "DEF 14A officer/director bios, filed 2026-05-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1327811/000110465926055687/tm261347-2_def14a.htm",
+      "confidence": "Low",
+      "notes": "Name-anchored regex match on the registrant's own identified CEO/Executive Chair having founder language tied to their name: 'Aneel Bhusri: Sincerely, \u200b \u200b \u200b Aneel Bhusri Co-Founder, Chief Executive Officer, and Chair \u200b \u200b \u200b \u200b TABLE OF CONTENTS WORKDAY, INC. 6110 STONERIDGE MALL ROAD PLEASANTON, CALIFORNIA 94588 NOTICE OF 2026 ANNUAL MEETING OF STOCKHOLDERS \u200b \u200b Date \u200b \u200b Tuesday, June\u00a016, 2026 \u200b \u200b Location Online at www.'. Not a manual bio read -- verify.",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -124435,6 +125011,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -124673,6 +125265,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -124910,6 +125518,22 @@
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -125144,6 +125768,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -125381,6 +126021,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   },
@@ -125621,6 +126277,22 @@
       "confidence": "Medium",
       "notes": null,
       "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
+      "last_updated": "2026-08-21"
     }
   },
   {
@@ -125857,6 +126529,22 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Independent-director percentage not found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "founder_led": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No founder claim tied to the registrant's own identified CEO/Executive Chair found in proxy text scan",
+      "last_updated": "2026-08-21"
+    },
+    "family_owned": {
+      "value": "No verifiable data found",
+      "source": null,
+      "source_url": null,
+      "confidence": "None",
+      "notes": "No '<Name> family' + ownership-context pattern (excluding large asset managers) found in proxy text scan",
       "last_updated": "2026-08-21"
     }
   }
