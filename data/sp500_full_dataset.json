@@ -31441,6 +31441,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 86360489984.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Dividend yield not present/parseable in the GitHub dataset row for this ticker.",
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 62.220238,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 5.04,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 262.75,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 416.69,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 12.592964,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 14.793777,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 2155915008.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 6.99,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000813672/us-gaap/SalesRevenueNet.json",
+        "confidence": "Medium",
+        "notes": "FY2017: 1,816,083,000 -> 1,943,032,000 (SalesRevenueNet).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No matching fiscal-year-end pair of revenue and net income data found on SEC EDGAR XBRL for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No matching fiscal-year-end pair of revenue and operating-cash-flow data found on SEC EDGAR XBRL for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -31692,6 +31830,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 10850206720.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 3.91,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 35.5,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 3.04,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 96.53,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 119.81,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 2.9106994,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 6.85911,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 893971008.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 81.69,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000906345/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "confidence": "Medium",
+        "notes": "FY2025: 7,137,000 -> 12,967,000 (RevenueFromContractWithCustomerExcludingAssessedTax).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 2964.93,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000906345/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income 384,462,000 / revenue 12,967,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 1.06,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000906345/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2025-12-31: liabilities 4,604,736,000 / equity 4,362,523,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 6374.81,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000906345/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 826,621,000 (capex tag not found, using OCF alone) / revenue 12,967,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -31943,6 +32219,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 130353258496.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 1.45,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 11.713341,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 18.14,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 174.24,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 259.64,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 1.2658243,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 2.7094839,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "EBITDA not present/parseable in the GitHub dataset row for this ticker.",
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Fewer than 2 annual 10-K revenue data points found on SEC EDGAR XBRL for this CIK (common for recent IPOs/spin-offs or filers using an uncommon revenue tag).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No matching fiscal-year-end pair of revenue and net income data found on SEC EDGAR XBRL for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No matching fiscal-year-end pair of revenue and operating-cash-flow data found on SEC EDGAR XBRL for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -32196,6 +32610,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 53134254080.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 0.88,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 31.598894,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 7.23,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 145.87,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 258.3,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": -18.4644,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 0.20898594,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 4244000000.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 14.23,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000721371/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY2026: 222,578,000,000 -> 254,248,000,000 (Revenues).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 0.67,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000721371/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2026-06-30: net income 1,714,000,000 / revenue 254,248,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 1.78,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000721371/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2026-06-30: OCF 5,174,000,000 - capex 649,000,000 / revenue 254,248,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -32441,6 +32993,144 @@
       "confidence": "Low",
       "notes": "Text mentions 'the Arison family' near ownership/voting-power language, not near a large asset manager marker; percentage not automatically extracted -- verify manually. Context: \"...rdinary shares which are held by Carnival Corporation and 28,927,231 ordinary shares held in treasury, both of which have no voting rights. \u200b Micky Arison, Chair of the Board of each of Carnival Corpo...\"",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 34747998208.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 1.69,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 12.023698,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 2.11,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 23.45,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 34.03,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 2.6840882,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 1.2723079,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 7302000128.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 6.4,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000815097/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "confidence": "Medium",
+        "notes": "FY2025: 25,021,000,000 -> 26,622,000,000 (RevenueFromContractWithCustomerExcludingAssessedTax).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 10.37,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000815097/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-11-30: net income 2,760,000,000 / revenue 26,622,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 9.79,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000815097/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-11-30: OCF 6,218,000,000 - capex 3,611,000,000 / revenue 26,622,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -32694,6 +33384,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 49583153152.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 1.57,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 43.586956,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 1.38,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 50.24,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 76.76,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 3.7747097,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 2.2427697,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 3092999936.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": "Unreliable -- recent merger/spin-off/IPO, YoY comparison not meaningful",
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001783180/us-gaap/Revenues.json",
+        "confidence": "Low",
+        "notes": "recent_corporate_action_flag is set for this company; see that field's notes for the specific event.",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 6.82,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001783180/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income 1,484,000,000 / revenue 21,747,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 11.56,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001783180/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 2,513,000,000 (capex tag not found, using OCF alone) / revenue 21,747,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -32945,6 +33773,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CVNA' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CVNA' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CVNA' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CVNA' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CVNA' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CVNA' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CVNA' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CVNA' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CVNA' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": "Unreliable -- recent merger/spin-off/IPO, YoY comparison not meaningful",
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001690820/us-gaap/Revenues.json",
+        "confidence": "Low",
+        "notes": "recent_corporate_action_flag is set for this company; see that field's notes for the specific event.",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 6.92,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001690820/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income 1,407,000,000 / revenue 20,322,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 2.61,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001690820/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2025-12-31: liabilities 8,998,000,000 / equity 3,441,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 4.37,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001690820/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 1,036,000,000 - capex 147,000,000 / revenue 20,322,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -33196,6 +34162,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CASY' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CASY' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CASY' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CASY' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CASY' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CASY' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CASY' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CASY' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Ticker 'CASY' not present in the GitHub financials dataset (a daily-refreshed but sometimes-lagging S&P 500 constituent list) -- likely a recent index addition or a symbol-format mismatch; see logs/manual_review_needed.md.",
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 10.16,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000726958/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY2026: 15,940,899,000 -> 17,561,101,000 (Revenues).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 4.07,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000726958/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2026-04-30: net income 714,448,000 / revenue 17,561,101,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 1.26,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000726958/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2026-04-30: liabilities 4,984,336,000 / equity 3,951,719,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 4.11,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000726958/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2026-04-30: OCF 1,377,540,000 - capex 655,920,000 / revenue 17,561,101,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -33451,6 +34555,144 @@
       "confidence": "None",
       "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 374814310400.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 0.8,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 35.05546,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 23.26,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 410.52,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 1073.46,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 19.325243,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 5.0156474,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 16250999808.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": "Unreliable -- recent merger/spin-off/IPO, YoY comparison not meaningful",
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000018230/us-gaap/Revenues.json",
+        "confidence": "Low",
+        "notes": "recent_corporate_action_flag is set for this company; see that field's notes for the specific event.",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 6.34,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000018230/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2010-12-31: net income 2,700,000,000 / revenue 42,588,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 13.19,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000018230/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 11,739,000,000 - capex 2,821,000,000 / revenue 67,589,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -33702,6 +34944,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 30714204160.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 1.23,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 22.923616,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 12.83,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 227.15,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 371.18,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 5.4660172,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 6.0684414,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 1930700032.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 217.04,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001374310/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY2017: 703,100,000 -> 2,229,100,000 (Revenues).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 18.02,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001374310/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2017-12-31: net income 401,700,000 / revenue 2,229,100,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 0.81,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001374310/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2025-12-31: liabilities 4,167,000,000 / equity 5,138,300,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 15.11,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001374310/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2017-12-31: OCF 374,400,000 - capex 37,500,000 / revenue 2,229,100,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -33955,6 +35335,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 43954630656.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Dividend yield not present/parseable in the GitHub dataset row for this ticker.",
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 35.46495,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 4.28,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 121.69,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 174.27,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 5.2388344,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 1.0055736,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 2214000128.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 13.37,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001138118/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY2025: 35,767,000,000 -> 40,550,000,000 (Revenues).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 2.85,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001138118/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income 1,157,000,000 / revenue 40,550,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 2.39,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001138118/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2025-12-31: liabilities 21,251,000,000 / equity 8,878,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 3.84,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001138118/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 1,559,000,000 (capex tag not found, using OCF alone) / revenue 40,550,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -34202,6 +35720,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 16694825984.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 1.84,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 16.069794,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 8.31,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 97.12,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 171.55,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 6.8517184,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 0.710406,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 2010899968.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": "Unreliable -- recent merger/spin-off/IPO, YoY comparison not meaningful",
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001402057/us-gaap/Revenues.json",
+        "confidence": "Low",
+        "notes": "recent_corporate_action_flag is set for this company; see that field's notes for the specific event.",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 4.76,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001402057/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income 1,066,600,000 / revenue 22,424,100,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 2.3,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001402057/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2017-12-31: liabilities 5,981,100,000 / equity 2,606,100,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 4.85,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001402057/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 1,205,200,000 - capex 117,100,000 / revenue 22,424,100,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -34463,6 +36119,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 60051402752.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 0.76,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 23.537024,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 13.37,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 244.82,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 377.54,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 19.682888,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 0.18045847,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 5546476032.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": "Unreliable -- recent merger/spin-off/IPO, YoY comparison not meaningful",
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001140859/us-gaap/Revenues.json",
+        "confidence": "Low",
+        "notes": "recent_corporate_action_flag is set for this company; see that field's notes for the specific event.",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 0.48,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001140859/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-09-30: net income 1,554,169,000 / revenue 321,332,819,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 1.0,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001140859/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-09-30: OCF 3,875,120,000 - capex 667,981,000 / revenue 321,332,819,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -34716,6 +36510,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 31684839424.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Dividend yield not present/parseable in the GitHub dataset row for this ticker.",
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "P/E not present/parseable (often means negative or undefined trailing earnings) in the GitHub dataset row for this ticker.",
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": -10.36,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 28.24,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 69.36,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 1.4043307,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 0.1757301,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 4606000128.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 19.44,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001071739/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY2025: 163,071,000,000 -> 194,777,000,000 (Revenues).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": -3.43,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001071739/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income -6,674,000,000 / revenue 194,777,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 2.84,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001071739/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2025-12-31: liabilities 56,691,000,000 / equity 19,953,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 2.22,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001071739/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 5,088,000,000 - capex 767,000,000 / revenue 194,777,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -34963,6 +36895,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 26480553984.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 2.38,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 24.071857,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 1.67,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 36.6,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 45.26,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 2.2593155,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 2.7526565,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 3854000128.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": "Unreliable -- recent merger/spin-off/IPO, YoY comparison not meaningful",
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001130310/us-gaap/Revenues.json",
+        "confidence": "Low",
+        "notes": "recent_corporate_action_flag is set for this company; see that field's notes for the specific event.",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 11.24,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001130310/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income 1,052,000,000 / revenue 9,357,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": -25.48,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001130310/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 2,486,000,000 - capex 4,870,000,000 / revenue 9,357,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -35217,6 +37287,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 19023202304.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 2.02,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 9.324926,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 13.48,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 75.42,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 141.96,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 3.3151357,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 2.4580958,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 3872999936.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 19.34,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001324404/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY2025: 5,936,000,000 -> 7,084,000,000 (Revenues).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No matching fiscal-year-end pair of revenue and net income data found on SEC EDGAR XBRL for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 25.44,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001324404/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 2,752,000,000 - capex 950,000,000 / revenue 7,084,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -35470,6 +37678,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 14038484992.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Dividend yield not present/parseable in the GitHub dataset row for this ticker.",
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "P/E not present/parseable (often means negative or undefined trailing earnings) in the GitHub dataset row for this ticker.",
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": -4.84,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 144.26,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 299.32,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 4.898649,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 3.5105102,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 849118016.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": "Unreliable -- recent merger/spin-off/IPO, YoY comparison not meaningful",
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001100682/us-gaap/Revenues.json",
+        "confidence": "Low",
+        "notes": "recent_corporate_action_flag is set for this company; see that field's notes for the specific event.",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": -3.59,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001100682/us-gaap/RevenueFromContractWithCustomerExcludingAssessedTax.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-27: net income -144,338,000 / revenue 4,015,382,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 1.24,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001100682/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2025-12-27: liabilities 3,924,228,000 / equity 3,164,630,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 18.37,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001100682/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-27: OCF 737,646,000 (capex tag not found, using OCF alone) / revenue 4,015,382,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -35723,6 +38069,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 189863772160.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 1.15,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 20.219154,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 5.43,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 83.96,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 112.2,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 4.3185306,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 7.295438,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "EBITDA not present/parseable in the GitHub dataset row for this ticker.",
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": 22.01,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000316709/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY2025: 19,606,000,000 -> 23,921,000,000 (Revenues).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 37.01,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000316709/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income 8,852,000,000 / revenue 23,921,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 8.93,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000316709/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2025-12-31: liabilities 441,570,000,000 / equity 49,425,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 36.63,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000316709/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 9,311,000,000 - capex 548,000,000 / revenue 23,921,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -35974,6 +38458,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 19914721280.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Dividend yield not present/parseable in the GitHub dataset row for this ticker.",
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 3.8459136,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 38.42,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 111.55,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 285.82,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 1.0396701,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 0.36610636,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 21814999040.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": -0.56,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001091667/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY2025: 55,085,000,000 -> 54,774,000,000 (Revenues).",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 9.1,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001091667/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income 4,987,000,000 / revenue 54,774,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Liabilities and/or StockholdersEquity XBRL data not found on SEC EDGAR for this CIK.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 8.07,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0001091667/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 16,077,000,000 - capex 11,659,000,000 / revenue 54,774,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
@@ -36234,6 +38856,144 @@
       "confidence": "Low",
       "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
       "last_updated": "2026-08-21"
+    },
+    "financial_metrics": {
+      "market_cap_usd": {
+        "value": 403639140352.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "dividend_yield_pct": {
+        "value": 3.46,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "pe_ratio": {
+        "value": 19.804619,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "eps_ttm": {
+        "value": 10.39,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_low": {
+        "value": 146.49,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "fifty_two_week_high": {
+        "value": 214.71,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_book": {
+        "value": 2.1257231,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "price_to_sales": {
+        "value": 1.9277459,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "ebitda_usd": {
+        "value": 50661998592.0,
+        "source": "GitHub dataset: datasets/s-and-p-500-companies-financials (Yahoo Finance via Open Knowledge Foundation, PDDL license)",
+        "source_url": "https://raw.githubusercontent.com/datasets/s-and-p-500-companies-financials/master/data/constituents-financials.csv",
+        "confidence": "High",
+        "notes": null,
+        "last_updated": "2026-08-21"
+      },
+      "revenue_growth_yoy_pct": {
+        "value": "Unreliable -- recent merger/spin-off/IPO, YoY comparison not meaningful",
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000093410/us-gaap/Revenues.json",
+        "confidence": "Low",
+        "notes": "recent_corporate_action_flag is set for this company; see that field's notes for the specific event.",
+        "last_updated": "2026-08-21"
+      },
+      "profit_margin_pct": {
+        "value": 6.51,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000093410/us-gaap/Revenues.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: net income 12,299,000,000 / revenue 189,031,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "debt_to_equity_ratio": {
+        "value": 0.71,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000093410/us-gaap/Liabilities.json",
+        "confidence": "Medium",
+        "notes": "As of 2025-12-31: liabilities 131,836,000,000 / equity 186,450,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "free_cash_flow_margin_pct": {
+        "value": 17.95,
+        "source": "SEC EDGAR XBRL companyconcept API",
+        "source_url": "https://data.sec.gov/api/xbrl/companyconcept/CIK0000093410/us-gaap/NetCashProvidedByUsedInOperatingActivities.json",
+        "confidence": "Medium",
+        "notes": "FY end 2025-12-31: OCF 33,939,000,000 (capex tag not found, using OCF alone) / revenue 189,031,000,000.",
+        "last_updated": "2026-08-21"
+      },
+      "analyst_consensus_rating": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "No analyst consensus data available on free-tier sources -- Finnhub requires an API key not configured in this environment; Stooq and Alpha Vantage are blocked at the network proxy level; no credible, actively-maintained free analyst-consensus dataset was found on raw.githubusercontent.com.",
+        "last_updated": "2026-08-21"
+      },
+      "beta": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Beta requires historical price-return data to compute against a market index; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "yoy_stock_price_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "Trailing-12-month price return requires historical daily price data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      },
+      "five_year_total_return_pct": {
+        "value": "No verifiable data found",
+        "source": null,
+        "source_url": null,
+        "confidence": "None",
+        "notes": "5-year total return requires 5 years of historical price + dividend data; Finnhub (needs an API key we don't have), Stooq, and Alpha Vantage (both blocked at the network proxy level in this environment) are the only approved sources for this, and none is reachable here.",
+        "last_updated": "2026-08-21"
+      }
     }
   },
   {
