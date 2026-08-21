@@ -835,9 +835,13 @@ def find_family_owned(text):
         # an override signal (a stated percentage, share count, or controlling
         # language) somewhere to back it up -- so when the name IS entity-suffixed,
         # require that positive evidence rather than defaulting to permissive.
+        # Allows up to 2 filler words between "family" and the entity keyword --
+        # "Family DELAWARE Trust" (Extra Space Storage), "Family Voting Trust"
+        # (A.O. Smith), "Family 2001 Trust" (Coherent) all insert a qualifier
+        # between the two.
         entity_suffixed = bool(re.match(
-            r"\s*(?:Trust|LLC|L\.L\.C\.|Foundation|Limited Partnership|LP|L\.P\.|Office|Corp\.?|Inc\.?)\b",
-            text[m.end():m.end() + 40], re.IGNORECASE))
+            r"\s*(?:[A-Za-z0-9][\w.'-]*\s+){0,2}(?:Trust|LLC|L\.L\.C\.|Foundation|Limited Partnership|LP|L\.P\.|Office|Corp\.?|Inc\.?)\b",
+            text[m.end():m.end() + 60], re.IGNORECASE))
         if entity_suffixed and not has_override:
             continue
         # The institutional-owner check uses a deliberately tighter window (160 vs.
