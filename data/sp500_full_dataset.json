@@ -341,12 +341,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 115.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/91142/000119312526089938/d79196ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -1606,12 +1606,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 341.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2488/000119312526129057/d85856ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -2110,12 +2110,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 396.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4977/000162828026019621/afl-20260319.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -2363,12 +2363,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 155.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-02-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1090872/000119312526040286/a-20260203.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -2616,12 +2616,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 171.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-12-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2969/000130817925000643/apd-20251210.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -3626,12 +3626,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 56.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-01",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035443/000103544326000031/are-20260331.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -4383,12 +4383,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 51.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/352541/000035254126000025/lnt-20260330.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -4638,12 +4638,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 306.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/899051/000089905126000063/all-20260410.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -5383,12 +5383,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 147.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/764180/000110465926038900/tmb-20260514xdef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -5893,12 +5893,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 119.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-09-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1748790/000174879025000032/amcr-20250922.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -6146,12 +6146,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 112.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1002910/000110465926037756/tm261401-1_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -6397,12 +6397,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 261.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/4904/000000490426000022/aep-20260318.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -7153,12 +7153,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 164.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1053507/000105350726000088/amt-20260406.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -7398,12 +7398,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 73.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1410636/000119312526120668/d21438ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -7645,12 +7645,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 232.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000110465926032725/amp-20260429xdef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -8151,12 +8151,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 160.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/318154/000119312526145588/d13946ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -8408,12 +8408,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 1188.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820313/000110465926040688/tm261344-1_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": "No verifiable data found",
@@ -8661,12 +8661,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 534.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-01-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/6281/000000628126000010/adi-20260122.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -8916,12 +8916,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 826.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-28",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/315293/000119312526187428/aon-20260428.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -9161,12 +9161,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 56.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1841666/000119312526149453/apa-20260409.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -9918,12 +9918,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 330.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-01-28",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/6951/000119312526027307/d71992ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -10424,12 +10424,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 1894.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1521332/000119312526108328/aptv-20260311.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -11183,12 +11183,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 346.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-21",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1176948/000162828026026286/ares-20260420.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -11434,12 +11434,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 15.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1596532/000119312526158942/d66465ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -11681,12 +11681,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 346.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/354190/000035419026000101/ajg-20260323.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -12689,12 +12689,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 203.5,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-05-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/769397/000076939726000030/adsk-20260429.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -13693,12 +13693,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 0.3,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1069183/000162828026025521/axon-20260416.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": "No verifiable data found",
@@ -13944,12 +13944,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 310.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1701605/000119312526130309/d939028ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -14201,12 +14201,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 46.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/9389/000110465926029499/tm2525516-2_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -14709,12 +14709,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 445.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/10456/000162828026020330/bax-20260320.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -14956,12 +14956,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 374.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-12-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/10795/000162828025057846/bdx-20251217.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -15207,12 +15207,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 4.16,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1067983/000119312526106253/d882687ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -15462,12 +15462,12 @@
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-19"
+      "value": 542.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/764478/000114036126018265/ny20063180x1_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -15715,12 +15715,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 88.9,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-09-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/842023/000130817925000599/tech014339-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -15970,12 +15970,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 113.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-28",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/875045/000119312526187303/d788083ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": "No verifiable data found",
@@ -16727,12 +16727,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 1e-05,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1512673/000162828026027203/sq-20260423.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -16980,12 +16980,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 1018.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-05",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1390777/000119312526092500/d52987ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -17235,12 +17235,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 166.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/12927/000119312526096787/d39411ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -17739,12 +17739,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 348.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/885725/000088572526000025/bsx-20260318.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -17994,12 +17994,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 131.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/14272/000001427226000006/bmy-20260325.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -18490,12 +18490,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 216.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-10-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1383312/000114036125037069/ny20050521x1_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -18745,12 +18745,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 117.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/79282/000119312526122172/d30704ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -19496,12 +19496,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 252.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1996862/000162828026024588/bg-20260410.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -19743,12 +19743,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 164.5,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000010/bxp-20260410.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -19996,12 +19996,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 178.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1043277/000104327726000011/chrw-20260323.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -20247,12 +20247,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 592.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/813672/000119312526124264/d932644ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": "No verifiable data found",
@@ -20747,12 +20747,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 526.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/927628/000119312526124131/d701179ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -21000,12 +21000,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 261.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-09-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/721371/000072137125000114/cah-20250916.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -22002,12 +22002,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 735.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-07-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/726958/000114036126029280/ny20072699x1_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -22255,12 +22255,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 196.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/18230/000130817926000358/cat014496-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -22508,12 +22508,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 102.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1374310/000162828026022939/cboe-20260401.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -23010,12 +23010,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 128.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1402057/000130817926000251/cdw014321-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -23261,12 +23261,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 198.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-01-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1140859/000162828026003061/cor-20260122.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": "No verifiable data found",
@@ -23522,12 +23522,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 206.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1071739/000107173926000077/cnc-20260326.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -23769,12 +23769,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 93.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1130310/000110465926023457/tm261341-3_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -24020,12 +24020,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 88.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324404/000110465926029482/tm261459-1_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -24529,12 +24529,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 143.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-06",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/316709/000119312526142826/d930509ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -25548,12 +25548,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 512.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/896159/000110465926039513/tm2527783-7_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": "No verifiable data found",
@@ -25799,12 +25799,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 120.7,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/313927/000119312526115994/chd-20260319.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -26550,12 +26550,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 46.3,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/20286/000002028626000015/cinf-20260316.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -26803,12 +26803,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 125.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-09-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/723254/000072325425000025/ctas-20250915.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -27311,12 +27311,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 1309.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/831001/000120677426000185/citi4583461-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -27566,12 +27566,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 155.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/759944/000075994426000064/cfg-20260309.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -28062,12 +28062,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 140.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1156375/000162828026020500/cme-20260323.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -28315,12 +28315,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 56.1,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/811156/000081115626000015/cms-20260326.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -28568,12 +28568,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 1739.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/21344/000110465926028215/ko-20260429xdef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -29582,12 +29582,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 276.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/21665/000130817926000136/cl015164-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -30087,12 +30087,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 158.2,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1035983/000130817926000245/fix014562-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -31089,12 +31089,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 140.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1868275/000155278126000140/e26004_ceg-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -31342,12 +31342,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 331.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-02-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/711404/000162828026011110/coo-20260224.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -31597,12 +31597,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 46.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-10-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/900075/000119312525249664/d84887ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -31848,12 +31848,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 451.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/24741/000120677426000148/glw4500541-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -32099,12 +32099,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 40.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1175454/000117545426000022/cpay-20260410.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -32605,12 +32605,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 303.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1057352/000119312526197205/d903159ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -33866,12 +33866,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 123.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/277948/000162828026021944/csx-20260326.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -34121,12 +34121,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 312.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/26172/000110465926039158/tm261336-2_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -34623,12 +34623,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 343.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/313616/000031361626000101/dhr-20260325.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": "No verifiable data found",
@@ -35127,12 +35127,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 131.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1561550/000162828026028118/ddog-20260429.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -35380,12 +35380,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 254.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/927066/000092706626000053/dva-20260422.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -35878,12 +35878,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 190.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-01-14",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/315189/000110465926003618/de-20260225xdef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -36137,12 +36137,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 43.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-05-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1571996/000119312526226734/d132444ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -36392,12 +36392,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 190.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/27904/000130817926000345/dal014970-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -37143,12 +37143,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 89.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-09",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1539838/000130817926000242/fang015366-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": "No verifiable data found",
@@ -37390,12 +37390,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 174.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1297996/000130817926000296/dlr015307-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -38151,12 +38151,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 107.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/715957/000119312526115180/d-20260319.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -38400,12 +38400,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 291.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1286681/000128668126000012/dpz-20260309.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -39161,12 +39161,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 207.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-02-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1751788/000119312526082583/dow-20260227.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -39408,12 +39408,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 194.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-12-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/882184/000088218425000114/dhi-20251210.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -39661,12 +39661,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 53.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-12",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/936340/000093634026000062/dte-20260312.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -39912,12 +39912,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 106.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1326160/000110465926032443/tm261356-4_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -40165,12 +40165,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 189.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1666700/000119312526151204/d11932ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -40671,12 +40671,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 158.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1065088/000155278126000285/e26002_ebay-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -40922,12 +40922,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 105.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-03-21",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1415404/000155837025003470/tmb-20250502xdef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -41171,12 +41171,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 326.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/31462/000110465926032777/tm2530816-3_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -41936,12 +41936,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 286.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1156039/000115603926000031/elv-20260326.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -42187,12 +42187,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 164.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-21",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/105634/000114036126015809/ny20062562x1_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -42693,12 +42693,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 88.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/65984/000006598426000211/etr-20260327.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": "No verifiable data found",
@@ -42938,12 +42938,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 78.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/821189/000110465926036125/eog-20260520xdef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -43189,12 +43189,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 103.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-02-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/33213/000110465926020027/tm261383-1_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -44187,12 +44187,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 89.2,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/920522/000092052226000011/ess-20260327.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -44681,12 +44681,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 49.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1095073/000162828026024596/eg-20260406.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -44932,12 +44932,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 64.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1711269/000114036126011357/ny20059674x1_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -45426,12 +45426,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 103.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1109357/000110935726000040/exc-20260318.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -45924,12 +45924,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 154.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1324424/000132442426000022/expe-20260429.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -46177,12 +46177,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 186.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/746515/000119312526121388/expd-20260323.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -47434,12 +47434,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 368.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-01-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/814547/000119312526024403/d27709ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -47685,12 +47685,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 88.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-02-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/815556/000081555626000017/fast-20260225.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -47936,12 +47936,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 76.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/34903/000119312526127642/d33770ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -48191,12 +48191,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 547.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-08-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1048911/000110465926097836/tm2531093-3_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -48688,12 +48688,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 239.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-03-16",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2011641/000201164126000016/ferg-20260315.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -49445,12 +49445,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 194.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-02",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1274494/000127449426000096/fslr-20260401.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -50202,12 +50202,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 3431.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-06-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/866374/000130817926000365/flex015484-def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -50709,12 +50709,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 75.34,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-29",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1262039/000207709626000106/ea0287420-01.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -51719,12 +51719,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 113.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2025-12-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/38777/000114036125046314/ny20055304x771_def14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
@@ -51974,12 +51974,12 @@
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Pay ratio pattern not found in proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": 128.0,
+      "source": "DEF 14A Pay Ratio Disclosure, filed 2026-04-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/831259/000119312526173666/d30227ddef14a.htm",
+      "confidence": "High",
+      "notes": null,
+      "last_updated": "2026-08-21"
     },
     "fraud_corruption_scandal_history": {
       "value": {
