@@ -120,7 +120,9 @@ say "was" (past tense) with filler in between ("was estimated to be",
 "our estimate ... was"), use "N times that of the median employee" as an
 entirely different phrasing, and the character-budget regex itself was
 silently broken by "Mr."/"Ms." abbreviations sitting next to the ratio
-sentence.
+sentence. This is a near-universal mandatory disclosure (Dodd-Frank
+953(b)), so the original 30% hit rate was a pipeline gap, not a real
+absence of data.
 
 Q9 (board independence) went through a different kind of fix: the original
 `find_independent_directors_pct()` reported 175/503 (34.8%), but that number
@@ -149,9 +151,52 @@ lands at 155/503 (30.8%) -- a lower raw count than the original 175, because
 most of the difference was false positives (committee stats, benchmarking
 noise) being correctly excluded, not real coverage lost; every remaining
 hit has been spot-checked against its source filing.
-sentence. This is a near-universal mandatory disclosure (Dodd-Frank
-953(b)), so the original 30% hit rate was a pipeline gap, not a real
-absence of data:
+
+Q24 (founder-led / family-owned) needed the opposite kind of check from
+Q10: a user asked whether the ~87% of companies showing no verifiable
+`founder_led` data were legitimately not founder-led, or a pipeline gap.
+The honest answer was "neither, cleanly" -- the original heuristic (a
+whole-document scan for any "founder ... CEO/Executive Chairman" phrase)
+was both wrong in its existing True values and blind to real ones. False
+positives, found at scale: an outside director's own unrelated bio line
+("Co-Founder and CEO of <Other Company>", a near-universal "director
+skills highlights" pattern) matching as if it described the registrant
+(MSFT, GM, MCD, CVS, LLY, SO, CSX, MDLZ, HSY, MA, WSM, NFLX all wrongly
+showed `True` this way); a large asset manager's own controlling family
+showing up in a beneficial-ownership footnote as an apparent "founding
+family" (Fidelity's "the Johnson family" -- Abigail P. Johnson, FMR LLC's
+chairman -- matched for three unrelated semiconductor companies as if she
+controlled them). False negatives: the pattern only recognized "founder"
+as a noun immediately before the title, missing the equally common verb
+form ("Jensen Huang **founded** NVIDIA in 1993 and has served since ... as
+Chief Executive Officer") and reversed/relabeled title order (Oracle's
+"Lawrence Ellison, Executive Chair, CTO **and Founder**") -- both famous,
+unambiguous founder-CEOs that the old pattern could never match.
+
+Rewrote `find_founder_led()` to first identify the registrant's own
+current CEO and Executive Chair by name, then search only the text
+surrounding that specific, already-identified person for founder
+language, instead of scanning the whole document for any matching phrase
+-- anchoring to a known officer is what makes an unrelated director's bio
+structurally unable to match. `find_family_owned()` got a parallel
+institutional-asset-manager exclusion. The trickiest remaining class,
+found during validation: a company that shares its own name with a
+multi-generation founding family can mention several same-surnamed people
+in one filing (Rollins, Inc.: "Ms. Rollins is the granddaughter of O.
+Wayne Rollins, the founder of Rollins, Inc." names three different
+Rollinses in one sentence) -- fixed with a same-surname/different-first-
+name guard, which also correctly identified that Cintas, ResMed, Moderna,
+and UHS are led by a founder's son/successor or a non-founder CEO, not the
+founder personally. Validated across four rounds with a 40-case regression
+set of real, freshly-fetched EDGAR filings (a mix of confirmed-false and
+confirmed-true tickers), plus full re-verification of every prior True
+result after each fix -- the final run reproduced the same result as the
+one before it, the first time that happened in this investigation. Final
+numbers: `founder_led` 33/503 (6.6%) True, 470/503 honest None;
+`family_owned` 15/503 (3.0%) True, 488/503 honest None. Given the false-
+positive rate found in the original heuristic, these lower True counts are
+the trustworthy ones, not a coverage regression -- a "founder-led S&P 500
+company" is, in reality, fairly rare.
 
 | Source | Status | Used for |
 |---|---|---|
@@ -218,6 +263,13 @@ and a quoted evidence snippet in `notes` for spot-checking.
   Q24) are regex text scans of the latest DEF 14A -- real, sourced hits when
   found, but recall is imperfect; a `None` here often just means the
   disclosure used unanticipated phrasing, not that no disclosure exists.
+  Q24 specifically is name-anchored (it identifies the registrant's own
+  CEO/Executive Chair first, then searches only their own bio text) rather
+  than a plain whole-document phrase scan, precisely because the plain-scan
+  approach had a real, confirmed false-positive problem (an unrelated
+  director's own outside-company bio, or an institutional shareholder's
+  beneficial-ownership footnote, matching as if it described the
+  registrant) -- see `## Sources actually used` above for the full story.
 - Country-of-operations (Q21) and cybersecurity-incident-based data privacy
   (Q22) are now implemented (see `## Sources actually used` above for
   coverage numbers) -- both are text/full-text-search-based signals with
