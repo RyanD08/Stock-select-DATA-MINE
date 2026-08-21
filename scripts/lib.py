@@ -561,11 +561,44 @@ def find_ceo_gender_signal(text):
     return (is_woman, ceo_surname, evidence)
 
 
+_INDEP_PCT_PATTERNS = [
+    # "91% of the board/directors ... independent" -- the original, still the most common form.
+    re.compile(r"(\d{1,3})\s*%\s*of[^.]{0,60}?independent", re.IGNORECASE),
+    # "Independent directors comprise/constitute/represent 100% of ..." -- reversed word
+    # order (the word "independent" comes first, not the number) that the pattern above
+    # can't match at all.
+    re.compile(r"independent\s+directors?\s+(?:comprise|constitute|represent)\s+(\d{1,3})\s*%", re.IGNORECASE),
+]
+# A compact infographic/"board snapshot" tile style increasingly common in modern proxies,
+# e.g. "8.6 years AVERAGE TENURE 91% INDEPENDENT" -- no "of" at all -- and the parenthetical
+# form "Nine (9) directors (82%) are independent". Both need extra validation beyond a bare
+# regex: these dashboards very often ALSO show a separate "100% independent [Audit/
+# Compensation] Committee" stat nearby, which isn't the full-board number -- found as a real
+# regression (KIM, WDAY) where the committee stat matched before the real board number.
+_INDEP_PCT_NEEDS_CONTEXT = [
+    re.compile(r"(\d{1,3})\s*%\s+independent\b", re.IGNORECASE),
+    re.compile(r"\(\s*(\d{1,3})\s*%\s*\)\s*(?:are|is)\s+independent", re.IGNORECASE),
+]
+_INDEP_PCT_COMMITTEE_TRAILING = re.compile(r"\s*(?:\w+\s+){0,2}committees?\b", re.IGNORECASE)
+_INDEP_PCT_BOARD_CONTEXT = re.compile(r"\bboard\b|\bdirectors?\b", re.IGNORECASE)
+
+
 def find_independent_directors_pct(text):
-    m = re.search(r"(\d{1,3})\s*%\s*of[^.]{0,60}?independent", text, re.IGNORECASE)
-    if m:
-        return int(m.group(1))
-    m2 = re.search(r"(\d{1,2})\s+of\s+(?:our\s+)?(\d{1,2})\s+director[s]?[^.]{0,60}?(?:is|are)\s+independent", text, re.IGNORECASE)
+    for pat in _INDEP_PCT_PATTERNS:
+        m = pat.search(text)
+        if m:
+            return int(m.group(1))
+    for pat in _INDEP_PCT_NEEDS_CONTEXT:
+        for m in pat.finditer(text):
+            if _INDEP_PCT_COMMITTEE_TRAILING.match(text, m.end()):
+                continue  # "100% independent Compensation Committee" -- a different stat
+            window = text[max(0, m.start() - 100):m.end() + 100]
+            if not _INDEP_PCT_BOARD_CONTEXT.search(window):
+                continue
+            return int(m.group(1))
+    # "N out of M directors ... independent" -- "out of" is at least as common as a bare
+    # "of" in practice and the original pattern only accepted the latter.
+    m2 = re.search(r"(\d{1,2})\s+(?:out\s+)?of\s+(?:our\s+)?(\d{1,2})\s+director[s]?[^.]{0,60}?(?:is|are)\s+independent", text, re.IGNORECASE)
     if m2:
         n, d = int(m2.group(1)), int(m2.group(2))
         if d > 0:
