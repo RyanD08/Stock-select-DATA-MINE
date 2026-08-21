@@ -112,7 +112,17 @@ incident (8-K Item 1.05, the SEC's post-December-2023 material-
 cybersecurity-incident disclosure rule, scoped to each company's own
 CIK and filtered on EDGAR's structured item-code field after an initial
 pass caught two false positives from unstructured text matching --
-including one filing dated 2005, two decades before Item 1.05 existed):
+including one filing dated 2005, two decades before Item 1.05 existed).
+Q10 (CEO pay ratio) went from 153/503 (30.4%) to 424/503 (84.3%) after
+fixing `find_pay_ratio()`'s regex in `scripts/lib.py`: the old pattern
+only matched "is <N> to 1" immediately, but real disclosures overwhelmingly
+say "was" (past tense) with filler in between ("was estimated to be",
+"our estimate ... was"), use "N times that of the median employee" as an
+entirely different phrasing, and the character-budget regex itself was
+silently broken by "Mr."/"Ms." abbreviations sitting next to the ratio
+sentence. This is a near-universal mandatory disclosure (Dodd-Frank
+953(b)), so the original 30% hit rate was a pipeline gap, not a real
+absence of data:
 
 | Source | Status | Used for |
 |---|---|---|
