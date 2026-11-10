@@ -48870,12 +48870,14 @@
       "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0002082247&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": "No verifiable data found",
@@ -55201,12 +55203,14 @@
       "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000040987&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": {
@@ -70138,12 +70142,14 @@
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000319201&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": {
@@ -72673,12 +72679,14 @@
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000059478&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": "No verifiable data found",
@@ -72924,12 +72932,14 @@
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001707925&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": "No verifiable data found",
@@ -76201,12 +76211,14 @@
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001835632&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": "No verifiable data found",
@@ -76952,12 +76964,14 @@
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000063754&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": {
@@ -95714,12 +95728,14 @@
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000857005&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": "No verifiable data found",
@@ -113175,12 +113191,14 @@
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0001466258&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": {
@@ -114186,12 +114204,14 @@
       "last_updated": "2026-08-20"
     },
     "data_privacy_practices": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "SEC EDGAR full-text search (Item 1.05) request failed",
-      "last_updated": "2026-08-20"
+      "value": {
+        "item_1_05_incident_count": 0
+      },
+      "source": "SEC EDGAR full-text search (efts.sec.gov), 8-K Item 1.05 filings",
+      "source_url": "https://www.sec.gov/cgi-bin/browse-edgar?action=getcompany&CIK=0000092230&type=8-K",
+      "confidence": "Low",
+      "notes": "No Item 1.05 (material cybersecurity incident) 8-K filed under this company own CIK. Item 1.05 only exists for incidents from December 2023 onward, so this does not rule out an incident before the rule took effect, or one judged immaterial. Retried 2026-11-10: the original request failure was transient.",
+      "last_updated": "2026-11-10"
     },
     "board_transparency_independence": {
       "value": {
