@@ -2092,11 +2092,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6321 (Accident & Health Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -4871,11 +4871,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7370 (Services-Computer Programming, Data Processing, Etc.) -- a Communication Services company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -5080,11 +5080,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 7370 (Services-Computer Programming, Data Processing, Etc.) -- a Communication Services company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -5120,11 +5120,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7370 (Services-Computer Programming, Data Processing, Etc.) -- a Communication Services company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -6636,11 +6636,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6199 (Finance Services) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -6890,11 +6890,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -7591,11 +7591,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6282 (Investment Advice) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -7631,11 +7631,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6282 (Investment Advice) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -8904,11 +8904,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6411 (Insurance Agents, Brokers & Service) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -10159,11 +10159,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7370 (Services-Computer Programming, Data Processing, Etc.) -- a Communication Services company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -10667,11 +10667,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -11173,11 +11173,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6282 (Investment Advice) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -11629,11 +11629,11 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6411 (Insurance Agents, Brokers & Service) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-19"
     },
     "sustainable_agriculture_resource_use": {
@@ -11669,11 +11669,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6411 (Insurance Agents, Brokers & Service) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -11920,11 +11920,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6399 (Insurance Carriers, NEC) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -14444,11 +14444,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -15197,11 +15197,11 @@
       "last_updated": "2026-08-19"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-19"
     },
     "ceo_pay_ratio": {
@@ -16205,11 +16205,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6211 (Security Brokers, Dealers & Flotation Companies) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -16962,11 +16962,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6022 (State Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -20733,11 +20733,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -22492,11 +22492,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6200 (Security & Commodity Brokers, Dealers, Exchanges & Services) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -24511,11 +24511,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6211 (Security Brokers, Dealers & Flotation Companies) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -25528,11 +25528,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -26532,11 +26532,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -27289,11 +27289,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -27544,11 +27544,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6022 (State Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -28042,11 +28042,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6200 (Security & Commodity Brokers, Dealers, Exchanges & Services) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -29263,11 +29263,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6199 (Finance Services) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -29303,11 +29303,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6199 (Finance Services) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -32075,11 +32075,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7389 (Services-Business Services, NEC) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -43866,11 +43866,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6411 (Insurance Agents, Brokers & Service) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -43906,11 +43906,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6411 (Insurance Agents, Brokers & Service) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -44607,11 +44607,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -44647,11 +44647,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -47149,11 +47149,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7370 (Services-Computer Programming, Data Processing, Etc.) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -48905,11 +48905,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7389 (Services-Business Services, NEC) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -49156,11 +49156,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6022 (State Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -49913,11 +49913,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7389 (Services-Business Services, NEC) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -51681,11 +51681,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6282 (Investment Advice) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -55219,11 +55219,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7389 (Services-Business Services, NEC) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -55468,11 +55468,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6311 (Life Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -55964,11 +55964,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6211 (Security Brokers, Dealers & Flotation Companies) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -56476,11 +56476,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -60758,11 +60758,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -63213,11 +63213,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6211 (Security Brokers, Dealers & Flotation Companies) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -63253,11 +63253,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6211 (Security Brokers, Dealers & Flotation Companies) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -63458,11 +63458,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6200 (Security & Commodity Brokers, Dealers, Exchanges & Services) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -63498,11 +63498,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6200 (Security & Commodity Brokers, Dealers, Exchanges & Services) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -64761,11 +64761,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6282 (Investment Advice) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -66269,11 +66269,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7373 (Services-Computer Integrated Systems Design) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -67249,11 +67249,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -68004,11 +68004,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -68044,11 +68044,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -69251,11 +69251,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6282 (Investment Advice) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -69291,11 +69291,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6282 (Investment Advice) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -73031,11 +73031,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -74246,11 +74246,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6022 (State Commercial Banks) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -74286,11 +74286,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6022 (State Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -75035,11 +75035,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6411 (Insurance Agents, Brokers & Service) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -75995,11 +75995,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 7389 (Services-Business Services, NEC) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -76035,11 +76035,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7389 (Services-Business Services, NEC) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -77800,11 +77800,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6311 (Life Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -80844,11 +80844,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7320 (Services-Consumer Credit Reporting, Collection Agencies) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -81856,11 +81856,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7389 (Services-Business Services, NEC) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -82061,11 +82061,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6200 (Security & Commodity Brokers, Dealers, Exchanges & Services) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -82101,11 +82101,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6200 (Security & Commodity Brokers, Dealers, Exchanges & Services) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -84808,11 +84808,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6022 (State Commercial Banks) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -84848,11 +84848,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6022 (State Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -87621,11 +87621,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7311 (Services-Advertising Agencies) -- a Communication Services company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -90627,11 +90627,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7389 (Services-Business Services, NEC) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -92604,11 +92604,11 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no EPA ECHO-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No EPA ECHO facilities matched by company name')",
       "last_updated": "2026-08-20"
     },
     "sustainable_agriculture_resource_use": {
@@ -92644,11 +92644,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -93405,11 +93405,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6321 (Accident & Health Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -93911,11 +93911,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -94417,11 +94417,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6311 (Life Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -96941,11 +96941,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6211 (Security Brokers, Dealers & Flotation Companies) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -97192,11 +97192,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7374 (Services-Computer Processing & Data Preparation) -- a Communication Services company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -98449,11 +98449,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -99445,11 +99445,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6211 (Security Brokers, Dealers & Flotation Companies) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -100957,11 +100957,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7320 (Services-Consumer Credit Reporting, Collection Agencies) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -105708,11 +105708,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6022 (State Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -107981,11 +107981,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6282 (Investment Advice) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -108232,11 +108232,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7372 (Services-Prepackaged Software) -- a Communication Services company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -111754,11 +111754,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7370 (Services-Computer Programming, Data Processing, Etc.) -- a Communication Services company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -113266,11 +113266,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -114017,11 +114017,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -119312,11 +119312,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 7389 (Services-Business Services, NEC) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -120318,11 +120318,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6331 (Fire, Marine & Casualty Insurance) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -122577,11 +122577,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6021 (National Commercial Banks) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
@@ -124356,11 +124356,11 @@
       "last_updated": "2026-08-20"
     },
     "worker_safety_record": {
-      "value": "No verifiable data found",
+      "value": "No applicable facility records",
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No OSHA establishments matched by company name",
+      "notes": "SIC 6411 (Insurance Agents, Brokers & Service) -- a Financials company in this line of business has no OSHA-regulated industrial/physical-hazard facilities to search for in the first place; this is a structural non-applicability, not a failed search. (Original search note: 'No OSHA establishments matched by company name')",
       "last_updated": "2026-08-20"
     },
     "ceo_pay_ratio": {
