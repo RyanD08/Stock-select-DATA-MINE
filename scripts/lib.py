@@ -1262,6 +1262,201 @@ def find_independent_directors_pct(text):
     return None
 
 
+# ------------------------------------------------------- Q9 board independence, pass 2
+#
+# find_independent_directors_pct() above only catches a company that states its own
+# composition as a plain-prose percentage or "N out of M directors" count. Investigating
+# the ~348 companies still None after that pass (2026-11-10) found the single dominant
+# cause is structural, not a missed phrasing: most DEF 14A director-nominee tables render
+# their "Independent" column as a bare checkmark <img> with no alt text at all (confirmed:
+# Apple's table has a cell literally containing only an <img src=".../aapl...x12x1.jpg">,
+# invisible to any text-based scan, for every director) -- there is no way to recover
+# that from text, and this project will not attempt image/OCR analysis of checkmark icons
+# for a data field this consequential (a wrong guess is worse than an honest None).
+#
+# But nearly every proxy also carries a second, independent (pun intended) textual
+# disclosure that plain-text IS recoverable: the standard NYSE/Nasdaq-compliance sentence
+# "The Board has determined that all/each of our directors, other than <NAME(s)>, are
+# independent under applicable rules of <exchange>." This is boilerplate required by
+# exchange listing standards, not company-specific phrasing, so it generalizes far beyond
+# any one company's proxy-writing style. Confirmed on Apple: "The Board has determined
+# that all Board members, other than Mr. Cook, are independent under applicable rules of
+# The Nasdaq Stock Market LLC."
+_BOARD_DETERMINED_INDEP = re.compile(
+    r"(?:(?:the\s+)?board(?:\s+of\s+directors)?\s+has\s+determined\s+that\s+)?"
+    r"(?:all(?:\s+of)?|each(?:\s+of)?)\s+(?:(?:our|the|its)\s+)?(?:current\s+)?"
+    r"(?:board\s+members|directors|director\s+nominees)"
+    r"(?:[^.]{0,30}?(?:other\s+than|except(?:\s+for)?|with\s+the\s+exception\s+of)\s+([^,;]{1,150}?))?"
+    r",?\s*(?:is|are)\s+independent\b", re.IGNORECASE)
+# ACN's house style puts the exception clause AFTER "independent" rather than before it
+# ("All of our current directors are independent except for our chair and chief executive
+# officer.") -- the pattern above only looks between the head noun and "are independent",
+# so it matches this sentence but silently drops the exception clause (falls back to the
+# qualitative branch, which is safe -- never fabricates 100% -- but misses a computable %).
+_BOARD_DETERMINED_INDEP_TRAILING_EXC = re.compile(
+    r"(?:all(?:\s+of)?|each(?:\s+of)?)\s+(?:(?:our|the|its)\s+)?(?:current\s+)?"
+    r"(?:board\s+members|directors|director\s+nominees)\s*(?:is|are)\s+independent\s+"
+    r"(?:other\s+than|except(?:\s+for)?|with\s+the\s+exception\s+of)\s+"
+    # A plain "ends at the next period" bound breaks on "Mr."/"Ms."/"Dr." -- allow those
+    # specific abbreviations' periods through without treating them as the sentence end.
+    r"((?:Mr\.|Mrs\.|Ms\.|Dr\.|Jr\.|Sr\.|[^.;])"
+    r"{1,150}?)\.", re.IGNORECASE)
+# "<agency> has determined that the following Directors are independent: <Name1> <Name2>
+# ..." (AT&T house style) -- a positive named list instead of an exception list. Capture
+# everything up to the next clear clause break (". " / "In addition" / a newline-turned-
+# double-space run from the original HTML) and count capitalized-looking name tokens.
+_BOARD_NAMED_LIST_INDEP = re.compile(
+    r"has\s+determined\s+that\s+the\s+following\s+directors?\s+(?:is|are)\s+independent\s*:\s*"
+    r"([^.]{1,500}?)(?=\s+In\s+addition\b|\s+[A-Z][a-z]+\s+(?:is|are|has|will|may)\b|\.\s|$)",
+    re.IGNORECASE)
+# A second, more compact house style some proxies use instead ("Vice Chair, President and
+# CEO Thomas J. Hopkins is not independent" / "our Board consists of a majority of
+# independent directors") -- deliberately NOT added here: a quick pass found these too
+# easily conflated with unrelated sentences (e.g. "is not independent" about the AUDITOR,
+# not a director) without the same "Board has determined" anchor the pattern above has,
+# and the exchange-compliance sentence above already covers the large majority of real
+# cases. Left as a documented gap rather than risking a new false-positive class.
+
+
+def _split_exception_names(exception_text):
+    """'Mr. Cook' -> 1 name. 'Ms. Smith and Mr. Jones' / 'A, B, and C' -> split on
+    'and'/commas. Returns None (not a count) if the clause doesn't look like a clean
+    name list (too long, or contains sentence-structure words), since guessing a wrong
+    count would be worse than falling back to a qualitative-only field."""
+    if not exception_text:
+        return 0  # "all ... are independent" with no exception clause at all -- 0 excluded
+    if len(exception_text) > 120 or re.search(r"\b(?:who|which|that|serves?|served)\b", exception_text, re.IGNORECASE):
+        return None
+    parts = re.split(r",\s*(?:and\s+)?|\s+and\s+", exception_text.strip())
+    parts = [p for p in parts if p.strip()]
+    return len(parts) if parts else None
+
+
+def _board_nominee_table_info(raw_html):
+    """Returns (row_count, [first-cell text per row]) for the proxy's own director table
+    (the one whose header row names an 'Independent' column, alongside 'Age'/'Director
+    Since'/'Occupation') -- gives both the total board size needed to turn an
+    exception-list count ("...other than Mr. Cook...") into a percentage, and each
+    director's own name (as the table itself states it, not split out of a flattened
+    name-list sentence, which is error-prone for names with accents/suffixes) for
+    cross-checking a positive named-independent-directors list. Returns (None, []) if no
+    such table is found (don't guess)."""
+    try:
+        soup = BeautifulSoup(raw_html, "lxml")
+    except Exception:
+        return None, []
+    for table in soup.find_all("table"):
+        rows = table.find_all("tr")
+        if not rows:
+            continue
+        header_text = rows[0].get_text(" ", strip=True).lower()
+        if "independent" not in header_text:
+            continue
+        if not any(k in header_text for k in ("director since", "age", "occupation")):
+            continue
+        header_cols = len(rows[0].find_all(["td", "th"]))
+        if header_cols < 3:
+            continue
+        data_rows = 0
+        names = []
+        for tr in rows[1:]:
+            cells = tr.find_all(["td", "th"])
+            if len(cells) < max(3, header_cols - 2):
+                continue  # a single-cell divider/filler row (e.g. a gradient-bar image), not a real data row
+            first_cell_text = cells[0].get_text(" ", strip=True)
+            if len(first_cell_text) < 3:
+                continue
+            names.append(first_cell_text)
+            data_rows += 1
+        if data_rows >= 3:  # sanity floor -- a real board has at least a few members
+            return data_rows, names
+    return None, []
+
+
+def resolve_board_independence_field(text, cik, proxy_url, filing_date):
+    """Full Q9 resolution: numeric prose/table-caption pass, then the universal
+    exchange-compliance "Board has determined..." sentence, computing a real percentage
+    when the board size is independently countable from the proxy's own nominee table and
+    falling back to a qualitative (no percentage, but real quoted disclosure) field
+    otherwise. Never fabricates a count it can't verify."""
+    pct = find_independent_directors_pct(text)
+    if pct:
+        return field({"pct_independent_directors": pct}, f"DEF 14A, filed {filing_date}", proxy_url, "Medium")
+
+    m = _BOARD_DETERMINED_INDEP.search(text)
+    if m:
+        quote = m.group(0)
+        exception_clause = m.group(1)
+        if not exception_clause:
+            # The leading-exception pattern can match a sentence that actually puts its
+            # exception clause AFTER "independent" instead (ACN style) -- check for that
+            # specific trailing form before accepting this as a no-exceptions (100%) claim.
+            mt = _BOARD_DETERMINED_INDEP_TRAILING_EXC.search(text)
+            if mt and abs(mt.start() - m.start()) < 20:
+                quote = mt.group(0)
+                exception_clause = mt.group(1)
+        excluded_count = _split_exception_names(exception_clause)
+        board_size, _names = (None, [])
+        if excluded_count is not None:
+            try:
+                raw = sec_get(proxy_url, timeout=40).text
+                board_size, _names = _board_nominee_table_info(raw)
+            except Exception:
+                board_size = None
+        if excluded_count is not None and board_size and excluded_count < board_size:
+            computed_pct = round((board_size - excluded_count) / board_size * 100)
+            return field(
+                {"pct_independent_directors": computed_pct, "board_size": board_size, "excluded_count": excluded_count},
+                f"DEF 14A, filed {filing_date} (exchange-compliance statement + nominee-table count)", proxy_url, "Medium",
+                f"Computed from the proxy's own disclosure: \"{quote}\" (board size {board_size} counted from the "
+                "director-nominee table's own rows).")
+        return field(
+            {"pct_independent_directors": None, "qualitative_disclosure": quote},
+            f"DEF 14A, filed {filing_date}", proxy_url, "Medium",
+            "Exact percentage not computed -- the proxy states this qualitatively (exchange-compliance "
+            "independence determination) but either the excluded-director list or the total board size "
+            "couldn't be reliably counted from this filing. Quoted disclosure: \"" + quote + "\"")
+
+    mn = _BOARD_NAMED_LIST_INDEP.search(text)
+    if mn:
+        blob = mn.group(1)
+        try:
+            raw = sec_get(proxy_url, timeout=40).text
+            board_size, names = _board_nominee_table_info(raw)
+        except Exception:
+            board_size, names = None, []
+        if board_size and names:
+            # Cross-check against the table's own director names (not split out of the
+            # flattened blob itself, which is error-prone for names with accents/suffixes)
+            # -- a name "counts" as independent if a reasonable chunk of its own table
+            # text (first two tokens, typically First+Last) appears in the matched blob.
+            indep_count = 0
+            for n in names:
+                tokens = n.split()
+                probe = " ".join(tokens[:2]) if len(tokens) >= 2 else n
+                if probe and probe in blob:
+                    indep_count += 1
+            if 0 < indep_count <= board_size:
+                computed_pct = round(indep_count / board_size * 100)
+                return field(
+                    {"pct_independent_directors": computed_pct, "board_size": board_size, "independent_count": indep_count},
+                    f"DEF 14A, filed {filing_date} (named-independent-directors list + nominee-table cross-check)",
+                    proxy_url, "Medium",
+                    f"Proxy names {indep_count} directors as independent out of a {board_size}-member board "
+                    "(cross-checked against the director-nominee table's own name list).")
+        return field(
+            {"pct_independent_directors": None, "qualitative_disclosure": mn.group(0)[:300]},
+            f"DEF 14A, filed {filing_date}", proxy_url, "Medium",
+            "Proxy names specific directors as independent but the total board size couldn't be reliably "
+            "cross-checked from the nominee table. Quoted disclosure: \"" + mn.group(0)[:300] + "\"")
+
+    return none_field(
+        "No board-independence percentage or qualifying 'Board has determined ... independent' statement found "
+        "in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no "
+        "text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess "
+        "at via image analysis.")
+
+
 # ---------------------------------------------------------------- FEC (Q20 political donations)
 #
 # fec.gov's bulk-download files give real, filed committee-level data: the

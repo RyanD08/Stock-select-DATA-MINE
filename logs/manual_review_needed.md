@@ -265,3 +265,35 @@ Findings per source, this session:
 - **apps.occ.gov** -- logging as a suggested additional allowlist host for
   a future session that wants to pursue OCC's real enforcement-action
   search tool.
+
+## ERIE (Erie Indemnity) files DEF 14C, not DEF 14A -- governance fields stuck at None
+
+ERIE has no DEF 14A on record at all, but does file DEF 14C ("information
+statement", used instead of a proxy when shareholder votes aren't being
+solicited -- consistent with Erie Indemnity's controlled-company
+structure). This project's pipeline only ever looks for DEF 14A, so
+board_transparency_independence, ceo_pay_ratio, shareholder_rights_voting_structure,
+founder_led, family_owned, and women_led are all None for ERIE specifically
+because of this form-type gap, not a text-matching failure. Checked
+across all 341 companies with any governance-field gap: ERIE is the ONLY
+DEF-14C-only filer in this dataset, so this isn't worth a generalized
+pipeline change for one company -- flagging for a future session to
+manually pull ERIE's latest DEF 14C and populate these six fields from it
+directly.
+
+## BX (Blackstone), FDXF (FedEx Freight), PSKY (Paramount Skydance) -- no DEF 14A at all
+
+- **BX**: genuinely has no DEF 14A, DEF 14C, or equivalent proxy/information
+  statement anywhere in its EDGAR filing history going back to its 2007
+  IPO as a limited partnership -- its filing list is 10-K/10-Q/Schedule 13
+  family/Form 3-4-5/S-3/S-8 only. Worth a future session's manual check of
+  whether Blackstone's governance disclosures are instead in its 10-K
+  (some controlled/partnership structures fold this in) rather than
+  assuming a pipeline bug.
+- **FDXF**: CIK 0002082247 ('FedEx Freight Holding Company, Inc.') only has
+  a Form 10-12B (registration statement) filing history -- a very recent
+  spin-off from FedEx, too new to have filed its first annual proxy yet.
+- **PSKY**: CIK 0002041610, formerly 'New Pluto Global, Inc.' then
+  'Paramount Skydance Corp' -- only contested-merger proxy forms
+  (DEFA14A/DEFC14A/PREC14A/PRER14A/PRRN14A) on file, no plain annual-meeting
+  DEF 14A yet, consistent with its recent Paramount/Skydance merger.
