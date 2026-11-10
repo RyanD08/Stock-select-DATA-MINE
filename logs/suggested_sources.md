@@ -39,3 +39,34 @@ an `srt:StatementGeographicalAxis` dimension) across all filers for a given
 period, which would give real per-company country-of-operations data for Q21
 instead of the current `None` placeholder. Left unimplemented in this session
 for time; a good first task for the next batch-processing session.
+
+## nlrb.gov re-tested 2026-11-10 -- domain reachable, but case search is robots.txt-disallowed
+
+Unlike the earlier finding (nlrb.gov entirely unreachable as a JS-rendered
+widget with no API), as of this session www.nlrb.gov itself returns HTTP 200
+and is not network-blocked. However, the actual company-searchable Case
+Search tool lives at `/search/case`, and `/search/` is explicitly disallowed
+in nlrb.gov's own robots.txt -- respecting that rather than routing around
+it. The "Research" page (`/cases-decisions/cases/research`) and "Open
+Government" page (`/open`) were checked for an alternative: the only bulk
+report with a download option (`/reports/graphs-data/recent-filings`,
+"Recent Charges & Petitions Filings") exposes filters for case type/status/
+date-range/region only -- no company or respondent-name filter -- and its
+table data loads via a client-side AJAX call (no static JSON API found in
+the page source), so there is no way to query it by company without either
+violating robots.txt or downloading and fuzzy-matching a large, unfiltered
+case stream, which was not attempted this session given the uncertain
+yield. `labor_disputes_exploitation_history` (0% coverage) remains
+genuinely unfillable from nlrb.gov under this project's access rules.
+Violation Tracker (violationtracker.goodjobsfirst.org) was re-tested too
+and is still blocked at the network/proxy level (ProxyError, same as
+previously documented) -- no change there either.
+
+If a future session gets explicit approval to drive the actual Case Search
+UI with a headless browser (not a robots.txt violation if the tool itself
+is reachable via a different, allowed path, e.g. an underlying REST view),
+or if NLRB publishes a bulk open-data extract elsewhere (data.gov was
+already checked and came up empty per the 2026-08-20 note above), that
+would be the way to get real labor-dispute data. Logging rather than acting
+on it, since driving the search UI directly would mean working around the
+robots.txt restriction.

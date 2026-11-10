@@ -32,12 +32,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 673,
+        "caa_case_rows": 91,
+        "cwa_case_rows": 122,
+        "rcra_case_rows": 280,
+        "total_penalties_usd": "$3,617,936"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=3M CO",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('3M CO') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -1048,12 +1054,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Accenture plc",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Accenture plc') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -1548,12 +1560,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 30,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 13,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ADVANCED MICRO DEVICES INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ADVANCED MICRO DEVICES INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -5329,12 +5347,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 2,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ALTRIA GROUP, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ALTRIA GROUP, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -7346,12 +7370,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=American Water Works Company, Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('American Water Works Company, Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -9111,12 +9141,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 54,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 11,
+        "rcra_case_rows": 24,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=APA Corp",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('APA Corp') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -12637,12 +12673,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 12,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 6,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Autodesk, Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Autodesk, Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -12884,12 +12926,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 27,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 14,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=AUTOMATIC DATA PROCESSING INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('AUTOMATIC DATA PROCESSING INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -14902,12 +14950,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 109,
+        "caa_case_rows": 25,
+        "cwa_case_rows": 22,
+        "rcra_case_rows": 62,
+        "total_penalties_usd": "$58,794"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=BECTON DICKINSON AND CO",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10: the SEC legal name ('BECTON DICKINSON & CO') contains a literal '&', which EPA ECHO's p_fn search parameter cannot handle (confirmed: same name with '&' replaced by 'AND' -- 'BECTON DICKINSON AND CO' -- succeeds while the exact legal name returns no match). Substituted 'AND' for '&' to work around this known EPA ECHO quirk, not a change to the company-matching logic itself. Aggregated across all EPA-regulated facilities whose name matches this substring; may include unrelated facilities with similar names.",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -18432,12 +18486,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 3,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 1,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=BROADRIDGE FINANCIAL SOLUTIONS, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('BROADRIDGE FINANCIAL SOLUTIONS, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -18932,12 +18992,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 19,
+        "caa_case_rows": 5,
+        "cwa_case_rows": 9,
+        "rcra_case_rows": 3,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=BROWN FORMAN CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('BROWN FORMAN CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -19687,12 +19753,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 25,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 3,
+        "rcra_case_rows": 19,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=BXP, Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('BXP, Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -21191,12 +21263,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 100,
+        "caa_case_rows": 7,
+        "cwa_case_rows": 15,
+        "rcra_case_rows": 42,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Carnival Corp Ltd.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Carnival Corp Ltd.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -22950,12 +23028,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 4,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 2,
+        "total_penalties_usd": "$15,000"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=CDW Corp",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('CDW Corp') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -23711,12 +23795,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 428,
+        "caa_case_rows": 42,
+        "cwa_case_rows": 108,
+        "rcra_case_rows": 83,
+        "total_penalties_usd": "$81,500"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=CENTERPOINT ENERGY INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('CENTERPOINT ENERGY INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -27751,12 +27841,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 1,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=CLOROX CO /DE/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('CLOROX CO /DE/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -30025,12 +30121,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 6,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 5,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=COMFORT SYSTEMS USA INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('COMFORT SYSTEMS USA INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -30778,12 +30880,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 33,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 3,
+        "rcra_case_rows": 20,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=CONSTELLATION BRANDS, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('CONSTELLATION BRANDS, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -31025,12 +31133,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 39,
+        "caa_case_rows": 21,
+        "cwa_case_rows": 19,
+        "rcra_case_rows": 21,
+        "total_penalties_usd": "$9,082"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Constellation Energy Corp",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Constellation Energy Corp') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -32282,12 +32396,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 42,
+        "caa_case_rows": 10,
+        "cwa_case_rows": 6,
+        "rcra_case_rows": 21,
+        "total_penalties_usd": "$315,634"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Corteva, Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Corteva, Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -35808,12 +35928,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 382,
+        "caa_case_rows": 52,
+        "cwa_case_rows": 76,
+        "rcra_case_rows": 89,
+        "total_penalties_usd": "$5,250"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=DEERE AND CO",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10: the SEC legal name ('DEERE & CO') contains a literal '&', which EPA ECHO's p_fn search parameter cannot handle (confirmed: same name with '&' replaced by 'AND' -- 'DEERE AND CO' -- succeeds while the exact legal name returns no match). Substituted 'AND' for '&' to work around this known EPA ECHO quirk, not a change to the company-matching logic itself. Aggregated across all EPA-regulated facilities whose name matches this substring; may include unrelated facilities with similar names.",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -36569,12 +36695,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 1,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=DEVON ENERGY CORP/DE",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('DEVON ENERGY CORP/DE') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -37318,12 +37450,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 11,
+        "caa_case_rows": 3,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 3,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=DIGITAL REALTY TRUST, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('DIGITAL REALTY TRUST, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -38328,12 +38466,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 57,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 10,
+        "rcra_case_rows": 6,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=DOMINOS PIZZA INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('DOMINOS PIZZA INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -39336,12 +39480,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=HORTON D R INC /DE/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('HORTON D R INC /DE/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -41095,12 +41245,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 459,
+        "caa_case_rows": 77,
+        "cwa_case_rows": 24,
+        "rcra_case_rows": 307,
+        "total_penalties_usd": "$1,017,288"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ECOLAB INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ECOLAB INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -42864,12 +43020,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 688,
+        "caa_case_rows": 259,
+        "cwa_case_rows": 57,
+        "rcra_case_rows": 5,
+        "total_penalties_usd": "$8,683,500"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=EOG RESOURCES INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('EOG RESOURCES INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -43621,12 +43783,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 87,
+        "caa_case_rows": 24,
+        "cwa_case_rows": 8,
+        "rcra_case_rows": 25,
+        "total_penalties_usd": "$91,229"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=EQUINIX INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('EQUINIX INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -44111,12 +44279,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 102,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 95,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ESSEX PROPERTY TRUST, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ESSEX PROPERTY TRUST, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -44360,12 +44534,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 4,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 4,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ESTEE LAUDER COMPANIES INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ESTEE LAUDER COMPANIES INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -45103,12 +45283,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 124,
+        "caa_case_rows": 20,
+        "cwa_case_rows": 19,
+        "rcra_case_rows": 80,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=EVERSOURCE ENERGY",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('EVERSOURCE ENERGY') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -45350,12 +45536,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 60,
+        "caa_case_rows": 24,
+        "cwa_case_rows": 22,
+        "rcra_case_rows": 31,
+        "total_penalties_usd": "$10,535"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=EXELON CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('EXELON CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -45597,12 +45789,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 5,
+        "caa_case_rows": 4,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=EXPAND ENERGY Corp",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('EXPAND ENERGY Corp') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -46603,12 +46801,18 @@
       "last_updated": "2026-08-19"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-19"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ExxonMobil Holdings Corp",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ExxonMobil Holdings Corp') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "No verifiable data found",
@@ -48614,12 +48818,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Ferguson Enterprises Inc. /DE/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Ferguson Enterprises Inc. /DE/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -50380,12 +50590,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 358,
+        "caa_case_rows": 61,
+        "cwa_case_rows": 37,
+        "rcra_case_rows": 216,
+        "total_penalties_usd": "$79,731"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=FORD MOTOR CO",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('FORD MOTOR CO') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -53914,12 +54130,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 313,
+        "caa_case_rows": 40,
+        "cwa_case_rows": 67,
+        "rcra_case_rows": 158,
+        "total_penalties_usd": "$6,254"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=GENERAL DYNAMICS CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('GENERAL DYNAMICS CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -55673,12 +55895,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 1,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 1,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=GoDaddy Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('GoDaddy Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -57434,12 +57662,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 20,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 18,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=HENRY SCHEIN INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('HENRY SCHEIN INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -60465,12 +60699,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 42,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 4,
+        "rcra_case_rows": 24,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=HUMANA INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('HUMANA INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -60963,12 +61203,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 9,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 3,
+        "total_penalties_usd": "$3,900"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=HUNTINGTON INGALLS INDUSTRIES, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('HUNTINGTON INGALLS INDUSTRIES, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -61459,12 +61705,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=IDEX CORP /DE/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('IDEX CORP /DE/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -61702,12 +61954,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=IDEXX LABORATORIES INC /DE",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('IDEXX LABORATORIES INC /DE') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -64966,12 +65224,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 8,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 8,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Invitation Homes Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Invitation Homes Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -66476,12 +66740,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=JACOBS SOLUTIONS INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('JACOBS SOLUTIONS INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -67000,12 +67270,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Johnson Controls International plc",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Johnson Controls International plc') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -68504,12 +68780,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 139,
+        "caa_case_rows": 24,
+        "cwa_case_rows": 35,
+        "rcra_case_rows": 62,
+        "total_penalties_usd": "$33,758"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=KIMBERLY CLARK CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('KIMBERLY CLARK CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -69004,12 +69286,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 894,
+        "caa_case_rows": 217,
+        "cwa_case_rows": 197,
+        "rcra_case_rows": 206,
+        "total_penalties_usd": "$1,767,702"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=KINDER MORGAN, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('KINDER MORGAN, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -70005,12 +70293,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 2145,
+        "caa_case_rows": 58,
+        "cwa_case_rows": 204,
+        "rcra_case_rows": 1434,
+        "total_penalties_usd": "$2,507,800"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=KROGER CO",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('KROGER CO') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -70252,12 +70546,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 6573,
+        "caa_case_rows": 278,
+        "cwa_case_rows": 1081,
+        "rcra_case_rows": 2372,
+        "total_penalties_usd": "$8,725,770"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=L3HARRIS TECHNOLOGIES, INC. /DE/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('L3HARRIS TECHNOLOGIES, INC. /DE/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -70495,12 +70795,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=LABCORP HOLDINGS INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('LABCORP HOLDINGS INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -70993,12 +71299,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 1,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 1,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=LAS VEGAS SANDS CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('LAS VEGAS SANDS CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -71744,12 +72056,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 1,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=LENNOX INTERNATIONAL INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('LENNOX INTERNATIONAL INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -71989,12 +72307,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 100,
+        "caa_case_rows": 13,
+        "cwa_case_rows": 29,
+        "rcra_case_rows": 40,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ELI LILLY AND Co",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10: the SEC legal name ('ELI LILLY & Co') contains a literal '&', which EPA ECHO's p_fn search parameter cannot handle (confirmed: same name with '&' replaced by 'AND' -- 'ELI LILLY AND Co' -- succeeds while the exact legal name returns no match). Substituted 'AND' for '&' to work around this known EPA ECHO quirk, not a change to the company-matching logic itself. Aggregated across all EPA-regulated facilities whose name matches this substring; may include unrelated facilities with similar names.",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -72738,12 +73062,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 514,
+        "caa_case_rows": 57,
+        "cwa_case_rows": 100,
+        "rcra_case_rows": 263,
+        "total_penalties_usd": "$119,594"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=LOCKHEED MARTIN CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('LOCKHEED MARTIN CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -74744,12 +75074,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=MARRIOTT INTERNATIONAL INC /MD/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('MARRIOTT INTERNATIONAL INC /MD/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -76244,12 +76580,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 612,
+        "caa_case_rows": 55,
+        "cwa_case_rows": 136,
+        "rcra_case_rows": 139,
+        "total_penalties_usd": "$1,172,853"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=MCCORMICK AND CO INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10: the SEC legal name ('MCCORMICK & CO INC') contains a literal '&', which EPA ECHO's p_fn search parameter cannot handle (confirmed: same name with '&' replaced by 'AND' -- 'MCCORMICK AND CO INC' -- succeeds while the exact legal name returns no match). Substituted 'AND' for '&' to work around this known EPA ECHO quirk, not a change to the company-matching logic itself. Aggregated across all EPA-regulated facilities whose name matches this substring; may include unrelated facilities with similar names.",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -76995,12 +77337,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 2,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 2,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Medtronic plc",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Medtronic plc') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -82816,12 +83164,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=NEWMONT Corp /DE/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('NEWMONT Corp /DE/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -83059,12 +83413,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 828,
+        "caa_case_rows": 59,
+        "cwa_case_rows": 84,
+        "rcra_case_rows": 394,
+        "total_penalties_usd": "$5,327,700"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=NEWS CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('NEWS CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -84065,12 +84425,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 26,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 10,
+        "rcra_case_rows": 3,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=NISOURCE INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('NISOURCE INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -84312,12 +84678,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 62,
+        "caa_case_rows": 6,
+        "cwa_case_rows": 11,
+        "rcra_case_rows": 40,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=NORDSON CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('NORDSON CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -85814,12 +86186,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 304,
+        "caa_case_rows": 66,
+        "cwa_case_rows": 153,
+        "rcra_case_rows": 92,
+        "total_penalties_usd": "$2,292,785"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=NUCOR CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('NUCOR CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -86575,12 +86953,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=NXP Semiconductors N.V.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('NXP Semiconductors N.V.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -86828,12 +87212,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 77,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 17,
+        "rcra_case_rows": 53,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=O REILLY AUTOMOTIVE INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('O REILLY AUTOMOTIVE INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -87075,12 +87465,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=OCCIDENTAL PETROLEUM CORP /DE/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('OCCIDENTAL PETROLEUM CORP /DE/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -87828,12 +88224,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 11,
+        "caa_case_rows": 3,
+        "cwa_case_rows": 5,
+        "rcra_case_rows": 7,
+        "total_penalties_usd": "$4,800"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ON SEMICONDUCTOR CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ON SEMICONDUCTOR CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -88073,12 +88475,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 1,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ONEOK INC /NEW/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ONEOK INC /NEW/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -89328,12 +89736,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 2,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Palantir Technologies Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Palantir Technologies Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -89575,12 +89989,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 4,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 1,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Palo Alto Networks Inc",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Palo Alto Networks Inc') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -91601,12 +92021,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 3753,
+        "caa_case_rows": 26,
+        "cwa_case_rows": 150,
+        "rcra_case_rows": 1608,
+        "total_penalties_usd": "$409,000"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=PG&E Corp",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('PG&E Corp') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -96648,12 +97074,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 8,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 6,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=RALPH LAUREN CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('RALPH LAUREN CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -98654,12 +99086,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 456,
+        "caa_case_rows": 71,
+        "cwa_case_rows": 169,
+        "rcra_case_rows": 227,
+        "total_penalties_usd": "$1,460,531"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=REPUBLIC SERVICES, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('REPUBLIC SERVICES, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -99150,12 +99588,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 7,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 4,
+        "rcra_case_rows": 5,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=REVVITY, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('REVVITY, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -100162,12 +100606,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ROPER TECHNOLOGIES INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ROPER TECHNOLOGIES INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -101921,12 +102371,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=SLB LIMITED/NV",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('SLB LIMITED/NV') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -102168,12 +102624,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Seagate Technology Holdings plc",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Seagate Technology Holdings plc') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -102415,12 +102877,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 31,
+        "caa_case_rows": 3,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 7,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=SEMPRA",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('SEMPRA') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -102662,12 +103130,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=ServiceNow, Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('ServiceNow, Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -103162,12 +103636,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 13,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 6,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=SIMON PROPERTY GROUP INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('SIMON PROPERTY GROUP INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -103409,12 +103889,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 14,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 2,
+        "rcra_case_rows": 9,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=SKYWORKS SOLUTIONS, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('SKYWORKS SOLUTIONS, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -104664,12 +105150,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 13459,
+        "caa_case_rows": 1201,
+        "cwa_case_rows": 3013,
+        "rcra_case_rows": 3700,
+        "total_penalties_usd": "$12,117,942"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=SOUTHERN CO",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('SOUTHERN CO') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -105164,12 +105656,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 53,
+        "caa_case_rows": 11,
+        "cwa_case_rows": 25,
+        "rcra_case_rows": 25,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=STANLEY BLACK & DECKER, INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('STANLEY BLACK & DECKER, INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -107184,12 +107682,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 11,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=SYNOPSYS INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('SYNOPSYS INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -109445,12 +109949,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 11,
+        "caa_case_rows": 3,
+        "cwa_case_rows": 4,
+        "rcra_case_rows": 11,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=TELEDYNE TECHNOLOGIES INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('TELEDYNE TECHNOLOGIES INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -111206,12 +111716,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=TJX COMPANIES INC /DE/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('TJX COMPANIES INC /DE/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -114475,12 +114991,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 27,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 1,
+        "rcra_case_rows": 17,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=UDR, Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('UDR, Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -115230,12 +115752,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 0,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=United Airlines Holdings, Inc.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('United Airlines Holdings, Inc.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Medium",
@@ -115985,12 +116513,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 2,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 2,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=UNITEDHEALTH GROUP INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('UNITEDHEALTH GROUP INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -119521,12 +120055,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 5,
+        "caa_case_rows": 1,
+        "cwa_case_rows": 3,
+        "rcra_case_rows": 2,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=Vistra Corp.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('Vistra Corp.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -120778,12 +121318,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 2,
+        "caa_case_rows": 2,
+        "cwa_case_rows": 2,
+        "rcra_case_rows": 2,
+        "total_penalties_usd": "$28,825"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('WESTINGHOUSE AIR BRAKE TECHNOLOGIES CORP') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -121788,12 +122334,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 2459,
+        "caa_case_rows": 297,
+        "cwa_case_rows": 614,
+        "rcra_case_rows": 912,
+        "total_penalties_usd": "$1,690,633"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=WASTE MANAGEMENT INC",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('WASTE MANAGEMENT INC') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -122035,12 +122587,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 1,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 0,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=WATERS CORP /DE/",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('WATERS CORP /DE/') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",
@@ -122786,12 +123344,18 @@
       "last_updated": "2026-08-20"
     },
     "environmental_pollution_violations": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No EPA ECHO facilities matched by company name",
-      "last_updated": "2026-08-20"
+      "value": {
+        "matched_facility_query_rows": 19,
+        "caa_case_rows": 0,
+        "cwa_case_rows": 0,
+        "rcra_case_rows": 19,
+        "total_penalties_usd": "$0"
+      },
+      "source": "EPA ECHO facility search (name-matched, retried)",
+      "source_url": "https://echodata.epa.gov/echo/echo_rest_services.get_facilities?p_fn=WELLTOWER INC.",
+      "confidence": "Medium",
+      "notes": "Retried 2026-11-10 using the SEC EDGAR legal registrant name ('WELLTOWER INC.') -- the original 2026-08-19/20 run used the same method but came up empty, most likely because the EPA ECHO API was transiently degraded then. Aggregated across all EPA-regulated facilities whose name matches this name substring; may include unrelated facilities with similar names, and may miss facilities filed under subsidiary names (see retry_epa_echo_subsidiaries.py for that follow-up pass).",
+      "last_updated": "2026-11-10"
     },
     "sustainable_agriculture_resource_use": {
       "value": "Low",

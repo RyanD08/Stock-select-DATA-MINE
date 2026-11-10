@@ -184,3 +184,20 @@ IPOs, name/ticker changes -- will be appended below as batches are processed.)*
 - **XOM** (2026-08-19): CIK 0002115436 ('ExxonMobil Holdings Corp') has no 10-K or DEF 14A filing history on EDGAR -- likely a recent holding-company reorganization/successor-registrant event (check for a predecessor CIK). Filing types on record: ['10-Q', '8-K', '8-K12B', 'POSASR', 'S-8 POS'].
 - **HONA** (2026-08-20): CIK 0002089271 ('Honeywell Aerospace Inc.') has no 10-K or DEF 14A filing history on EDGAR -- likely a recent holding-company reorganization/successor-registrant event (check for a predecessor CIK). Filing types on record: ['10-12B', '10-12B/A', '10-Q', '3', '4', '424B3', '8-K', 'CERT', 'DRS', 'DRS/A', 'EFFECT', 'S-4', 'S-8', 'SCHEDULE 13G', 'SEC STAFF ACTION'].
 - **BLDR / CTVA / KVUE / TAP / PSKY / TTD / WBD** (2026-11-10): no longer present in the live Wikipedia S&P 500 constituents table under these exact symbols (checked directly -- the current table has exactly 503 symbols, none of these 7 among them), implying a recent index reconstitution this project's dataset hasn't been re-synced against. Their `gics_sector` was backfilled from their already-correct `gics_sub_industry` via the standard GICS taxonomy (e.g. "Brewers" -> Consumer Staples) rather than left blank, but every other field for these 7 (survey-question data, financials, etc.) was populated against whatever ticker/constituent state existed when this dataset was first built and has not been re-verified against the current index. Flagging for a future session to decide whether a full constituent-list refresh (`fetch_sp500_list.py`) is in scope, and whether any of these 7 should be dropped or any newly-added constituent should be added.
+
+## OSHA establishment search now returns a site-wide 403 (new blocker, 2026-11-10)
+
+`www.osha.gov` -- including its plain homepage, not just the
+`/ords/imis/establishment.search` endpoint used for worker_safety_record --
+now returns HTTP 403 Forbidden to this project's descriptive, compliant
+User-Agent. This is a new access change since the dataset was first built
+(worker_safety_record's existing 185/503 real records were captured
+2026-08-19/20, before this block). Confirmed by testing the exact same
+request this project has always made; not something to route around (no
+header spoofing, no proxy tricks were used or should be used). This fully
+blocks any worker_safety_record retry this session -- the field is frozen
+at its existing 185/503 (36.8%) plus the 74 "No applicable facility
+records" reclassifications from the 2026-11-10 bias-correction pass.
+Re-test osha.gov directly at the start of a future session before assuming
+it's still blocked; this could be transient (same class of issue as EPA
+ECHO's confirmed transient degradation, below) or a durable policy change.

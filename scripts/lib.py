@@ -179,7 +179,12 @@ def sic_screen(sic_code):
 
 def epa_echo_summary(company_name):
     url = "https://echodata.epa.gov/echo/echo_rest_services.get_facilities"
-    params = {"output": "JSON", "p_fn": company_name}
+    # EPA ECHO's p_fn name-search parameter cannot handle a literal "&" --
+    # confirmed 2026-11-10: "DEERE & CO" returns no match while "DEERE AND
+    # CO" (otherwise identical) succeeds -- so swap it for "AND" rather than
+    # let a company whose legal name contains "&" (common: "X & CO",
+    # "X & SONS") silently come back empty.
+    params = {"output": "JSON", "p_fn": company_name.replace("&", "AND")}
     try:
         r = epa_get(url, params=params)
         data = r.json()
