@@ -70098,8 +70098,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -70864,8 +70864,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -72379,8 +72379,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -73645,8 +73645,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -74153,8 +74153,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -74404,8 +74404,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -74903,8 +74903,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -76657,12 +76657,12 @@
       "last_updated": "2026-08-20"
     },
     "political_donation_transparency": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "value": "Disclosed",
+      "source": "DEF 14A political spending disclosure, filed 2026-04-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1141391/000114139126000021/ma-20260427.htm",
+      "confidence": "Medium",
+      "notes": "Matched broader political-activity disclosure language: \"Political Action Committee\". Retried 2026-11-10 with an expanded pattern (named political action committees, corporate political-activity policies, trade-association political spending, and explicit negative disclosures) beyond the original narrow 'political contribut/spending/donation' phrase match.",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [
@@ -78699,8 +78699,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -78954,8 +78954,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -79207,8 +79207,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -80235,8 +80235,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -80993,8 +80993,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -81244,8 +81244,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -81495,8 +81495,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -82001,8 +82001,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -82503,12 +82503,12 @@
       "last_updated": "2026-08-20"
     },
     "political_donation_transparency": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "value": "Disclosed",
+      "source": "DEF 14A political spending disclosure, filed 2026-03-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1408198/000140819826000023/msci-20260310.htm",
+      "confidence": "Medium",
+      "notes": "Matched broader political-activity disclosure language: \"Corporate Political Activit\". Retried 2026-11-10 with an expanded pattern (named political action committees, corporate political-activity policies, trade-association political spending, and explicit negative disclosures) beyond the original narrow 'political contribut/spending/donation' phrase match.",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -85030,8 +85030,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -86543,8 +86543,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [],
@@ -86802,8 +86802,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No political-spending disclosure language found in proxy text scan; cii.org unavailable in this environment",
-      "last_updated": "2026-08-20"
+      "notes": "No FEC-registered corporate PAC name-matched and no political-spending/PAC/lobbying disclosure language found in proxy text scan (retried 2026-11-10 with an expanded pattern); opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment",
+      "last_updated": "2026-11-10"
     },
     "countries_of_concern_operations": {
       "value": [
