@@ -509,5 +509,23 @@
     "ZBRA",
     "ZTS"
   ],
-  "manual_review_tickers": []
+  "manual_review_tickers": [],
+  "coverage_update_2026_11_10": {
+    "last_updated": "2026-11-10T15:56:08.792621+00:00",
+    "steps_completed": [
+      "Step 1: full coverage audit, overall + by GICS sector (gics_sector backfilled -- was blank for all 503 due to a Wikipedia header-text change, see git log)",
+      "Step 2: No applicable facility records reclassification for Financials (SIC-verified) + narrow Communication Services sub-industries -- 16 environmental_pollution_violations + 74 worker_safety_record fields reclassified. Real Estate deliberately NOT reclassified (data does not support the premise for that sector).",
+      "Step 3.1 (EPA ECHO only): retried all 94 environmental_pollution_violations gaps -- 90 recovered on a clean re-run (API was transiently degraded at original collection time), remaining 4 (BDX/DE/LLY/MKC) fixed via an EPA ECHO & -> AND query workaround, now permanent in lib.py. environmental_pollution_violations: 78.1% -> 96.8% real, 0 genuine gaps left."
+    ],
+    "steps_blocked": [
+      "Step 3.1 (OSHA): www.osha.gov now returns a site-wide HTTP 403 to this project compliant User-Agent (new since original collection) -- worker_safety_record retry not possible this session.",
+      "Step 3.3 (labor disputes): nlrb.gov reachable again but its real Case Search tool is at /search/case, disallowed by nlrb.gov robots.txt; static report pages have no company-name filter. Violation Tracker still network-blocked."
+    ],
+    "steps_remaining": [
+      "Step 3.2: CFPB/FDIC/Fed/OCC/FINRA/OpenSanctions/FCC for Financials/Communication Services/Real Estate",
+      "Step 3.4: DEF 14A governance gaps (board independence, pay ratio, dual-class)",
+      "Step 3.5: founder-led/family-owned/women-led gaps",
+      "Step 3.6: political donations/data privacy/countries-of-concern gaps"
+    ]
+  }
 }
