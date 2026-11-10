@@ -83291,8 +83291,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -84295,8 +84295,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -84546,12 +84546,12 @@
       "last_updated": "2026-08-20"
     },
     "women_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-07-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/320187/000032018726000089/nke-20260715.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Hill' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...NCIAL EXPERTISE GOVERNANCE ELLIOTT HILL Mr. Hill is President & Chief Executive Officer of the Company. He w...\"",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -86063,8 +86063,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -87083,8 +87083,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -87598,8 +87598,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -88862,8 +88862,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -89111,8 +89111,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -89619,8 +89619,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -90632,7 +90632,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-20"
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -91650,8 +91650,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -92417,8 +92417,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -92671,8 +92671,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -94690,8 +94690,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -94943,8 +94943,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -95196,8 +95196,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -96468,8 +96468,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -98231,8 +98231,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -98989,8 +98989,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -99240,8 +99240,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -99491,8 +99491,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -100763,8 +100763,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -101777,8 +101777,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -102281,8 +102281,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -104813,8 +104813,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -106335,8 +106335,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -109122,8 +109122,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -110134,12 +110134,12 @@
       "last_updated": "2026-08-20"
     },
     "women_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-01-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1385157/000110465926003934/tel-20260311xdef14a.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Curtin' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...ncrease. Market-aligned adjustments for Mr. Curtin and Mr. Jenkins support continued competitiveness. Equity A...\"",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -110391,8 +110391,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -110642,8 +110642,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -110895,8 +110895,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -111146,8 +111146,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -112416,8 +112416,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -112918,8 +112918,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -114431,8 +114431,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -116711,8 +116711,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -118496,8 +118496,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -118747,8 +118747,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -119000,8 +119000,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -121270,8 +121270,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -121523,8 +121523,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -122535,12 +122535,12 @@
       "last_updated": "2026-08-20"
     },
     "women_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "value": false,
+      "source": "DEF 14A proxy statement, filed 2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710726000046/wbd-20260429.htm",
+      "confidence": "Low",
+      "notes": "CEO surname identified as 'Zaslav' via name+title adjacency in the proxy text; gender determined from the filing's own honorific (Mr./Ms./Mrs.) or, where none was used, a majority of pronoun references (she/her vs he/his) describing that person -- not inferred from the first name. Not a manual bio read -- verify. Evidence: \"...5 and each director nominee, other than Mr. Zaslav, is independent under the Nasdaq Rules and the Guidelines....\"",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -122794,8 +122794,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -123043,8 +123043,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -124321,8 +124321,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -125586,8 +125586,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
@@ -126600,8 +126600,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan",
-      "last_updated": "2026-08-20"
+      "notes": "No consistent CEO-name/honorific-or-pronoun pairing found in DEF 14A proxy text scan (retried 2026-11-10 with reversed Title-then-Name pattern too)",
+      "last_updated": "2026-11-10"
     },
     "data_privacy_practices": {
       "value": {
