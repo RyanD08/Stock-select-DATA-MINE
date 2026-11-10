@@ -760,12 +760,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1800/000130817926000064/abt-20260311.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -2793,12 +2793,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2025-12-11",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/2969/000130817925000643/apd-20251210.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -4556,12 +4556,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/352541/000035254126000025/lnt-20260330.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -5066,12 +5066,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -5315,12 +5315,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1652044/000130817926000342/goog-20260424.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -7096,12 +7096,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/5272/000000527226000039/aig-20260331.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -7848,12 +7848,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/820027/000110465926032725/amp-20260429xdef14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -16736,7 +16736,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -20026,12 +20026,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-10",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1037540/000103754026000010/bxp-20260410.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -22547,12 +22547,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/18230/000130817926000358/cat014496-def14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -26609,12 +26609,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1739940/000173994026000023/ci-20260312.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -28128,12 +28128,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-10-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/21076/000155278126000516/e26316_clx-def14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -28381,12 +28381,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1156375/000162828026020500/cme-20260323.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -30916,12 +30916,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1047862/000104786226000078/ed-20260408.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -31680,7 +31680,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -41817,12 +41817,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-13",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/827052/000110465926027655/eix-20260423xdef14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -44354,7 +44354,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -47128,7 +47128,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -48645,12 +48645,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-08-17",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1048911/000110465926097836/tm2531093-3_def14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -48899,7 +48899,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -52441,12 +52441,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-23",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/831259/000119312526173666/d30227ddef14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -59282,7 +59282,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -62062,7 +62062,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -68401,12 +68401,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1418135/000119312526177266/d201572ddef14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -68649,12 +68649,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/91576/000119312526127600/d944221ddef14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -69165,7 +69165,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -69413,12 +69413,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/879101/000120677426000197/kim4498121-def14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -72697,12 +72697,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-20",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/59478/000005947826000029/lly-20260317.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -75721,12 +75721,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-31",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/62709/000119312526133303/d94896ddef14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -75976,12 +75976,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/916076/000119312526157039/d28378ddef14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -77997,12 +77997,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/310158/000119312526147704/d85708ddef14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -80798,12 +80798,12 @@
       "last_updated": "2026-11-10"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-04-03",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1103982/000162828026023640/mdlz-20260403.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -89649,12 +89649,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-18",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/75362/000119312526113876/pcar-20260318.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -90666,7 +90666,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -91940,12 +91940,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/77476/000130817926000169/pep015012_def14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -97009,7 +97009,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -100534,12 +100534,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2025-12-22",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1024478/000130817925000665/rok014559-def14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -110925,12 +110925,12 @@
       "last_updated": "2026-11-10"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-10-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
@@ -126379,12 +126379,12 @@
       "last_updated": "2026-08-21"
     },
     "family_owned": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not locate a beneficial-ownership disclosure section in the proxy text scan, so family ownership could not be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A beneficial ownership section, filed 2026-03-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1524472/000110465926036678/xyl-20260514xdef14a.htm",
+      "confidence": "Low",
+      "notes": "The proxy's mandatory Item 403 beneficial-ownership disclosure was found and scanned, but no '<Name> family' + ownership-context pattern was found among the disclosed 5%-or-greater owners (excluding large asset managers). Not a manual read -- verify.",
+      "last_updated": "2026-11-10"
     }
   },
   {
