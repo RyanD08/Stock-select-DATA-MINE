@@ -1514,12 +1514,12 @@
       "last_updated": "2026-08-21"
     },
     "founder_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A officer/director bios, filed 2026-02-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/796343/000079634326000043/adbe-20260227.htm",
+      "confidence": "Low",
+      "notes": "Identified the registrant's own current CEO/Executive Chair (Shantanu Narayen) but found no founder claim tied to their name anywhere in the proxy text -- SEC proxies extensively narrate executive backgrounds, so this is treated as real negative evidence, not just an absence of a match. Not a manual bio read -- verify.",
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -3545,7 +3545,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -4051,7 +4051,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -4302,7 +4302,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -5563,7 +5563,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -6329,7 +6329,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -13179,12 +13179,12 @@
       "last_updated": "2026-08-21"
     },
     "founder_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A officer/director bios, filed 2026-09-24",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/8670/000130817926000409/adp015474-def14a.htm",
+      "confidence": "Low",
+      "notes": "Identified the registrant's own current CEO/Executive Chair (Maria Black) but found no founder claim tied to their name anywhere in the proxy text -- SEC proxies extensively narrate executive backgrounds, so this is treated as real negative evidence, not just an absence of a match. Not a manual bio read -- verify.",
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -15464,7 +15464,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -16728,7 +16728,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": "No verifiable data found",
@@ -16981,7 +16981,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -18249,7 +18249,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -22035,7 +22035,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -23051,7 +23051,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -31166,7 +31166,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": true,
@@ -38266,7 +38266,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -38521,7 +38521,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -43340,7 +43340,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -43845,12 +43845,12 @@
       "last_updated": "2026-08-21"
     },
     "founder_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A officer/director bios, filed 2026-03-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/33185/000119312526127556/d947238ddef14a.htm",
+      "confidence": "Low",
+      "notes": "Identified the registrant's own current CEO/Executive Chair (Mark W. Begor) but found no founder claim tied to their name anywhere in the proxy text -- SEC proxies extensively narrate executive backgrounds, so this is treated as real negative evidence, not just an absence of a match. Not a manual bio read -- verify.",
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -44346,7 +44346,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": "No verifiable data found",
@@ -45856,7 +45856,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -46109,7 +46109,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -46618,7 +46618,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -47120,7 +47120,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": "No verifiable data found",
@@ -47631,7 +47631,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -47877,12 +47877,12 @@
       "last_updated": "2026-11-10"
     },
     "founder_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A officer/director bios, filed 2026-01-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/814547/000119312526024403/d27709ddef14a.htm",
+      "confidence": "Low",
+      "notes": "Identified the registrant's own current CEO/Executive Chair (William J. Lansing) but found no founder claim tied to their name anywhere in the proxy text -- SEC proxies extensively narrate executive backgrounds, so this is treated as real negative evidence, not just an absence of a match. Not a manual bio read -- verify.",
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -48133,7 +48133,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -48891,7 +48891,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": "No verifiable data found",
@@ -50153,7 +50153,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -51424,7 +51424,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -53197,7 +53197,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -53450,7 +53450,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -53708,7 +53708,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -53961,7 +53961,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -55224,7 +55224,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -59274,7 +59274,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": "No verifiable data found",
@@ -59779,7 +59779,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -60027,12 +60027,12 @@
       "last_updated": "2026-08-21"
     },
     "founder_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A officer/director bios, filed 2026-04-08",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1070750/000107075026000062/hst-20260407.htm",
+      "confidence": "Low",
+      "notes": "Identified the registrant's own current CEO/Executive Chair (James F. Risoleo) but found no founder claim tied to their name anywhere in the proxy text -- SEC proxies extensively narrate executive backgrounds, so this is treated as real negative evidence, not just an absence of a match. Not a manual bio read -- verify.",
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -62558,7 +62558,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": true,
@@ -67637,7 +67637,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -69908,7 +69908,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -70420,7 +70420,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -78754,7 +78754,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -79515,7 +79515,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -80795,7 +80795,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": "No verifiable data found",
@@ -81297,7 +81297,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -83318,7 +83318,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": true,
@@ -85086,7 +85086,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -86090,7 +86090,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -88889,7 +88889,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -90658,7 +90658,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "No DEF 14A found/fetchable on EDGAR",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": "No verifiable data found",
@@ -92444,7 +92444,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -93205,7 +93205,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -93709,7 +93709,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -93960,7 +93960,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -94972,7 +94972,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -95990,7 +95990,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": true,
@@ -96495,7 +96495,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -110160,12 +110160,12 @@
       "last_updated": "2026-11-10"
     },
     "founder_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A officer/director bios, filed 2026-01-15",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1385157/000110465926003934/tel-20260311xdef14a.htm",
+      "confidence": "Low",
+      "notes": "Identified the registrant's own current CEO/Executive Chair (Terrence R. Curtin) but found no founder claim tied to their name anywhere in the proxy text -- SEC proxies extensively narrate executive backgrounds, so this is treated as real negative evidence, not just an absence of a match. Not a manual bio read -- verify.",
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -110669,7 +110669,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -110917,12 +110917,12 @@
       "last_updated": "2026-11-10"
     },
     "founder_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A officer/director bios, filed 2026-10-19",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1318605/000110465926116700/tm267596-1_def14a.htm",
+      "confidence": "Low",
+      "notes": "Identified the registrant's own current CEO/Executive Chair (Impact As) but found no founder claim tied to their name anywhere in the proxy text -- SEC proxies extensively narrate executive backgrounds, so this is treated as real negative evidence, not just an absence of a match. Not a manual bio read -- verify.",
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": "No verifiable data found",
@@ -111176,7 +111176,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -114209,7 +114209,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -116738,7 +116738,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -118523,7 +118523,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -118774,7 +118774,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -119027,7 +119027,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -121299,7 +121299,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -122563,12 +122563,12 @@
       "last_updated": "2026-08-21"
     },
     "founder_led": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "value": false,
+      "source": "DEF 14A officer/director bios, filed 2026-04-30",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1437107/000143710726000046/wbd-20260429.htm",
+      "confidence": "Low",
+      "notes": "Identified the registrant's own current CEO/Executive Chair (David M. Zaslav) but found no founder claim tied to their name anywhere in the proxy text -- SEC proxies extensively narrate executive backgrounds, so this is treated as real negative evidence, not just an absence of a match. Not a manual bio read -- verify.",
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -122821,7 +122821,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
@@ -125362,7 +125362,7 @@
       "source_url": null,
       "confidence": "None",
       "notes": "Could not identify the registrant's own current CEO/Executive Chair by name in the proxy text scan, so no founder claim could be checked either way",
-      "last_updated": "2026-08-21"
+      "last_updated": "2026-11-10"
     },
     "family_owned": {
       "value": false,
