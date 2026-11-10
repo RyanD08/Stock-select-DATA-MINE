@@ -271,14 +271,21 @@ _PAY_RATIO_PATTERNS = [
     # "Interim CEO's annual\ntotal compensation ... was 417 to 1") -- without it those
     # newlines acted as unintended hard stops and silently killed real matches too.
     re.compile(r"\bratio\b(?=.{0,150}?\b(?:compensation|median|employee)\b).{0,150}?"
-               r"\b(?:is|was|were)\b.{0,60}?([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1\b", re.IGNORECASE | re.DOTALL),
-    # Fallbacks for phrasing the primary pattern doesn't cover. Both need a trailing \b --
-    # without it, a table presented in reversed "median:CEO" order (e.g. Valero's own
-    # summary table: "Median Employee to CEO Pay Ratio 1:162") silently matched just the
-    # leading "1" of "162" as if it were "...:1", producing a wrong value (1.0 instead of
-    # the real 162) rather than either the right number or no match at all.
-    re.compile(r"pay ratio.{0,300}?([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1\b", re.IGNORECASE | re.DOTALL),
-    re.compile(r"([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1\b.{0,60}?pay ratio", re.IGNORECASE | re.DOTALL),
+               r"\b(?:is|was|were)\b.{0,60}?([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1(?!,?\d)", re.IGNORECASE | re.DOTALL),
+    # Fallbacks for phrasing the primary pattern doesn't cover. Both need a trailing
+    # boundary check -- without it, a table presented in reversed "median:CEO" order
+    # (e.g. Valero's own summary table: "Median Employee to CEO Pay Ratio 1:162")
+    # silently matched just the leading "1" of "162" as if it were "...:1", producing a
+    # wrong value (1.0 instead of the real 162) rather than either the right number or
+    # no match at all. A bare `\b` word boundary (the original fix) stops "1" merging
+    # into a run-on "1162" but does NOT stop it matching the leading "1" of a
+    # comma-grouped 4+-digit number ("...is 1 to 1,381" -- Coherent's real, correct
+    # ratio -- still has a word boundary right after that leading "1" because of the
+    # comma) -- confirmed producing the same wrong-1.0 bug via that exact phrasing.
+    # `1(?!,?\d)` fixes both: it additionally refuses a "1" immediately followed by an
+    # optional comma-then-digit, i.e. by more of the same number.
+    re.compile(r"pay ratio.{0,300}?([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1(?!,?\d)", re.IGNORECASE | re.DOTALL),
+    re.compile(r"([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1(?!,?\d)\b.{0,60}?pay ratio", re.IGNORECASE | re.DOTALL),
     # Reversed "median:CEO" table format (e.g. "Median Employee to CEO Pay Ratio 1:162") --
     # the leading "1" is the normalized median-employee value, the second number is the
     # real ratio.
@@ -288,6 +295,22 @@ _PAY_RATIO_PATTERNS = [
     # that of our median employee").
     re.compile(r"\b(?:was|is)\b.{0,60}?\b(?:approximately\s+)?([\d,]+(?:\.\d+)?)\s+times\b"
                r".{0,80}?\b(?:median|employee)\b", re.IGNORECASE | re.DOTALL),
+    # "...median employee was $X, resulting in a ratio of 166:1" (Abbott) -- the context
+    # word (median/employee/compensation) comes BEFORE "ratio" here, with no "is/was/were"
+    # directly governing the ratio itself (it governs the compensation amount instead, in
+    # an earlier clause of the same sentence) -- the primary pattern's lookahead-only
+    # context check and "is/was/were ... NUMBER" requirement both miss this. Context word
+    # must appear within the preceding 150 chars (re has no variable-width lookbehind, so
+    # this is matched as a leading capture group of its own and simply not returned).
+    re.compile(r"\b(?:compensation|median|employee)\b.{0,150}?\bratio\s+of\s+"
+               r"([\d,]+(?:\.\d+)?)\s*(?:to|:)\s*1\b", re.IGNORECASE | re.DOTALL),
+    # "...resulting in a ratio of those amounts of 1-to-51" (Amazon) -- an employee:CEO
+    # order ("1 to N") rather than the far more common CEO:employee "N to 1", and using
+    # hyphens ("1-to-51") rather than "to"/":" alone. Needs the same bidirectional
+    # compensation-context guard as the pattern above, or a bare "ratio...1 to N" would
+    # also match unrelated things like a 1-to-1 stock split ratio.
+    re.compile(r"\b(?:compensation|median|employee)\b.{0,150}?\bratio\b.{0,60}?"
+               r"\b1\s*(?:-to-|to|:)\s*([\d,]+(?:\.\d+)?)\b", re.IGNORECASE | re.DOTALL),
 ]
 
 

@@ -297,3 +297,18 @@ directly.
   'Paramount Skydance Corp' -- only contested-merger proxy forms
   (DEFA14A/DEFC14A/PREC14A/PRER14A/PRRN14A) on file, no plain annual-meeting
   DEF 14A yet, consistent with its recent Paramount/Skydance merger.
+
+## AMCR ceo_pay_ratio conflict found during pay-ratio regression testing (2026-11-10)
+
+While testing new find_pay_ratio() patterns (added to recover ABT/AMZN-style
+phrasing gaps) against a regression sample of already-populated companies,
+AMCR's stored value (119) disagreed with what the new patterns found (246).
+Investigated directly: the proxy's real pay-ratio sentence states "the
+annual total compensation of our CEO to the annual total compensation of
+our median employee was 246 to 1" -- 246 is correct. 119 appears to have
+been mis-extracted from an unrelated country-level employee headcount
+table elsewhere in the same filing ("Morocco (119 employees)"), a
+pre-existing false-positive in whichever pattern matched first at original
+collection time. Per this project's "never overwrite an existing value,
+log the conflict instead" rule, AMCR's ceo_pay_ratio was NOT changed --
+flagging here for a human decision on correcting it to 246.
