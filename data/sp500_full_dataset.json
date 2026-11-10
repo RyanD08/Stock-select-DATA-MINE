@@ -108638,8 +108638,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -108889,8 +108889,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -109140,8 +109140,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -109389,12 +109389,14 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "value": {
+        "pct_independent_directors": 91
+      },
+      "source": "DEF 14A, filed 2026-09-25",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1116132/000111613226000024/tpr-20260924.htm",
+      "confidence": "Medium",
+      "notes": null,
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -109640,12 +109642,15 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "value": {
+        "pct_independent_directors": null,
+        "qualitative_disclosure": "all directors of the Company, other than Mr. Meloy, are independent"
+      },
+      "source": "DEF 14A, filed 2026-03-26",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/1389170/000119312526126280/trgp-20260326.htm",
+      "confidence": "Medium",
+      "notes": "Exact percentage not computed -- the proxy states this qualitatively (exchange-compliance independence determination) but either the excluded-director list or the total board size couldn't be reliably counted from this filing. Quoted disclosure: \"all directors of the Company, other than Mr. Meloy, are independent\"",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -109893,12 +109898,15 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "value": {
+        "pct_independent_directors": null,
+        "qualitative_disclosure": "all of our directors other than our CEO and our Executive Chair of the Board are independent"
+      },
+      "source": "DEF 14A, filed 2026-04-27",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/27419/000162828026027508/tgt-20260426.htm",
+      "confidence": "Medium",
+      "notes": "Exact percentage not computed -- the proxy states this qualitatively (exchange-compliance independence determination) but either the excluded-director list or the total board size couldn't be reliably counted from this filing. Quoted disclosure: \"all of our directors other than our CEO and our Executive Chair of the Board are independent\"",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -110148,8 +110156,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": "No verifiable data found",
@@ -110401,8 +110409,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -110652,8 +110660,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": "No verifiable data found",
@@ -110905,8 +110913,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": "No verifiable data found",
@@ -111152,12 +111160,15 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "value": {
+        "pct_independent_directors": null,
+        "qualitative_disclosure": "The board has determined that each of our directors is independent"
+      },
+      "source": "DEF 14A, filed 2026-03-04",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/97476/000009747626000078/txn-20260303.htm",
+      "confidence": "Medium",
+      "notes": "Exact percentage not computed -- the proxy states this qualitatively (exchange-compliance independence determination) but either the excluded-director list or the total board size couldn't be reliably counted from this filing. Quoted disclosure: \"The board has determined that each of our directors is independent\"",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": "No verifiable data found",
@@ -111407,8 +111418,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -111915,8 +111926,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -112423,8 +112434,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -112674,8 +112685,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": true,
@@ -113680,12 +113691,15 @@
       "last_updated": "2026-08-20"
     },
     "board_transparency_independence": {
-      "value": "No verifiable data found",
-      "source": null,
-      "source_url": null,
-      "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "value": {
+        "pct_independent_directors": null,
+        "qualitative_disclosure": "All of our director nominees other than our Chief Executive Officer are independent"
+      },
+      "source": "DEF 14A, filed 2026-04-07",
+      "source_url": "https://www.sec.gov/Archives/edgar/data/86312/000008631226000103/trv-20260406.htm",
+      "confidence": "Medium",
+      "notes": "Exact percentage not computed -- the proxy states this qualitatively (exchange-compliance independence determination) but either the excluded-director list or the total board size couldn't be reliably counted from this filing. Quoted disclosure: \"All of our director nominees other than our Chief Executive Officer are independent\"",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -113935,8 +113949,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -114435,8 +114449,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -114686,8 +114700,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
@@ -114935,8 +114949,8 @@
       "source": null,
       "source_url": null,
       "confidence": "None",
-      "notes": "Independent-director percentage not found in proxy text scan",
-      "last_updated": "2026-08-21"
+      "notes": "No board-independence percentage or qualifying 'Board has determined ... independent' statement found in proxy text scan. Likely rendered only as a checkmark icon in the director-nominee table with no text equivalent (confirmed common, e.g. Apple's own table) -- not something this project will guess at via image analysis.",
+      "last_updated": "2026-11-10"
     },
     "founder_led": {
       "value": false,
