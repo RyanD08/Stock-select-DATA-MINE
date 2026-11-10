@@ -743,9 +743,29 @@ def _company_object_matches(obj, company_key):
 
 _BENEFICIAL_OWNERSHIP_SECTION = re.compile(
     r"securit(?:y|ies) ownership of (?:certain )?beneficial owners|"
-    r"beneficial ownership (?:of|table)|"
     r"5%\s+(?:or\s+greater\s+)?(?:stockholders|shareholders|owners)|"
-    r"principal (?:stockholders|shareholders)",
+    r"principal (?:stockholders|shareholders)|"
+    # "Common Stock Ownership of Certain Beneficial Owners and Management" (Alphabet) --
+    # "Stock Ownership of ... Beneficial Owners" word order, not "Security/Securities
+    # Ownership of Beneficial Owners" (the pattern above only accepted "security"/
+    # "securities" as the noun right before "ownership").
+    r"stock ownership of (?:certain )?beneficial owners|"
+    # "Persons Owning More than 5% of <Company>" (Air Products) -- "5%" sits in the
+    # middle of the heading rather than right after "owning", a word-order variant the
+    # pattern above (anchored on "5% (or greater) stockholders/shareholders/owners")
+    # doesn't cover at all.
+    r"persons? owning (?:more than )?5%|"
+    # "Security ownership of executive officers and directors" (Abbott) -- some
+    # companies combine the mandatory management-ownership and 5%-owner disclosures
+    # under one heading that names only "executive officers and directors"/
+    # "management", with no "beneficial owner(s)"/"5%" wording in the heading itself.
+    r"security ownership of (?:executive officers|management)|"
+    # "OWNERSHIP OF VOTING SECURITIES" (Alliant Energy) -- yet another heading variant,
+    # and Alliant's actual 5%-owner sentence ("beneficial ownership by the only owners
+    # known to us ... more than 5% of Alliant Energy's common stock") doesn't match the
+    # "beneficial ownership (of|table)" pattern above either (uses "by", not "of"/
+    # "table") -- loosened that one case to bare "beneficial ownership".
+    r"ownership of voting securities|beneficial ownership",
     re.IGNORECASE)
 
 
@@ -1044,18 +1064,25 @@ def find_ceo_gender_signal(text):
     name_hits = Counter()
     surname_display = {}
     chair_tagged = set()
-    for m in _CEO_NAME_TITLE.finditer(text):
-        full_name = m.group(1).strip()
-        tokens = full_name.split()
-        surname = tokens[-1].strip(".,’'")
-        first = tokens[0].strip(".,’'")
-        if surname.lower() in _CEO_NAME_STOPWORDS or first.lower() in _CEO_NAME_STOPWORDS:
-            continue
-        key = surname.lower()
-        name_hits[key] += 1
-        surname_display.setdefault(key, surname)
-        if re.search(r"chair", m.group(0), re.IGNORECASE):
-            chair_tagged.add(key)
+    # Both name-then-title ("Mary T. Barra, Chair and CEO") and the reversed
+    # title-then-name order ("our Chief Executive Officer ("CEO"), Shantanu
+    # Narayen") are searched -- the latter is the ONLY clean mention of some
+    # companies' actual CEO anywhere in their own proxy (see
+    # resolve_founder_led_field's docstring for the Adobe case this was found
+    # on), and find_ceo_gender_signal previously only ever tried the former.
+    for pat in (_CEO_NAME_TITLE, _CEO_TITLE_NAME_REV):
+        for m in pat.finditer(text):
+            full_name = m.group(1).strip()
+            tokens = full_name.split()
+            surname = tokens[-1].strip(".,’'")
+            first = tokens[0].strip(".,’'")
+            if surname.lower() in _CEO_NAME_STOPWORDS or first.lower() in _CEO_NAME_STOPWORDS:
+                continue
+            key = surname.lower()
+            name_hits[key] += 1
+            surname_display.setdefault(key, surname)
+            if re.search(r"chair", m.group(0), re.IGNORECASE):
+                chair_tagged.add(key)
     if not name_hits:
         return None
     # Some companies (e.g. P&G) use "Chief Executive Officer" as an internal
