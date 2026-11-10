@@ -88,19 +88,33 @@ def fetch_table():
     return companies, resp.url
 
 
+def _get_col(row, *candidates):
+    """Wikipedia's exact header text for a column can drift (e.g. "GICS
+    Sector" rendered without the space as "GICSSector" as of a 2026 page
+    edit, which silently broke exact-key lookups and left gics_sector blank
+    for all 503 companies). Match case/whitespace-insensitively against any
+    of the given candidate header spellings instead of a single exact key."""
+    norm = {re.sub(r"\s+", "", k).lower(): v for k, v in row.items()}
+    for c in candidates:
+        key = re.sub(r"\s+", "", c).lower()
+        if key in norm:
+            return norm[key]
+    return ""
+
+
 def build_skeleton(companies, source_url):
     now = datetime.now(timezone.utc).strftime("%Y-%m-%d")
     dataset = []
     for row in companies:
-        ticker = row.get("Symbol", "").strip().replace(".", "-")
-        name = row.get("Security", "").strip()
-        sector = row.get("GICS Sector", "").strip()
-        sub_industry = row.get("GICS Sub-Industry", "").strip()
-        hq = row.get("Headquarters Location", "").strip()
-        date_added = row.get("Date added", "").strip() or None
-        cik_raw = row.get("CIK", "").strip()
+        ticker = _get_col(row, "Symbol").strip().replace(".", "-")
+        name = _get_col(row, "Security").strip()
+        sector = _get_col(row, "GICS Sector").strip()
+        sub_industry = _get_col(row, "GICS Sub-Industry").strip()
+        hq = _get_col(row, "Headquarters Location").strip()
+        date_added = _get_col(row, "Date added").strip() or None
+        cik_raw = _get_col(row, "CIK").strip()
         cik = cik_raw.zfill(10) if cik_raw.isdigit() else None
-        founded = row.get("Founded", "").strip() or None
+        founded = _get_col(row, "Founded").strip() or None
 
         record = {
             "ticker": ticker,
