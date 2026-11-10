@@ -426,10 +426,10 @@ def find_founder_led(text, company_name):
     text_lower = text.lower()
     company_key = _company_key(company_name)
     candidates = []
-    ceo = _top_named_officer(text, _CEO_NAME_TITLE_FOUNDER_OK, company_key)
+    ceo = _top_named_officer(text, (_CEO_NAME_TITLE_FOUNDER_OK, _CEO_TITLE_NAME_REV), company_key)
     if ceo:
         candidates.append(ceo)
-    chair = _top_named_officer(text, _EXEC_CHAIR_NAME_TITLE, company_key)
+    chair = _top_named_officer(text, (_EXEC_CHAIR_NAME_TITLE, _EXEC_CHAIR_TITLE_NAME_REV), company_key)
     # Dedupe by full name, not surname -- a father-founder/son-CEO pair (or any two
     # relatives leading the same family company) can share a surname while being two
     # different people (UHS: CEO Marc D. Miller and Executive Chairman Alan B. Miller,
@@ -503,21 +503,23 @@ def _top_named_officer(text, title_regex, company_key=None):
     text = text.replace("\xa0", " ")
     name_hits = Counter()
     display = {}
-    for m in title_regex.finditer(text):
-        full_name = m.group(1).strip()
-        tokens = full_name.split()
-        if len(tokens) < 2:
-            continue
-        surname = tokens[-1].strip(".,’'")
-        first = tokens[0].strip(".,’'")
-        if surname.lower() in _CEO_NAME_STOPWORDS or first.lower() in _CEO_NAME_STOPWORDS:
-            continue
-        trailing_of = _TITLE_TRAILING_OF_COMPANY.match(text[m.end():m.end() + 65])
-        if trailing_of and not _company_object_matches(trailing_of.group(1), company_key):
-            continue
-        key = surname.lower()
-        name_hits[key] += 1
-        display.setdefault(key, full_name)
+    title_regexes = title_regex if isinstance(title_regex, (list, tuple)) else (title_regex,)
+    for pat in title_regexes:
+        for m in pat.finditer(text):
+            full_name = m.group(1).strip()
+            tokens = full_name.split()
+            if len(tokens) < 2:
+                continue
+            surname = tokens[-1].strip(".,’'")
+            first = tokens[0].strip(".,’'")
+            if surname.lower() in _CEO_NAME_STOPWORDS or first.lower() in _CEO_NAME_STOPWORDS:
+                continue
+            trailing_of = _TITLE_TRAILING_OF_COMPANY.match(text[m.end():m.end() + 65])
+            if trailing_of and not _company_object_matches(trailing_of.group(1), company_key):
+                continue
+            key = surname.lower()
+            name_hits[key] += 1
+            display.setdefault(key, full_name)
     if not name_hits:
         return None
     top_two = name_hits.most_common(2)
@@ -1007,6 +1009,20 @@ _CEO_NAME_TITLE_FOUNDER_OK = re.compile(
     r"(?:\d{1,4}\s+)?(?:(?:Co-)?Founder(?:,\s*|\s+and\s+))?"
     r"(?:(?:our |the Company's )?(?:Chair(?:man|woman)?(?:\s+of\s+the\s+Board(?:\s+of\s+Directors)?)?(?:,?\s+and\s+|\s*&\s*|,\s*)|President(?:,?\s+and\s+|\s*&\s*|,\s*))*"
     r"(?:Chief Executive Officer|CEO)\b)")
+# The reverse order -- title first, then the person's name -- is at least as common in
+# an introductory sentence ("the Board has determined that, at this time, our Chief
+# Executive Officer ("CEO"), Shantanu Narayen, ...") as the name-first order above, and
+# the name-first pattern can never match it at all. Confirmed as the ONLY clean mention
+# of Adobe's actual CEO in Adobe's own proxy (every other "Chief Executive Officer"
+# occurrence nearby is a different, outside director's bio, already excluded by the
+# "of <Other Company>" check in _top_named_officer -- but only if this reversed order is
+# searched too, since the forward pattern simply never fires for Adobe's own CEO at all).
+_CEO_TITLE_NAME_REV = re.compile(
+    r"\b(?:our |the Company's )(?:Chief Executive Officer|CEO)\b(?:\s*\(.{0,8}?CEO.{0,8}?\))?\s*,\s+"
+    r"([A-Z][" + _NAME_CHARS + r".-]+(?:\s+[A-Z]\.?)?\s+[A-Z][" + _NAME_CHARS + r"-]+)\b")
+_EXEC_CHAIR_TITLE_NAME_REV = re.compile(
+    r"\b(?:our |the Company's )(?:President(?:,?\s+and\s+|\s*&\s*|,\s*))?Executive\s+Chair(?:man|woman)?\b\s*,\s+"
+    r"([A-Z][" + _NAME_CHARS + r".-]+(?:\s+[A-Z]\.?)?\s+[A-Z][" + _NAME_CHARS + r"-]+)\b")
 
 
 def find_ceo_gender_signal(text):
