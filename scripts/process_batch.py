@@ -315,7 +315,10 @@ def process_company(rec):
             f"${total_disb:,.2f} disbursements. Matched by company name against FEC's CONNECTED_ORG_NM/committee-name "
             "fields (FEC does not publish a CIK crosswalk) -- verify the matched committee is this company, not a "
             "similarly-named one.")
-    elif proxy_text and re.search(r"political (contribut|spending|donation)", proxy_text.lower()):
+    elif proxy_text and re.search(
+            r"political (contribut|spending|donation)|political action committees?|"
+            r"corporate political (?:and lobbying )?activit|trade association.{0,60}political activit",
+            proxy_text.lower()):
         rec["political_donation_transparency"] = field("Disclosed", f"DEF 14A political spending disclosure, filed {proxy['filing_date']}", purl, "Medium")
     else:
         rec["political_donation_transparency"] = none_field("No FEC-registered corporate PAC name-matched and no political-spending disclosure language found in proxy text scan; opensecrets.org blocked by Cloudflare, cii.org unavailable in this environment")
