@@ -70,3 +70,22 @@ already checked and came up empty per the 2026-08-20 note above), that
 would be the way to get real labor-dispute data. Logging rather than acting
 on it, since driving the search UI directly would mean working around the
 robots.txt restriction.
+
+## apps.occ.gov -- OCC's real Enforcement Actions Search tool, different subdomain
+
+The newly-approved occ.gov/www.occ.gov don't host OCC's actual searchable
+enforcement-action database -- that's at `apps.occ.gov/EASearch`, a
+separate subdomain. Logging rather than requesting it mid-task; a future
+session chasing the Financials-sector enforcement-data gap (currently just
+7 companies: BLK, BX, CB, GPN, MA, TMUS, USB) could request this host
+specifically and try that tool.
+
+## OpenSanctions API key -- needed for programmatic entity/sanctions search
+
+api.opensanctions.org (the documented "yente" API) is reachable but returns
+401 Unauthorized without an API key; no free/keyless tier was found. The
+HTML site's own robots.txt disallows /search and /entities for a generic
+bot User-Agent (only named AI-assistant live-fetch bots are allowed those
+paths), so the website itself isn't a usable substitute either. If this is
+worth pursuing for sanctions-exposure signal on Financials-sector
+companies, a future session would need a provided API key.

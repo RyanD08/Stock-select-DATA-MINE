@@ -201,3 +201,67 @@ records" reclassifications from the 2026-11-10 bias-correction pass.
 Re-test osha.gov directly at the start of a future session before assuming
 it's still blocked; this could be transient (same class of issue as EPA
 ECHO's confirmed transient degradation, below) or a durable policy change.
+
+## New sources for Financials/Comm Services/Real Estate (CFPB/FDIC/Fed/OCC/FINRA/OpenSanctions/FCC) -- environment allowlist gap, not a code issue (2026-11-10)
+
+All seven sources named as "newly approved for this run" -- consumerfinance.gov,
+fdic.gov, federalreserve.gov, occ.gov, finra.org, opensanctions.org, fcc.gov --
+are rejected at the network *gateway* itself from this environment: every
+request (with or without `www.`) fails with `ProxyError` / "gateway answered
+403 to CONNECT (policy denial or other refusal)" per
+`$HTTPS_PROXY/__agentproxy/status`'s `recentRelayFailures`. This is the exact
+same signature already documented for stooq.com/alphavantage.co/
+violationtracker.goodjobsfirst.org -- a sandbox network-allowlist gap, not a
+site-side block or a code bug. Being "approved" for this task doesn't change
+what this container's network policy actually permits; the allowlist itself
+needs to be updated (outside this session's control) before any of these
+seven can be used. Only 7 companies in Financials/Communication
+Services/Real Estate were still gaps in fraud_corruption_scandal_history
+(BLK, BX, CB, GPN, MA, TMUS, USB) -- these sources would have targeted
+exactly those, plus potentially strengthened existing Low-confidence hits
+for sector-regulated companies (e.g. FCC for TMUS/T/VZ, OCC/Fed/FDIC for
+USB and other banks). None of this was attempted/faked; all 7 stay
+genuinely None pending an allowlist update.
+
+## Sector-appropriate sources for Financials/Comm Services/Real Estate (2026-11-10) -- partial, small yield
+
+All 7 newly-approved hosts (consumerfinance.gov, fdic.gov, federalreserve.gov,
+occ.gov, finra.org, opensanctions.org, fcc.gov) were added to this
+environment's network allowlist this session and are now reachable. Only
+7 companies were genuine fraud_corruption_scandal_history gaps in these
+three sectors to begin with (BLK, BX, CB, GPN, MA, TMUS, USB) -- this
+source set targets exactly those plus potential strengthening of existing
+Low-confidence hits, so the realistic ceiling here was always small.
+Findings per source, this session:
+- **CFPB** (www.consumerfinance.gov): the Consumer Complaint Database has a
+  real, working JSON API (`/data-research/consumer-complaints/search/api/v1/`)
+  but its `company` parameter requires an exact match against CFPB's own
+  internal company-name taxonomy (confirmed: "Mastercard", "MASTERCARD
+  INCORPORATED", "Global Payments", "GLOBAL PAYMENTS INC" all returned 0
+  hits even though the index itself has 19M+ complaints) -- no discoverable
+  autocomplete/fuzzy-match endpoint was found to resolve an arbitrary SEC
+  legal name to CFPB's internal name string. The enforcement-actions page
+  (`/enforcement/actions/`) is client-rendered with no static JSON API
+  found. Not used for GPN/MA this session; needs either a company-name
+  crosswalk or more API reverse-engineering.
+- **OCC**: real search tool exists at `apps.occ.gov/EASearch` -- a
+  *different subdomain* not yet on the allowlist (only occ.gov/www.occ.gov
+  were added). Not pursued further this session once the apps.occ.gov gap
+  was found.
+- **FDIC**: enforcement actions are published as periodic press-release/PDF
+  bulletins (e.g. "FDIC Publishes September Enforcement Actions"), not an
+  obvious searchable database/API from the homepage within this session's
+  search.
+- **Federal Reserve, FINRA, OpenSanctions, FCC**: not investigated this
+  session beyond confirming network reachability, given the above findings
+  and the small (7-company) ceiling -- time was redirected to the much
+  larger DEF 14A governance-gap and founder/family/women-led backlogs (70-348
+  companies each). OpenSanctions specifically: its HTML search
+  (`/search`, `/entities`) is disallowed by its own robots.txt for a generic
+  User-Agent like this project's (only named AI-assistant live-fetch bots
+  get that access, which this pipeline's batch identity isn't); its
+  documented API (`api.opensanctions.org`) requires an API key this
+  environment doesn't have (401 Unauthorized, no free/keyless tier found).
+- **apps.occ.gov** -- logging as a suggested additional allowlist host for
+  a future session that wants to pursue OCC's real enforcement-action
+  search tool.
