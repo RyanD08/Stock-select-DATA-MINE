@@ -244,6 +244,7 @@ Final numbers: `founder_led` 34/503 (6.8%) True, 399/503 (79.3%) False,
 | securities.stanford.edu | **Blocked** -- Cloudflare challenge | Securities fraud cases (Q11) |
 | www.bcorporation.net | **Blocked** -- 403/bot protection | B-Corp discovery (additional criteria) |
 | gunfreefunds.org (bare domain) | Working | Weapons/defense exposure context (Q16) |
+| www.sipri.org | Working (added 2026-11-17) | SIPRI Top 100 arms producers list for the weapons screen (Q16), saved to `data/reference/sipri_top100_2024.json` |
 | api.gunfreefunds.org / www.gunfreefunds.org | **Blocked** -- proxy policy denial | -- |
 | fossilfreefunds.org | Working | Fossil-fuel exposure context (Q1) |
 | justcapital.com | Working (not yet integrated into the pipeline) | Worker-treatment rankings |
@@ -267,6 +268,45 @@ Revenue growth and debt-to-equity/dividend-consistency *are* available from
 SEC EDGAR XBRL data and are populated. If a Finnhub or Alpha Vantage API key
 becomes available (env vars `FINNHUB_API_KEY` / `ALPHAVANTAGE_API_KEY`), a
 future pipeline run can fill in the missing pieces.
+
+## Industry screens and headquarters country (2026-11-17)
+
+`scripts/fix_industry_screens.py` rebuilds the tobacco, alcohol, gambling,
+weapons and interest-based-finance flags, plus `domestic_hq` and a new
+top-level `hq_country`. The original flags used only each registrant's SEC
+SIC code, and SIC files much of these industries elsewhere: casino
+operators (Las Vegas Sands, Wynn, MGM) under "hotels and motels", most
+defense contractors (Northrop Grumman, General Dynamics, RTX, L3Harris,
+Huntington Ingalls) under "aircraft" or "search and navigation equipment",
+and Goldman Sachs, Morgan Stanley and Schwab under "security brokers and
+dealers". All of them were marked "not involved" with High confidence.
+
+The rules, chosen by the project owner:
+
+- **Tobacco / gambling:** official GICS sub-industry ("Tobacco", "Casinos &
+  Gaming"), or the matching SIC code.
+- **Alcohol:** producers only, by GICS sub-industry ("Brewers", "Distillers &
+  Vintners"). PepsiCo and Keurig Dr Pepper, flagged earlier because their
+  10-Ks mention alcohol partnerships, are no longer flagged.
+- **Weapons:** on the SIPRI Top 100 arms producers list (2024 edition; the 18
+  S&P 500 companies on it are in `data/reference/sipri_top100_2024.json`)
+  **or** weapons is the primary business by SIC code (Lockheed Martin, Axon).
+  This includes companies whose arms sales are a small share of revenue but
+  large in dollars (e.g. Eaton 7.5%, Amphenol 11%, GE Aerospace 13%); the
+  share is recorded in each company's notes.
+- **Interest-based finance:** lenders and brokers -- GICS "Diversified Banks",
+  "Regional Banks", "Consumer Finance", "Investment Banking & Brokerage", or a
+  banking/lending SIC code. Insurers, payment networks and asset managers are
+  not counted.
+- **Headquarters:** where the company is actually run from. Wikipedia's
+  Headquarters Location is the default; for the 25 companies it lists outside
+  the US (or with no location), the company's own latest annual report decides,
+  with the evidence and rule recorded in `data/reference/hq_country_overrides.json`.
+  This also fixed an older bug that marked every New Jersey company as
+  non-US (Johnson & Johnson, Merck, ADP, Prudential and others).
+
+The script is idempotent: it re-reads each record's SIC code from the notes
+it writes.
 
 ## Additional-criteria fields (not part of the official 27 questions)
 

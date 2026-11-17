@@ -1,0 +1,135 @@
+{
+  "source": "SIPRI Top 100 arms-producing and military services companies in the world, 2024 (SIPRI Fact Sheet, December 2025), Annex 1",
+  "source_url": "https://www.sipri.org/sites/default/files/2025-11/fs_2512_top_100_2024.pdf",
+  "doi": "https://doi.org/10.55163/XPGD6816",
+  "retrieved": "2026-11-17",
+  "notes": "Only companies that are current S&P 500 constituents are listed. SIPRI ranks 'Honeywell International' (2024); its aerospace and defense business is now the separately listed Honeywell Aerospace (HONA), so the entry is mapped to HONA, not to the remaining Honeywell company (HON). Arms revenue is in millions of constant 2024 US dollars.",
+  "companies": [
+    {
+      "sipri_rank": 1,
+      "sipri_name": "Lockheed Martin Corp.",
+      "ticker": "LMT",
+      "arms_revenue_usd_m": 64650,
+      "arms_share_of_revenue_pct": 91
+    },
+    {
+      "sipri_rank": 2,
+      "sipri_name": "RTX",
+      "ticker": "RTX",
+      "arms_revenue_usd_m": 43600,
+      "arms_share_of_revenue_pct": 54
+    },
+    {
+      "sipri_rank": 3,
+      "sipri_name": "Northrop Grumman",
+      "ticker": "NOC",
+      "arms_revenue_usd_m": 37850,
+      "arms_share_of_revenue_pct": 92
+    },
+    {
+      "sipri_rank": 5,
+      "sipri_name": "General Dynamics Corp.",
+      "ticker": "GD",
+      "arms_revenue_usd_m": 33630,
+      "arms_share_of_revenue_pct": 70
+    },
+    {
+      "sipri_rank": 6,
+      "sipri_name": "Boeing",
+      "ticker": "BA",
+      "arms_revenue_usd_m": 30550,
+      "arms_share_of_revenue_pct": 46
+    },
+    {
+      "sipri_rank": 10,
+      "sipri_name": "L3Harris Technologies",
+      "ticker": "LHX",
+      "arms_revenue_usd_m": 16210,
+      "arms_share_of_revenue_pct": 76
+    },
+    {
+      "sipri_rank": 16,
+      "sipri_name": "HII",
+      "ticker": "HII",
+      "arms_revenue_usd_m": 10280,
+      "arms_share_of_revenue_pct": 89
+    },
+    {
+      "sipri_rank": 18,
+      "sipri_name": "Leidos",
+      "ticker": "LDOS",
+      "arms_revenue_usd_m": 9370,
+      "arms_share_of_revenue_pct": 56
+    },
+    {
+      "sipri_rank": 27,
+      "sipri_name": "Honeywell International",
+      "ticker": "HONA",
+      "arms_revenue_usd_m": 6090,
+      "arms_share_of_revenue_pct": 16
+    },
+    {
+      "sipri_rank": 33,
+      "sipri_name": "GE Aerospace",
+      "ticker": "GE",
+      "arms_revenue_usd_m": 4890,
+      "arms_share_of_revenue_pct": 13
+    },
+    {
+      "sipri_rank": 48,
+      "sipri_name": "Textron",
+      "ticker": "TXT",
+      "arms_revenue_usd_m": 3290,
+      "arms_share_of_revenue_pct": 24
+    },
+    {
+      "sipri_rank": 49,
+      "sipri_name": "TransDigm Group",
+      "ticker": "TDG",
+      "arms_revenue_usd_m": 3180,
+      "arms_share_of_revenue_pct": 40
+    },
+    {
+      "sipri_rank": 54,
+      "sipri_name": "Parker-Hannifin Corp.",
+      "ticker": "PH",
+      "arms_revenue_usd_m": 2740,
+      "arms_share_of_revenue_pct": 14
+    },
+    {
+      "sipri_rank": 69,
+      "sipri_name": "Teledyne Technologies",
+      "ticker": "TDY",
+      "arms_revenue_usd_m": 2050,
+      "arms_share_of_revenue_pct": 36
+    },
+    {
+      "sipri_rank": 75,
+      "sipri_name": "Eaton",
+      "ticker": "ETN",
+      "arms_revenue_usd_m": 1870,
+      "arms_share_of_revenue_pct": 7.5
+    },
+    {
+      "sipri_rank": 81,
+      "sipri_name": "Amphenol Corp.",
+      "ticker": "APH",
+      "arms_revenue_usd_m": 1670,
+      "arms_share_of_revenue_pct": 11
+    },
+    {
+      "sipri_rank": 94,
+      "sipri_name": "Howmet Aerospace",
+      "ticker": "HWM",
+      "arms_revenue_usd_m": 1160,
+      "arms_share_of_revenue_pct": 16
+    },
+    {
+      "sipri_rank": 95,
+      "sipri_name": "Keysight Technologies",
+      "ticker": "KEYS",
+      "arms_revenue_usd_m": 1150,
+      "arms_share_of_revenue_pct": 23
+    }
+  ]
+}

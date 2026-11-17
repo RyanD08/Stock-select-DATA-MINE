@@ -1,0 +1,81 @@
+{
+  "retrieved": "2026-11-17",
+  "rule": "A company counts as headquartered in the United States when it is actually run from there. The Wikipedia constituents table (headquarters_location) is the default. For companies it lists outside the US, the company's own latest annual report decides: if the report names a US location as its main operational, administrative, corporate or (co-)principal executive office, it counts as US. If the report names a foreign headquarters and only a regional US office (e.g. 'North American headquarters'), it does not. When the report says neither, a US business or mailing address on the company's SEC registration is used.",
+  "companies": {
+    "MDT": {
+      "country": "United States",
+      "evidence": "FY2026 10-K, Properties: principal executive office in Ireland; 'main operational offices are located in the Minneapolis, Minnesota metropolitan area'.",
+      "source_url": "https://data.sec.gov/submissions/CIK0001613103.json"
+    },
+    "STE": {
+      "country": "United States",
+      "evidence": "FY2026 10-K: principal executive office in Dublin, Ireland; 'primary administrative offices are located in Mentor, OH'.",
+      "source_url": "https://data.sec.gov/submissions/CIK0001757898.json"
+    },
+    "LIN": {
+      "country": "United States",
+      "evidence": "2025 10-K, Properties: principal executive offices in Woking, United Kingdom and Danbury, Connecticut.",
+      "source_url": "https://data.sec.gov/submissions/CIK0001707925.json"
+    },
+    "EG": {
+      "country": "United States",
+      "evidence": "2025 10-K, Properties: corporate offices in Warren, New Jersey; SEC mailing address Warren, NJ.",
+      "source_url": "https://data.sec.gov/submissions/CIK0001095073.json"
+    },
+    "LYB": {
+      "country": "United States",
+      "evidence": "SEC business address Houston, TX; 2025 10-K lists executive offices in London, Rotterdam, Houston and Hong Kong.",
+      "source_url": "https://data.sec.gov/submissions/CIK0001489393.json"
+    },
+    "PNR": {
+      "country": "United States",
+      "evidence": "SEC mailing address Golden Valley, MN; annual report names no other operating headquarters.",
+      "source_url": "https://data.sec.gov/submissions/CIK0000077360.json"
+    },
+    "TT": {
+      "country": "United States",
+      "evidence": "SEC mailing address Davidson, NC; annual report names no other operating headquarters.",
+      "source_url": "https://data.sec.gov/submissions/CIK0001466258.json"
+    },
+    "ALLE": {
+      "country": "United States",
+      "evidence": "SEC mailing address Carmel, IN; annual report names no other operating headquarters.",
+      "source_url": "https://data.sec.gov/submissions/CIK0001579241.json"
+    },
+    "XYZ": {
+      "country": "United States",
+      "evidence": "Wikipedia lists no headquarters (remote-first company); US company incorporated in Delaware with US SEC registration.",
+      "source_url": "https://data.sec.gov/submissions/CIK0001512673.json"
+    },
+    "JCI": {
+      "country": "Ireland",
+      "evidence": "FY2026 10-K: 'world headquarters located in Cork, Ireland and its North American operational headquarters located in Milwaukee' -- the US office is regional.",
+      "source_url": "https://data.sec.gov/submissions/CIK0000833444.json"
+    },
+    "SW": {
+      "country": "Ireland",
+      "evidence": "2025 10-K: global corporate headquarters in Dublin; North American operations headquartered in Atlanta (regional).",
+      "source_url": "https://data.sec.gov/submissions/CIK0002005951.json"
+    },
+    "CRH": {
+      "country": "Ireland",
+      "evidence": "2025 10-K: Americas divisional headquarters in Atlanta (regional); SEC business address Dublin.",
+      "source_url": "https://data.sec.gov/submissions/CIK0000849395.json"
+    },
+    "AON": {
+      "country": "Ireland",
+      "evidence": "2025 10-K, Properties: corporate headquarters at 15 George's Quay, Dublin 2, Ireland (Wikipedia lists London).",
+      "source_url": "https://data.sec.gov/submissions/CIK0000315293.json"
+    },
+    "AMCR": {
+      "country": "Switzerland",
+      "evidence": "FY2026 10-K: 'Our primary executive office is located in Zurich, Switzerland' (Wikipedia lists Bristol, UK); a US headquarters in Miami is planned from 2027.",
+      "source_url": "https://data.sec.gov/submissions/CIK0001748790.json"
+    },
+    "STX": {
+      "country": "Singapore",
+      "evidence": "FY2026 10-K, Properties: 'Our principal executive offices are located in Singapore' (Wikipedia lists Dublin).",
+      "source_url": "https://data.sec.gov/submissions/CIK0001137789.json"
+    }
+  }
+}

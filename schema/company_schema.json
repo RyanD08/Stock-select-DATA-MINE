@@ -28,7 +28,8 @@
       "type": "boolean + notes",
       "description": "True if the company underwent a merger, spin-off, IPO, or major restructuring within the trailing 12 months. Per TrueNorth methodology, single-year revenue/return comparisons for such companies are unreliable and must be flagged rather than silently scored (see EXE/Expand Energy case in background doc)."
     },
-    "processing_status": "pending | in_progress | complete | manual_review_needed -- tracked here and mirrored in logs/progress.json."
+    "processing_status": "pending | in_progress | complete | manual_review_needed -- tracked here and mirrored in logs/progress.json.",
+    "hq_country": "Country the company is actually run from (rule and per-company evidence in data/reference/hq_country_overrides.json). Written by scripts/fix_industry_screens.py."
   },
   "questions": {
     "environmental": {
@@ -110,10 +111,10 @@
       }
     },
     "ethical_sin_stock": {
-      "q13_tobacco": {"survey_question": "Avoiding tobacco companies", "field": "tobacco_involvement", "value_type": "boolean", "sources": ["SIC code 2100-2199"]},
-      "q14_alcohol": {"survey_question": "Avoiding alcohol producers", "field": "alcohol_involvement", "value_type": "boolean", "sources": ["SIC code 2080-2085"]},
-      "q15_gambling": {"survey_question": "Avoiding gambling/casino companies", "field": "gambling_casino_involvement", "value_type": "boolean", "sources": ["SIC code 7990-7999"]},
-      "q16_weapons_defense": {"survey_question": "Avoiding weapons/defense manufacturers", "field": "weapons_defense_involvement", "value_type": "boolean", "sources": ["SIC code 3480-3489, 3760-3769", "Gun Free Funds (gunfreefunds.org)"]},
+      "q13_tobacco": {"survey_question": "Avoiding tobacco companies", "field": "tobacco_involvement", "value_type": "boolean", "sources": ["GICS sub-industry 'Tobacco' (Wikipedia)", "SIC code 2100-2199"], "note": "See scripts/fix_industry_screens.py (2026-11-17)."},
+      "q14_alcohol": {"survey_question": "Avoiding alcohol producers", "field": "alcohol_involvement", "value_type": "boolean", "sources": ["GICS sub-industry 'Brewers' or 'Distillers & Vintners' (Wikipedia)"], "note": "Producers only; alcohol partnerships and distribution deals are not counted. See scripts/fix_industry_screens.py (2026-11-17)."},
+      "q15_gambling": {"survey_question": "Avoiding gambling/casino companies", "field": "gambling_casino_involvement", "value_type": "boolean", "sources": ["GICS sub-industry 'Casinos & Gaming' (Wikipedia)", "SIC code 7993"], "note": "SIC alone missed the big casino operators, which are filed under hotels and motels. See scripts/fix_industry_screens.py (2026-11-17)."},
+      "q16_weapons_defense": {"survey_question": "Avoiding weapons/defense manufacturers", "field": "weapons_defense_involvement", "value_type": "boolean", "sources": ["SIPRI Top 100 arms-producing and military services companies (data/reference/sipri_top100_2024.json)", "SIC code 3480-3489, 3760-3769, 3795 (weapons as primary business)"], "note": "Flagged if on the SIPRI Top 100 OR weapons is the primary business by SIC code. See scripts/fix_industry_screens.py (2026-11-17)."},
       "q17_adult_entertainment": {"survey_question": "Avoiding adult entertainment industries", "field": "adult_entertainment_involvement", "value_type": "boolean", "sources": ["SIC code 7990-7999 subset / business description review"]}
     },
     "religious_values": {
@@ -128,7 +129,8 @@
         "survey_question": "Avoiding interest-based financial products",
         "field": "interest_based_financial_products",
         "value_type": "boolean (true if core business is interest-based lending/banking)",
-        "sources": ["SIC code 6000-6199", "10-K business description (EDGAR)"]
+        "sources": ["GICS sub-industry 'Diversified Banks', 'Regional Banks', 'Consumer Finance' or 'Investment Banking & Brokerage' (Wikipedia)", "SIC code 6000-6199"],
+        "rule_note": "Lenders and brokers; insurers, payment networks and asset managers are not counted. See scripts/fix_industry_screens.py (2026-11-17)."
       }
     },
     "political_social": {
@@ -158,7 +160,8 @@
         "survey_question": "Supporting locally-headquartered or domestic companies",
         "field": "domestic_hq",
         "value_type": "boolean",
-        "sources": ["Wikipedia HQ field", "SEC filings"]
+        "sources": ["Wikipedia HQ field", "Company annual report / SEC registration where Wikipedia lists a non-US HQ (data/reference/hq_country_overrides.json)"],
+        "rule_note": "Where the company is actually run from; the country is in the top-level hq_country field. See scripts/fix_industry_screens.py (2026-11-17)."
       },
       "q24_founder_family": {
         "survey_question": "Supporting founder-led or family-owned businesses",
